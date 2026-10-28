@@ -35,9 +35,10 @@ export function createHandler({ store, wa, agent, voice, numbers, log = console 
     return next;
   }
 
-  async function say(to, text, lang) {
+  // The card rides along with the voice note where the channel allows it, to save a message.
+  async function say(to, text, lang, caption = '') {
     const ogg = await voice.speak(text, LANGUAGES[lang]?.voice);
-    await wa.sendVoice(to, ogg);
+    await wa.sendVoice(to, ogg, caption);
   }
 
   async function askLanguage(to) {
@@ -61,8 +62,7 @@ export function createHandler({ store, wa, agent, voice, numbers, log = console 
     await store.save();
     log.info?.(`[${number.slice(-4)}] ${reply.status}: ${reply.spoken.slice(0, 160)}`);
 
-    await say(number, reply.spoken, lang);
-    if (reply.card) await wa.sendText(number, reply.card);
+    await say(number, reply.spoken, lang, reply.card);
 
     // Anything that costs money or cannot be undone waits for the person's own yes.
     if (reply.status === 'needs_confirmation') {
@@ -78,7 +78,8 @@ export function createHandler({ store, wa, agent, voice, numbers, log = console 
   }
 
   async function respond(number, text, lang) {
-    await wa.sendText(number, phrase('ack', lang));
+    // The ack is a courtesy: if it fails (rate limit, network), still do the task.
+    await wa.sendText(number, phrase('ack', lang)).catch((err) => log.warn(`[${number.slice(-4)}] ack not sent: ${err.message}`));
     try {
       await runTurn(number, text);
     } catch (err) {
@@ -118,6 +119,7 @@ export function createHandler({ store, wa, agent, voice, numbers, log = console 
     if (msg.kind !== 'text' && msg.kind !== 'audio') return say(msg.from, phrase('unsupported', lang), lang);
 
     const text = await toText(msg);
+    if (msg.kind === 'audio') log.info?.(`[${msg.from.slice(-4)}] heard: ${text}`);
     if (!text) return say(msg.from, phrase('error', lang), lang);
 
     // A spoken or typed "हाँ" / "नहीं" answers the open question.

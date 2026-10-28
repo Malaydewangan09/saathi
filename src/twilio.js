@@ -62,10 +62,10 @@ export function createTwilioTransport({ accountSid, authToken, from, publicUrl, 
     },
 
     // Twilio fetches media from a URL, so the voice note is served by this server for a short time.
-    sendVoice(to, ogg) {
+    sendVoice(to, ogg, caption = '') {
       const id = randomBytes(16).toString('hex');
       media.set(id, { data: ogg, expires: Date.now() + MEDIA_TTL_MS });
-      return send(to, { MediaUrl: `${publicUrl}/media/${id}.ogg` });
+      return send(to, { MediaUrl: `${publicUrl}/media/${id}.ogg`, ...(caption ? { Body: caption } : {}) });
     },
 
     getMedia(id) {

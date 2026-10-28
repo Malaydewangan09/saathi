@@ -5,15 +5,18 @@ import { Store } from '../src/store.js';
 
 const ME = '911';
 
-function setup(agentReplies = [], { failAgent = false } = {}) {
+function setup(agentReplies = [], { failAgent = false, failText = false } = {}) {
   const sent = [];
   const agentCalls = [];
   const store = new Store('/dev/null/x');
   store.save = async () => {};
   const wa = {
-    sendText: async (to, text) => sent.push({ to, type: 'text', text }),
+    sendText: async (to, text) => {
+      if (failText) throw new Error('Twilio 429: daily limit');
+      sent.push({ to, type: 'text', text });
+    },
     sendButtons: async (to, text, buttons) => sent.push({ to, type: 'buttons', text, buttons: buttons.map((b) => b.id) }),
-    sendVoice: async (to) => sent.push({ to, type: 'voice' }),
+    sendVoice: async (to, _ogg, caption) => sent.push({ to, type: 'voice', caption }),
     downloadMedia: async () => ({ data: Buffer.from('ogg'), mimeType: 'audio/ogg' }),
   };
   let transcript = 'कल पुणे की ट्रेन देखो';
@@ -115,6 +118,22 @@ test('unknown numbers and duplicate deliveries are ignored', async () => {
   await handle(m);
   await handle(m);
   assert.equal(agentCalls.length, 1);
+});
+
+test('the card is sent as the voice note caption, one message per reply', async () => {
+  const { handle, sent, store, msg } = setup([{ status: 'done', spoken: 'मिल गई', card: '12409 SL ₹640', confirm_summary: '', amount_inr: 0 }]);
+  store.person(ME).language = 'hi';
+  await handle(msg({ kind: 'text', text: 'ट्रेन देखो' }));
+  assert.deepEqual(sent.map((s) => s.type), ['text', 'voice']);
+  assert.equal(sent[1].caption, '12409 SL ₹640');
+});
+
+test('a failed ack does not stop the task', async () => {
+  const { handle, sent, agentCalls, store, msg } = setup([], { failText: true });
+  store.person(ME).language = 'hi';
+  await handle(msg({ kind: 'text', text: 'ट्रेन देखो' }));
+  assert.equal(agentCalls.length, 1);
+  assert.equal(sent.at(-1).type, 'voice');
 });
 
 test('agent failure still gives a spoken reply', async () => {
