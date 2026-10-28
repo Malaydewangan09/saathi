@@ -33,6 +33,8 @@ export const config = {
   },
   // Numbers in international format without '+', e.g. 919812345678.
   elderNumbers: list(env.SAATHI_ELDER_NUMBERS),
+  // How the family refers to the elder, e.g. "Maa" or "Papa". Used in family messages.
+  elderName: env.SAATHI_ELDER_NAME || 'Maa',
   familyNumbers: list(env.SAATHI_FAMILY_NUMBERS),
 };
 
