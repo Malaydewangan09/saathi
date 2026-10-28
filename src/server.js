@@ -9,6 +9,13 @@ import * as wa from './whatsapp.js';
 import { createTwilioTransport, verifyTwilioSignature } from './twilio.js';
 
 const MAX_BODY = 1024 * 1024;
+const inflight = new Set();
+
+// Tracks every message being handled, so shutdown can wait for replies in progress.
+function track(promise) {
+  inflight.add(promise);
+  promise.finally(() => inflight.delete(promise));
+}
 
 const twilio = config.transport === 'twilio';
 if (twilio) require_('deepgramKey', 'twilio.accountSid', 'twilio.authToken', 'publicUrl');
@@ -68,7 +75,7 @@ const server = createServer(async (req, res) => {
       }
       for (const msg of wa.parseMessages(payload)) {
         console.log(`<- ${msg.kind} from ...${msg.from.slice(-4)}`);
-        handle(msg).catch((err) => console.error(`handler: ${err.message}`));
+        track(handle(msg).catch((err) => console.error(`handler: ${err.message}`)));
       }
     } else if (twilio && req.method === 'POST' && url.pathname === '/twilio') {
       const params = Object.fromEntries(new URLSearchParams((await readBody(req)).toString('utf8')));
@@ -81,7 +88,7 @@ const server = createServer(async (req, res) => {
       res.writeHead(200, { 'Content-Type': 'text/xml' }).end('<Response/>');
       const msg = transport.parseMessage(params);
       console.log(`<- ${msg.kind} from ...${msg.from.slice(-4)}`);
-      handle(msg).catch((err) => console.error(`handler: ${err.message}`));
+      track(handle(msg).catch((err) => console.error(`handler: ${err.message}`)));
     } else if (twilio && req.method === 'GET' && /^\/media\/[0-9a-f]{32}\.ogg$/.test(url.pathname)) {
       const data = transport.getMedia(url.pathname.slice(7, -4));
       if (data) res.writeHead(200, { 'Content-Type': 'audio/ogg' }).end(data);
@@ -99,8 +106,10 @@ server.listen(config.port, () => console.log(`Saathi (${config.transport}) liste
 
 for (const sig of ['SIGINT', 'SIGTERM']) {
   process.once(sig, async () => {
-    console.log('shutting down');
+    console.log(`shutting down, waiting for ${inflight.size} reply(s) in progress`);
     server.close();
+    const limit = new Promise((r) => setTimeout(r, config.agentTimeoutMs + 30_000).unref());
+    await Promise.race([Promise.allSettled([...inflight]), limit]);
     await store.save();
     process.exit(0);
   });
