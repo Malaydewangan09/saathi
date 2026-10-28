@@ -7,6 +7,7 @@ import { runAgent } from './agent.js';
 import { speak, transcribe } from './voice.js';
 import * as wa from './whatsapp.js';
 import { createTwilioTransport, verifyTwilioSignature } from './twilio.js';
+import { withLocalPlayback } from './local.js';
 
 const MAX_BODY = 1024 * 1024;
 const inflight = new Set();
@@ -22,7 +23,9 @@ if (twilio) require_('deepgramKey', 'twilio.accountSid', 'twilio.authToken', 'pu
 else require_('deepgramKey', 'whatsapp.token', 'whatsapp.phoneNumberId', 'whatsapp.appSecret', 'whatsapp.verifyToken');
 if (!config.numbers.length) throw new Error('set SAATHI_NUMBERS in .env');
 
-const transport = twilio ? createTwilioTransport({ ...config.twilio, publicUrl: config.publicUrl }) : wa;
+const channel = twilio ? createTwilioTransport({ ...config.twilio, publicUrl: config.publicUrl }) : wa;
+// For testing on this Mac: replies the channel refuses are played and printed here.
+const transport = config.playLocally ? withLocalPlayback(channel) : channel;
 const store = await new Store(path.join(config.dataDir, 'store.json')).load();
 const handle = createHandler({
   store,
