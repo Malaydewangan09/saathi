@@ -5,7 +5,7 @@ import { Store } from '../src/store.js';
 
 const ME = '911';
 
-function setup(agentReplies = [], { failAgent = false, failText = false, clock } = {}) {
+function setup(agentReplies = [], { failAgent = false, failText = false, clock, collage } = {}) {
   const sent = [];
   const agentCalls = [];
   const store = new Store('/dev/null/x');
@@ -17,6 +17,7 @@ function setup(agentReplies = [], { failAgent = false, failText = false, clock }
     },
     sendButtons: async (to, text, buttons) => sent.push({ to, type: 'buttons', text, buttons: buttons.map((b) => b.id) }),
     sendVoice: async (to, _ogg, caption) => sent.push({ to, type: 'voice', caption }),
+    sendImage: async (to, _jpg, caption) => sent.push({ to, type: 'image', caption }),
     downloadMedia: async () => ({ data: Buffer.from('ogg'), mimeType: 'audio/ogg' }),
   };
   let transcript = 'कल पुणे की ट्रेन देखो';
@@ -30,7 +31,7 @@ function setup(agentReplies = [], { failAgent = false, failText = false, clock }
     },
   };
   const log = { error: () => {}, warn: () => {} };
-  const handle = createHandler({ store, wa, agent, voice, numbers: [ME], log, ...(clock ? { clock } : {}) });
+  const handle = createHandler({ store, wa, agent, voice, numbers: [ME], log, ...(clock ? { clock } : {}), ...(collage ? { collage } : {}) });
   let n = 0;
   const msg = (extra, from = ME) => ({ id: `m${++n}`, from, timestamp: Date.now(), ...extra });
   return { handle, sent, agentCalls, store, msg, setTranscript: (t) => (transcript = t) };
@@ -138,6 +139,25 @@ test('the card is sent as the voice note caption, one message per reply', async 
   await handle(msg({ kind: 'text', text: 'ट्रेन देखो' }));
   assert.deepEqual(sent.map((s) => s.type), ['text', 'voice']);
   assert.equal(sent[1].caption, '12409 SL ₹640');
+});
+
+test('options with photos go out as one picture with the card as caption', async () => {
+  const reply = { status: 'done', spoken: 'ये झूमर मिले', card: '1. Homesake ₹1,549\n2. GA ₹1,810', confirm_summary: '', amount_inr: 0, images: ['https://a/1.jpg', 'https://a/2.jpg'] };
+  const { handle, sent, store, msg } = setup([reply], { collage: async (urls) => Buffer.from(`grid of ${urls.length}`) });
+  store.person(ME).language = 'hi';
+  await handle(msg({ kind: 'text', text: 'झूमर दिखाओ' }));
+  assert.deepEqual(sent.map((s) => s.type), ['text', 'voice', 'image']);
+  assert.equal(sent[1].caption, '');
+  assert.match(sent[2].caption, /Homesake/);
+});
+
+test('if the picture cannot be made, the card still goes with the voice note', async () => {
+  const reply = { status: 'done', spoken: 'ये झूमर मिले', card: '1. Homesake ₹1,549', confirm_summary: '', amount_inr: 0, images: ['https://a/1.jpg'] };
+  const { handle, sent, store, msg } = setup([reply], { collage: async () => { throw new Error('no images could be fetched'); } });
+  store.person(ME).language = 'hi';
+  await handle(msg({ kind: 'text', text: 'झूमर दिखाओ' }));
+  assert.deepEqual(sent.map((s) => s.type), ['text', 'voice']);
+  assert.match(sent[1].caption, /Homesake/);
 });
 
 test('a failed ack does not stop the task', async () => {

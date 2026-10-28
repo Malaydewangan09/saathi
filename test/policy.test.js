@@ -2,7 +2,7 @@ import { test } from 'node:test';
 import assert from 'node:assert/strict';
 import { normalizeReply } from '../src/policy.js';
 
-const base = { status: 'done', spoken: 'ठीक है', card: '', confirm_summary: '', amount_inr: 0 };
+const base = { status: 'done', spoken: 'ठीक है', card: '', confirm_summary: '', amount_inr: 0, images: [] };
 
 test('keeps a valid reply as is', () => {
   assert.deepEqual(normalizeReply(base), base);
@@ -33,6 +33,11 @@ test('empty spoken text gets a fallback so a voice note is always sent', () => {
 
 test('long text is clipped', () => {
   assert.ok(normalizeReply({ ...base, spoken: 'क'.repeat(5000) }).spoken.length <= 600);
+});
+
+test('only https image URLs are kept, at most 4', () => {
+  const r = normalizeReply({ ...base, images: ['https://a/1.jpg', 'http://b/2.jpg', 5, 'https://c/3.jpg', 'https://d/4.jpg', 'https://e/5.jpg', 'https://f/6.jpg'] });
+  assert.deepEqual(r.images, ['https://a/1.jpg', 'https://c/3.jpg', 'https://d/4.jpg', 'https://e/5.jpg']);
 });
 
 test('rejects a missing reply', () => {

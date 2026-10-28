@@ -30,6 +30,13 @@ export function createTwilioTransport({ accountSid, authToken, from, publicUrl, 
     return res.json();
   }
 
+  // Twilio fetches media from a URL, so files are served by this server for a short time under a random id.
+  function sendMedia(to, data, ext, caption) {
+    const id = randomBytes(16).toString('hex');
+    media.set(id, { data, ext, expires: Date.now() + MEDIA_TTL_MS });
+    return send(to, { MediaUrl: `${publicUrl}/media/${id}.${ext}`, ...(caption ? { Body: caption } : {}) });
+  }
+
   function parseMessage(params) {
     const base = { id: params.MessageSid, from: number(params.From), timestamp: Date.now() };
     if (Number(params.NumMedia) > 0) {
@@ -61,17 +68,18 @@ export function createTwilioTransport({ accountSid, authToken, from, publicUrl, 
       return send(to, { Body: `${text}\n\n${list}\n\n${hint}` });
     },
 
-    // Twilio fetches media from a URL, so the voice note is served by this server for a short time.
     sendVoice(to, ogg, caption = '') {
-      const id = randomBytes(16).toString('hex');
-      media.set(id, { data: ogg, expires: Date.now() + MEDIA_TTL_MS });
-      return send(to, { MediaUrl: `${publicUrl}/media/${id}.ogg`, ...(caption ? { Body: caption } : {}) });
+      return sendMedia(to, ogg, 'ogg', caption);
     },
 
-    getMedia(id) {
+    sendImage(to, jpg, caption = '') {
+      return sendMedia(to, jpg, 'jpg', caption);
+    },
+
+    getMedia(id, ext) {
       const m = media.get(id);
-      if (!m || m.expires < Date.now()) {
-        media.delete(id);
+      if (!m || m.expires < Date.now() || m.ext !== ext) {
+        if (m && m.expires < Date.now()) media.delete(id);
         return null;
       }
       return m.data;

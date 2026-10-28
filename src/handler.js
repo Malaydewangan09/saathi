@@ -17,7 +17,7 @@ export function yesOrNo(text) {
 }
 
 // One conversation turn per incoming message. Dependencies are passed in so tests can fake them.
-export function createHandler({ store, wa, agent, voice, numbers, log = console, clock = Date.now }) {
+export function createHandler({ store, wa, agent, voice, numbers, log = console, clock = Date.now, collage = null }) {
   const seen = new Set();
   const queues = new Map();
 
@@ -68,7 +68,13 @@ export function createHandler({ store, wa, agent, voice, numbers, log = console,
     await store.save();
     log.info?.(`[${number.slice(-4)}] ${reply.status}: ${reply.spoken.slice(0, 160)}`);
 
-    await say(number, reply.spoken, lang, reply.card);
+    // Options people pick by look go out as one numbered picture, with the card as its caption.
+    const picture = reply.images?.length && collage ? await collage(reply.images).catch((err) => {
+      log.warn(`[${number.slice(-4)}] no picture: ${err.message}`);
+      return null;
+    }) : null;
+    await say(number, reply.spoken, lang, picture ? '' : reply.card);
+    if (picture) await wa.sendImage(number, picture, reply.card);
 
     // Anything that costs money or cannot be undone waits for the person's own yes.
     if (reply.status === 'needs_confirmation') {

@@ -7,13 +7,18 @@ const MAX_CARD = 1500;
 export const REPLY_SCHEMA = {
   type: 'object',
   additionalProperties: false,
-  required: ['status', 'spoken', 'card', 'confirm_summary', 'amount_inr'],
+  required: ['status', 'spoken', 'card', 'confirm_summary', 'amount_inr', 'images'],
   properties: {
     status: { type: 'string', enum: STATUSES },
     spoken: { type: 'string', description: 'What Saathi says in the voice note, in the user\'s language, short and warm.' },
     card: { type: 'string', description: 'Short text with the key facts (names, times, amounts). Empty if nothing to show.' },
     confirm_summary: { type: 'string', description: 'One short line in the user\'s language: exactly what will happen if they say yes. Empty unless needs_confirmation.' },
     amount_inr: { type: 'number', description: 'Money involved in rupees, 0 if none.' },
+    images: {
+      type: 'array',
+      items: { type: 'string' },
+      description: 'Direct https image URLs of the options shown, in the same order as their numbers in the card, at most 4. Empty if none.',
+    },
   },
 };
 
@@ -27,6 +32,7 @@ export function normalizeReply(raw) {
     card: clip(raw.card, MAX_CARD),
     confirm_summary: clip(raw.confirm_summary, 300),
     amount_inr: Number.isFinite(raw.amount_inr) && raw.amount_inr > 0 ? Math.round(raw.amount_inr) : 0,
+    images: Array.isArray(raw.images) ? raw.images.filter((u) => typeof u === 'string' && u.startsWith('https://')).slice(0, 4) : [],
   };
   if (!reply.spoken) reply.spoken = 'माफ़ कीजिए, मैं समझ नहीं पाई। एक बार फिर से बताइए।';
   // A confirmation must say what is being confirmed, or it is just a question.
