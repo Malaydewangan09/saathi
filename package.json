@@ -10,7 +10,8 @@
   "license": "MIT",
   "type": "module",
   "dependencies": {
-    "@playwright/mcp": "^0.0.83"
+    "@playwright/mcp": "^0.0.83",
+    "playwright": "^1.64.0-alpha-1790635538000"
   },
   "private": true,
   "engines": {

@@ -8,6 +8,7 @@ import { speak, transcribe } from './voice.js';
 import * as wa from './whatsapp.js';
 import { createTwilioTransport, verifyTwilioSignature } from './twilio.js';
 import { withLocalPlayback } from './local.js';
+import { makeCollage } from './collage.js';
 
 const MAX_BODY = 1024 * 1024;
 const inflight = new Set();
@@ -33,6 +34,7 @@ const handle = createHandler({
   agent: { run: runAgent },
   voice: { speak, transcribe },
   numbers: config.numbers,
+  collage: makeCollage,
 });
 
 function readBody(req) {
@@ -90,9 +92,10 @@ const server = createServer(async (req, res) => {
       const msg = transport.parseMessage(params);
       console.log(`<- ${msg.kind} from ...${msg.from.slice(-4)}`);
       track(handle(msg).catch((err) => console.error(`handler: ${err.message}`)));
-    } else if (twilio && req.method === 'GET' && /^\/media\/[0-9a-f]{32}\.ogg$/.test(url.pathname)) {
-      const data = transport.getMedia(url.pathname.slice(7, -4));
-      if (data) res.writeHead(200, { 'Content-Type': 'audio/ogg' }).end(data);
+    } else if (twilio && req.method === 'GET' && /^\/media\/[0-9a-f]{32}\.(ogg|jpg)$/.test(url.pathname)) {
+      const [, id, ext] = url.pathname.match(/^\/media\/(\w+)\.(\w+)$/);
+      const data = transport.getMedia(id, ext);
+      if (data) res.writeHead(200, { 'Content-Type': ext === 'jpg' ? 'image/jpeg' : 'audio/ogg' }).end(data);
       else res.writeHead(404).end('not found');
     } else {
       res.writeHead(404).end('not found');

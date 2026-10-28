@@ -60,8 +60,9 @@ test('voice notes are served once from a random, expiring URL', async () => {
   const mediaUrl = sent[0].body.MediaUrl;
   assert.match(mediaUrl, /^https:\/\/pub\/media\/[0-9a-f]{32}\.ogg$/);
   const id = mediaUrl.match(/media\/(\w+)\.ogg/)[1];
-  assert.equal(t.getMedia(id).toString(), 'ogg');
-  assert.equal(t.getMedia('nope'), null);
+  assert.equal(t.getMedia(id, 'ogg').toString(), 'ogg');
+  assert.equal(t.getMedia(id, 'jpg'), null);
+  assert.equal(t.getMedia('nope', 'ogg'), null);
 });
 
 test('a reply matching an alias also works, ignoring case and a trailing full stop', async () => {

@@ -7,13 +7,13 @@ import { promisify } from 'node:util';
 const run = promisify(execFile);
 
 // Plays the reply on this Mac when the channel refuses it (e.g. Twilio's daily trial limit), so testing can go on.
-export function withLocalPlayback(transport, { log = console, play = playOgg } = {}) {
-  const fallback = (what, show) => async (...args) => {
+export function withLocalPlayback(transport, { log = console, play = playOgg, show = showJpg } = {}) {
+  const fallback = (what, instead) => async (...args) => {
     try {
       return await transport[what](...args);
     } catch (err) {
       log.warn(`${what} failed (${err.message.slice(0, 80)}), showing it here instead`);
-      await show(...args);
+      await instead(...args);
       return null;
     }
   };
@@ -26,7 +26,17 @@ export function withLocalPlayback(transport, { log = console, play = playOgg } =
       if (caption) log.log(`  [card] ${caption}`);
       await play(ogg);
     }),
+    sendImage: fallback('sendImage', async (_to, jpg, caption) => {
+      if (caption) log.log(`  [card] ${caption}`);
+      await show(jpg);
+    }),
   };
+}
+
+async function showJpg(jpg) {
+  const file = path.join(await mkdtemp(path.join(tmpdir(), 'saathi-pic-')), 'options.jpg');
+  await writeFile(file, jpg);
+  await run('open', [file]);
 }
 
 async function playOgg(ogg) {

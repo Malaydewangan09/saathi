@@ -12,7 +12,8 @@ function make({ fail }) {
     sendVoice: async () => { if (fail) throw new Error('Twilio 429'); return 'sent'; },
     downloadMedia: async () => 'media',
   };
-  const t = withLocalPlayback(transport, { log, play: async (ogg) => played.push(ogg) });
+  transport.sendImage = async () => { if (fail) throw new Error('Twilio 429'); return 'sent'; };
+  const t = withLocalPlayback(transport, { log, play: async (ogg) => played.push(ogg), show: async (jpg) => played.push(jpg) });
   return { t, lines, played };
 }
 
@@ -36,4 +37,11 @@ test('refused texts and choices are printed, other methods pass through', async 
   assert.ok(lines.some((l) => l.includes('जी, देख रही हूँ।')));
   assert.ok(lines.some((l) => l.includes('1. हाँ')));
   assert.equal(await t.downloadMedia('x'), 'media');
+});
+
+test('a refused picture opens here, with its card printed', async () => {
+  const { t, lines, played } = make({ fail: true });
+  await t.sendImage('911', Buffer.from('jpg'), '1. Homesake ₹1,549');
+  assert.equal(played.length, 1);
+  assert.ok(lines.some((l) => l.includes('Homesake')));
 });
