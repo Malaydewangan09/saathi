@@ -1,8 +1,0 @@
-- generic [ref=f1e2]:
-  - generic [ref=f1e3]:
-    - generic [ref=f1e5]: ConfirmTkt
-    - generic [ref=f1e6]: IRCTC TICKET BOOKING
-  - generic [ref=f1e7]:
-    - generic [ref=f1e8]: POWERED BY
-    - generic [ref=f1e9]: ConfirmTkt Prediction & Alternates
-    - generic [ref=f1e10]: Get Confirm Ticket
