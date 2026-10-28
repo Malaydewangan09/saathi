@@ -37,6 +37,20 @@ export function parseMessages(payload) {
   return out;
 }
 
+// Delivery reports for messages we sent: sent, delivered, read, failed (with Meta's reason).
+export function parseStatuses(payload) {
+  const out = [];
+  for (const entry of payload?.entry || []) {
+    for (const change of entry.changes || []) {
+      for (const s of change.value?.statuses || []) {
+        const e = s.errors?.[0];
+        out.push({ id: s.id, to: s.recipient_id || '', status: s.status, error: e ? `${e.code} ${e.title || ''} ${e.error_data?.details || ''}`.trim() : null });
+      }
+    }
+  }
+  return out;
+}
+
 async function call(path, init = {}) {
   require_('whatsapp.token', 'whatsapp.phoneNumberId');
   const res = await fetch(`${graph()}${path}`, {

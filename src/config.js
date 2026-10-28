@@ -22,7 +22,14 @@ export const config = {
     phoneNumberId: env.WHATSAPP_PHONE_NUMBER_ID,
     appSecret: env.WHATSAPP_APP_SECRET,
     verifyToken: env.WHATSAPP_VERIFY_TOKEN,
-    apiVersion: env.WHATSAPP_API_VERSION || 'v21.0',
+    apiVersion: env.WHATSAPP_API_VERSION || 'v25.0',
+  },
+  transport: env.SAATHI_TRANSPORT === 'twilio' ? 'twilio' : 'meta',
+  publicUrl: (env.PUBLIC_URL || '').replace(/\/$/, ''),
+  twilio: {
+    accountSid: env.TWILIO_ACCOUNT_SID,
+    authToken: env.TWILIO_AUTH_TOKEN,
+    from: env.TWILIO_WHATSAPP_FROM || 'whatsapp:+14155238886',
   },
   // Numbers in international format without '+', e.g. 919812345678.
   elderNumbers: list(env.SAATHI_ELDER_NUMBERS),
