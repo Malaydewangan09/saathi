@@ -94,11 +94,14 @@ export function sendButtons(to, text, buttons) {
   });
 }
 
-export async function sendVoice(to, ogg) {
+// WhatsApp Cloud API audio messages have no caption, so the caption goes as a text after it.
+export async function sendVoice(to, ogg, caption = '') {
   const form = new FormData();
   form.append('messaging_product', 'whatsapp');
   form.append('type', 'audio/ogg');
   form.append('file', new Blob([ogg], { type: 'audio/ogg' }), 'reply.ogg');
   const { id } = await (await call(`/${config.whatsapp.phoneNumberId}/media`, { method: 'POST', body: form })).json();
-  return send({ to, type: 'audio', audio: { id, voice: true } });
+  const sent = await send({ to, type: 'audio', audio: { id, voice: true } });
+  if (caption) await sendText(to, caption);
+  return sent;
 }
