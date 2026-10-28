@@ -2,7 +2,7 @@
 
 export const STATUSES = ['done', 'needs_input', 'needs_confirmation', 'scam_warning'];
 const MAX_SPOKEN = 600;
-const MAX_CARD = 900;
+const MAX_CARD = 1500;
 
 export const REPLY_SCHEMA = {
   type: 'object',
