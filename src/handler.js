@@ -28,7 +28,7 @@ export function createHandler({ store, wa, agent, voice, numbers, log = console 
   }
 
   async function askLanguage(to) {
-    await wa.sendButtons(to, PHRASES.pick, Object.entries(LANGUAGES).map(([id, l]) => ({ id: `lang:${id}`, title: l.label })));
+    await wa.sendButtons(to, PHRASES.pick, Object.entries(LANGUAGES).map(([id, l]) => ({ id: `lang:${id}`, title: l.label, aliases: [l.name] })));
   }
 
   async function toText(msg) {
@@ -46,6 +46,7 @@ export function createHandler({ store, wa, agent, voice, numbers, log = console 
     });
     person.sessionId = sessionId;
     await store.save();
+    log.info?.(`[${number.slice(-4)}] ${reply.status}: ${reply.spoken.slice(0, 160)}`);
 
     await say(number, reply.spoken, lang);
     if (reply.card) await wa.sendText(number, reply.card);

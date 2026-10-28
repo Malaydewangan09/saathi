@@ -64,6 +64,12 @@ test('voice notes are served once from a random, expiring URL', async () => {
   assert.equal(t.getMedia('nope'), null);
 });
 
+test('a reply matching an alias also works, ignoring case and a trailing full stop', async () => {
+  const { t } = transport();
+  await t.sendButtons('911', 'Language?', [{ id: 'lang:hi', title: 'हिंदी', aliases: ['Hindi'] }, { id: 'lang:en', title: 'English', aliases: ['English'] }]);
+  assert.equal(t.parseMessage({ MessageSid: 'f', From: 'whatsapp:+911', Body: 'Hindi.', NumMedia: '0' }).buttonId, 'lang:hi');
+});
+
 test('refuses to download media from other hosts', async () => {
   const { t } = transport();
   await assert.rejects(t.downloadMedia('https://evil.example/x'), /unexpected media host/);

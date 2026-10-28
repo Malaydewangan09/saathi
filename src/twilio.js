@@ -40,7 +40,8 @@ export function createTwilioTransport({ accountSid, authToken, from, publicUrl, 
     const text = (params.Body || '').trim();
     const offered = choices.get(base.from);
     if (offered) {
-      const i = /^\d+$/.test(text) ? Number(text) - 1 : offered.findIndex((b) => b.title.toLowerCase() === text.toLowerCase());
+      const said = text.toLowerCase().replace(/[.!।]+$/, '');
+      const i = /^\d+$/.test(said) ? Number(said) - 1 : offered.findIndex((b) => [b.title, ...(b.aliases || [])].some((t) => t.toLowerCase() === said));
       if (offered[i]) {
         choices.delete(base.from);
         return { ...base, kind: 'button', buttonId: offered[i].id, text: offered[i].title };

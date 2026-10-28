@@ -1,3 +1,0 @@
-[     195ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://confirmtkt.azureedge.net/images/train.jpg:0
-[     605ms] [ERROR] The script resource is behind a redirect, which is disallowed. @ :0
-[     606ms] [ERROR] SecurityError: Failed to register a ServiceWorker for scope ('https://www.confirmtkt.com/~partytown/') with script ('https://www.confirmtkt.com/~partytown/partytown-sw.js'): The script resource is behind a redirect, which is disallowed. @ :0
