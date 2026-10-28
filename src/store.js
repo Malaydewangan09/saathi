@@ -2,19 +2,20 @@ import { mkdir, readFile, rename, writeFile } from 'node:fs/promises';
 import { randomUUID } from 'node:crypto';
 import path from 'node:path';
 
-const APPROVAL_TTL_MS = 30 * 60 * 1000;
+const CONFIRM_TTL_MS = 30 * 60 * 1000;
 
-// Small JSON file store: per-person language, agent session and pending family approvals.
+// Small JSON file store: per-person language, agent session and pending confirmations.
 export class Store {
   constructor(file) {
     this.file = file;
-    this.data = { people: {}, approvals: {} };
+    this.data = { people: {}, confirmations: {} };
     this.writing = Promise.resolve();
   }
 
   async load() {
     try {
-      this.data = JSON.parse(await readFile(this.file, 'utf8'));
+      this.data = { people: {}, confirmations: {}, ...JSON.parse(await readFile(this.file, 'utf8')) };
+      delete this.data.approvals;
     } catch (err) {
       if (err.code !== 'ENOENT') throw err;
     }
@@ -36,25 +37,31 @@ export class Store {
     return (this.data.people[number] ??= { language: null, sessionId: null, queued: null });
   }
 
-  createApproval({ elder, summary, amount, now = Date.now() }) {
+  createConfirmation({ owner, summary, amount, now = Date.now() }) {
     const id = randomUUID().slice(0, 8);
-    this.data.approvals[id] = { elder, summary, amount, createdAt: now, status: 'pending' };
+    this.data.confirmations[id] = { owner, summary, amount, createdAt: now, status: 'pending' };
     return id;
   }
 
-  // Only a family member, only once, only within the time limit.
-  resolveApproval(id, { decision, by, isFamily, now = Date.now() }) {
-    const a = this.data.approvals[id];
-    if (!a) return { ok: false, reason: 'unknown approval' };
-    if (!isFamily) return { ok: false, reason: 'only family can approve' };
-    if (a.status !== 'pending') return { ok: false, reason: `already ${a.status}` };
-    if (now - a.createdAt > APPROVAL_TTL_MS) {
-      a.status = 'expired';
+  // The newest open question for this person, if any.
+  pendingConfirmation(owner, now = Date.now()) {
+    const open = Object.entries(this.data.confirmations)
+      .filter(([, c]) => c.owner === owner && c.status === 'pending' && now - c.createdAt <= CONFIRM_TTL_MS)
+      .sort(([, a], [, b]) => b.createdAt - a.createdAt);
+    return open[0]?.[0] || null;
+  }
+
+  // Only the person it was asked of, only once, only within the time limit.
+  resolveConfirmation(id, { decision, by, now = Date.now() }) {
+    const c = this.data.confirmations[id];
+    if (!c || c.owner !== by) return { ok: false, reason: 'unknown confirmation' };
+    if (c.status !== 'pending') return { ok: false, reason: `already ${c.status}` };
+    if (now - c.createdAt > CONFIRM_TTL_MS) {
+      c.status = 'expired';
       return { ok: false, reason: 'expired' };
     }
-    a.status = decision === 'approve' ? 'approved' : 'declined';
-    a.by = by;
-    a.resolvedAt = now;
-    return { ok: true, approval: a };
+    c.status = decision === 'yes' ? 'confirmed' : 'cancelled';
+    c.resolvedAt = now;
+    return { ok: true, confirmation: c };
   }
 }

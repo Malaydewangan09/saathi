@@ -32,8 +32,8 @@ export const config = {
     from: env.TWILIO_WHATSAPP_FROM || 'whatsapp:+14155238886',
   },
   // Numbers in international format without '+', e.g. 919812345678.
-  elderNumbers: list(env.SAATHI_ELDER_NUMBERS),
-  familyNumbers: list(env.SAATHI_FAMILY_NUMBERS),
+  // Only these numbers can talk to Saathi.
+  numbers: list(env.SAATHI_NUMBERS),
 };
 
 function list(v) {

@@ -20,9 +20,7 @@ function track(promise) {
 const twilio = config.transport === 'twilio';
 if (twilio) require_('deepgramKey', 'twilio.accountSid', 'twilio.authToken', 'publicUrl');
 else require_('deepgramKey', 'whatsapp.token', 'whatsapp.phoneNumberId', 'whatsapp.appSecret', 'whatsapp.verifyToken');
-if (!config.elderNumbers.length || !config.familyNumbers.length) {
-  throw new Error('set SAATHI_ELDER_NUMBERS and SAATHI_FAMILY_NUMBERS in .env');
-}
+if (!config.numbers.length) throw new Error('set SAATHI_NUMBERS in .env');
 
 const transport = twilio ? createTwilioTransport({ ...config.twilio, publicUrl: config.publicUrl }) : wa;
 const store = await new Store(path.join(config.dataDir, 'store.json')).load();
@@ -31,7 +29,7 @@ const handle = createHandler({
   wa: transport,
   agent: { run: runAgent },
   voice: { speak, transcribe },
-  numbers: { elderNumbers: config.elderNumbers, familyNumbers: config.familyNumbers },
+  numbers: config.numbers,
 });
 
 function readBody(req) {
