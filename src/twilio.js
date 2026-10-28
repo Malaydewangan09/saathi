@@ -55,10 +55,10 @@ export function createTwilioTransport({ accountSid, authToken, from, publicUrl, 
 
     sendText: (to, text) => send(to, { Body: text }),
 
-    sendButtons(to, text, buttons) {
+    sendButtons(to, text, buttons, hint = '(Reply with the number)') {
       choices.set(to, buttons);
       const list = buttons.map((b, i) => `${i + 1}. ${b.title}`).join('\n');
-      return send(to, { Body: `${text}\n\n${list}\n\n(Reply with the number)` });
+      return send(to, { Body: `${text}\n\n${list}\n\n${hint}` });
     },
 
     // Twilio fetches media from a URL, so the voice note is served by this server for a short time.
