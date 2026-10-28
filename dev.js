@@ -39,8 +39,7 @@ await writeFile(SESSION_FILE, next);
 console.log(`\nSaathi [${reply.status}] (${Math.round((Date.now() - started) / 1000)}s)`);
 console.log(`  says : ${reply.spoken}`);
 if (reply.card) console.log(`  card : ${reply.card.replace(/\n/g, '\n         ')}`);
-if (reply.status === 'needs_approval') console.log(`  -> family approval: ${reply.approval_summary} (₹${reply.amount_inr})`);
-if (reply.family_note) console.log(`  -> family note: ${reply.family_note}`);
+if (reply.status === 'needs_confirmation') console.log(`  asks : ${reply.confirm_summary}${reply.amount_inr ? ` (₹${reply.amount_inr})` : ''}  -> reply with: node dev.js "USER CONFIRMED: ..."`);
 
 if (!values.mute) {
   const file = path.join(config.dataDir, 'last-reply.ogg');
