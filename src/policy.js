@@ -28,7 +28,7 @@ export function normalizeReply(raw) {
     card: clip(raw.card, MAX_CARD),
     approval_summary: clip(raw.approval_summary, 300),
     amount_inr: Number.isFinite(raw.amount_inr) && raw.amount_inr > 0 ? Math.round(raw.amount_inr) : 0,
-    family_note: clip(raw.family_note, 300),
+    family_note: clip(raw.family_note, 500),
   };
   if (!reply.spoken) reply.spoken = 'माफ़ कीजिए, मैं समझ नहीं पाई। एक बार फिर से बताइए।';
   // An approval request must say what is being approved, or it is just a question.
