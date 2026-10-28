@@ -4,6 +4,8 @@ const NO = /(नहीं|नही|मत |मत$|रहने दो|cancel|\
 const YES = /(हाँ|हां|ठीक है|कर दो|कर दीजिए|कर दीजिये|बुक करो|\byes\b|\bhaan?\b|\bok(ay)?\b|\bkar do\b)/i;
 const CHANGE = /(लेकिन|पर |दूसरी|दूसरा|बदल|instead|\bbut\b|\bother\b|\blekin\b|\bdoosri\b)/i;
 
+const FRESH_AFTER_MS = 30 * 60 * 1000;
+
 // Reads a short spoken or typed answer to "shall I go ahead?". Anything with a change in it is a new request, not a yes.
 export function yesOrNo(text) {
   const t = text.trim().replace(/[.,!?।]+/g, ' ').replace(/\s+/g, ' ').trim();
@@ -15,7 +17,7 @@ export function yesOrNo(text) {
 }
 
 // One conversation turn per incoming message. Dependencies are passed in so tests can fake them.
-export function createHandler({ store, wa, agent, voice, numbers, log = console }) {
+export function createHandler({ store, wa, agent, voice, numbers, log = console, clock = Date.now }) {
   const seen = new Set();
   const queues = new Map();
 
@@ -54,6 +56,10 @@ export function createHandler({ store, wa, agent, voice, numbers, log = console 
   async function runTurn(number, message) {
     const person = store.person(number);
     const lang = person.language || DEFAULT_LANGUAGE;
+    // After a quiet spell, start a clean conversation: faster, cheaper, and old tasks do not leak into new ones.
+    const now = clock();
+    if (person.lastActive && now - person.lastActive > FRESH_AFTER_MS) person.sessionId = null;
+    person.lastActive = now;
     const { reply, sessionId } = await agent.run({
       message: `[Reply language: ${LANGUAGES[lang].name}]\n${message}`,
       sessionId: person.sessionId,

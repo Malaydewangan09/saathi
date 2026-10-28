@@ -5,7 +5,7 @@ import { Store } from '../src/store.js';
 
 const ME = '911';
 
-function setup(agentReplies = [], { failAgent = false, failText = false } = {}) {
+function setup(agentReplies = [], { failAgent = false, failText = false, clock } = {}) {
   const sent = [];
   const agentCalls = [];
   const store = new Store('/dev/null/x');
@@ -30,7 +30,7 @@ function setup(agentReplies = [], { failAgent = false, failText = false } = {}) 
     },
   };
   const log = { error: () => {}, warn: () => {} };
-  const handle = createHandler({ store, wa, agent, voice, numbers: [ME], log });
+  const handle = createHandler({ store, wa, agent, voice, numbers: [ME], log, ...(clock ? { clock } : {}) });
   let n = 0;
   const msg = (extra, from = ME) => ({ id: `m${++n}`, from, timestamp: Date.now(), ...extra });
   return { handle, sent, agentCalls, store, msg, setTranscript: (t) => (transcript = t) };
@@ -58,6 +58,18 @@ test('the agent session is reused across turns', async () => {
   await handle(msg({ kind: 'text', text: 'राजनांदगाँव से दिल्ली' }));
   assert.equal(agentCalls[0].sessionId, null);
   assert.equal(agentCalls[1].sessionId, 'sess-1');
+});
+
+test('after 30 quiet minutes the conversation starts fresh, quick follow-ups keep memory', async () => {
+  let now = 0;
+  const { handle, agentCalls, store, msg } = setup([], { clock: () => now });
+  store.person(ME).language = 'hi';
+  await handle(msg({ kind: 'text', text: 'ट्रेन देखो' }));
+  now = 10 * 60 * 1000;
+  await handle(msg({ kind: 'text', text: 'हाँ, यही वाली' }));
+  now += 31 * 60 * 1000;
+  await handle(msg({ kind: 'text', text: 'दीवाली कब है?' }));
+  assert.deepEqual(agentCalls.map((c) => c.sessionId), [null, 'sess-1', null]);
 });
 
 test('anything costing money asks the same person, and mentions nobody else', async () => {
