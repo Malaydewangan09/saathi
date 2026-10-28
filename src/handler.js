@@ -2,7 +2,7 @@ import { roleOf } from './policy.js';
 import { DEFAULT_LANGUAGE, LANGUAGES, phrase, PHRASES } from './languages.js';
 
 // One conversation turn per incoming message. Dependencies are passed in so tests can fake them.
-export function createHandler({ store, wa, agent, voice, numbers, elderName = 'Maa', log = console }) {
+export function createHandler({ store, wa, agent, voice, numbers, log = console }) {
   const seen = new Set();
   const queues = new Map();
 
@@ -41,7 +41,7 @@ export function createHandler({ store, wa, agent, voice, numbers, elderName = 'M
     const person = store.person(number);
     const lang = person.language || DEFAULT_LANGUAGE;
     const { reply, sessionId } = await agent.run({
-      message: `[Reply language: ${LANGUAGES[lang].name}] [The family calls this person: ${elderName}]\n${message}`,
+      message: `[Reply language: ${LANGUAGES[lang].name}]\n${message}`,
       sessionId: person.sessionId,
     });
     person.sessionId = sessionId;
@@ -54,7 +54,7 @@ export function createHandler({ store, wa, agent, voice, numbers, elderName = 'M
     if (reply.status === 'needs_approval') {
       const id = store.createApproval({ elder: number, summary: reply.approval_summary, amount: reply.amount_inr });
       await store.save();
-      const text = `Saathi needs your OK\n\n${reply.family_note}${reply.amount_inr ? `\nAmount: ₹${reply.amount_inr}` : ''}`;
+      const text = `Saathi needs your OK\n\n${reply.family_note}\n\n${reply.approval_summary}${reply.amount_inr ? `\nAmount: ₹${reply.amount_inr}` : ''}`;
       for (const f of numbers.familyNumbers) {
         await wa.sendButtons(f, text, [{ id: `approve:${id}`, title: 'Approve' }, { id: `decline:${id}`, title: 'Decline' }]);
       }
