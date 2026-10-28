@@ -32,6 +32,7 @@ const handle = createHandler({
   agent: { run: runAgent },
   voice: { speak, transcribe },
   numbers: { elderNumbers: config.elderNumbers, familyNumbers: config.familyNumbers },
+  elderName: config.elderName,
 });
 
 function readBody(req) {
