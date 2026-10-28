@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Saathi</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Inter:wght@400;500&family=Noto+Sans+Devanagari:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root { --green: #0d3b2c; --green2: #134a38; --cream: #f2ebd9; --cream2: #e7dec8; --ink: #0d3b2c; --lime: #c8f25c; --muted: rgba(242,235,217,.62); }
+  * { box-sizing: border-box; margin: 0; }
+  html, body { overflow-x: clip; }
+  body { background: var(--green); color: var(--cream); font: 16px/1.55 Inter, "Noto Sans Devanagari", system-ui, sans-serif; -webkit-font-smoothing: antialiased; overflow-x: hidden; }
+  .hi { font-family: "Noto Sans Devanagari", Inter, sans-serif; }
+  .wrap { max-width: 1240px; margin: 0 auto; padding: 0 32px; }
+  nav { display: flex; align-items: center; justify-content: space-between; padding: 24px 0; border-bottom: 1px solid rgba(242,235,217,.14); }
+  .logo { font: 700 22px "Inter Tight"; letter-spacing: -.02em; }
+  .logo span { font-family: "Noto Sans Devanagari"; font-weight: 500; color: var(--lime); margin-left: 6px; font-size: 18px; }
+  nav ul { display: flex; gap: 30px; list-style: none; padding: 0; font-size: 14px; color: var(--muted); }
+  .btn { display: inline-flex; align-items: center; gap: 10px; border-radius: 999px; padding: 15px 24px; font-weight: 500; font-size: 15px; text-decoration: none; }
+  .btn-lime { background: var(--lime); color: var(--green); }
+  .btn-ghost { color: var(--cream); border: 1px solid rgba(242,235,217,.3); }
+  .hero { display: grid; grid-template-columns: 1.15fr .85fr; gap: 56px; padding: 72px 0 96px; align-items: center; }
+  .kicker { font-size: 13px; letter-spacing: .1em; text-transform: uppercase; color: var(--lime); margin-bottom: 26px; }
+  h1 { font-family: "Inter Tight"; font-weight: 600; font-size: clamp(54px, 7.2vw, 104px); line-height: .92; letter-spacing: -.055em; }
+  h1 em { font-style: italic; font-weight: 500; color: var(--lime); }
+  .lede { font-size: 20px; color: var(--muted); max-width: 28em; margin: 34px 0 36px; line-height: 1.5; }
+  .lede b { color: var(--cream); font-weight: 500; }
+  .ctas { display: flex; gap: 12px; flex-wrap: wrap; }
+
+  .phone { background: var(--cream); color: var(--ink); border-radius: 30px; padding: 18px; box-shadow: 0 30px 80px rgba(0,0,0,.35); }
+  .ph-head { display: flex; align-items: center; gap: 10px; padding: 4px 4px 14px; border-bottom: 1px solid var(--cream2); margin-bottom: 14px; }
+  .ph-head .av { width: 34px; height: 34px; border-radius: 50%; background: var(--green); color: var(--lime); display: grid; place-items: center; font-family: "Noto Sans Devanagari"; font-size: 14px; }
+  .ph-head small { display: block; font-size: 12px; color: #4f6f60; }
+  .b { max-width: 86%; padding: 10px 13px; border-radius: 16px; font-size: 14.5px; margin-bottom: 9px; }
+  .me { margin-left: auto; background: var(--green); color: var(--cream); border-bottom-right-radius: 5px; }
+  .them { background: #fff; border-bottom-left-radius: 5px; }
+  .voice { display: flex; align-items: center; gap: 9px; }
+  .play { width: 28px; height: 28px; border-radius: 50%; background: var(--lime); display: grid; place-items: center; flex: none; }
+  .play::after { content: ""; border-left: 8px solid var(--green); border-top: 5px solid transparent; border-bottom: 5px solid transparent; margin-left: 2px; }
+  .them .play { background: var(--green); }
+  .them .play::after { border-left-color: var(--lime); }
+  .wave { display: flex; align-items: center; gap: 2px; height: 24px; }
+  .wave i { width: 3px; border-radius: 2px; background: currentColor; opacity: .55; }
+  .dur { font-size: 11px; opacity: .6; }
+  .card { border: 1.5px solid var(--green); background: #fff; }
+  .card b { font-weight: 700; }
+
+  .asks { background: var(--cream); color: var(--ink); padding: 110px 0 120px; }
+  .asks-head { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: end; margin-bottom: 56px; }
+  .asks h2 { font-family: "Inter Tight"; font-weight: 600; font-size: clamp(42px, 6vw, 84px); line-height: .92; letter-spacing: -.05em; }
+  .asks h2 em { font-weight: 500; color: #4f6f60; }
+  .asks-head p { color: #4f6f60; font-size: 18px; max-width: 26em; }
+  .row { display: grid; grid-template-columns: 70px 1.1fr 1fr 140px; gap: 24px; align-items: center; padding: 26px 0; border-top: 1.5px solid var(--ink); }
+  .row:last-child { border-bottom: 1.5px solid var(--ink); }
+  .row .n { font: 600 14px "Inter Tight"; opacity: .5; }
+  .row .q { font-size: clamp(20px, 2.2vw, 28px); font-weight: 600; letter-spacing: -.01em; line-height: 1.3; }
+  .row .a { color: #3d5a4d; font-size: 15px; }
+  .tag { justify-self: end; font-size: 12px; padding: 6px 12px; border-radius: 999px; background: var(--green); color: var(--lime); white-space: nowrap; }
+  .tag.soon { background: transparent; color: var(--green); border: 1px solid var(--green); }
+
+  @media (max-width: 900px) {
+    .wrap { padding: 0 20px; }
+    nav ul { display: none; }
+    .hero { grid-template-columns: 1fr; padding: 44px 0 72px; }
+    .asks-head { grid-template-columns: 1fr; }
+    .row { grid-template-columns: 1fr; gap: 8px; }
+    .row .n { display: none; }
+    .tag { justify-self: start; }
+    .asks { padding: 80px 0; }
+  }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <nav>
+      <div class="logo">Saathi<span>साथी</span></div>
+      <ul><li>How it works</li><li>What to ask</li><li>Demo</li></ul>
+      <a class="btn btn-lime" href="#" style="padding:10px 18px;font-size:14px">Chat on WhatsApp</a>
+    </nav>
+
+    <section class="hero">
+      <div>
+        <div class="kicker">A WhatsApp contact for the whole web</div>
+        <h1>The internet,<br><em>in your words.</em></h1>
+        <p class="lede">Ask Saathi on WhatsApp, by voice or text, in Hindi or English. It <b>uses the real website for you</b> and answers with a voice note and the facts that matter.</p>
+        <div class="ctas">
+          <a class="btn btn-lime" href="#">Chat on WhatsApp</a>
+          <a class="btn btn-ghost" href="#">▶ Watch the demo</a>
+        </div>
+      </div>
+
+      <div class="phone">
+        <div class="ph-head"><div class="av">सा</div><div><b>Saathi</b><small>online</small></div></div>
+        <div class="b me"><div class="voice"><div class="play"></div><div class="wave" id="w1"></div><span class="dur">0:04</span></div><div class="hi" style="margin-top:6px;font-size:13px;opacity:.8">राजनांदगाँव से दिल्ली की 11 नवंबर की train</div></div>
+        <div class="b them"><div class="voice"><div class="play"></div><div class="wave" id="w2"></div><span class="dur">0:21</span></div></div>
+        <div class="b them card hi"><b>12409 गोंडवाना एक्सप्रेस</b><br>08:56 · स्लीपर ₹640 · WL 57</div>
+        <div class="b them hi"><b>क्या मैं यह करूँ?</b> <span style="opacity:.6">(हाँ या नहीं बोलिए)</span></div>
+        <div class="b me hi">नहीं, रहने दो</div>
+      </div>
+    </section>
+  </div>
+
+  <section class="asks">
+    <div class="wrap">
+      <div class="asks-head">
+        <h2>Ask it anything<br><em>you'd ask a friend.</em></h2>
+        <p>Saathi can't use the apps on your phone. So it does the search on its own computer and sends you a link that opens the right one.</p>
+      </div>
+      <div class="row"><span class="n">01</span><span class="q hi">“राजनांदगाँव से दिल्ली की ट्रेन”</span><span class="a">Four real trains, with waitlist numbers. Asks before booking.</span><span class="tag">Tried tonight</span></div>
+      <div class="row"><span class="n">02</span><span class="q hi">“पनीर बटर मसाला की recipe”</span><span class="a">Three Hindi videos, 10 to 16 minutes. Opens in YouTube.</span><span class="tag">Tried tonight</span></div>
+      <div class="row"><span class="n">03</span><span class="q hi">“बर्लिन में अभी क्या समय है?”</span><span class="a hi">बर्लिन: बुधवार रात 10:54 · भारत: गुरुवार रात 3:24</span><span class="tag">Tried tonight</span></div>
+      <div class="row"><span class="n">04</span><span class="q hi">“यह मैसेज सही है?”</span><span class="a">Reads a forwarded SMS and tells you if it is a scam, before you call.</span><span class="tag soon">In progress</span></div>
+    </div>
+  </section>
+
+<script>
+  function wave(id, n, seed) {
+    const el = document.getElementById(id); let x = seed;
+    for (let i = 0; i < n; i++) { x = (x * 9301 + 49297) % 233280; const h = 5 + Math.round((x / 233280) * 16 * Math.sin((i / n) * Math.PI) + 3);
+      const b = document.createElement('i'); b.style.height = h + 'px'; el.appendChild(b); }
+  }
+  wave('w1', 26, 7); wave('w2', 34, 21);
+</script>
+</body>
+</html>
