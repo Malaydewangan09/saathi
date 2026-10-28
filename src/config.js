@@ -25,6 +25,7 @@ export const config = {
     apiVersion: env.WHATSAPP_API_VERSION || 'v25.0',
   },
   transport: env.SAATHI_TRANSPORT === 'twilio' ? 'twilio' : 'meta',
+  playLocally: env.SAATHI_PLAY_LOCALLY === '1',
   publicUrl: (env.PUBLIC_URL || '').replace(/\/$/, ''),
   twilio: {
     accountSid: env.TWILIO_ACCOUNT_SID,

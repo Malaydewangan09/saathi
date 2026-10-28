@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Saathi</title>
-<meta name="description" content="Saathi is a WhatsApp contact your parents talk to in Hindi. It does the website part for them, and asks you before any money moves.">
+<meta name="description" content="Saathi is a WhatsApp contact your mother talks to in Hindi. It does the website part for her, and asks her before any money moves.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,400&family=Kalam:wght@400;700&family=Mukta:wght@400;500;700&family=Tiro+Devanagari+Hindi&display=swap" rel="stylesheet">
@@ -114,7 +114,7 @@
   /* 2. the chat */
   .chat-section { padding: 96px 0; background: var(--paper-2); }
   .split { display: grid; grid-template-columns: .9fr 1.1fr; gap: 64px; align-items: center; }
-  h2 { font: 400 clamp(34px, 4.6vw, 56px)/1.08 "Fraunces", serif; letter-spacing: -.015em; margin: 0 0 20px; }
+  h2 { font: 400 clamp(34px, 4.6vw, 56px)/1.08 "Fraunces", serif; letter-spacing: -.015em; margin: 0 0 20px; text-wrap: balance; }
   .copy p { color: var(--ink-soft); max-width: 40ch; margin: 0 0 16px; }
   .copy p strong { color: var(--ink); font-weight: 500; }
 
@@ -142,30 +142,51 @@
   .ticket b { font-weight: 700; }
   .typing { align-self: flex-start; font: 400 16px/1 "Kalam", cursive; color: var(--ink-soft); padding: 4px 6px; }
 
-  /* 3. tin can telephone */
-  .string-section { padding: 110px 0 120px; }
-  .string-section .head { text-align: center; max-width: 720px; margin: 0 auto 64px; }
-  .string-section .head p { color: var(--ink-soft); margin: 0 auto; max-width: 52ch; }
-  .tins { position: relative; display: flex; justify-content: space-between; align-items: center; gap: 24px; max-width: 980px; margin: 0 auto; }
-  .tins > svg.cord { position: absolute; left: 12%; right: 12%; top: 50%; width: 76%; height: 160px; transform: translateY(-50%); overflow: visible; z-index: 0; }
-  .tins > svg.cord path { fill: none; stroke: var(--saffron); stroke-width: 2.4; stroke-linecap: round; stroke-dasharray: 2 9; }
-  .end { position: relative; z-index: 1; width: min(330px, 46%); }
-  .end .label { font: 400 22px/1.2 "Kalam", cursive; color: var(--ink-soft); margin: 0 0 12px; }
-  .end.right .label { text-align: right; }
-  .note { background: var(--bubble-in); border-radius: 14px; padding: 16px 16px 12px; box-shadow: var(--shadow); font-size: 16px; }
-  .end.left .note { transform: rotate(-2deg); }
-  .end.right .note { transform: rotate(1.8deg); }
-  .note .from { font-size: 13px; color: var(--green); font-weight: 700; margin-bottom: 6px; }
-  .note .amount { font: 600 30px/1.1 "Fraunces", serif; margin: 6px 0; }
-  .approve { display: grid; grid-template-columns: 1fr 1fr; margin-top: 12px; border-top: 1px solid var(--line); }
-  .approve span { text-align: center; padding: 10px 0 2px; color: var(--green); font-weight: 500; }
-  .approve span + span { border-left: 1px solid var(--line); color: var(--ink-soft); }
-  .tap { position: absolute; right: 4%; bottom: -78px; font: 400 20px/1.2 "Kalam", cursive; color: var(--saffron); transform: rotate(-3deg); }
-  .tap svg { display: block; width: 60px; height: 40px; margin: 0 0 2px 40px; overflow: visible; }
-  .tap path { fill: none; stroke: var(--saffron); stroke-width: 2; stroke-linecap: round; }
+  /* 3. rubber stamp */
+  .stamp-section, .day-section { padding: 110px 0 120px; }
+  .stamp-section .head, .day-section .head { text-align: center; max-width: 760px; margin: 0 auto 64px; }
+  .stamp-section .head p { color: var(--ink-soft); margin: 0 auto; max-width: 52ch; }
+  .desk { display: grid; grid-template-columns: 1fr 1fr; gap: 72px; align-items: center; max-width: 980px; margin: 0 auto; }
+  .slip { position: relative; justify-self: end; width: min(380px, 100%); background: var(--bubble-in); padding: 24px 24px 34px; box-shadow: var(--shadow); transform: rotate(-1.5deg); }
+  .slip::after { content: ""; position: absolute; left: 0; right: 0; bottom: -11px; height: 12px;
+    background: linear-gradient(135deg, var(--bubble-in) 33%, transparent 34%) 0 0 / 14px 12px, linear-gradient(225deg, var(--bubble-in) 33%, transparent 34%) 0 0 / 14px 12px; }
+  .slip .from { font-size: 13px; color: var(--green); font-weight: 700; margin-bottom: 8px; }
+  .slip .q { font-size: 22px; line-height: 1.45; margin: 0 0 8px; }
+  .slip .gloss { color: var(--ink-soft); font-size: 15px; font-style: italic; margin: 0; max-width: 26ch; }
+  .stamp { position: absolute; right: -46px; bottom: -58px; width: 150px; height: 150px; transform: rotate(-14deg); overflow: visible; }
+  .stamp path { fill: none; stroke: var(--red); stroke-width: 3.2; stroke-linecap: round; opacity: .85; }
+  .stamp text { fill: var(--red); opacity: .85; font: 400 42px "Tiro Devanagari Hindi", serif; }
+  .answers { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 30px; }
+  .answers li { display: flex; flex-direction: column; gap: 4px; }
+  .answers li:nth-child(2) { transform: translateX(24px) rotate(.6deg); }
+  .answers li:nth-child(3) { transform: rotate(-.8deg); }
+  .said-it { font: 400 26px/1.25 "Kalam", "Tiro Devanagari Hindi", cursive; color: var(--ink); }
+  .then { color: var(--ink-soft); font-size: 16px; max-width: 40ch; }
+  .then .hi { color: var(--ink); }
+
+  /* 4. clothesline */
+  .day-section { background: var(--paper-2); }
+  .lead-line { font: italic 400 clamp(22px, 2.4vw, 28px)/1.4 "Fraunces", serif; color: var(--ink); max-width: 34ch; margin: 0 auto; }
+  .line { position: relative; max-width: 1120px; margin: 0 auto; padding-top: 14px; }
+  .rope { position: absolute; left: 0; top: 0; width: 100%; height: 80px; overflow: visible; }
+  .rope path { fill: none; stroke: var(--ink-soft); stroke-width: 1.8; stroke-linecap: round; }
+  .chits { list-style: none; margin: 0; padding: 0; display: flex; gap: 16px; align-items: flex-start; }
+  .chit { position: relative; flex: 1; display: flex; flex-direction: column; gap: 6px; background: var(--bubble-in); padding: 24px 14px 14px; box-shadow: 0 10px 24px rgba(60, 40, 20, .14);
+    font-size: 15px; line-height: 1.4; transform: rotate(var(--r)); margin-top: var(--y); transform-origin: 50% 0; }
+  .chit::before { content: ""; position: absolute; top: -16px; left: 50%; width: 10px; height: 28px; background: #b98a5a; border-radius: 3px; transform: translateX(-50%) rotate(5deg); box-shadow: inset -2px 0 0 rgba(0,0,0,.15); }
+  .chit .when { font: 400 17px/1 "Kalam", cursive; color: var(--ink-soft); }
+  .chit .she { font-size: 17px; line-height: 1.4; }
+  .chit .back { color: var(--ink-soft); font-size: 14px; }
+  .chit .back.hi { color: var(--ink); font-size: 15px; }
+  .chit .tag { margin-top: auto; padding-top: 6px; font: 400 15px/1.2 "Kalam", cursive; }
+  .chit .tag.tried { color: var(--green); }
+  .chit .tag.next { color: var(--saffron); }
+  .page em.ok, .page em.wip { font-style: normal; font-size: 16px; padding-left: 6px; }
+  .page em.ok { color: var(--green); }
+  .page em.wip { color: var(--saffron); }
 
   /* 4. the scam stop */
-  .scam-section { padding: 100px 0; background: var(--paper-2); }
+  .scam-section { padding: 110px 0; }
   .scam { display: grid; grid-template-columns: 1fr 1fr; gap: 56px; align-items: center; }
   .forward { position: relative; background: var(--bubble-in); border-radius: 12px; padding: 18px 18px 14px; font-size: 16px; box-shadow: var(--shadow); max-width: 400px; justify-self: end; }
   .forward .fwd { font-size: 12px; color: var(--ink-soft); font-style: italic; margin-bottom: 6px; }
@@ -232,13 +253,14 @@
     .count { margin-top: 40px; }
     .chat-section, .scam-section { padding: 72px 0; }
     .forward { justify-self: start; }
-    .tins { flex-direction: column; gap: 90px; }
-    .tins > svg.cord { display: none; }
-    .end { width: 100%; max-width: 360px; }
-    .end.right { align-self: flex-end; }
-    .tins::before { content: ""; position: absolute; left: 50%; top: 22%; bottom: 22%; border-left: 2.4px dotted var(--saffron); }
-    .tap { position: static; margin: 12px 0 0; text-align: right; }
-    .tap svg { margin-left: auto; transform: scaleX(-1); }
+    .desk { grid-template-columns: 1fr; gap: 80px; }
+    .slip { justify-self: start; }
+    .stamp { right: -4px; bottom: -78px; width: 140px; height: 140px; }
+    .answers li:nth-child(2) { transform: rotate(.6deg); }
+    .stamp-section, .day-section { padding: 80px 0 90px; }
+    .rope { display: none; }
+    .chits { flex-direction: column; align-items: center; gap: 40px; padding-top: 16px; }
+    .chit { width: 100%; max-width: 360px; margin-top: 0; }
     .quiet-line { padding: 110px 16px 100px; }
   }
   @media (max-width: 480px) {
@@ -304,78 +326,127 @@
       <div class="copy">
         <h2 id="h-how">She sends a voice note. Saathi does the rest.</h2>
         <p>Your mother holds the mic button and says what she needs, the way she would say it to you. Hindi, English, or both in one sentence.</p>
-        <p>Saathi opens the <strong>real website</strong> in a browser, does the searching and form filling, and replies with a voice note in Hindi. She never sees the website.</p>
-        <p>If it needs something from her, like a station or a consumer number, it asks one simple question.</p>
+        <p>Saathi opens the <strong>real website</strong> in a browser, does the searching, and replies with a voice note in Hindi. She never sees the website.</p>
+        <p>It heard <span class="hi" lang="hi">"राधनगांव"</span> and still knew she meant Rajnandgaon. If it needs something from her, it asks one simple question.</p>
       </div>
 
-      <div class="phone" role="img" aria-label="A WhatsApp chat between Maa and Saathi about a train to Pune">
+      <div class="phone" role="img" aria-label="A WhatsApp chat between Maa and Saathi about a train from Rajnandgaon to Delhi">
         <div class="screen">
           <div class="bar"><span class="dot" aria-hidden="true">सा</span><div><b>Saathi</b><small>online</small></div></div>
           <div class="msgs">
             <div class="msg out">
               <div class="voice"><span class="play"></span>
                 <svg viewBox="0 0 160 26" preserveAspectRatio="none" aria-hidden="true"><path d="M2 13v1M8 10v6M14 6v14M20 11v5M26 4v18M32 8v10M38 12v3M44 7v12M50 3v20M56 9v8M62 12v2M68 5v16M74 9v8M80 11v4M86 6v14M92 2v22M98 8v10M104 12v3M110 7v12M116 10v6M122 5v16M128 11v4M134 8v10M140 12v2M146 9v8M152 12v3"/></svg>
-                <span class="len">0:04</span></div>
-              <div class="heard"><span class="hi" lang="hi">"कल सुबह पुणे के लिए ट्रेन देखो, स्लीपर में।"</span><span class="en">"Find a train to Pune tomorrow morning, sleeper."</span></div>
-              <time>9:12</time>
+                <span class="len">0:05</span></div>
+              <div class="heard"><span class="hi" lang="hi">"राधनगांव से दिल्ली की ट्रेन देखो, कल की।"</span><span class="en">"Find a train from Rajnandgaon to Delhi, for tomorrow."</span></div>
+              <time>4:02</time>
             </div>
             <div class="msg in">
               <div class="voice"><span class="play"></span>
                 <svg viewBox="0 0 160 26" preserveAspectRatio="none" aria-hidden="true"><path d="M2 12v2M8 9v8M14 5v16M20 10v6M26 7v12M32 3v20M38 9v8M44 12v2M50 6v14M56 10v6M62 4v18M68 8v10M74 12v3M80 7v12M86 11v4M92 5v16M98 9v8M104 3v20M110 10v6M116 12v2M122 6v14M128 9v8M134 11v4M140 7v12M146 12v3M152 10v6"/></svg>
-                <span class="len">0:09</span></div>
-              <div class="heard"><span class="hi" lang="hi">"सुबह चार बजकर पच्चीस की ट्रेन में सीट है, एक सौ अस्सी रुपये। बुक करूँ?"</span><span class="en">"The 4:25 am train has seats, ₹180. Shall I book it?"</span></div>
-              <time>9:13</time>
+                <span class="len">0:11</span></div>
+              <div class="heard"><span class="hi" lang="hi">"राजनांदगांव से दिल्ली की चार ट्रेनें मिलीं। गोंडवाना एक्सप्रेस में स्लीपर की वेटिंग सत्तावन है।"</span><span class="en">"Four trains from Rajnandgaon to Delhi. Gondwana Express has sleeper waitlist 57."</span></div>
+              <time>4:03</time>
             </div>
             <div class="msg in">
-              <div class="ticket"><b>Adi Pune SF (22185)</b><br>Kalyan 4:25 am to Pune 7:30 am<br>Sleeper: 20 seats free, ₹180</div>
-              <time>9:13</time>
+              <div class="ticket"><b>Gondwana Express</b><br>Sleeper: waitlist 57, ₹640<br>3 more trains, with their waitlists</div>
+              <time>4:03</time>
             </div>
-            <div class="msg out">
-              <div class="voice"><span class="play"></span>
-                <svg viewBox="0 0 160 26" preserveAspectRatio="none" aria-hidden="true"><path d="M2 13v1M8 9v8M14 4v18M20 10v6M26 7v12M32 12v2M38 8v10M44 11v4M50 13v1"/></svg>
-                <span class="len">0:01</span></div>
-              <div class="heard"><span class="hi" lang="hi">"हाँ, यही वाली।"</span><span class="en">"Yes, this one."</span></div>
-              <time>9:14</time>
+            <div class="msg in">
+              <div class="hi" lang="hi">गोंडवाना एक्सप्रेस, स्लीपर, ₹640, वेटिंग 57। क्या मैं यह करूँ? (हाँ या नहीं बोलिए)</div>
+              <div class="heard"><span class="en">"Gondwana Express, sleeper, ₹640, waitlist 57. Shall I do this? (say yes or no)"</span></div>
+              <time>4:03</time>
             </div>
-            <div class="typing">Saathi is asking your son first...</div>
+            <div class="typing">waiting for her हाँ or नहीं...</div>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- 3. Tin can telephone: the family loop -->
-  <section class="string-section" aria-labelledby="h-family">
+  <!-- 3. The rubber stamp: it always asks her before money -->
+  <section class="stamp-section" aria-labelledby="h-ask">
     <div class="wrap">
       <div class="head">
-        <h2 id="h-family">Money never moves without you.</h2>
-        <p>Before a booking, a payment, or anything that cannot be undone, Saathi stops and asks you on WhatsApp. One tap. You are still in the loop, just not on a 20 minute call.</p>
+        <h2 id="h-ask">Nothing gets stamped until she says हाँ.</h2>
+        <p>Before a booking, a payment, or anything that cannot be undone, Saathi stops and asks her, in the same chat, in plain words. She answers the way she talks.</p>
       </div>
-      <div class="tins">
-        <svg class="cord draw" viewBox="0 0 600 160" preserveAspectRatio="none" aria-hidden="true"><path d="M0 70 C 120 150, 240 150, 300 110 S 480 20, 600 90" style="--len:720"/></svg>
-        <div class="end left">
-          <p class="label">Maa, in Nagpur</p>
-          <div class="note">
-            <div class="from">Saathi</div>
-            <p class="hi" lang="hi" style="margin:0">आपके बेटे से पूछ रही हूँ। एक मिनट।</p>
-            <p style="margin:4px 0 0;color:var(--ink-soft);font-size:14px;font-style:italic">Asking your son. One minute.</p>
-          </div>
+      <div class="desk">
+        <div class="slip">
+          <div class="from">Saathi asks</div>
+          <p class="q hi" lang="hi">गोंडवाना एक्सप्रेस, स्लीपर, ₹640, वेटिंग 57। क्या मैं यह करूँ?</p>
+          <p class="gloss">Gondwana Express, sleeper, ₹640, waitlist 57. Shall I do this?</p>
+          <svg class="stamp draw" viewBox="0 0 160 160" aria-hidden="true">
+            <path d="M80 12 C 122 10, 150 42, 148 82 C 146 124, 116 150, 78 148 C 38 146, 12 118, 13 80 C 14 40, 42 14, 82 12" style="--len:480"/>
+            <path d="M80 24 C 113 23, 137 48, 136 81 C 135 114, 110 137, 79 136 C 46 135, 24 111, 25 79 C 26 47, 49 25, 83 24" style="--len:420"/>
+            <text x="80" y="96" text-anchor="middle">हाँ?</text>
+          </svg>
         </div>
-        <div class="end right">
-          <p class="label">You, in a meeting in Bengaluru</p>
-          <div class="note">
-            <div class="from">Saathi</div>
-            <div>Maa wants to book Adi Pune SF, tomorrow 4:25 am, sleeper.</div>
-            <div class="amount">₹180</div>
-            <div class="approve" aria-hidden="true"><span>Approve</span><span>Decline</span></div>
-          </div>
-          <p class="tap"><svg viewBox="0 0 60 40" aria-hidden="true" class="draw"><path d="M4 36 C 18 30, 30 20, 40 6 M40 6 L 31 9 M40 6 L 41 15" style="--len:90"/></svg>one tap, between two slides</p>
-        </div>
+        <ul class="answers">
+          <li>
+            <span class="said-it hi" lang="hi">"हाँ, बुक कर दो"</span>
+            <span class="then">She said yes. Saathi goes ahead with exactly that train.</span>
+          </li>
+          <li>
+            <span class="said-it hi" lang="hi">"नहीं, रहने दो"</span>
+            <span class="then"><span class="hi" lang="hi">"बुकिंग रोकी गई। कोई टिकट नहीं बना, कोई भुगतान नहीं हुआ।"</span><br>Stopped. No ticket was made, no money was paid.</span>
+          </li>
+          <li>
+            <span class="said-it hi" lang="hi">"हाँ, लेकिन दूसरी वाली"</span>
+            <span class="then">Not a yes. It is a new request, so Saathi looks again and asks again.</span>
+          </li>
+        </ul>
       </div>
     </div>
   </section>
 
-  <!-- 4. The scam stop -->
+  <!-- 4. The clothesline: her whole day -->
+  <section class="day-section" aria-labelledby="h-day">
+    <div class="wrap">
+      <div class="head">
+        <h2 id="h-day">Not just paperwork. Her whole day.</h2>
+        <p class="lead-line">Saathi cannot tap apps on her phone. So it does the search on its own computer and sends her a link that opens the right app at the right place: the YouTube video, the Maps pin, the payment page.</p>
+      </div>
+      <div class="line">
+        <svg class="rope" viewBox="0 0 1100 80" preserveAspectRatio="none" aria-hidden="true"><path d="M0 10 C 200 52, 420 64, 560 58 S 900 40, 1100 12"/></svg>
+        <ul class="chits">
+          <li class="chit" style="--r:-2deg;--y:4px">
+            <span class="when">6:30 am</span>
+            <span class="she hi" lang="hi">"आज की आरती लगा दो"</span>
+            <span class="back">A link that opens the aarti on YouTube.</span>
+            <span class="tag next">can do, not tried yet</span>
+          </li>
+          <li class="chit" style="--r:1.5deg;--y:30px">
+            <span class="when">12:10 pm</span>
+            <span class="she hi" lang="hi">"मुझे आज पनीर बटर मसाला बनाना है"</span>
+            <span class="back">Three Hindi YouTube videos, each with the chef and the length.</span>
+            <span class="back hi" lang="hi">"रेसिपी के कदम और मात्रा मैंने नहीं पढ़ी, वीडियो में देखें।"</span>
+            <span class="tag tried">tried tonight</span>
+          </li>
+          <li class="chit" style="--r:-1deg;--y:44px">
+            <span class="when">4:02 pm</span>
+            <span class="she hi" lang="hi">"राधनगांव से दिल्ली की ट्रेन देखो"</span>
+            <span class="back">Four real trains with their waitlists, then one question before booking.</span>
+            <span class="tag tried">tried tonight</span>
+          </li>
+          <li class="chit" style="--r:2deg;--y:34px">
+            <span class="when">7:15 pm</span>
+            <span class="she hi" lang="hi">"बिजली का बिल कितना आया?" "PNR देखो"</span>
+            <span class="back">The bill amount and due date. The PNR status.</span>
+            <span class="tag next">can do, not tried yet</span>
+          </li>
+          <li class="chit" style="--r:-2.5deg;--y:8px">
+            <span class="when">3:24 am</span>
+            <span class="she hi" lang="hi">"मेरा लड़का बर्लिन गया है, वहाँ का समय अभी क्या हो रहा है?"</span>
+            <span class="back hi" lang="hi">"बर्लिन: बुधवार रात 10:54, भारत: गुरुवार रात 3:24, फ़र्क़ 4 घंटे 30 मिनट"</span>
+            <span class="tag tried">tried tonight</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. The scam stop -->
   <section class="scam-section" aria-labelledby="h-scam">
     <div class="wrap scam">
       <div class="forward" role="img" aria-label="A forwarded scam message, crossed out">
@@ -394,35 +465,39 @@
           <li><svg viewBox="0 0 18 14" aria-hidden="true"><path d="M2 2 L 16 12 M16 2 L 2 12"/></svg>Anyone asking for an OTP to "send" money</li>
           <li><svg viewBox="0 0 18 14" aria-hidden="true"><path d="M2 2 L 16 12 M16 2 L 2 12"/></svg>Disconnection threats, prizes, police calls</li>
         </ul>
-        <p style="color:var(--ink-soft);margin-top:18px">She is told gently. You get a note too, so you can call her about it.</p>
+        <p style="color:var(--ink-soft);margin-top:18px">She is told gently, in her language, before she dials. This part is still being built.</p>
       </div>
     </div>
   </section>
 
-  <!-- 5. The quiet line -->
+  <!-- 6. The quiet line -->
   <section class="quiet-line wrap" aria-label="The point">
     <p class="big">She booked it herself. She didn't call me once.</p>
     <p class="small">Not because she stopped needing help. Because the help now speaks her language, waits for her, and never makes her feel slow.</p>
     <div class="log" aria-label="Call log">
       <s>Sun 11:40 am, Maa, 22 min</s>
       <s>Wed 7:05 pm, Maa, 18 min</s>
-      <span>Sun 9:14 am, approved ₹180 from a meeting</span>
+      <span>Thu 3:24 am, she checked the time in Berlin and went back to sleep</span>
     </div>
   </section>
 
-  <!-- 6. Notebook page: honest status -->
+  <!-- 7. Notebook page: honest status -->
   <section class="honest" id="honest" aria-labelledby="h-honest">
     <div class="wrap">
       <div class="page">
         <h2 id="h-honest">What works today</h2>
         <p class="sub">Saathi is a prototype, built in two days for the WeMakeDevs x Wispr Flow No Hands challenge. Every line of it was built by voice.</p>
         <ul>
-          <li>Train search is tested on a real site. Bill check and scam check are in progress.</li>
-          <li>It runs on one laptop for now, so it answers only while that laptop is on.</li>
-          <li>It uses a free WhatsApp test number that works with up to 5 verified phone numbers.</li>
-          <li>It never stores passwords. Logins and OTPs come from the person, not from Saathi.</li>
-          <li>It never pays or books without a family member tapping Approve.</li>
-          <li>Hindi and English today. More languages need more voices.</li>
+          <li>Train search, and booking up to the "shall I do this?" question. <em class="ok">tested</em></li>
+          <li>Cancelling a booking. <em class="ok">tested</em></li>
+          <li>YouTube links that open the right video. <em class="ok">tested</em></li>
+          <li>Time in another city, like Berlin. <em class="ok">tested</em></li>
+          <li>Scam check. <em class="wip">in progress</em></li>
+          <li>Electricity bill and PNR status. <em class="wip">in progress</em></li>
+          <li>It never types passwords.</li>
+          <li>It never pays without her own हाँ.</li>
+          <li>WhatsApp through the Twilio sandbox for now. Meta's own WhatsApp API needs business verification, which blocked the free test number.</li>
+          <li>It runs on one laptop and answers only registered numbers. Hindi and English.</li>
         </ul>
         <p class="sign">Built by Malay, by talking to Claude through Wispr Flow.</p>
       </div>
