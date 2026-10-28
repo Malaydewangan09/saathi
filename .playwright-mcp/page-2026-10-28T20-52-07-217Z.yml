@@ -1,0 +1,864 @@
+- generic [active] [ref=e1]:
+  - main [ref=e2]:
+    - generic [ref=e4]:
+      - link [ref=e6] [cursor=pointer]:
+        - /url: /
+        - img "ixigo.com" [ref=e7]
+      - generic [ref=e8]:
+        - generic [ref=e9]:
+          - link [ref=e10] [cursor=pointer]:
+            - /url: /offers
+            - paragraph [ref=e13]: Offers
+          - link [ref=e14] [cursor=pointer]:
+            - /url: /help-center
+            - paragraph [ref=e18]: Customer Service
+        - generic [ref=e21] [cursor=pointer]
+    - generic [ref=e23]:
+      - generic [ref=e24]:
+        - link [ref=e25] [cursor=pointer]:
+          - /url: /
+          - img "ixigo.com" [ref=e26]
+        - list [ref=e28]:
+          - listitem [ref=e29]:
+            - link [ref=e30] [cursor=pointer]:
+              - /url: /flights
+              - img "ixigo Flights" [ref=e32]
+              - paragraph [ref=e33]: Flights
+          - listitem [ref=e34]:
+            - link [ref=e35] [cursor=pointer]:
+              - /url: /hotels
+              - img "ixigo Hotels" [ref=e37]
+              - paragraph [ref=e38]: Hotels
+          - listitem [ref=e39]:
+            - link [ref=e40] [cursor=pointer]:
+              - /url: /trains
+              - img "ixigo Trains" [ref=e42]
+              - paragraph [ref=e43]: Trains
+              - paragraph [ref=e44]
+          - listitem [ref=e45]:
+            - link [ref=e46] [cursor=pointer]:
+              - /url: /buses
+              - img "ixigo Buses" [ref=e48]
+              - paragraph [ref=e49]: Buses
+        - generic [ref=e50]:
+          - generic [ref=e51] [cursor=pointer]:
+            - img "ixigo-more" [ref=e52]
+            - paragraph [ref=e53]: More
+          - list "More products" [ref=e56]:
+            - listitem [ref=e57]:
+              - listitem [ref=e58] [cursor=pointer]:
+                - paragraph [ref=e64]: Book Visa
+            - listitem [ref=e65] [cursor=pointer]:
+              - listitem [ref=e66]:
+                - paragraph [ref=e73]: Group Booking
+            - listitem [ref=e74] [cursor=pointer]:
+              - listitem [ref=e75]:
+                - img "user" [ref=e77]
+                - paragraph [ref=e79]: Plan
+            - listitem [ref=e80] [cursor=pointer]:
+              - listitem [ref=e81]:
+                - img "credit card" [ref=e83]
+                - paragraph [ref=e85]: Credit Card
+      - generic [ref=e86]:
+        - generic [ref=e87]:
+          - link [ref=e88] [cursor=pointer]:
+            - /url: /offers
+            - paragraph [ref=e91]: Offers
+          - link [ref=e92] [cursor=pointer]:
+            - /url: /help-center
+            - paragraph [ref=e96]: Customer Service
+        - generic [ref=e99] [cursor=pointer]
+    - generic [ref=e100]:
+      - generic [ref=e101]:
+        - list [ref=e103]:
+          - listitem [ref=e104]:
+            - link [ref=e105] [cursor=pointer]:
+              - /url: /flights
+              - img "ixigo Flights" [ref=e107]
+              - paragraph [ref=e108]: Flights
+          - listitem [ref=e109]:
+            - link [ref=e110] [cursor=pointer]:
+              - /url: /hotels
+              - img "ixigo Hotels" [ref=e112]
+              - paragraph [ref=e113]: Hotels
+          - listitem [ref=e114]:
+            - link [ref=e115] [cursor=pointer]:
+              - /url: /trains
+              - img "ixigo Trains" [ref=e117]
+              - paragraph [ref=e118]: Trains
+              - paragraph [ref=e119]
+          - listitem [ref=e120]:
+            - link [ref=e121] [cursor=pointer]:
+              - /url: /buses
+              - img "ixigo Buses" [ref=e123]
+              - paragraph [ref=e124]: Buses
+        - generic [ref=e125]:
+          - generic [ref=e126] [cursor=pointer]:
+            - generic [ref=e127]:
+              - generic [ref=e134]:
+                - generic: From
+                - searchbox "Enter Origin" [ref=e135]
+              - generic [ref=e142]:
+                - generic: To
+                - searchbox "Enter Destination" [ref=e143]
+            - generic [ref=e145]:
+              - paragraph [ref=e146]: Departure Date
+              - generic [ref=e147]:
+                - generic [ref=e148]: Thu, 29 Oct
+                - generic [ref=e149]:
+                  - generic [ref=e150]:
+                    - paragraph [ref=e151]: Tomorrow
+                    - paragraph [ref=e152]: Tatkal Open
+                  - generic [ref=e153]:
+                    - paragraph [ref=e154]: Day After
+                    - paragraph [ref=e155]: Tatkal Open
+            - button "Search" [ref=e156]
+          - generic [ref=e159]:
+            - generic [ref=e160]:
+              - checkbox [ref=e162] [cursor=pointer]
+              - paragraph [ref=e163]: Get a full train fare refund
+            - generic [ref=e164]:
+              - generic [ref=e165]:
+                - img "₹0 cancellation fee" [ref=e166]
+                - paragraph [ref=e167]: ₹0 cancellation fee
+              - generic [ref=e169]:
+                - img "Instant full train fare refunds" [ref=e170]
+                - paragraph [ref=e171]: Instant full train fare refunds
+              - generic [ref=e173]:
+                - img "24x7 premium customer support" [ref=e174]
+                - paragraph [ref=e175]: 24x7 premium customer support
+              - generic [ref=e177]:
+                - img "No documentation required" [ref=e178]
+                - paragraph [ref=e179]: No documentation required
+      - link [ref=e180] [cursor=pointer]:
+        - /url: /tour-packages?source=WEB
+        - img "Holiday Packages Book at ₹250" [ref=e181]
+    - generic [ref=e182]:
+      - generic [ref=e185]:
+        - generic [ref=e186]:
+          - link "Live Running Status" [ref=e188] [cursor=pointer]:
+            - /url: /trains/train-running-status
+            - generic [ref=e189]: Live
+            - generic [ref=e193]:
+              - generic [ref=e194]: Running
+              - generic [ref=e195]: Status
+          - link "PNR Status" [ref=e197] [cursor=pointer]:
+            - /url: /trains/pnr-status
+            - generic [ref=e200]:
+              - generic [ref=e201]: PNR
+              - generic [ref=e202]: Status
+          - link "New Holiday Packages" [ref=e204] [cursor=pointer]:
+            - /url: https://www.ixigo.com/tour-packages/?source=WEB
+            - generic [ref=e205]: New
+            - generic [ref=e209]:
+              - generic [ref=e210]: Holiday
+              - generic [ref=e211]: Packages
+          - link "Metro Ticket" [ref=e213] [cursor=pointer]:
+            - /url: https://www.ixigo.com/book-metro-ticket/?source=WEB
+            - generic [ref=e216]:
+              - generic [ref=e217]: Metro
+              - generic [ref=e218]: Ticket
+          - link "Order Food On Train" [ref=e220] [cursor=pointer]:
+            - /url: https://www.ixigo.com/order-food-in-train?source=Home+page+grid&clientId=ixiweb
+            - generic [ref=e223]:
+              - generic [ref=e224]: Order Food
+              - generic [ref=e225]: On Train
+          - link "Train by Name/No." [ref=e227] [cursor=pointer]:
+            - /url: /trains/name-number
+            - generic [ref=e230]:
+              - generic [ref=e231]: Train by
+              - generic [ref=e232]: Name/No.
+          - link "Seat Availability" [ref=e234] [cursor=pointer]:
+            - /url: /trains/train-seat-availability
+            - generic [ref=e237]:
+              - generic [ref=e238]: Seat
+              - generic [ref=e239]: Availability
+          - link "Tatkal Reservation" [ref=e241] [cursor=pointer]:
+            - /url: /trains/tatkal-railway-reservation
+            - generic [ref=e244]:
+              - generic [ref=e245]: Tatkal
+              - generic [ref=e246]: Reservation
+          - link "Station Status" [ref=e248] [cursor=pointer]:
+            - /url: /train-stations
+            - generic [ref=e251]:
+              - generic [ref=e252]: Station
+              - generic [ref=e253]: Status
+          - link "Platform Locator" [ref=e255] [cursor=pointer]:
+            - /url: /trains/platform-locator
+            - generic [ref=e258]:
+              - generic [ref=e259]: Platform
+              - generic [ref=e260]: Locator
+          - link "Coach Position" [ref=e262] [cursor=pointer]:
+            - /url: https://www.ixigo.com/trains/coach-position
+            - generic [ref=e265]:
+              - generic [ref=e266]: Coach
+              - generic [ref=e267]: Position
+          - link "Vande Bharat" [ref=e269] [cursor=pointer]:
+            - /url: /trains/vande-bharat-express-trains
+            - generic [ref=e272]:
+              - generic [ref=e273]: Vande
+              - generic [ref=e274]: Bharat
+          - link "New ixigo UK Booking" [ref=e276] [cursor=pointer]:
+            - /url: https://www.ixigo.co.uk/
+            - generic [ref=e277]: New
+            - generic [ref=e281]:
+              - generic [ref=e282]: ixigo UK
+              - generic [ref=e283]: Booking
+        - button [ref=e284] [cursor=pointer]
+      - generic [ref=e289]:
+        - heading [level=1] [ref=e290]:
+          - strong [ref=e291]: IRCTC Train Ticket Booking
+        - paragraph [ref=e292]: Book train tickets quickly with ixigo and skip long queues at the station. Check train schedules, plan your journey, and confirm your booking in just a few clicks.
+        - heading [level=2] [ref=e293]:
+          - strong [ref=e294]: Online Train Booking on ixigo
+        - paragraph [ref=e295]: ixigo is one of the top-rated IRCTC-Authorised platforms for a seamless train ticket booking experience. With ixigo, you can easily book train tickets online while enjoying ₹0 PG fee on UPI payments, exclusive train ticket offers on debit and credit cards, and quick Tatkal ticket booking. We also provide live train running status, PNR status updates, seat availability checks, and more on both the app and the website.
+      - generic [ref=e296]:
+        - heading "Why Book Train Tickets with ixigo?" [level=2] [ref=e297]
+        - paragraph [ref=e298]: "Here are some reasons why 100+ millions of travellers choose ixigo for booking train tickets:"
+        - generic [ref=e299]:
+          - generic [ref=e300]:
+            - img "<b>Trusted by</b> 100+ Million Travelers" [ref=e302]:
+              - heading "Trusted by 100+ Million Travelers" [level=3] [ref=e303]
+            - img "Get 3x Refund with Alternate Travel Plan" [ref=e305]:
+              - heading "Get 3x Refund with Alternate Travel Plan" [level=3] [ref=e306]
+            - img "Enjoy <b>Free Cancellation</b> with <b>Assured</b>" [ref=e308]:
+              - heading "Enjoy Free Cancellation with Assured" [level=3] [ref=e309]
+            - img "Enjoy ₹0 P.G. fee on UPI payments" [ref=e311]:
+              - heading "Enjoy ₹0 P.G. fee on UPI payments" [level=3] [ref=e312]
+            - img "IRCTC Authorised Partner" [ref=e314]:
+              - heading "IRCTC Authorised Partner" [level=3] [ref=e315]
+            - img "<b>Instant Refund</b> on Booking Cancellation" [ref=e317]:
+              - heading "Instant Refund on Booking Cancellation" [level=3] [ref=e318]
+            - img "<b>24x7</b> customer support" [ref=e320]:
+              - heading "24x7 customer support" [level=3] [ref=e321]
+          - button [ref=e322] [cursor=pointer]
+      - generic [ref=e326]:
+        - heading "Popular Train Routes in India" [level=2] [ref=e327]
+        - generic [ref=e328]:
+          - generic [ref=e331]:
+            - paragraph [ref=e333]: Trains to Goa
+            - list [ref=e334]:
+              - listitem [ref=e335]:
+                - paragraph [ref=e336]:
+                  - link "Mumbai to Goa Trains" [ref=e337] [cursor=pointer]:
+                    - /url: https://www.ixigo.com/by-train-rail/mumbai-to-goa-by-train
+              - listitem [ref=e338]:
+                - paragraph [ref=e339]:
+                  - link "Bengaluru to Goa Trains" [ref=e340] [cursor=pointer]:
+                    - /url: https://www.ixigo.com/by-train-rail/bengaluru-to-goa-by-train
+              - listitem [ref=e341]:
+                - paragraph [ref=e342]:
+                  - link "New Delhi to Goa Trains" [ref=e343] [cursor=pointer]:
+                    - /url: https://www.ixigo.com/by-train-rail/new-delhi-to-goa-by-train
+              - listitem [ref=e344]:
+                - paragraph [ref=e345]:
+                  - link "Pune to Goa Trains" [ref=e346] [cursor=pointer]:
+                    - /url: https://www.ixigo.com/by-train-rail/pune-to-goa-by-train
+            - img "Trains to Goa" [ref=e348]
+          - generic [ref=e351]:
+            - paragraph [ref=e353]: Trains to Mumbai
+            - list [ref=e354]:
+              - listitem [ref=e355]:
+                - paragraph [ref=e356]:
+                  - link "Pune to Mumbai Trains" [ref=e357] [cursor=pointer]:
+                    - /url: https://www.ixigo.com/by-train-rail/pune-to-mumbai-by-train
+              - listitem [ref=e358]:
+                - paragraph [ref=e359]:
+                  - link "New Delhi to Mumbai Trains" [ref=e360] [cursor=pointer]:
+                    - /url: https://www.ixigo.com/by-train-rail/new-delhi-to-mumbai-by-train
+              - listitem [ref=e361]:
+                - paragraph [ref=e362]:
+                  - link "Ahmedabad to Mumbai Trains" [ref=e363] [cursor=pointer]:
+                    - /url: https://www.ixigo.com/by-train-rail/ahmedabad-to-mumbai-by-train
+              - listitem [ref=e364]:
+                - paragraph [ref=e365]:
+                  - link "Surat to Mumbai Trains" [ref=e366] [cursor=pointer]:
+                    - /url: https://www.ixigo.com/by-train-rail/surat-to-mumbai-by-train
+            - img "Trains to Mumbai" [ref=e368]
+          - generic [ref=e371]:
+            - paragraph [ref=e373]: Trains to Bengaluru
+            - list [ref=e374]:
+              - listitem [ref=e375]:
+                - paragraph [ref=e376]:
+                  - link "Mumbai to Bengaluru Trains" [ref=e377] [cursor=pointer]:
+                    - /url: https://www.ixigo.com/by-train-rail/mumbai-to-bengaluru-by-train
+              - listitem [ref=e378]:
+                - paragraph [ref=e379]:
+                  - link "Chennai to Bengaluru Trains" [ref=e380] [cursor=pointer]:
+                    - /url: https://www.ixigo.com/by-train-rail/chennai-to-bengaluru-by-train
+              - listitem [ref=e381]:
+                - paragraph [ref=e382]:
+                  - link "Delhi to Bengaluru Trains" [ref=e383] [cursor=pointer]:
+                    - /url: https://www.ixigo.com/by-train-rail/new-delhi-to-bengaluru-by-train
+              - listitem [ref=e384]:
+                - paragraph [ref=e385]:
+                  - link "Hyderabad to Bengaluru Trains" [ref=e386] [cursor=pointer]:
+                    - /url: https://www.ixigo.com/by-train-rail/hyderabad-to-bengaluru-by-train
+            - img "Trains to Bengaluru" [ref=e388]
+          - generic [ref=e391]:
+            - paragraph [ref=e393]: Trains to New Delhi
+            - list [ref=e394]:
+              - listitem [ref=e395]:
+                - paragraph [ref=e396]:
+                  - link "Mumbai to New Delhi Trains" [ref=e397] [cursor=pointer]:
+                    - /url: https://www.ixigo.com/by-train-rail/mumbai-to-new-delhi-by-train
+              - listitem [ref=e398]:
+                - paragraph [ref=e399]:
+                  - link "Jaipur to New Delhi Trains" [ref=e400] [cursor=pointer]:
+                    - /url: https://www.ixigo.com/by-train-rail/jaipur-to-new-delhi-by-train
+              - listitem [ref=e401]:
+                - paragraph [ref=e402]:
+                  - link "Bengaluru to New Delhi Trains" [ref=e403] [cursor=pointer]:
+                    - /url: https://www.ixigo.com/by-train-rail/bengaluru-to-new-delhi-by-train
+              - listitem [ref=e404]:
+                - paragraph [ref=e405]:
+                  - link "Chandigarh to New Delhi Trains" [ref=e406] [cursor=pointer]:
+                    - /url: https://www.ixigo.com/by-train-rail/chandigarh-to-new-delhi-by-train
+            - img "Trains to New Delhi" [ref=e408]
+          - generic [ref=e411]:
+            - paragraph [ref=e413]: Trains to Pune
+            - list [ref=e414]:
+              - listitem [ref=e415]:
+                - paragraph [ref=e416]:
+                  - link "Mumbai to Pune Trains" [ref=e417] [cursor=pointer]:
+                    - /url: https://www.ixigo.com/by-train-rail/mumbai-to-pune-by-train
+              - listitem [ref=e418]:
+                - paragraph [ref=e419]:
+                  - link "Delhi to Pune Trains" [ref=e420] [cursor=pointer]:
+                    - /url: https://www.ixigo.com/by-train-rail/new-delhi-to-pune-by-train
+              - listitem [ref=e421]:
+                - paragraph [ref=e422]:
+                  - link "Bengaluru to Pune Trains" [ref=e423] [cursor=pointer]:
+                    - /url: https://www.ixigo.com/by-train-rail/bengaluru-to-pune-by-train
+              - listitem [ref=e424]:
+                - paragraph [ref=e425]:
+                  - link "Nagpur to Pune Trains" [ref=e426] [cursor=pointer]:
+                    - /url: https://www.ixigo.com/by-train-rail/nagpur-to-pune-by-train
+            - img "Trains to Pune" [ref=e428]
+          - generic [ref=e431]:
+            - paragraph [ref=e433]: Trains to Chennai
+            - list [ref=e434]:
+              - listitem [ref=e435]:
+                - paragraph [ref=e436]:
+                  - link "Bengaluru to Chennai Trains" [ref=e437] [cursor=pointer]:
+                    - /url: https://www.ixigo.com/by-train-rail/bengaluru-to-chennai-by-train
+              - listitem [ref=e438]:
+                - paragraph [ref=e439]:
+                  - link "Delhi to Chennai Trains" [ref=e440] [cursor=pointer]:
+                    - /url: https://www.ixigo.com/by-train-rail/new-delhi-to-chennai-by-train
+              - listitem [ref=e441]:
+                - paragraph [ref=e442]:
+                  - link "Madurai to Chennai Trains" [ref=e443] [cursor=pointer]:
+                    - /url: https://www.ixigo.com/by-train-rail/madurai-to-chennai-by-train
+              - listitem [ref=e444]:
+                - paragraph [ref=e445]:
+                  - link "Coimbatore to Chennai Trains" [ref=e446] [cursor=pointer]:
+                    - /url: https://www.ixigo.com/by-train-rail/coimbatore-to-chennai-by-train
+            - img "Trains to Chennai" [ref=e448]
+          - generic [ref=e451]:
+            - paragraph [ref=e453]: Trains to Kolkata
+            - list [ref=e454]:
+              - listitem [ref=e455]:
+                - paragraph [ref=e456]:
+                  - link "Mumbai to Kolkata Trains" [ref=e457] [cursor=pointer]:
+                    - /url: https://www.ixigo.com/by-train-rail/mumbai-to-kolkata-by-train
+              - listitem [ref=e458]:
+                - paragraph [ref=e459]:
+                  - link "Delhi to Kolkata Trains" [ref=e460] [cursor=pointer]:
+                    - /url: https://www.ixigo.com/by-train-rail/new-delhi-to-kolkata-by-train
+              - listitem [ref=e461]:
+                - paragraph [ref=e462]:
+                  - link "Bengaluru to Kolkata Trains" [ref=e463] [cursor=pointer]:
+                    - /url: https://www.ixigo.com/by-train-rail/bengaluru-to-kolkata-by-train
+              - listitem [ref=e464]:
+                - paragraph [ref=e465]:
+                  - link "Guwahati to Kolkata Trains" [ref=e466] [cursor=pointer]:
+                    - /url: https://www.ixigo.com/by-train-rail/guwahati-to-kolkata-by-train
+            - img "Trains to Kolkata" [ref=e468]
+          - generic [ref=e471]:
+            - paragraph [ref=e473]: Trains to Hyderabad
+            - list [ref=e474]:
+              - listitem [ref=e475]:
+                - paragraph [ref=e476]:
+                  - link "Mumbai to Hyderabad Trains" [ref=e477] [cursor=pointer]:
+                    - /url: https://www.ixigo.com/by-train-rail/mumbai-to-hyderabad-by-train
+              - listitem [ref=e478]:
+                - paragraph [ref=e479]:
+                  - link "Chennai to Hyderabad Trains" [ref=e480] [cursor=pointer]:
+                    - /url: https://www.ixigo.com/by-train-rail/chennai-to-hyderabad-by-train
+              - listitem [ref=e481]:
+                - paragraph [ref=e482]:
+                  - link "Pune to Hyderabad Trains" [ref=e483] [cursor=pointer]:
+                    - /url: https://www.ixigo.com/by-train-rail/pune-to-hyderabad-by-train
+              - listitem [ref=e484]:
+                - paragraph [ref=e485]:
+                  - link "Delhi to Hyderabad Trains" [ref=e486] [cursor=pointer]:
+                    - /url: https://www.ixigo.com/by-train-rail/delhi-to-hyderabad-by-train
+            - img "Trains to Hyderabad" [ref=e488]
+          - generic [ref=e491]:
+            - paragraph [ref=e493]: Trains to Jaipur
+            - list [ref=e494]:
+              - listitem [ref=e495]:
+                - paragraph [ref=e496]:
+                  - link "Mumbai to Jaipur Trains" [ref=e497] [cursor=pointer]:
+                    - /url: https://www.ixigo.com/by-train-rail/mumbai-to-jaipur-by-train
+              - listitem [ref=e498]:
+                - paragraph [ref=e499]:
+                  - link "New Delhi to Jaipur Trains" [ref=e500] [cursor=pointer]:
+                    - /url: https://www.ixigo.com/by-train-rail/new-delhi-to-jaipur-by-train
+              - listitem [ref=e501]:
+                - paragraph [ref=e502]:
+                  - link "Jodhpur to Jaipur Trains" [ref=e503] [cursor=pointer]:
+                    - /url: https://www.ixigo.com/by-train-rail/jodhpur-to-jaipur-by-train
+              - listitem [ref=e504]:
+                - paragraph [ref=e505]:
+                  - link "Kota to Jaipur Trains" [ref=e506] [cursor=pointer]:
+                    - /url: https://www.ixigo.com/by-train-rail/kota-to-jaipur-by-train
+            - img "Trains to Jaipur" [ref=e508]
+      - generic [ref=e511]:
+        - heading [level=2] [ref=e512]:
+          - strong [ref=e513]: How to Book IRCTC Train Tickets on ixigo?
+        - paragraph [ref=e514]: "Here are the steps to book train tickets online with ixigo:"
+        - list [ref=e515]:
+          - listitem [ref=e516]:
+            - 'heading "Step 1: Visit ixigo and Choose Your Destination" [level=3] [ref=e517]'
+            - paragraph [ref=e518]: Open the ixigo website or app, select your source and destination, and choose your journey date.
+          - listitem [ref=e519]:
+            - 'heading "Step 2: Select Class and Find Available Trains" [level=3] [ref=e520]'
+            - paragraph [ref=e521]: Choose your preferred class, such as First Class, Second AC, Third AC, or Sleeper. Select the train that best suits your journey from the list of available trains.
+          - listitem [ref=e522]:
+            - 'heading "Step 3: Add Passenger Details and IRCTC Login ID" [level=3] [ref=e523]'
+            - paragraph [ref=e524]: Fill in the passenger details and choose your berth preferences. Log in using your IRCTC user ID and password. Create a new user ID if you don't have one.
+          - listitem [ref=e525]:
+            - 'heading "Step 4: Choose a Payment Method and Complete Booking" [level=3] [ref=e526]'
+            - paragraph [ref=e527]: You can choose from several payment options and proceed to complete your train ticket booking.
+          - listitem [ref=e528]:
+            - 'heading "Step 5: Get a Confirmation Message" [level=3] [ref=e529]'
+            - paragraph [ref=e530]: You will then receive a confirmation on your registered email ID and SMS on your mobile number.
+      - generic [ref=e531]:
+        - generic [ref=e532]:
+          - heading [level=2] [ref=e533]:
+            - strong [ref=e534]: IRCTC Next Generation Ticket Booking
+          - paragraph [ref=e535]:
+            - text: Established in 1999, Indian Railway Catering and Tourism Corporation (IRCTC) is the official online ticketing arm of Indian Railways, offering railway ticketing, catering, and tourism services to passengers across India. Its online reservation platform,
+            - link "IRCTC next generation" [ref=e536] [cursor=pointer]:
+              - /url: https://www.ixigo.com/irctc-next-generation-ticket-booking-story-1164367
+            - text: e-Ticketing System, allows travellers to book train tickets online conveniently. To improve security and streamline the reservation process, passengers are advised to link Aadhaar to their IRCTC account. Aadhaar linking enables smoother authentication during train bookings, helping ensure a more secure and transparent ticketing system.
+          - paragraph [ref=e539]: The total number of trains running today is 18,909, as last updated on 2026-10-29
+        - generic [ref=e540]:
+          - heading "IRCTC Login — Access Your Account on ixigo" [level=2] [ref=e541]
+          - paragraph [ref=e542]: With ixigo, you can register & navigate the next-generation IRCTC login process, reset your password and more. You can also recover a deactivated IRCTC ID, update profile details, and easily manage your bookings.
+          - generic [ref=e543]:
+            - heading "How to Log in to Your IRCTC Account" [level=3] [ref=e544]
+            - paragraph [ref=e545]: "Follow these steps to log in to your IRCTC account on ixigo:"
+            - list [ref=e546]:
+              - listitem [ref=e547]: Open the ixigo Trains app.
+              - listitem [ref=e548]: Enter your journey details, including departure station, arrival station, travel date, and preferred class.
+              - listitem [ref=e549]: Add traveller details for the passengers.
+              - listitem [ref=e550]: Tap ‘Pay Now’ to proceed with the payment.
+              - listitem [ref=e551]: After the payment is successful, enter your Login ID & password to complete the booking.
+          - generic [ref=e552]:
+            - heading "How to Create an IRCTC Account" [level=3] [ref=e553]
+            - paragraph [ref=e554]: "Create an IRCTC login ID and password by following the steps below:"
+            - list [ref=e555]:
+              - listitem [ref=e556]: Open the ixigo Trains app.
+              - listitem [ref=e557]: Tap on the profile icon at the bottom right of the page.
+              - listitem [ref=e558]: Now, tap on 'Link your IRCTC Account'.
+              - listitem [ref=e559]: You will see 'IRCTC username'. Tap on it.
+              - listitem [ref=e560]: A pop-up will appear. Click on 'Register' located at the bottom right.
+              - listitem [ref=e561]: Now, fill in the required details and proceed to get an OTP.
+              - listitem [ref=e562]: Please enter the OTP and verify your email ID and mobile number.
+              - listitem [ref=e563]: Your IRCTC account will be successfully created.
+          - generic [ref=e564]:
+            - heading "How to Recover an IRCTC Account" [level=3] [ref=e565]
+            - paragraph [ref=e566]: "You can easily recover your IRCTC login ID by following the steps below:"
+            - list [ref=e567]:
+              - listitem [ref=e568]: Open the ixigo app.
+              - listitem [ref=e569]: Tap on the profile icon at the bottom right of the page.
+              - listitem [ref=e570]: Now, go to 'Link your IRCTC Account'.
+              - listitem [ref=e571]: Then, click on 'Forgot your IRCTC User ID'.
+              - listitem [ref=e572]: Enter your registered email ID or mobile number and proceed.
+          - generic [ref=e573]:
+            - heading "How to Register as a New User on IRCTC" [level=3] [ref=e574]
+            - paragraph [ref=e575]: "Here are the steps to register as a new user on IRCTC:"
+            - list [ref=e576]:
+              - listitem [ref=e577]: Open the ixigo trains app.
+              - listitem [ref=e578]: Tap on the profile icon at the bottom right of the page.
+              - listitem [ref=e579]: Now, go to 'Link your IRCTC Account'.
+              - listitem [ref=e580]: Then, click on 'Register on IRCTC'.
+              - listitem [ref=e581]: Enter your details and proceed.
+          - generic [ref=e582]:
+            - text: Check
+            - link "IRCTC cancellation charges" [ref=e583] [cursor=pointer]:
+              - /url: https://www.ixigo.com/trains/irctc-cancellation-charges-icms
+            - text: and refund rules here.
+      - generic [ref=e584]:
+        - generic [ref=e585]:
+          - heading [level=2] [ref=e586]:
+            - strong [ref=e587]: IRCTC Ticket Booking Timings & Rules
+          - table [ref=e588]:
+            - rowgroup [ref=e589]:
+              - row [ref=e590]:
+                - cell "Train ticket booking timings" [ref=e591]
+                - cell "00:20 AM to 11:45 PM" [ref=e592]
+              - row [ref=e593]:
+                - cell "IRCTC site maintenance window" [ref=e594]
+                - cell "11:45 PM to 12:20 AM" [ref=e595]
+              - row [ref=e596]:
+                - cell "Tatkal booking timings for AC berth" [ref=e597]
+                - cell "10:00 AM – 10:30 AM (1 day before journey)" [ref=e598]
+              - row [ref=e599]:
+                - cell "Tatkal booking timings for Non-AC berth" [ref=e600]
+                - cell "11:00 AM – 11:30 AM (1 day before journey)" [ref=e601]
+              - row [ref=e602]:
+                - cell "Premium Tatkal booking timings" [ref=e603]
+                - cell "Same as Tatkal" [ref=e604]
+              - row [ref=e605]:
+                - cell "Passengers allowed in Tatkal per PNR" [ref=e606]
+                - cell "4 passengers (max.)" [ref=e607]
+              - row [ref=e608]:
+                - cell "FTR (Full Tariff Rate) bookings" [ref=e609]
+                - cell "30 days to 6 months in advance" [ref=e610]
+              - row [ref=e611]:
+                - cell "First chart preparation" [ref=e612]
+                - cell "8-10 hours before the train’s departure" [ref=e613]
+              - row [ref=e614]:
+                - cell "Second (final) chart preparation" [ref=e615]
+                - cell "30 minutes to 1 hour before the train’s departure" [ref=e616]
+              - row [ref=e617]:
+                - cell "Senior citizen quota" [ref=e618]
+                - cell "Available in GN quota, not allowed in Tatkal quota" [ref=e619]
+              - row [ref=e620]:
+                - cell "Refunds after chart preparation" [ref=e621]
+                - cell "Only through the TDR request" [ref=e622]
+              - row [ref=e623]:
+                - cell "Refund processing time" [ref=e624]
+                - cell "3-7 business days" [ref=e625]
+              - row [ref=e626]:
+                - cell "Monthly train ticket limit per user" [ref=e627]
+                - cell "24 for users with an Aadhaar number linked and 12 for others" [ref=e628]
+              - row [ref=e629]:
+                - cell "Maximum train tickets per user ID in a day" [ref=e630]
+                - cell "A maximum of two tickets per user ID in a day, between 8:00 AM and 12:00 PM for Tatkal bookings" [ref=e631]
+        - generic [ref=e632]:
+          - paragraph [ref=e633]
+          - heading [level=2] [ref=e634]:
+            - strong [ref=e635]: IRCTC Train Ticket Fares by Travel Class
+          - paragraph [ref=e636]: "Train ticket fares depend on the class of travel and the type of coach selected. Check the table below:"
+          - table [ref=e637]:
+            - rowgroup [ref=e638]:
+              - row [ref=e639]:
+                - columnheader "Travel Class" [ref=e640]
+                - columnheader "Minimum Distance for Charge" [ref=e641]
+                - columnheader "Basic Fare at Minimum Distance" [ref=e642]
+                - columnheader "Reservation Fee" [ref=e643]
+                - columnheader "Supplementary Charge for Superfast Trains" [ref=e644]
+            - rowgroup [ref=e645]:
+              - row [ref=e646]:
+                - cell "Second Class" [ref=e647]
+                - cell "50 Kms" [ref=e648]
+                - cell "₹30" [ref=e649]
+                - cell "₹15" [ref=e650]
+                - cell "₹15" [ref=e651]
+              - row [ref=e652]:
+                - cell "Sleeper Class" [ref=e653]
+                - cell "200 Kms" [ref=e654]
+                - cell "₹126" [ref=e655]
+                - cell "₹20" [ref=e656]
+                - cell "₹30" [ref=e657]
+              - row [ref=e658]:
+                - cell "AC Chair Car" [ref=e659]
+                - cell "150 Kms" [ref=e660]
+                - cell "₹205" [ref=e661]
+                - cell "₹40" [ref=e662]
+                - cell "₹45" [ref=e663]
+              - row [ref=e664]:
+                - cell "AC 3 Tier" [ref=e665]
+                - cell "300 Kms" [ref=e666]
+                - cell "₹440–470" [ref=e667]
+                - cell "₹40" [ref=e668]
+                - cell "₹45" [ref=e669]
+              - row [ref=e670]:
+                - cell "First Class" [ref=e671]
+                - cell "100 Kms" [ref=e672]
+                - cell "₹232" [ref=e673]
+                - cell "₹50" [ref=e674]
+                - cell "₹45" [ref=e675]
+              - row [ref=e676]:
+                - cell "Executive Class" [ref=e677]
+                - cell "N/A" [ref=e678]
+                - cell "N/A" [ref=e679]
+                - cell "₹60" [ref=e680]
+                - cell "₹75" [ref=e681]
+          - paragraph [ref=e682]
+          - generic [ref=e683]:
+            - heading [level=2] [ref=e684]:
+              - strong [ref=e685]: Valid ID Proofs for Train Travel
+            - paragraph [ref=e686]: "You don't need to enter ID details while booking train tickets on the app. However, passengers must carry a valid ID proof during their journey. The Travelling Ticket Examiner (TTE) will check your ID while verifying your ticket in the coach and may assist with seat allocation. Make sure to carry the original version of any of the following ID proofs:"
+            - list [ref=e687]:
+              - listitem [ref=e688]: Aadhaar Card
+              - listitem [ref=e689]: Voter ID
+              - listitem [ref=e690]: Passport
+              - listitem [ref=e691]: Driving License
+              - listitem [ref=e692]: PAN Card
+              - listitem [ref=e693]: Photo ID issued by the Central/State Government
+              - listitem [ref=e694]: Student ID with photograph
+              - listitem [ref=e695]: Nationalized Bank Passbook with a photograph
+              - listitem [ref=e696]: Credit Card with laminated photograph
+              - listitem [ref=e697]: Any other photo ID card with a serial number
+          - heading [level=2] [ref=e698]:
+            - strong [ref=e699]: Train Booking Features on ixigo
+          - list [ref=e700]:
+            - listitem [ref=e701]:
+              - heading [level=3] [ref=e702]:
+                - link "Alternate Travel Plan" [ref=e703] [cursor=pointer]:
+                  - /url: https://www.ixigo.com/trains/alternate-travel
+              - paragraph [ref=e704]: Avoid the uncertainty of waitlisted tickets with the Alternate Travel Plan. Simply select this option while booking your train ticket and get up to 3X refund if your ticket remains waitlisted. T&C Apply!
+            - listitem [ref=e705]:
+              - heading [level=3] [ref=e706]:
+                - link "Free Cancellation with Assured" [ref=e707] [cursor=pointer]:
+                  - /url: https://www.ixigo.com/ixigo-assured-trains-policy
+              - paragraph [ref=e708]: With Assured, you can enjoy free cancellation and instant refunds on eligible bookings, making your travel plans more flexible.
+            - listitem [ref=e709]:
+              - heading [level=3] [ref=e710]:
+                - link "Check PNR Status" [ref=e711] [cursor=pointer]:
+                  - /url: https://www.ixigo.com/trains/pnr-status
+              - paragraph [ref=e712]: PNR Status allows you to check the current status of your booked ticket, letting you know if it's confirmed or not. ixigo provides the Indian Railways PNR Prediction with highest accuracy of train tickets booked through its app or website.
+            - listitem [ref=e713]:
+              - heading [level=3] [ref=e714]:
+                - link "Check Train Running Status" [ref=e715] [cursor=pointer]:
+                  - /url: https://www.ixigo.com/trains/train-running-status
+              - paragraph [ref=e716]: Check your train running status on ixigo by just entering the train number or station name and get your train status.
+            - listitem [ref=e717]:
+              - heading [level=3] [ref=e718]:
+                - link "Order Food on Train" [ref=e719] [cursor=pointer]:
+                  - /url: https://www.ixigo.com/trains/order-food-in-train
+              - paragraph [ref=e720]: Get fresh & delicious meals delivered right to your seat with our Order Food on Train feature.
+            - listitem [ref=e721]:
+              - heading [level=3] [ref=e722]:
+                - link "Check Train Seat Availability" [ref=e723] [cursor=pointer]:
+                  - /url: https://www.ixigo.com/trains/train-seat-availability
+              - paragraph [ref=e724]: Use ixigo’s train seat availability feature to find out the seat or berth availability on your train and check the lowest train ticket price. You can make online train ticket reservations according to your preferred options - date of travel, train halt in minutes and train route.
+      - generic [ref=e725]:
+        - heading "Frequently Asked Questions (FAQs)" [level=2] [ref=e726]
+        - generic [ref=e727]:
+          - heading [level=3] [ref=e730] [cursor=pointer]:
+            - strong [ref=e731]: Q. How can I check my booking history on IRCTC?
+          - generic [ref=e739]:
+            - paragraph [ref=e740]:
+              - strong [ref=e741]: "A:"
+              - text: "To check your booking history, follow these simple steps:"
+            - list [ref=e742]:
+              - listitem [ref=e743]: Visit the IRCTC website.
+              - listitem [ref=e744]: Log in using your IRCTC Login ID and password.
+              - listitem [ref=e745]: Go to the "My Account" section.
+              - listitem [ref=e746]: Click on "My Transactions" and select "Booked Ticket History."
+              - listitem [ref=e747]: You will be able to view all your past train ticket bookings.
+        - generic [ref=e748]:
+          - heading [level=3] [ref=e751] [cursor=pointer]:
+            - strong [ref=e752]: Q. Can I change my IRCTC login ID?
+          - paragraph [ref=e761]:
+            - strong [ref=e762]: "A:"
+            - text: Creating your IRCTC login ID is a one-time registration process. Once you have registered, you cannot change your username or the login credentials for the registered email address.
+        - generic [ref=e763]:
+          - heading [level=3] [ref=e766] [cursor=pointer]:
+            - strong [ref=e767]: Q. What should I do if I have not received the IRCTC OTP?
+          - generic [ref=e775]:
+            - paragraph [ref=e776]:
+              - strong [ref=e777]: "A:"
+              - text: "If you have not received the OTP, you can try the following steps:"
+            - list [ref=e778]:
+              - listitem [ref=e779]: Check your network connection to ensure your mobile phone has a proper signal.
+              - listitem [ref=e780]: Wait for a few minutes, as OTP delivery may sometimes be delayed due to network traffic.
+              - listitem [ref=e781]: Click on the "Resend OTP" option on the IRCTC login or booking page.
+              - listitem [ref=e782]: Verify your registered mobile number and email ID.
+              - listitem [ref=e783]: Check your spam or junk folder if the OTP was sent to your email.
+            - paragraph [ref=e784]: If the issue continues, contact IRCTC customer support or try logging in again after some time.
+        - generic [ref=e785]:
+          - heading [level=3] [ref=e788] [cursor=pointer]:
+            - strong [ref=e789]: Q. How can I link my Aadhaar to my IRCTC account using the ixigo app?
+          - generic [ref=e797]:
+            - paragraph [ref=e798]:
+              - strong [ref=e799]: "A:"
+              - text: "You can link your Aadhaar following these simple steps:"
+            - list [ref=e800]:
+              - listitem [ref=e801]: Open the ixigo Trains app and tap on "Link Your Aadhaar."
+              - listitem [ref=e802]: You will be redirected to the IRCTC login page within the app.
+              - listitem [ref=e803]: Enter your User ID, password, and CAPTCHA, then sign in.
+              - listitem [ref=e804]: On the Aadhaar KYC page, enter your 12-digit Aadhaar number.
+              - listitem [ref=e805]: Tap "Send OTP."
+              - listitem [ref=e806]: Enter the OTP sent to the mobile number linked with your Aadhaar and verify it.
+            - paragraph [ref=e807]: Once the OTP is verified, your Aadhaar will be successfully linked.
+        - generic [ref=e808]:
+          - heading [level=3] [ref=e811] [cursor=pointer]:
+            - strong [ref=e812]: Q. How can I book train tickets by mobile?
+          - paragraph [ref=e821]:
+            - strong [ref=e822]: "A:"
+            - text: You can book railway tickets from your mobile using the
+            - link "ixigo trains app" [ref=e823] [cursor=pointer]:
+              - /url: https://4wlx.adj.st?adj_t=oxd0a66&adj_campaign=trainhome&adj_creative=content
+            - text: ", or by visiting the official website. Simply choose your route, date and preferred seat; update passenger details (including the user ID); and make the payment to book your ticket. Alternatively, you can also"
+            - link "book train tickets on ConfirmTkt" [ref=e824] [cursor=pointer]:
+              - /url: https://www.confirmtkt.com/
+            - text: ", powered by ixigo."
+        - generic [ref=e825]:
+          - heading [level=3] [ref=e828] [cursor=pointer]:
+            - strong [ref=e829]: Q. How do I cancel the train ticket after the train has departed?
+          - paragraph [ref=e838]:
+            - strong [ref=e839]: "A:"
+            - text: A confirmed train ticket can be cancelled anytime before chart preparation, though cancellation charges vary depending on how close the cancellation is to the train's departure time. Tickets booked online cannot be cancelled once the chart has been prepared.
+        - generic [ref=e840]:
+          - heading [level=3] [ref=e843] [cursor=pointer]:
+            - strong [ref=e844]: Q. What is TDR in your train ticket?
+          - paragraph [ref=e853]:
+            - strong [ref=e854]: "A:"
+            - text: TDR refers to the ticket deposit receipt. Passengers who have a train ticket but have not travelled, and want to apply for a refund, can file for a TDR online. If the train chart is not prepared, users can cancel their tickets online. It is only after a chart is ready that a TDR needs to be filed for a refund.
+        - generic [ref=e855]:
+          - heading [level=3] [ref=e858] [cursor=pointer]:
+            - strong [ref=e859]: Q. How can I pay for my train booking on ixigo?
+          - paragraph [ref=e868]:
+            - strong [ref=e869]: "A:"
+            - text: You can complete your train ticket booking on ixigo using credit/debit cards, net banking, or UPI. Choose the payment method that suits you best for a hassle-free transaction. Enjoy zero payment gateway charges with your
+            - link "ixigo AU Bank Credit Card." [ref=e870] [cursor=pointer]:
+              - /url: https://www.ixigo.com/travel-credit-card
+        - generic [ref=e871]:
+          - heading [level=3] [ref=e874] [cursor=pointer]:
+            - strong [ref=e875]: Q. How can I print my train ticket without logging in?
+          - paragraph [ref=e884]:
+            - strong [ref=e885]: "A:"
+            - text: Your train ticket can be printed using your PNR number on the IRCTC website without logging in. Alternatively, you can download your ticket via SMS.
+        - generic [ref=e886]:
+          - heading [level=3] [ref=e889] [cursor=pointer]:
+            - strong [ref=e890]: Q. Are children charged for train ticket booking?
+          - paragraph [ref=e899]:
+            - strong [ref=e900]: "A:"
+            - text: Children under 5 years of age are not charged for a train journey. Children between 5 and 12 years of age are charged fully if you have opted for a berth separately. However, if a berth/seat is not required for a child between 5 and 12 years of age, then only half of the adult traveller fare will be applicable.
+      - generic [ref=e901]:
+        - img "banner-image" [ref=e902]
+        - generic [ref=e903]:
+          - generic [ref=e904]:
+            - paragraph [ref=e905]: Get more with our ixigo app
+            - generic [ref=e906]:
+              - img "Seamless Train Ticket Bookings" [ref=e907]
+              - paragraph [ref=e908]: Seamless Train Ticket Bookings
+            - generic [ref=e909]:
+              - img "Free Cancellation and Instant Refunds" [ref=e910]
+              - paragraph [ref=e911]: Free Cancellation and Instant Refunds
+            - generic [ref=e912]:
+              - img "₹0 Payment Gateway Fees via UPI" [ref=e913]
+              - paragraph [ref=e914]: ₹0 Payment Gateway Fees via UPI
+          - img "app-install-hero-icon" [ref=e916]
+          - generic [ref=e917]:
+            - generic [ref=e918]:
+              - link "Google Play Link" [ref=e919] [cursor=pointer]:
+                - /url: https://play.google.com/store/apps/details?id=com.ixigo.train.ixitrain
+                - img "play-store-icon" [ref=e920]
+              - link "Apple Store Link" [ref=e921] [cursor=pointer]:
+                - /url: https://apps.apple.com/in/app/ixigo-trains-ticket-booking/id1148984317
+                - img "app-store-icon" [ref=e922]
+              - generic [ref=e923]:
+                - paragraph [ref=e924]: "4.8"
+                - img "rating-icon" [ref=e925]
+            - generic [ref=e926]:
+              - link [ref=e927] [cursor=pointer]:
+                - /url: https://app.adjust.com/72eu5f4
+                - img "qr-code-image" [ref=e928]
+              - paragraph [ref=e929]: Scan to Download
+      - generic [ref=e930]:
+        - heading "IRCTC Train News" [level=2] [ref=e931]
+        - generic [ref=e932]:
+          - generic [ref=e933]:
+            - link "Bengaluru-Mumbai Vande Bharat Sleeper Train to Launch on November 1! Bengaluru-Mumbai Vande Bharat Sleeper Train to Launch on November 1!" [ref=e935] [cursor=pointer]:
+              - /url: https://www.ixigo.com/travel-stories/bengaluru-mumbai-vande-bharat-sleeper-train-to-launch-on-november-1-story-1200001
+              - img "Bengaluru-Mumbai Vande Bharat Sleeper Train to Launch on November 1!" [ref=e936]
+              - generic [ref=e937]: Bengaluru-Mumbai Vande Bharat Sleeper Train to Launch on November 1!
+            - 'link "Navratri Fasting Food in Train: Best Navratri Vrat Meals to Order Navratri Fasting Food in Train: Best Navratri Vrat Meals to Order" [ref=e939] [cursor=pointer]':
+              - /url: https://www.ixigo.com/travel-stories/navratri-fasting-food-in-train-best-navratri-vrat-meals-to-order-story-1187254
+              - 'img "Navratri Fasting Food in Train: Best Navratri Vrat Meals to Order" [ref=e940]'
+              - generic [ref=e941]: "Navratri Fasting Food in Train: Best Navratri Vrat Meals to Order"
+            - 'link "Festive Food Trail: Best Cities to Eat Your Way Through Navratri &amp; Dussehra Festive Food Trail: Best Cities to Eat Your Way Through Navratri &amp; Dussehra" [ref=e943] [cursor=pointer]':
+              - /url: https://www.ixigo.com/travel-stories/festive-food-trail-best-cities-to-eat-your-way-through-navratri-dussehra-story-1187250
+              - 'img "Festive Food Trail: Best Cities to Eat Your Way Through Navratri &amp; Dussehra" [ref=e944]'
+              - generic [ref=e945]: "Festive Food Trail: Best Cities to Eat Your Way Through Navratri &amp; Dussehra"
+            - 'link "Book Now, Pay Later: How Partial Payment Works for ixigo Holiday Packages Book Now, Pay Later: How Partial Payment Works for ixigo Holiday Packages" [ref=e947] [cursor=pointer]':
+              - /url: https://www.ixigo.com/travel-stories/book-now-pay-later-how-partial-payment-works-for-ixigo-holiday-packages-story-1187230
+              - 'img "Book Now, Pay Later: How Partial Payment Works for ixigo Holiday Packages" [ref=e948]'
+              - generic [ref=e949]: "Book Now, Pay Later: How Partial Payment Works for ixigo Holiday Packages"
+            - link "Gift Your Parents a Holiday This Festive Season with ixigo Holiday Packages! Gift Your Parents a Holiday This Festive Season with ixigo Holiday Packages!" [ref=e951] [cursor=pointer]:
+              - /url: https://www.ixigo.com/travel-stories/gift-your-parents-a-holiday-this-festive-season-with-ixigo-holiday-packages-story-1187243
+              - img "Gift Your Parents a Holiday This Festive Season with ixigo Holiday Packages!" [ref=e952]
+              - generic [ref=e953]: Gift Your Parents a Holiday This Festive Season with ixigo Holiday Packages!
+            - 'link "Ganesh Chaturthi Special: 7 Best Places to Visit! Ganesh Chaturthi Special: 7 Best Places to Visit!" [ref=e955] [cursor=pointer]':
+              - /url: https://www.ixigo.com/travel-stories/ganesh-chaturthi-special-7-best-places-to-visit-story-1187161
+              - 'img "Ganesh Chaturthi Special: 7 Best Places to Visit!" [ref=e956]'
+              - generic [ref=e957]: "Ganesh Chaturthi Special: 7 Best Places to Visit!"
+            - link "Train Bookings Now Open for Diwali 2026 Train Bookings Now Open for Diwali 2026" [ref=e959] [cursor=pointer]:
+              - /url: https://www.ixigo.com/travel-stories/train-bookings-now-open-for-diwali-2026-story-1187151
+              - img "Train Bookings Now Open for Diwali 2026" [ref=e960]
+              - generic [ref=e961]: Train Bookings Now Open for Diwali 2026
+            - 'link "Skip the Usual Spots: Why Orchha Is the Weekend Getaway to Try Next! Skip the Usual Spots: Why Orchha Is the Weekend Getaway to Try Next!" [ref=e963] [cursor=pointer]':
+              - /url: https://www.ixigo.com/travel-stories/skip-the-usual-spots-why-orchha-is-the-weekend-getaway-to-try-next-story-1187125
+              - 'img "Skip the Usual Spots: Why Orchha Is the Weekend Getaway to Try Next!" [ref=e964]'
+              - generic [ref=e965]: "Skip the Usual Spots: Why Orchha Is the Weekend Getaway to Try Next!"
+            - link "The Ultimate Onam Travel Itinerary for First-Time Visitors! The Ultimate Onam Travel Itinerary for First-Time Visitors!" [ref=e967] [cursor=pointer]:
+              - /url: https://www.ixigo.com/travel-stories/the-ultimate-onam-travel-itinerary-for-first-time-visitors-story-1187098
+              - img "The Ultimate Onam Travel Itinerary for First-Time Visitors!" [ref=e968]
+              - generic [ref=e969]: The Ultimate Onam Travel Itinerary for First-Time Visitors!
+            - link "Train Bookings Now Open for Durga Puja and Dussehra Train Bookings Now Open for Durga Puja and Dussehra" [ref=e971] [cursor=pointer]:
+              - /url: https://www.ixigo.com/travel-stories/train-bookings-now-open-for-durga-puja-dussehra-story-1186069
+              - img "Train Bookings Now Open for Durga Puja and Dussehra" [ref=e972]
+              - generic [ref=e973]: Train Bookings Now Open for Durga Puja and Dussehra
+          - generic [ref=e975]:
+            - generic [ref=e976] [cursor=pointer]
+            - generic [ref=e977] [cursor=pointer]
+            - generic [ref=e978] [cursor=pointer]
+            - generic [ref=e979] [cursor=pointer]
+            - generic [ref=e980] [cursor=pointer]
+            - generic [ref=e981] [cursor=pointer]
+            - generic [ref=e982] [cursor=pointer]
+            - generic [ref=e983] [cursor=pointer]
+            - generic [ref=e984] [cursor=pointer]
+            - generic [ref=e985] [cursor=pointer]
+    - generic [ref=e988]:
+      - generic [ref=e989]:
+        - generic [ref=e990]:
+          - paragraph [ref=e991]:
+            - link "About Us" [ref=e992] [cursor=pointer]:
+              - /url: /about
+          - paragraph [ref=e993]:
+            - link "Investor Relations" [ref=e994] [cursor=pointer]:
+              - /url: /about/investor-relations
+          - paragraph [ref=e995]:
+            - link "CSR" [ref=e996] [cursor=pointer]:
+              - /url: /about/csr
+        - generic [ref=e997]:
+          - paragraph [ref=e998]:
+            - link "Privacy" [ref=e999] [cursor=pointer]:
+              - /url: /about/more-info/privacy
+          - paragraph [ref=e1000]:
+            - link "Terms of Use" [ref=e1001] [cursor=pointer]:
+              - /url: /about/more-info/terms-of-use
+          - paragraph [ref=e1002]:
+            - link "Career" [ref=e1003] [cursor=pointer]:
+              - /url: /about/careers
+          - paragraph [ref=e1004]:
+            - link "Customer Service" [ref=e1005] [cursor=pointer]:
+              - /url: /support
+        - paragraph [ref=e1006]: © 2026 Le Travenues Technology Ltd. India. All brands are trademarks of their respective owners.
+      - generic [ref=e1007]:
+        - link [ref=e1008] [cursor=pointer]:
+          - /url: https://www.facebook.com/ixigo
+          - img "facebook" [ref=e1009]
+        - link [ref=e1010] [cursor=pointer]:
+          - /url: https://www.twitter.com/ixigo
+          - img "twitter" [ref=e1011]
+        - link [ref=e1012] [cursor=pointer]:
+          - /url: https://www.instagram.com/ixigo
+          - img "instgram" [ref=e1013]
+        - link [ref=e1014] [cursor=pointer]:
+          - /url: https://in.linkedin.com/company/ixigo
+          - img "linkedin" [ref=e1015]
+        - link [ref=e1016] [cursor=pointer]:
+          - /url: https://www.youtube.com/user/ixigorocks
+          - img "youtube" [ref=e1017]
+  - alert [ref=e1018]

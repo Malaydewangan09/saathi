@@ -1,0 +1,9 @@
+- generic [ref=e3]:
+  - link [ref=e4] [cursor=pointer]:
+    - /url: /
+    - img "Confirmtkt" [ref=e5]
+  - heading "404" [level=1] [ref=e6]
+  - paragraph [ref=e7]: Oops! The Page you requested was not found
+  - paragraph [ref=e9]:
+    - link "Take me home" [ref=e10] [cursor=pointer]:
+      - /url: https://www.confirmtkt.com

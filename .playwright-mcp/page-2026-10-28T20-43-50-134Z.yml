@@ -1,0 +1,1788 @@
+- generic [ref=f1e1]:
+  - generic [ref=f1e12]:
+    - banner [ref=f1e13]:
+      - generic [ref=f1e14]:
+        - link [ref=f1e16] [cursor=pointer]:
+          - /url: https://www.confirmtkt.com
+          - img "confirmtkt" [ref=f1e17]
+        - generic [ref=f1e18]:
+          - button "FLIGHTS" [ref=f1e19] [cursor=pointer]
+          - button "HOTELS" [ref=f1e20] [cursor=pointer]
+          - button "Login" [ref=f1e22] [cursor=pointer]:
+            - generic [ref=f1e27]: LOGIN
+    - generic [ref=f1e29]:
+      - generic [ref=f1e30]:
+        - heading "Mumbai Central to Pune Jn Trains" [level=4] [ref=f1e31]
+        - paragraph [ref=f1e32]: 34 Trains found between Mumbai Central (BCT) to Pune Jn (PUNE)
+      - generic [ref=f1e33]:
+        - generic [ref=f1e34]:
+          - generic [ref=f1e35]:
+            - paragraph [ref=f1e37]: Oct
+            - listbox "Available dates" [ref=f1e38]:
+              - option "Thu, 29" [ref=f1e39] [cursor=pointer]:
+                - paragraph [ref=f1e40]: Thu, 29
+                - paragraph [ref=f1e43]: Available
+              - option "Fri, 30" [selected] [ref=f1e44] [cursor=pointer]:
+                - paragraph [ref=f1e45]: Fri, 30
+                - paragraph [ref=f1e48]: Filling Fast
+              - option "Sat, 31" [ref=f1e49] [cursor=pointer]:
+                - paragraph [ref=f1e50]: Sat, 31
+                - paragraph [ref=f1e53]: Filling Fast
+              - option "Sun, 01" [ref=f1e54] [cursor=pointer]:
+                - paragraph [ref=f1e55]: Sun, 01
+                - paragraph [ref=f1e58]: Filling Fast
+              - option "Mon, 02" [ref=f1e59] [cursor=pointer]:
+                - paragraph [ref=f1e60]: Mon, 02
+                - paragraph [ref=f1e63]: Available
+              - option "Tue, 03" [ref=f1e64] [cursor=pointer]:
+                - paragraph [ref=f1e65]: Tue, 03
+                - paragraph [ref=f1e68]: Available
+              - option "Wed, 04" [ref=f1e69] [cursor=pointer]:
+                - paragraph [ref=f1e70]: Wed, 04
+                - paragraph [ref=f1e73]: Available
+              - option "Thu, 05" [ref=f1e74] [cursor=pointer]:
+                - paragraph [ref=f1e75]: Thu, 05
+                - paragraph [ref=f1e78]: Available
+              - option "Fri, 06" [ref=f1e79] [cursor=pointer]:
+                - paragraph [ref=f1e80]: Fri, 06
+                - paragraph [ref=f1e83]: Filling Fast
+              - option "Sat, 07" [ref=f1e84] [cursor=pointer]:
+                - paragraph [ref=f1e85]: Sat, 07
+                - paragraph [ref=f1e88]: Filling Fast
+              - option "Sun, 08" [ref=f1e89] [cursor=pointer]:
+                - paragraph [ref=f1e90]: Sun, 08
+                - paragraph [ref=f1e93]: Available
+              - option "Mon, 09" [ref=f1e94] [cursor=pointer]:
+                - paragraph [ref=f1e95]: Mon, 09
+                - paragraph [ref=f1e98]: Filling Fast
+              - option "Tue, 10" [ref=f1e99] [cursor=pointer]:
+                - paragraph [ref=f1e100]: Tue, 10
+                - paragraph [ref=f1e103]: Filling Fast
+              - option "Wed, 11" [ref=f1e104] [cursor=pointer]:
+                - paragraph [ref=f1e105]: Wed, 11
+                - paragraph [ref=f1e108]: Filling Fast
+              - option "Thu, 12" [ref=f1e109] [cursor=pointer]:
+                - paragraph [ref=f1e110]: Thu, 12
+                - paragraph [ref=f1e113]: Available
+            - button "Open calendar" [ref=f1e115] [cursor=pointer]
+          - generic [ref=f1e119]:
+            - paragraph [ref=f1e120]: Quick Filters
+            - generic [ref=f1e121]:
+              - generic [ref=f1e122]:
+                - checkbox [ref=f1e126] [cursor=pointer]
+                - paragraph [ref=f1e127]: Best Available
+              - generic [ref=f1e128]:
+                - checkbox [ref=f1e132] [cursor=pointer]
+                - paragraph [ref=f1e133]: Tatkal Only
+              - generic [ref=f1e134]:
+                - checkbox [ref=f1e138] [cursor=pointer]
+                - paragraph [ref=f1e139]: AC Only
+        - iframe [ref=f1e145]:
+          - link [ref=f4e2] [cursor=pointer]:
+            - /url: https://googleads.g.doubleclick.net/pcs/click?xai=AKAOjsvq4f208gjiAChgVSyoc78sEsEXWcX_HXTWzBfYD_Nw3bwqdBr3AIcZorROBAlOYBKNoFSHEkmcNemzei4mGmrUds6lve-swebDb3fiFJD1s3nyipT-CFBuA0dqmpP24CBvsfUrv5X6-ODV68-dm4l9mx7It_Le_n8Al68ROU7TGBhfJwcP0t_4yi7sb-WPkZzxWpAxqE-WrFay7s70F3tmfJWGE-hmPN0M8oZhP2WYKQky_QdSYUJhGfepSvhXPPv-7hSBm56B1bWBubrw86KUedIgRdZ2rKxYaN1ID6iLDT2ivCL2ep8tto9XHZ8IRKV2Fyma7lpKzuA3PMGsKfM-wqlz09YF3KBMa-3S2ehMKV0RG-lE3ews1diYcN4FMkUdl2oi4L4_kDSPJcJ16CHs70Rseoe-odNoDdBd0NYK_Q6V0OFfnA31ALf7Gomtz2TQltWCmxK6KaUk5w&sai=AMfl-YS9XzkQJyJtbb_Woct5oikqvEkaHwn6lHbd-UoPlNX85OIfLThPqgx-CD6jSOtJP8NGIydrnhKkNa7obt1tbP7ytmXuBB5lmWjfi_-htsgbrJ7sw42uUtVgGxAuGSfYoHwAYrs1g3eVwn4kqRAEvW4M0umoYpIVv7YbrAtQ7BVmsmd__A-0nn2-IBgFb0aGSuUMhkOibwWx8X2hsxSRIPPFrp02KNFBl0fp7iMQ81jpyi9aeBOK5AmTFH2shK7iNfcYOzOvAH7q_5KbNhwSHPnwCCfo5r2gC0IIjowKkSnZGtIrPEE2j4Q02M_mZl0pjvLVhRFwIQ8tMAv2Z6u_f4hhpUiJidsYGw1S9HOAMdQmeo1wCLNQ9H2mnJ2T49gYWYnAf2JNvC5EoHCdHXcCdwvduc88007xQt7jG6CUlmHyQ24FCw&sig=Cg0ArKJSzAyc4gKbXqxL&fbs_aeid=%5Bgw_fbsaeid%5D&adurl=https://ww55.affinity.net/sssdomweb%3Fenk%3Do%3Dbcg05:tsid%3D38615:u%3Daffinity-315.com:b%3D315:qld%3DNoReferer:pos%3D1:blid%3D0%26di%3D%7Bdevice_identifier%7D%26cid%3D%7Bclick_id%7D%26subid%3D%7Bsubid%7D%26qld%3D%7Bapp_domain%7D
+        - generic [ref=f1e146]:
+          - generic [ref=f1e148] [cursor=pointer]:
+            - checkbox "Free Cancellation Get full refund of your train fare on cancellation *" [ref=f1e150]
+            - generic [ref=f1e151]:
+              - paragraph [ref=f1e152]: Free Cancellation
+              - paragraph [ref=f1e153]: Get full refund of your train fare on cancellation *
+          - generic [ref=f1e154]:
+            - generic [ref=f1e155]:
+              - generic [ref=f1e156]:
+                - generic [ref=f1e157]: 11041Dr Snsi Exp
+                - generic [ref=f1e158]: "3.9"
+              - generic [ref=f1e169]:
+                - generic [ref=f1e170]:
+                  - generic [ref=f1e171]: 00:45 KYN
+                  - paragraph [ref=f1e175]: 2h 45m
+                  - generic [ref=f1e178]: 03:30 PUNE
+                - button "Schedule" [ref=f1e179] [cursor=pointer]
+            - generic [ref=f1e182]:
+              - generic [ref=f1e183] [cursor=pointer]:
+                - paragraph [ref=f1e184]: 21 mins ago
+                - generic [ref=f1e185]:
+                  - generic [ref=f1e186]:
+                    - generic [ref=f1e187]: SL
+                    - generic [ref=f1e188]: ₹150
+                  - generic [ref=f1e189]:
+                    - generic [ref=f1e190]: WL 43
+                    - generic [ref=f1e191]: 42% Chance
+              - generic [ref=f1e193] [cursor=pointer]:
+                - paragraph [ref=f1e194]: 28 mins ago
+                - generic [ref=f1e195]:
+                  - generic [ref=f1e196]:
+                    - generic [ref=f1e197]: SLTatkal
+                    - generic [ref=f1e198]: ₹385
+                  - generic [ref=f1e199]:
+                    - generic [ref=f1e200]: AVL 26
+                    - generic [ref=f1e201]: Available
+              - generic [ref=f1e203] [cursor=pointer]:
+                - paragraph [ref=f1e204]: 4 hrs ago
+                - generic [ref=f1e205]:
+                  - generic [ref=f1e206]:
+                    - generic [ref=f1e207]: 3A
+                    - generic [ref=f1e208]: ₹520
+                  - generic [ref=f1e209]:
+                    - paragraph [ref=f1e211]: WL 10
+                    - generic [ref=f1e213]:
+                      - paragraph [ref=f1e214]: Confirm or 3X Refund*
+                      - text: Waitlist
+              - generic [ref=f1e215] [cursor=pointer]:
+                - paragraph [ref=f1e216]: 6 hrs ago
+                - generic [ref=f1e217]:
+                  - generic [ref=f1e218]:
+                    - generic [ref=f1e219]: 3ATatkal
+                    - generic [ref=f1e220]: ₹1065
+                  - generic [ref=f1e221]:
+                    - generic [ref=f1e222]: AVL 25
+                    - generic [ref=f1e223]: Available
+              - generic [ref=f1e225] [cursor=pointer]:
+                - paragraph [ref=f1e226]: 1 day ago
+                - generic [ref=f1e227]:
+                  - generic [ref=f1e228]:
+                    - generic [ref=f1e229]: 2A
+                    - generic [ref=f1e230]: ₹725
+                  - generic [ref=f1e231]:
+                    - paragraph [ref=f1e233]: WL 6
+                    - generic [ref=f1e235]:
+                      - paragraph [ref=f1e236]: Confirm or 3X Refund*
+                      - text: Waitlist
+              - generic [ref=f1e237] [cursor=pointer]:
+                - paragraph [ref=f1e238]: 16 hrs ago
+                - generic [ref=f1e239]:
+                  - generic [ref=f1e240]:
+                    - generic [ref=f1e241]: 2ATatkal
+                    - generic [ref=f1e242]: ₹1475
+                  - generic [ref=f1e243]:
+                    - generic [ref=f1e244]: AVL 14
+                    - generic [ref=f1e245]: Available
+          - generic [ref=f1e255]:
+            - generic [ref=f1e256]:
+              - generic [ref=f1e257]:
+                - generic [ref=f1e258]: 22185Adi Pune Sf
+                - generic [ref=f1e259]: "4.3"
+              - generic [ref=f1e270]:
+                - generic [ref=f1e271]:
+                  - generic [ref=f1e272]: 04:25 KYN
+                  - paragraph [ref=f1e276]: 3h 5m
+                  - generic [ref=f1e279]: 07:30 PUNE
+                - button "Schedule" [ref=f1e280] [cursor=pointer]
+            - generic [ref=f1e283]:
+              - generic [ref=f1e284] [cursor=pointer]:
+                - paragraph [ref=f1e285]: 2 hrs ago
+                - generic [ref=f1e286]:
+                  - generic [ref=f1e287]:
+                    - generic [ref=f1e288]: SL
+                    - generic [ref=f1e289]: ₹180
+                  - generic [ref=f1e290]:
+                    - generic [ref=f1e291]: AVL 20
+                    - generic [ref=f1e292]: Available
+              - generic [ref=f1e294] [cursor=pointer]:
+                - paragraph [ref=f1e295]: 10 hrs ago
+                - generic [ref=f1e296]:
+                  - generic [ref=f1e297]:
+                    - generic [ref=f1e298]: 3A
+                    - generic [ref=f1e299]: ₹565
+                  - generic [ref=f1e300]:
+                    - generic [ref=f1e301]: AVL 15
+                    - generic [ref=f1e302]: Available
+              - generic [ref=f1e304] [cursor=pointer]:
+                - paragraph [ref=f1e305]: 1 day ago
+                - generic [ref=f1e306]:
+                  - generic [ref=f1e307]:
+                    - generic [ref=f1e308]: 2A
+                    - generic [ref=f1e309]: ₹770
+                  - generic [ref=f1e310]:
+                    - generic [ref=f1e311]: AVL 1
+                    - generic [ref=f1e312]: Available
+          - generic [ref=f1e315]:
+            - generic [ref=f1e316]:
+              - generic [ref=f1e317]:
+                - generic [ref=f1e318]: 22944Indb Daund Exp
+                - generic [ref=f1e319]: "3.7"
+              - generic [ref=f1e330]:
+                - generic [ref=f1e331]:
+                  - generic [ref=f1e332]: 04:35 BSR
+                  - paragraph [ref=f1e336]: 4h 15m
+                  - generic [ref=f1e339]: 08:50 PUNE
+                - button "Schedule" [ref=f1e340] [cursor=pointer]
+            - generic [ref=f1e343]:
+              - generic [ref=f1e344] [cursor=pointer]:
+                - paragraph [ref=f1e345]: 5 hrs ago
+                - generic [ref=f1e346]:
+                  - generic [ref=f1e347]:
+                    - generic [ref=f1e348]: SL
+                    - generic [ref=f1e349]: ₹180
+                  - generic [ref=f1e350]:
+                    - generic [ref=f1e351]: WL 35
+                    - generic [ref=f1e352]: 34% Chance
+              - generic [ref=f1e354] [cursor=pointer]:
+                - paragraph [ref=f1e355]: 3 hrs ago
+                - generic [ref=f1e356]:
+                  - generic [ref=f1e357]:
+                    - generic [ref=f1e358]: SLTatkal
+                    - generic [ref=f1e359]: ₹440
+                  - generic [ref=f1e360]: Not Available
+              - generic [ref=f1e362] [cursor=pointer]:
+                - paragraph [ref=f1e363]: 4 hrs ago
+                - generic [ref=f1e364]:
+                  - generic [ref=f1e365]:
+                    - generic [ref=f1e366]: 3A
+                    - generic [ref=f1e367]: ₹565
+                  - generic [ref=f1e368]:
+                    - paragraph [ref=f1e370]: WL 13
+                    - generic [ref=f1e372]:
+                      - paragraph [ref=f1e373]: Confirm or 3X Refund*
+                      - text: Waitlist
+              - generic [ref=f1e374] [cursor=pointer]:
+                - paragraph [ref=f1e375]: 7 hrs ago
+                - generic [ref=f1e376]:
+                  - generic [ref=f1e377]:
+                    - generic [ref=f1e378]: 3ATatkal
+                    - generic [ref=f1e379]: ₹1170
+                  - generic [ref=f1e380]: Not Available
+              - generic [ref=f1e382] [cursor=pointer]:
+                - paragraph [ref=f1e383]: 6 hrs ago
+                - generic [ref=f1e384]:
+                  - generic [ref=f1e385]:
+                    - generic [ref=f1e386]: 2A
+                    - generic [ref=f1e387]: ₹770
+                  - generic [ref=f1e388]:
+                    - paragraph [ref=f1e390]: WL 4
+                    - generic [ref=f1e392]:
+                      - paragraph [ref=f1e393]: Confirm or 3X Refund*
+                      - text: Waitlist
+              - generic [ref=f1e394] [cursor=pointer]:
+                - paragraph [ref=f1e395]: 7 hrs ago
+                - generic [ref=f1e396]:
+                  - generic [ref=f1e397]:
+                    - generic [ref=f1e398]: 2ATatkal
+                    - generic [ref=f1e399]: ₹1610
+                  - generic [ref=f1e400]: Not Available
+              - generic [ref=f1e402] [cursor=pointer]:
+                - paragraph [ref=f1e403]: 14 hrs ago
+                - generic [ref=f1e404]:
+                  - generic [ref=f1e405]:
+                    - generic [ref=f1e406]: 1A
+                    - generic [ref=f1e407]: ₹1270
+                  - generic [ref=f1e408]:
+                    - paragraph [ref=f1e410]: WL 2
+                    - generic [ref=f1e412]:
+                      - paragraph [ref=f1e413]: Confirm or 3X Refund*
+                      - text: Waitlist
+          - generic [ref=f1e415]:
+            - generic [ref=f1e416]:
+              - generic [ref=f1e417]:
+                - generic [ref=f1e418]: 22105Indrayani Exp
+                - generic [ref=f1e419]: "4.3"
+              - generic [ref=f1e430]:
+                - generic [ref=f1e431]:
+                  - generic [ref=f1e432]: 05:40 CSMT
+                  - paragraph [ref=f1e436]: 3h 25m
+                  - generic [ref=f1e439]: 09:05 PUNE
+                - button "Schedule" [ref=f1e440] [cursor=pointer]
+            - generic [ref=f1e443]:
+              - generic [ref=f1e444] [cursor=pointer]:
+                - paragraph [ref=f1e445]: 2 hrs ago
+                - generic [ref=f1e446]:
+                  - generic [ref=f1e447]:
+                    - generic [ref=f1e448]: 2S
+                    - generic [ref=f1e449]: ₹115
+                  - generic [ref=f1e450]:
+                    - paragraph [ref=f1e452]: WL 6
+                    - generic [ref=f1e454]:
+                      - paragraph [ref=f1e455]: Confirm or 3X Refund*
+                      - text: Waitlist
+              - generic [ref=f1e456] [cursor=pointer]:
+                - paragraph [ref=f1e457]: 3 hrs ago
+                - generic [ref=f1e458]:
+                  - generic [ref=f1e459]:
+                    - generic [ref=f1e460]: CC
+                    - generic [ref=f1e461]: ₹395
+                  - generic [ref=f1e462]:
+                    - generic [ref=f1e463]: WL 23
+                    - generic [ref=f1e464]: 36% Chance
+          - generic [ref=f1e467]:
+            - generic [ref=f1e468]:
+              - generic [ref=f1e469]:
+                - generic [ref=f1e470]: 12127Intercity Exp
+                - generic [ref=f1e471]: "4.4"
+              - generic [ref=f1e482]:
+                - generic [ref=f1e483]:
+                  - generic [ref=f1e484]: 06:40 CSMT
+                  - paragraph [ref=f1e488]: 3h 20m
+                  - generic [ref=f1e491]: 10:00 PUNE
+                - button "Schedule" [ref=f1e492] [cursor=pointer]
+            - generic [ref=f1e495]:
+              - generic [ref=f1e496] [cursor=pointer]:
+                - paragraph [ref=f1e497]: 7 mins ago
+                - generic [ref=f1e498]:
+                  - generic [ref=f1e499]:
+                    - generic [ref=f1e500]: 2S
+                    - generic [ref=f1e501]: ₹115
+                  - generic [ref=f1e502]:
+                    - generic [ref=f1e503]: AVL 123
+                    - generic [ref=f1e504]: Available
+              - generic [ref=f1e506] [cursor=pointer]:
+                - paragraph [ref=f1e507]: 7 mins ago
+                - generic [ref=f1e508]:
+                  - generic [ref=f1e509]:
+                    - generic [ref=f1e510]: CC
+                    - generic [ref=f1e511]: ₹395
+                  - generic [ref=f1e512]:
+                    - generic [ref=f1e513]: WL 23
+                    - generic [ref=f1e514]: 37% Chance
+              - generic [ref=f1e516] [cursor=pointer]:
+                - paragraph [ref=f1e517]: 7 mins ago
+                - generic [ref=f1e518]:
+                  - generic [ref=f1e519]:
+                    - generic [ref=f1e520]: CCTatkal
+                    - generic [ref=f1e521]: ₹525
+                  - generic [ref=f1e522]:
+                    - generic [ref=f1e523]: AVL 32
+                    - generic [ref=f1e524]: Available
+          - generic [ref=f1e527]:
+            - generic [ref=f1e528]:
+              - generic [ref=f1e529]:
+                - generic [ref=f1e530]: 18520Ltt Vskp Express
+                - generic [ref=f1e531]: "3.9"
+              - generic [ref=f1e542]:
+                - generic [ref=f1e543]:
+                  - generic [ref=f1e544]: 06:55 LTT
+                  - paragraph [ref=f1e548]: 3h 20m
+                  - generic [ref=f1e551]: 10:15 PUNE
+                - button "Schedule" [ref=f1e552] [cursor=pointer]
+            - generic [ref=f1e555]:
+              - generic [ref=f1e556] [cursor=pointer]:
+                - paragraph [ref=f1e557]: 2 hrs ago
+                - generic [ref=f1e558]:
+                  - generic [ref=f1e559]:
+                    - generic [ref=f1e560]: SL
+                    - generic [ref=f1e561]: ₹150
+                  - generic [ref=f1e562]:
+                    - paragraph [ref=f1e564]: WL 49
+                    - generic [ref=f1e566]:
+                      - paragraph [ref=f1e567]: Confirm or 3X Refund*
+                      - text: Waitlist
+              - generic [ref=f1e568] [cursor=pointer]:
+                - paragraph [ref=f1e569]: 1 hr ago
+                - generic [ref=f1e570]:
+                  - generic [ref=f1e571]:
+                    - generic [ref=f1e572]: 3A
+                    - generic [ref=f1e573]: ₹520
+                  - generic [ref=f1e574]:
+                    - generic [ref=f1e575]: AVL 41
+                    - generic [ref=f1e576]: Available
+              - generic [ref=f1e578] [cursor=pointer]:
+                - paragraph [ref=f1e579]: 4 hrs ago
+                - generic [ref=f1e580]:
+                  - generic [ref=f1e581]:
+                    - generic [ref=f1e582]: 2A
+                    - generic [ref=f1e583]: ₹725
+                  - generic [ref=f1e584]:
+                    - paragraph [ref=f1e586]: WL 20
+                    - generic [ref=f1e588]:
+                      - paragraph [ref=f1e589]: Confirm or 3X Refund*
+                      - text: Waitlist
+              - generic [ref=f1e590] [cursor=pointer]:
+                - paragraph [ref=f1e591]: 6 hrs ago
+                - generic [ref=f1e592]:
+                  - generic [ref=f1e593]:
+                    - generic [ref=f1e594]: 1A
+                    - generic [ref=f1e595]: ₹1190
+                  - generic [ref=f1e596]:
+                    - generic [ref=f1e597]: AVL 4
+                    - generic [ref=f1e598]: Available
+          - generic [ref=f1e601]:
+            - generic [ref=f1e602]:
+              - generic [ref=f1e603]:
+                - generic [ref=f1e604]: 11007Deccan Express
+                - generic [ref=f1e605]: "4.4"
+              - generic [ref=f1e616]:
+                - generic [ref=f1e617]:
+                  - generic [ref=f1e618]: 07:00 CSMT
+                  - paragraph [ref=f1e622]: 4h 5m
+                  - generic [ref=f1e625]: 11:05 PUNE
+                - button "Schedule" [ref=f1e626] [cursor=pointer]
+            - generic [ref=f1e629]:
+              - generic [ref=f1e630] [cursor=pointer]:
+                - paragraph [ref=f1e631]: 41 mins ago
+                - generic [ref=f1e632]:
+                  - generic [ref=f1e633]:
+                    - generic [ref=f1e634]: 2S
+                    - generic [ref=f1e635]: ₹100
+                  - generic [ref=f1e636]:
+                    - paragraph [ref=f1e638]: WL 6
+                    - generic [ref=f1e640]:
+                      - paragraph [ref=f1e641]: Confirm or 3X Refund*
+                      - text: Waitlist
+              - generic [ref=f1e642] [cursor=pointer]:
+                - paragraph [ref=f1e643]: 33 mins ago
+                - generic [ref=f1e644]:
+                  - generic [ref=f1e645]:
+                    - generic [ref=f1e646]: CC
+                    - generic [ref=f1e647]: ₹345
+                  - generic [ref=f1e648]:
+                    - generic [ref=f1e649]: WL 30
+                    - generic [ref=f1e650]: Low Chance
+              - generic [ref=f1e652] [cursor=pointer]:
+                - paragraph [ref=f1e653]: 2 hrs ago
+                - generic [ref=f1e654]:
+                  - generic [ref=f1e655]:
+                    - generic [ref=f1e656]: EV
+                    - generic [ref=f1e657]: ₹920
+                  - generic [ref=f1e658]:
+                    - paragraph [ref=f1e660]: WL 4
+                    - generic [ref=f1e662]:
+                      - paragraph [ref=f1e663]: Confirm or 3X Refund*
+                      - text: Waitlist
+          - generic [ref=f1e665]:
+            - generic [ref=f1e666]:
+              - generic [ref=f1e667]:
+                - generic [ref=f1e668]: 11301Udyan Express
+                - generic [ref=f1e669]: "4.0"
+              - generic [ref=f1e680]:
+                - generic [ref=f1e681]:
+                  - generic [ref=f1e682]: 07:55 CSMT
+                  - paragraph [ref=f1e686]: 3h 45m
+                  - generic [ref=f1e689]: 11:40 PUNE
+                - button "Schedule" [ref=f1e690] [cursor=pointer]
+            - generic [ref=f1e693]:
+              - generic [ref=f1e694] [cursor=pointer]:
+                - paragraph [ref=f1e695]: 2 hrs ago
+                - generic [ref=f1e696]:
+                  - generic [ref=f1e697]:
+                    - generic [ref=f1e698]: SL
+                    - generic [ref=f1e699]: ₹150
+                  - generic [ref=f1e700]:
+                    - paragraph [ref=f1e702]: WL 37
+                    - generic [ref=f1e704]:
+                      - paragraph [ref=f1e705]: Confirm or 3X Refund*
+                      - text: Waitlist
+              - generic [ref=f1e706] [cursor=pointer]:
+                - paragraph [ref=f1e707]: 5 hrs ago
+                - generic [ref=f1e708]:
+                  - generic [ref=f1e709]:
+                    - generic [ref=f1e710]: 3E
+                    - generic [ref=f1e711]: ₹520
+                  - generic [ref=f1e712]:
+                    - paragraph [ref=f1e714]: WL 8
+                    - generic [ref=f1e716]:
+                      - paragraph [ref=f1e717]: Confirm or 3X Refund*
+                      - text: Waitlist
+              - generic [ref=f1e718] [cursor=pointer]:
+                - paragraph [ref=f1e719]: 2 hrs ago
+                - generic [ref=f1e720]:
+                  - generic [ref=f1e721]:
+                    - generic [ref=f1e722]: 3A
+                    - generic [ref=f1e723]: ₹520
+                  - generic [ref=f1e724]:
+                    - generic [ref=f1e725]: WL 18
+                    - generic [ref=f1e726]: 41% Chance
+              - generic [ref=f1e728] [cursor=pointer]:
+                - paragraph [ref=f1e729]: 2 hrs ago
+                - generic [ref=f1e730]:
+                  - generic [ref=f1e731]:
+                    - generic [ref=f1e732]: 2A
+                    - generic [ref=f1e733]: ₹725
+                  - generic [ref=f1e734]:
+                    - paragraph [ref=f1e736]: WL 17
+                    - generic [ref=f1e738]:
+                      - paragraph [ref=f1e739]: Confirm or 3X Refund*
+                      - text: Waitlist
+              - generic [ref=f1e740] [cursor=pointer]:
+                - paragraph [ref=f1e741]: 1 hr ago
+                - generic [ref=f1e742]:
+                  - generic [ref=f1e743]:
+                    - generic [ref=f1e744]: 1A
+                    - generic [ref=f1e745]: ₹1190
+                  - generic [ref=f1e746]:
+                    - generic [ref=f1e747]: AVL 1
+                    - generic [ref=f1e748]: Available
+          - generic [ref=f1e751]:
+            - generic [ref=f1e752]:
+              - generic [ref=f1e753]:
+                - generic [ref=f1e754]: 11029Koyna Express
+                - generic [ref=f1e755]: "3.9"
+              - generic [ref=f1e766]:
+                - generic [ref=f1e767]:
+                  - generic [ref=f1e768]: 08:40 CSMT
+                  - paragraph [ref=f1e772]: 3h 55m
+                  - generic [ref=f1e775]: 12:35 PUNE
+                - button "Schedule" [ref=f1e776] [cursor=pointer]
+            - generic [ref=f1e779]:
+              - generic [ref=f1e780] [cursor=pointer]:
+                - paragraph [ref=f1e781]: 5 hrs ago
+                - generic [ref=f1e782]:
+                  - generic [ref=f1e783]:
+                    - generic [ref=f1e784]: 2S
+                    - generic [ref=f1e785]: ₹100
+                  - generic [ref=f1e786]:
+                    - generic [ref=f1e787]: WL 42
+                    - generic [ref=f1e788]: 50% Chance
+              - generic [ref=f1e790] [cursor=pointer]:
+                - paragraph [ref=f1e791]: 2 hrs ago
+                - generic [ref=f1e792]:
+                  - generic [ref=f1e793]:
+                    - generic [ref=f1e794]: SL
+                    - generic [ref=f1e795]: ₹150
+                  - generic [ref=f1e796]:
+                    - paragraph [ref=f1e798]: WL 13
+                    - generic [ref=f1e800]:
+                      - paragraph [ref=f1e801]: Confirm or 3X Refund*
+                      - text: Waitlist
+              - generic [ref=f1e802] [cursor=pointer]:
+                - paragraph [ref=f1e803]: 7 hrs ago
+                - generic [ref=f1e804]:
+                  - generic [ref=f1e805]:
+                    - generic [ref=f1e806]: CC
+                    - generic [ref=f1e807]: ₹345
+                  - generic [ref=f1e808]:
+                    - paragraph [ref=f1e810]: WL 18
+                    - generic [ref=f1e812]:
+                      - paragraph [ref=f1e813]: Confirm or 3X Refund*
+                      - text: Waitlist
+              - generic [ref=f1e814] [cursor=pointer]:
+                - paragraph [ref=f1e815]: 2 hrs ago
+                - generic [ref=f1e816]:
+                  - generic [ref=f1e817]:
+                    - generic [ref=f1e818]: 3A
+                    - generic [ref=f1e819]: ₹520
+                  - generic [ref=f1e820]:
+                    - paragraph [ref=f1e822]: WL 8
+                    - generic [ref=f1e824]:
+                      - paragraph [ref=f1e825]: Confirm or 3X Refund*
+                      - text: Waitlist
+              - generic [ref=f1e826] [cursor=pointer]:
+                - paragraph [ref=f1e827]: 2 hrs ago
+                - generic [ref=f1e828]:
+                  - generic [ref=f1e829]:
+                    - generic [ref=f1e830]: 2A
+                    - generic [ref=f1e831]: ₹725
+                  - generic [ref=f1e832]:
+                    - paragraph [ref=f1e834]: WL 2
+                    - generic [ref=f1e836]:
+                      - paragraph [ref=f1e837]: Confirm or 3X Refund*
+                      - text: Waitlist
+              - generic [ref=f1e838] [cursor=pointer]:
+                - paragraph [ref=f1e839]: 2 hrs ago
+                - generic [ref=f1e840]:
+                  - generic [ref=f1e841]:
+                    - generic [ref=f1e842]: 1A
+                    - generic [ref=f1e843]: ₹1190
+                  - generic [ref=f1e844]:
+                    - paragraph [ref=f1e846]: WL 6
+                    - generic [ref=f1e848]:
+                      - paragraph [ref=f1e849]: Confirm or 3X Refund*
+                      - text: Waitlist
+          - generic [ref=f1e851]:
+            - generic [ref=f1e852]:
+              - generic [ref=f1e853]:
+                - generic [ref=f1e854]: 20495Ju Hdp Sf Exp
+                - generic [ref=f1e855]: "4.3"
+              - generic [ref=f1e866]:
+                - generic [ref=f1e867]:
+                  - generic [ref=f1e868]: 12:22 BSR
+                  - paragraph [ref=f1e872]: 4h 18m
+                  - generic [ref=f1e875]: 16:40 PUNE
+                - button "Schedule" [ref=f1e876] [cursor=pointer]
+            - generic [ref=f1e879]:
+              - generic [ref=f1e880] [cursor=pointer]:
+                - paragraph [ref=f1e881]: 4 hrs ago
+                - generic [ref=f1e882]:
+                  - generic [ref=f1e883]:
+                    - generic [ref=f1e884]: SL
+                    - generic [ref=f1e885]: ₹180
+                  - generic [ref=f1e886]:
+                    - generic [ref=f1e887]: WL 34
+                    - generic [ref=f1e888]: 32% Chance
+              - generic [ref=f1e890] [cursor=pointer]:
+                - paragraph [ref=f1e891]: 3 hrs ago
+                - generic [ref=f1e892]:
+                  - generic [ref=f1e893]:
+                    - generic [ref=f1e894]: SLTatkal
+                    - generic [ref=f1e895]: ₹440
+                  - generic [ref=f1e896]: Not Available
+              - generic [ref=f1e898] [cursor=pointer]:
+                - paragraph [ref=f1e899]: 4 hrs ago
+                - generic [ref=f1e900]:
+                  - generic [ref=f1e901]:
+                    - generic [ref=f1e902]: 3E
+                    - generic [ref=f1e903]: ₹565
+                  - generic [ref=f1e904]:
+                    - generic [ref=f1e905]: WL 11
+                    - generic [ref=f1e906]: 42% Chance
+              - generic [ref=f1e908] [cursor=pointer]:
+                - paragraph [ref=f1e909]: 6 hrs ago
+                - generic [ref=f1e910]:
+                  - generic [ref=f1e911]:
+                    - generic [ref=f1e912]: 3ETatkal
+                    - generic [ref=f1e913]: ₹1110
+                  - generic [ref=f1e914]:
+                    - generic [ref=f1e915]: AVL 1
+                    - generic [ref=f1e916]: Available
+              - generic [ref=f1e918] [cursor=pointer]:
+                - paragraph [ref=f1e919]: 4 hrs ago
+                - generic [ref=f1e920]:
+                  - generic [ref=f1e921]:
+                    - generic [ref=f1e922]: 3A
+                    - generic [ref=f1e923]: ₹565
+                  - generic [ref=f1e924]:
+                    - generic [ref=f1e925]: WL 18
+                    - generic [ref=f1e926]: 41% Chance
+              - generic [ref=f1e928] [cursor=pointer]:
+                - paragraph [ref=f1e929]: 10 hrs ago
+                - generic [ref=f1e930]:
+                  - generic [ref=f1e931]:
+                    - generic [ref=f1e932]: 3ATatkal
+                    - generic [ref=f1e933]: ₹1170
+                  - generic [ref=f1e934]: Not Available
+              - generic [ref=f1e936] [cursor=pointer]:
+                - paragraph [ref=f1e937]: 17 hrs ago
+                - generic [ref=f1e938]:
+                  - generic [ref=f1e939]:
+                    - generic [ref=f1e940]: 2A
+                    - generic [ref=f1e941]: ₹770
+                  - generic [ref=f1e942]:
+                    - paragraph [ref=f1e944]: WL 12
+                    - generic [ref=f1e946]:
+                      - paragraph [ref=f1e947]: Confirm or 3X Refund*
+                      - text: Waitlist
+          - generic [ref=f1e949]:
+            - generic [ref=f1e950]:
+              - generic [ref=f1e951]:
+                - generic [ref=f1e952]: 22159Csmt Chennai Exp
+                - generic [ref=f1e953]: "4.1"
+              - generic [ref=f1e964]:
+                - generic [ref=f1e965]:
+                  - generic [ref=f1e966]: 12:45 CSMT
+                  - paragraph [ref=f1e970]: 3h 35m
+                  - generic [ref=f1e973]: 16:20 PUNE
+                - button "Schedule" [ref=f1e974] [cursor=pointer]
+            - generic [ref=f1e977]:
+              - generic [ref=f1e978] [cursor=pointer]:
+                - paragraph [ref=f1e979]: 2 hrs ago
+                - generic [ref=f1e980]:
+                  - generic [ref=f1e981]:
+                    - generic [ref=f1e982]: SL
+                    - generic [ref=f1e983]: ₹180
+                  - generic [ref=f1e984]:
+                    - paragraph [ref=f1e986]: WL 42
+                    - generic [ref=f1e988]:
+                      - paragraph [ref=f1e989]: Confirm or 3X Refund*
+                      - text: Waitlist
+              - generic [ref=f1e990] [cursor=pointer]:
+                - paragraph [ref=f1e991]: 8 hrs ago
+                - generic [ref=f1e992]:
+                  - generic [ref=f1e993]:
+                    - generic [ref=f1e994]: 3E
+                    - generic [ref=f1e995]: ₹565
+                  - generic [ref=f1e996]:
+                    - paragraph [ref=f1e998]: WL 23
+                    - generic [ref=f1e1000]:
+                      - paragraph [ref=f1e1001]: Confirm or 3X Refund*
+                      - text: Waitlist
+              - generic [ref=f1e1002] [cursor=pointer]:
+                - paragraph [ref=f1e1003]: 29 mins ago
+                - generic [ref=f1e1004]:
+                  - generic [ref=f1e1005]:
+                    - generic [ref=f1e1006]: 2A
+                    - generic [ref=f1e1007]: ₹770
+                  - generic [ref=f1e1008]:
+                    - paragraph [ref=f1e1010]: WL 12
+                    - generic [ref=f1e1012]:
+                      - paragraph [ref=f1e1013]: Confirm or 3X Refund*
+                      - text: Waitlist
+          - generic [ref=f1e1015]:
+            - generic [ref=f1e1016]:
+              - generic [ref=f1e1017]:
+                - generic [ref=f1e1018]: 20991Aii Dd Superfast
+                - generic [ref=f1e1019]: "4.3"
+              - generic [ref=f1e1030]:
+                - generic [ref=f1e1031]:
+                  - generic [ref=f1e1032]: 13:05 BSR
+                  - paragraph [ref=f1e1036]: 3h 45m
+                  - generic [ref=f1e1039]: 16:50 PUNE
+                - button "Schedule" [ref=f1e1040] [cursor=pointer]
+            - generic [ref=f1e1043]:
+              - generic [ref=f1e1044] [cursor=pointer]:
+                - paragraph [ref=f1e1045]: 4 hrs ago
+                - generic [ref=f1e1046]:
+                  - generic [ref=f1e1047]:
+                    - generic [ref=f1e1048]: SL
+                    - generic [ref=f1e1049]: ₹180
+                  - generic [ref=f1e1050]:
+                    - paragraph [ref=f1e1052]: WL 35
+                    - generic [ref=f1e1054]:
+                      - paragraph [ref=f1e1055]: Confirm or 3X Refund*
+                      - text: Waitlist
+              - generic [ref=f1e1056] [cursor=pointer]:
+                - paragraph [ref=f1e1057]: 4 hrs ago
+                - generic [ref=f1e1058]:
+                  - generic [ref=f1e1059]:
+                    - generic [ref=f1e1060]: SLTatkal
+                    - generic [ref=f1e1061]: ₹440
+                  - generic [ref=f1e1062]:
+                    - generic [ref=f1e1063]: AVL 23
+                    - generic [ref=f1e1064]: Available
+              - generic [ref=f1e1066] [cursor=pointer]:
+                - paragraph [ref=f1e1067]: 7 hrs ago
+                - generic [ref=f1e1068]:
+                  - generic [ref=f1e1069]:
+                    - generic [ref=f1e1070]: 3A
+                    - generic [ref=f1e1071]: ₹565
+                  - generic [ref=f1e1072]:
+                    - paragraph [ref=f1e1074]: WL 18
+                    - generic [ref=f1e1076]:
+                      - paragraph [ref=f1e1077]: Confirm or 3X Refund*
+                      - text: Waitlist
+              - generic [ref=f1e1078] [cursor=pointer]:
+                - paragraph [ref=f1e1079]: 5 days ago
+                - generic [ref=f1e1080]:
+                  - generic [ref=f1e1081]:
+                    - generic [ref=f1e1082]: 2A
+                    - generic [ref=f1e1083]: ₹770
+                  - generic [ref=f1e1084]:
+                    - paragraph [ref=f1e1086]: WL 19
+                    - generic [ref=f1e1088]:
+                      - paragraph [ref=f1e1089]: Confirm or 3X Refund*
+                      - text: Waitlist
+          - generic [ref=f1e1091]:
+            - generic [ref=f1e1092]:
+              - generic [ref=f1e1093]:
+                - generic [ref=f1e1094]: 14806Bme Ypr Ac Exp
+                - generic [ref=f1e1095]: "4.2"
+              - generic [ref=f1e1106]:
+                - generic [ref=f1e1107]:
+                  - generic [ref=f1e1108]: 13:50 BSR
+                  - paragraph [ref=f1e1112]: 5h 5m
+                  - generic [ref=f1e1115]: 18:55 PUNE
+                - button "Schedule" [ref=f1e1116] [cursor=pointer]
+            - generic [ref=f1e1119]:
+              - generic [ref=f1e1120] [cursor=pointer]:
+                - paragraph [ref=f1e1121]: 12 hrs ago
+                - generic [ref=f1e1122]:
+                  - generic [ref=f1e1123]:
+                    - generic [ref=f1e1124]: 3A
+                    - generic [ref=f1e1125]: ₹520
+                  - generic [ref=f1e1126]:
+                    - paragraph [ref=f1e1128]: WL 21
+                    - generic [ref=f1e1130]:
+                      - paragraph [ref=f1e1131]: Confirm or 3X Refund*
+                      - text: Waitlist
+              - generic [ref=f1e1132] [cursor=pointer]:
+                - paragraph [ref=f1e1133]: 3 days ago
+                - generic [ref=f1e1134]:
+                  - generic [ref=f1e1135]:
+                    - generic [ref=f1e1136]: 2A
+                    - generic [ref=f1e1137]: ₹725
+                  - generic [ref=f1e1138]:
+                    - paragraph [ref=f1e1140]: WL 7
+                    - generic [ref=f1e1142]:
+                      - paragraph [ref=f1e1143]: Confirm or 3X Refund*
+                      - text: Waitlist
+              - generic [ref=f1e1144] [cursor=pointer]:
+                - paragraph [ref=f1e1145]: 8 days ago
+                - generic [ref=f1e1146]:
+                  - generic [ref=f1e1147]:
+                    - generic [ref=f1e1148]: 1A
+                    - generic [ref=f1e1149]: ₹1190
+                  - generic [ref=f1e1150]:
+                    - paragraph [ref=f1e1152]: WL 1
+                    - generic [ref=f1e1154]:
+                      - paragraph [ref=f1e1155]: Confirm or 3X Refund*
+                      - text: Waitlist
+          - generic [ref=f1e1157]:
+            - generic [ref=f1e1158]:
+              - generic [ref=f1e1159]:
+                - generic [ref=f1e1160]: 11019Konark Express
+                - generic [ref=f1e1161]: "3.7"
+              - generic [ref=f1e1172]:
+                - generic [ref=f1e1173]:
+                  - generic [ref=f1e1174]: 14:00 CSMT
+                  - paragraph [ref=f1e1178]: 3h 55m
+                  - generic [ref=f1e1181]: 17:55 PUNE
+                - button "Schedule" [ref=f1e1182] [cursor=pointer]
+            - generic [ref=f1e1185]:
+              - generic [ref=f1e1186] [cursor=pointer]:
+                - paragraph [ref=f1e1187]: 2 hrs ago
+                - generic [ref=f1e1188]:
+                  - generic [ref=f1e1189]:
+                    - generic [ref=f1e1190]: SL
+                    - generic [ref=f1e1191]: ₹150
+                  - generic [ref=f1e1192]:
+                    - generic [ref=f1e1193]: WL 76
+                    - generic [ref=f1e1194]: Low Chance
+              - generic [ref=f1e1196] [cursor=pointer]:
+                - paragraph [ref=f1e1197]: 6 hrs ago
+                - generic [ref=f1e1198]:
+                  - generic [ref=f1e1199]:
+                    - generic [ref=f1e1200]: 3A
+                    - generic [ref=f1e1201]: ₹520
+                  - generic [ref=f1e1202]:
+                    - generic [ref=f1e1203]: AVL 25
+                    - generic [ref=f1e1204]: Available
+              - generic [ref=f1e1206] [cursor=pointer]:
+                - paragraph [ref=f1e1207]: 9 hrs ago
+                - generic [ref=f1e1208]:
+                  - generic [ref=f1e1209]:
+                    - generic [ref=f1e1210]: 2A
+                    - generic [ref=f1e1211]: ₹725
+                  - generic [ref=f1e1212]:
+                    - generic [ref=f1e1213]: AVL 2
+                    - generic [ref=f1e1214]: Available
+          - generic [ref=f1e1217]:
+            - generic [ref=f1e1218]:
+              - generic [ref=f1e1219]:
+                - generic [ref=f1e1220]: 22732Hyderabad Exp
+                - generic [ref=f1e1221]: "4.3"
+              - generic [ref=f1e1232]:
+                - generic [ref=f1e1233]:
+                  - generic [ref=f1e1234]: 14:10 CSMT
+                  - paragraph [ref=f1e1238]: 3h 55m
+                  - generic [ref=f1e1241]: 18:05 PUNE
+                - button "Schedule" [ref=f1e1242] [cursor=pointer]
+            - generic [ref=f1e1245]:
+              - generic [ref=f1e1246] [cursor=pointer]:
+                - paragraph [ref=f1e1247]: 2 hrs ago
+                - generic [ref=f1e1248]:
+                  - generic [ref=f1e1249]:
+                    - generic [ref=f1e1250]: SL
+                    - generic [ref=f1e1251]: ₹180
+                  - generic [ref=f1e1252]:
+                    - paragraph [ref=f1e1254]: WL 25
+                    - generic [ref=f1e1256]:
+                      - paragraph [ref=f1e1257]: Confirm or 3X Refund*
+                      - text: Waitlist
+              - generic [ref=f1e1258] [cursor=pointer]:
+                - paragraph [ref=f1e1259]: 2 hrs ago
+                - generic [ref=f1e1260]:
+                  - generic [ref=f1e1261]:
+                    - generic [ref=f1e1262]: 3A
+                    - generic [ref=f1e1263]: ₹565
+                  - generic [ref=f1e1264]:
+                    - generic [ref=f1e1265]: AVL 20
+                    - generic [ref=f1e1266]: Available
+              - generic [ref=f1e1268] [cursor=pointer]:
+                - paragraph [ref=f1e1269]: 9 hrs ago
+                - generic [ref=f1e1270]:
+                  - generic [ref=f1e1271]:
+                    - generic [ref=f1e1272]: 2A
+                    - generic [ref=f1e1273]: ₹770
+                  - generic [ref=f1e1274]:
+                    - generic [ref=f1e1275]: AVL 4
+                    - generic [ref=f1e1276]: Available
+          - generic [ref=f1e1279]:
+            - generic [ref=f1e1280]:
+              - generic [ref=f1e1281]:
+                - generic [ref=f1e1282]: 17613Pnvl Ned Express
+                - generic [ref=f1e1283]: "4.1"
+              - generic [ref=f1e1294]:
+                - generic [ref=f1e1295]:
+                  - generic [ref=f1e1296]: 16:00 PNVL
+                  - paragraph [ref=f1e1300]: 3h 15m
+                  - generic [ref=f1e1303]: 19:15 PUNE
+                - button "Schedule" [ref=f1e1304] [cursor=pointer]
+            - generic [ref=f1e1307]:
+              - generic [ref=f1e1308] [cursor=pointer]:
+                - paragraph [ref=f1e1309]: 4 mins ago
+                - generic [ref=f1e1310]:
+                  - generic [ref=f1e1311]:
+                    - generic [ref=f1e1312]: SL
+                    - generic [ref=f1e1313]: ₹150
+                  - generic [ref=f1e1314]:
+                    - paragraph [ref=f1e1316]: WL 46
+                    - generic [ref=f1e1318]:
+                      - paragraph [ref=f1e1319]: Confirm or 3X Refund*
+                      - text: Waitlist
+              - generic [ref=f1e1320] [cursor=pointer]:
+                - paragraph [ref=f1e1321]: 2 hrs ago
+                - generic [ref=f1e1322]:
+                  - generic [ref=f1e1323]:
+                    - generic [ref=f1e1324]: 3A
+                    - generic [ref=f1e1325]: ₹520
+                  - generic [ref=f1e1326]:
+                    - generic [ref=f1e1327]: AVL 55
+                    - generic [ref=f1e1328]: Available
+              - generic [ref=f1e1330] [cursor=pointer]:
+                - paragraph [ref=f1e1331]: 16 hrs ago
+                - generic [ref=f1e1332]:
+                  - generic [ref=f1e1333]:
+                    - generic [ref=f1e1334]: 2A
+                    - generic [ref=f1e1335]: ₹725
+                  - generic [ref=f1e1336]:
+                    - generic [ref=f1e1337]: AVL 14
+                    - generic [ref=f1e1338]: Available
+          - generic [ref=f1e1341]:
+            - generic [ref=f1e1342]:
+              - generic [ref=f1e1343]:
+                - generic [ref=f1e1344]: 22225Sur Vande Bharat
+                - generic [ref=f1e1345]: "4.3"
+              - generic [ref=f1e1356]:
+                - generic [ref=f1e1357]:
+                  - generic [ref=f1e1358]: 16:05 CSMT
+                  - paragraph [ref=f1e1362]: 3h 5m
+                  - generic [ref=f1e1365]: 19:10 PUNE
+                - button "Schedule" [ref=f1e1366] [cursor=pointer]
+            - generic [ref=f1e1369]:
+              - generic [ref=f1e1370] [cursor=pointer]:
+                - paragraph [ref=f1e1371]: 2 hrs ago
+                - generic [ref=f1e1372]:
+                  - generic [ref=f1e1373]:
+                    - generic [ref=f1e1374]: CC
+                    - generic [ref=f1e1375]: ₹665
+                  - generic [ref=f1e1376]:
+                    - generic [ref=f1e1377]: AVL 398
+                    - generic [ref=f1e1378]: Available
+              - generic [ref=f1e1380] [cursor=pointer]:
+                - paragraph [ref=f1e1381]: 1 hr ago
+                - generic [ref=f1e1382]:
+                  - generic [ref=f1e1383]:
+                    - generic [ref=f1e1384]: EC
+                    - generic [ref=f1e1385]: ₹1280
+                  - generic [ref=f1e1386]:
+                    - paragraph [ref=f1e1388]: WL 3
+                    - generic [ref=f1e1390]:
+                      - paragraph [ref=f1e1391]: Confirm or 3X Refund*
+                      - text: Waitlist
+          - generic [ref=f1e1393]:
+            - generic [ref=f1e1394]:
+              - generic [ref=f1e1395]:
+                - generic [ref=f1e1396]: 12125Pragati Express
+                - generic [ref=f1e1397]: "4.3"
+              - generic [ref=f1e1408]:
+                - generic [ref=f1e1409]:
+                  - generic [ref=f1e1410]: 16:25 CSMT
+                  - paragraph [ref=f1e1414]: 3h 25m
+                  - generic [ref=f1e1417]: 19:50 PUNE
+                - button "Schedule" [ref=f1e1418] [cursor=pointer]
+            - generic [ref=f1e1421]:
+              - generic [ref=f1e1422] [cursor=pointer]:
+                - paragraph [ref=f1e1423]: 2 hrs ago
+                - generic [ref=f1e1424]:
+                  - generic [ref=f1e1425]:
+                    - generic [ref=f1e1426]: 2S
+                    - generic [ref=f1e1427]: ₹110
+                  - generic [ref=f1e1428]:
+                    - generic [ref=f1e1429]: WL 43
+                    - generic [ref=f1e1430]: 68% Chance
+              - generic [ref=f1e1432] [cursor=pointer]:
+                - paragraph [ref=f1e1433]: 1 hr ago
+                - generic [ref=f1e1434]:
+                  - generic [ref=f1e1435]:
+                    - generic [ref=f1e1436]: CC
+                    - generic [ref=f1e1437]: ₹390
+                  - generic [ref=f1e1438]:
+                    - paragraph [ref=f1e1440]: WL 14
+                    - generic [ref=f1e1442]:
+                      - paragraph [ref=f1e1443]: Confirm or 3X Refund*
+                      - text: Waitlist
+              - generic [ref=f1e1444] [cursor=pointer]:
+                - paragraph [ref=f1e1445]: 2 hrs ago
+                - generic [ref=f1e1446]:
+                  - generic [ref=f1e1447]:
+                    - generic [ref=f1e1448]: EV
+                    - generic [ref=f1e1449]: ₹980
+                  - generic [ref=f1e1450]:
+                    - generic [ref=f1e1451]: AVL 18
+                    - generic [ref=f1e1452]: Available
+          - generic [ref=f1e1455]:
+            - generic [ref=f1e1456]:
+              - generic [ref=f1e1457]:
+                - generic [ref=f1e1458]: 19568Vivek Express
+                - generic [ref=f1e1459]: "4.0"
+              - generic [ref=f1e1470]:
+                - generic [ref=f1e1471]:
+                  - generic [ref=f1e1472]: 16:40 BSR
+                  - paragraph [ref=f1e1476]: 4h 30m
+                  - generic [ref=f1e1479]: 21:10 PUNE
+                - button "Schedule" [ref=f1e1480] [cursor=pointer]
+            - generic [ref=f1e1483]:
+              - generic [ref=f1e1484] [cursor=pointer]:
+                - paragraph [ref=f1e1485]: 1 hr ago
+                - generic [ref=f1e1486]:
+                  - generic [ref=f1e1487]:
+                    - generic [ref=f1e1488]: SL
+                    - generic [ref=f1e1489]: ₹150
+                  - generic [ref=f1e1490]:
+                    - generic [ref=f1e1491]: WL 63
+                    - generic [ref=f1e1492]: 32% Chance
+              - generic [ref=f1e1494] [cursor=pointer]:
+                - paragraph [ref=f1e1495]: 10 hrs ago
+                - generic [ref=f1e1496]:
+                  - generic [ref=f1e1497]:
+                    - generic [ref=f1e1498]: 3E
+                    - generic [ref=f1e1499]: ₹520
+                  - generic [ref=f1e1500]:
+                    - generic [ref=f1e1501]: WL 24
+                    - generic [ref=f1e1502]: Low Chance
+              - generic [ref=f1e1504] [cursor=pointer]:
+                - paragraph [ref=f1e1505]: 7 hrs ago
+                - generic [ref=f1e1506]:
+                  - generic [ref=f1e1507]:
+                    - generic [ref=f1e1508]: 3A
+                    - generic [ref=f1e1509]: ₹520
+                  - generic [ref=f1e1510]:
+                    - generic [ref=f1e1511]: Regret
+                    - generic [ref=f1e1512]: No more booking
+              - generic [ref=f1e1514] [cursor=pointer]:
+                - paragraph [ref=f1e1515]: 20 hrs ago
+                - generic [ref=f1e1516]:
+                  - generic [ref=f1e1517]:
+                    - generic [ref=f1e1518]: 2A
+                    - generic [ref=f1e1519]: ₹725
+                  - generic [ref=f1e1520]:
+                    - generic [ref=f1e1521]: Regret
+                    - generic [ref=f1e1522]: No more booking
+          - generic [ref=f1e1525]:
+            - generic [ref=f1e1526]:
+              - generic [ref=f1e1527]:
+                - generic [ref=f1e1528]: 12123Deccan Queen
+                - generic [ref=f1e1529]: "4.1"
+              - generic [ref=f1e1540]:
+                - generic [ref=f1e1541]:
+                  - generic [ref=f1e1542]: 17:10 CSMT
+                  - paragraph [ref=f1e1546]: 3h 15m
+                  - generic [ref=f1e1549]: 20:25 PUNE
+                - button "Schedule" [ref=f1e1550] [cursor=pointer]
+            - generic [ref=f1e1553]:
+              - generic [ref=f1e1554] [cursor=pointer]:
+                - paragraph [ref=f1e1555]: 3 hrs ago
+                - generic [ref=f1e1556]:
+                  - generic [ref=f1e1557]:
+                    - generic [ref=f1e1558]: 2S
+                    - generic [ref=f1e1559]: ₹115
+                  - generic [ref=f1e1560]:
+                    - generic [ref=f1e1561]: WL 42
+                    - generic [ref=f1e1562]: Low Chance
+              - generic [ref=f1e1564] [cursor=pointer]:
+                - paragraph [ref=f1e1565]: 24 mins ago
+                - generic [ref=f1e1566]:
+                  - generic [ref=f1e1567]:
+                    - generic [ref=f1e1568]: 2STatkal
+                    - generic [ref=f1e1569]: ₹125
+                  - generic [ref=f1e1570]:
+                    - generic [ref=f1e1571]: AVL 44
+                    - generic [ref=f1e1572]: Available
+              - generic [ref=f1e1574] [cursor=pointer]:
+                - paragraph [ref=f1e1575]: 4 hrs ago
+                - generic [ref=f1e1576]:
+                  - generic [ref=f1e1577]:
+                    - generic [ref=f1e1578]: CC
+                    - generic [ref=f1e1579]: ₹395
+                  - generic [ref=f1e1580]:
+                    - paragraph [ref=f1e1582]: WL 25
+                    - generic [ref=f1e1584]:
+                      - paragraph [ref=f1e1585]: Confirm or 3X Refund*
+                      - text: Waitlist
+              - generic [ref=f1e1586] [cursor=pointer]:
+                - paragraph [ref=f1e1587]: 24 mins ago
+                - generic [ref=f1e1588]:
+                  - generic [ref=f1e1589]:
+                    - generic [ref=f1e1590]: CCTatkal
+                    - generic [ref=f1e1591]: ₹525
+                  - generic [ref=f1e1592]:
+                    - generic [ref=f1e1593]: AVL 46
+                    - generic [ref=f1e1594]: Available
+              - generic [ref=f1e1596] [cursor=pointer]:
+                - paragraph [ref=f1e1597]: 1 hr ago
+                - generic [ref=f1e1598]:
+                  - generic [ref=f1e1599]:
+                    - generic [ref=f1e1600]: EV
+                    - generic [ref=f1e1601]: ₹1000
+                  - generic [ref=f1e1602]:
+                    - paragraph [ref=f1e1604]: WL 1
+                    - generic [ref=f1e1606]:
+                      - paragraph [ref=f1e1607]: Confirm or 3X Refund*
+                      - text: Waitlist
+          - generic [ref=f1e1609]:
+            - generic [ref=f1e1610]:
+              - generic [ref=f1e1611]:
+                - generic [ref=f1e1612]: 11009Sinhagad Exp
+                - generic [ref=f1e1613]: "4.2"
+              - generic [ref=f1e1624]:
+                - generic [ref=f1e1625]:
+                  - generic [ref=f1e1626]: 17:50 CSMT
+                  - paragraph [ref=f1e1630]: 4h 0m
+                  - generic [ref=f1e1633]: 21:50 PUNE
+                - button "Schedule" [ref=f1e1634] [cursor=pointer]
+            - generic [ref=f1e1637]:
+              - generic [ref=f1e1638] [cursor=pointer]:
+                - paragraph [ref=f1e1639]: 3 hrs ago
+                - generic [ref=f1e1640]:
+                  - generic [ref=f1e1641]:
+                    - generic [ref=f1e1642]: 2S
+                    - generic [ref=f1e1643]: ₹100
+                  - generic [ref=f1e1644]:
+                    - generic [ref=f1e1645]: WL 87
+                    - generic [ref=f1e1646]: 37% Chance
+              - generic [ref=f1e1648] [cursor=pointer]:
+                - paragraph [ref=f1e1649]: 17 mins ago
+                - generic [ref=f1e1650]:
+                  - generic [ref=f1e1651]:
+                    - generic [ref=f1e1652]: CC
+                    - generic [ref=f1e1653]: ₹345
+                  - generic [ref=f1e1654]:
+                    - generic [ref=f1e1655]: WL 36
+                    - generic [ref=f1e1656]: Low Chance
+          - generic [ref=f1e1659]:
+            - generic [ref=f1e1660]:
+              - generic [ref=f1e1661]:
+                - generic [ref=f1e1662]: 12163Ltt Mas Exp
+                - generic [ref=f1e1663]: "4.1"
+              - generic [ref=f1e1674]:
+                - generic [ref=f1e1675]:
+                  - generic [ref=f1e1676]: 18:30 LTT
+                  - paragraph [ref=f1e1680]: 3h 35m
+                  - generic [ref=f1e1683]: 22:05 PUNE
+                - button "Schedule" [ref=f1e1684] [cursor=pointer]
+            - generic [ref=f1e1687]:
+              - generic [ref=f1e1688] [cursor=pointer]:
+                - paragraph [ref=f1e1689]: 10 mins ago
+                - generic [ref=f1e1690]:
+                  - generic [ref=f1e1691]:
+                    - generic [ref=f1e1692]: SL
+                    - generic [ref=f1e1693]: ₹180
+                  - generic [ref=f1e1694]:
+                    - paragraph [ref=f1e1696]: WL 59
+                    - generic [ref=f1e1698]:
+                      - paragraph [ref=f1e1699]: Confirm or 3X Refund*
+                      - text: Waitlist
+              - generic [ref=f1e1700] [cursor=pointer]:
+                - paragraph [ref=f1e1701]: 10 mins ago
+                - generic [ref=f1e1702]:
+                  - generic [ref=f1e1703]:
+                    - generic [ref=f1e1704]: 3A
+                    - generic [ref=f1e1705]: ₹565
+                  - generic [ref=f1e1706]:
+                    - paragraph [ref=f1e1708]: WL 28
+                    - generic [ref=f1e1710]:
+                      - paragraph [ref=f1e1711]: Confirm or 3X Refund*
+                      - text: Waitlist
+              - generic [ref=f1e1712] [cursor=pointer]:
+                - paragraph [ref=f1e1713]: 10 mins ago
+                - generic [ref=f1e1714]:
+                  - generic [ref=f1e1715]:
+                    - generic [ref=f1e1716]: 2A
+                    - generic [ref=f1e1717]: ₹770
+                  - generic [ref=f1e1718]:
+                    - paragraph [ref=f1e1720]: WL 14
+                    - generic [ref=f1e1722]:
+                      - paragraph [ref=f1e1723]: Confirm or 3X Refund*
+                      - text: Waitlist
+          - generic [ref=f1e1725]:
+            - generic [ref=f1e1726]:
+              - generic [ref=f1e1727]:
+                - generic [ref=f1e1728]: 17318Dr Hubballi Exp
+                - generic [ref=f1e1729]: "4.0"
+              - generic [ref=f1e1740]:
+                - generic [ref=f1e1741]:
+                  - generic [ref=f1e1742]: 20:05 DR
+                  - paragraph [ref=f1e1746]: 3h 56m
+                  - generic [ref=f1e1749]: 00:01 PUNE
+                - button "Schedule" [ref=f1e1750] [cursor=pointer]
+            - generic [ref=f1e1753]:
+              - generic [ref=f1e1754] [cursor=pointer]:
+                - paragraph [ref=f1e1755]: 5 hrs ago
+                - generic [ref=f1e1756]:
+                  - generic [ref=f1e1757]:
+                    - generic [ref=f1e1758]: SL
+                    - generic [ref=f1e1759]: ₹150
+                  - generic [ref=f1e1760]:
+                    - generic [ref=f1e1761]: WL 99
+                    - generic [ref=f1e1762]: Low Chance
+              - generic [ref=f1e1764] [cursor=pointer]:
+                - paragraph [ref=f1e1765]: 3 hrs ago
+                - generic [ref=f1e1766]:
+                  - generic [ref=f1e1767]:
+                    - generic [ref=f1e1768]: 3A
+                    - generic [ref=f1e1769]: ₹520
+                  - generic [ref=f1e1770]:
+                    - paragraph [ref=f1e1772]: WL 30
+                    - generic [ref=f1e1774]:
+                      - paragraph [ref=f1e1775]: Confirm or 3X Refund*
+                      - text: Waitlist
+              - generic [ref=f1e1776] [cursor=pointer]:
+                - paragraph [ref=f1e1777]: 13 hrs ago
+                - generic [ref=f1e1778]:
+                  - generic [ref=f1e1779]:
+                    - generic [ref=f1e1780]: 2A
+                    - generic [ref=f1e1781]: ₹725
+                  - generic [ref=f1e1782]:
+                    - paragraph [ref=f1e1784]: WL 17
+                    - generic [ref=f1e1786]:
+                      - paragraph [ref=f1e1787]: Confirm or 3X Refund*
+                      - text: Waitlist
+              - generic [ref=f1e1788] [cursor=pointer]:
+                - paragraph [ref=f1e1789]: 6 hrs ago
+                - generic [ref=f1e1790]:
+                  - generic [ref=f1e1791]:
+                    - generic [ref=f1e1792]: 1A
+                    - generic [ref=f1e1793]: ₹1190
+                  - generic [ref=f1e1794]: Not Available
+          - generic [ref=f1e1797]:
+            - generic [ref=f1e1798]:
+              - generic [ref=f1e1799]:
+                - generic [ref=f1e1800]: 17411Mahalaxmi Exp
+                - generic [ref=f1e1801]: "3.9"
+              - generic [ref=f1e1812]:
+                - generic [ref=f1e1813]:
+                  - generic [ref=f1e1814]: 20:15 CSMT
+                  - paragraph [ref=f1e1818]: 3h 55m
+                  - generic [ref=f1e1821]: 00:10 PUNE
+                - button "Schedule" [ref=f1e1822] [cursor=pointer]
+            - generic [ref=f1e1825]:
+              - generic [ref=f1e1826] [cursor=pointer]:
+                - paragraph [ref=f1e1827]: 3 hrs ago
+                - generic [ref=f1e1828]:
+                  - generic [ref=f1e1829]:
+                    - generic [ref=f1e1830]: SL
+                    - generic [ref=f1e1831]: ₹150
+                  - generic [ref=f1e1832]:
+                    - paragraph [ref=f1e1834]: WL 88
+                    - generic [ref=f1e1836]:
+                      - paragraph [ref=f1e1837]: Confirm or 3X Refund*
+                      - text: Waitlist
+              - generic [ref=f1e1838] [cursor=pointer]:
+                - paragraph [ref=f1e1839]: 4 hrs ago
+                - generic [ref=f1e1840]:
+                  - generic [ref=f1e1841]:
+                    - generic [ref=f1e1842]: 3E
+                    - generic [ref=f1e1843]: ₹520
+                  - generic [ref=f1e1844]:
+                    - paragraph [ref=f1e1846]: WL 35
+                    - generic [ref=f1e1848]:
+                      - paragraph [ref=f1e1849]: Confirm or 3X Refund*
+                      - text: Waitlist
+              - generic [ref=f1e1850] [cursor=pointer]:
+                - paragraph [ref=f1e1851]: 7 hrs ago
+                - generic [ref=f1e1852]:
+                  - generic [ref=f1e1853]:
+                    - generic [ref=f1e1854]: 3A
+                    - generic [ref=f1e1855]: ₹520
+                  - generic [ref=f1e1856]:
+                    - generic [ref=f1e1857]: Regret
+                    - generic [ref=f1e1858]: No more booking
+              - generic [ref=f1e1860] [cursor=pointer]:
+                - paragraph [ref=f1e1861]: 7 hrs ago
+                - generic [ref=f1e1862]:
+                  - generic [ref=f1e1863]:
+                    - generic [ref=f1e1864]: 2A
+                    - generic [ref=f1e1865]: ₹725
+                  - generic [ref=f1e1866]:
+                    - paragraph [ref=f1e1868]: WL 33
+                    - generic [ref=f1e1870]:
+                      - paragraph [ref=f1e1871]: Confirm or 3X Refund*
+                      - text: Waitlist
+              - generic [ref=f1e1872] [cursor=pointer]:
+                - paragraph [ref=f1e1873]: 10 hrs ago
+                - generic [ref=f1e1874]:
+                  - generic [ref=f1e1875]:
+                    - generic [ref=f1e1876]: 1A
+                    - generic [ref=f1e1877]: ₹1190
+                  - generic [ref=f1e1878]:
+                    - paragraph [ref=f1e1880]: WL 8
+                    - generic [ref=f1e1882]:
+                      - paragraph [ref=f1e1883]: Confirm or 3X Refund*
+                      - text: Waitlist
+          - generic [ref=f1e1885]:
+            - generic [ref=f1e1886]:
+              - generic [ref=f1e1887]:
+                - generic [ref=f1e1888]: 16351Nagarcoil Exp
+                - generic [ref=f1e1889]: "3.8"
+              - generic [ref=f1e1900]:
+                - generic [ref=f1e1901]:
+                  - generic [ref=f1e1902]: 20:55 LTT
+                  - paragraph [ref=f1e1906]: 3h 20m
+                  - generic [ref=f1e1909]: 00:15 PUNE
+                - button "Schedule" [ref=f1e1910] [cursor=pointer]
+            - generic [ref=f1e1913]:
+              - generic [ref=f1e1914] [cursor=pointer]:
+                - paragraph [ref=f1e1915]: 5 hrs ago
+                - generic [ref=f1e1916]:
+                  - generic [ref=f1e1917]:
+                    - generic [ref=f1e1918]: SL
+                    - generic [ref=f1e1919]: ₹150
+                  - generic [ref=f1e1920]:
+                    - generic [ref=f1e1921]: WL 70
+                    - generic [ref=f1e1922]: 43% Chance
+              - generic [ref=f1e1924] [cursor=pointer]:
+                - paragraph [ref=f1e1925]: 4 hrs ago
+                - generic [ref=f1e1926]:
+                  - generic [ref=f1e1927]:
+                    - generic [ref=f1e1928]: 3A
+                    - generic [ref=f1e1929]: ₹520
+                  - generic [ref=f1e1930]:
+                    - paragraph [ref=f1e1932]: WL 24
+                    - generic [ref=f1e1934]:
+                      - paragraph [ref=f1e1935]: Confirm or 3X Refund*
+                      - text: Waitlist
+              - generic [ref=f1e1936] [cursor=pointer]:
+                - paragraph [ref=f1e1937]: 2 days ago
+                - generic [ref=f1e1938]:
+                  - generic [ref=f1e1939]:
+                    - generic [ref=f1e1940]: 2A
+                    - generic [ref=f1e1941]: ₹725
+                  - generic [ref=f1e1942]:
+                    - generic [ref=f1e1943]: AVL 1
+                    - generic [ref=f1e1944]: Available
+          - generic [ref=f1e1947]:
+            - generic [ref=f1e1948]:
+              - generic [ref=f1e1949]:
+                - generic [ref=f1e1950]: 22143Csmt Bidar Exp
+                - generic [ref=f1e1951]: "4.1"
+              - generic [ref=f1e1962]:
+                - generic [ref=f1e1963]:
+                  - generic [ref=f1e1964]: 21:00 CSMT
+                  - paragraph [ref=f1e1968]: 3h 30m
+                  - generic [ref=f1e1971]: 00:30 PUNE
+                - button "Schedule" [ref=f1e1972] [cursor=pointer]
+            - generic [ref=f1e1975]:
+              - generic [ref=f1e1976] [cursor=pointer]:
+                - paragraph [ref=f1e1977]: 3 hrs ago
+                - generic [ref=f1e1978]:
+                  - generic [ref=f1e1979]:
+                    - generic [ref=f1e1980]: SL
+                    - generic [ref=f1e1981]: ₹180
+                  - generic [ref=f1e1982]:
+                    - generic [ref=f1e1983]: WL 99
+                    - generic [ref=f1e1984]: Low Chance
+              - generic [ref=f1e1986] [cursor=pointer]:
+                - paragraph [ref=f1e1987]: 4 hrs ago
+                - generic [ref=f1e1988]:
+                  - generic [ref=f1e1989]:
+                    - generic [ref=f1e1990]: 3A
+                    - generic [ref=f1e1991]: ₹565
+                  - generic [ref=f1e1992]:
+                    - generic [ref=f1e1993]: AVL 15
+                    - generic [ref=f1e1994]: Available
+              - generic [ref=f1e1996] [cursor=pointer]:
+                - paragraph [ref=f1e1997]: 1 day ago
+                - generic [ref=f1e1998]:
+                  - generic [ref=f1e1999]:
+                    - generic [ref=f1e2000]: 2A
+                    - generic [ref=f1e2001]: ₹770
+                  - generic [ref=f1e2002]:
+                    - paragraph [ref=f1e2004]: WL 24
+                    - generic [ref=f1e2006]:
+                      - paragraph [ref=f1e2007]: Confirm or 3X Refund*
+                      - text: Waitlist
+              - generic [ref=f1e2008] [cursor=pointer]:
+                - paragraph [ref=f1e2009]: 1 day ago
+                - generic [ref=f1e2010]:
+                  - generic [ref=f1e2011]:
+                    - generic [ref=f1e2012]: 1A
+                    - generic [ref=f1e2013]: ₹1270
+                  - generic [ref=f1e2014]:
+                    - paragraph [ref=f1e2016]: WL 9
+                    - generic [ref=f1e2018]:
+                      - paragraph [ref=f1e2019]: Confirm or 3X Refund*
+                      - text: Waitlist
+          - generic [ref=f1e2021]:
+            - generic [ref=f1e2022]:
+              - generic [ref=f1e2023]:
+                - generic [ref=f1e2024]: 11139Csmt Hpt Exp
+                - generic [ref=f1e2025]: "4.0"
+              - generic [ref=f1e2036]:
+                - generic [ref=f1e2037]:
+                  - generic [ref=f1e2038]: 21:20 CSMT
+                  - paragraph [ref=f1e2042]: 3h 45m
+                  - generic [ref=f1e2045]: 01:05 PUNE
+                - button "Schedule" [ref=f1e2046] [cursor=pointer]
+            - generic [ref=f1e2049]:
+              - generic [ref=f1e2050] [cursor=pointer]:
+                - paragraph [ref=f1e2051]: 4 hrs ago
+                - generic [ref=f1e2052]:
+                  - generic [ref=f1e2053]:
+                    - generic [ref=f1e2054]: SL
+                    - generic [ref=f1e2055]: ₹180
+                  - generic [ref=f1e2056]:
+                    - generic [ref=f1e2057]: WL 68
+                    - generic [ref=f1e2058]: 34% Chance
+              - generic [ref=f1e2060] [cursor=pointer]:
+                - paragraph [ref=f1e2061]: 6 hrs ago
+                - generic [ref=f1e2062]:
+                  - generic [ref=f1e2063]:
+                    - generic [ref=f1e2064]: CC
+                    - generic [ref=f1e2065]: ₹395
+                  - generic [ref=f1e2066]:
+                    - paragraph [ref=f1e2068]: WL 20
+                    - generic [ref=f1e2070]:
+                      - paragraph [ref=f1e2071]: Confirm or 3X Refund*
+                      - text: Waitlist
+              - generic [ref=f1e2072] [cursor=pointer]:
+                - paragraph [ref=f1e2073]: 6 hrs ago
+                - generic [ref=f1e2074]:
+                  - generic [ref=f1e2075]:
+                    - generic [ref=f1e2076]: 3A
+                    - generic [ref=f1e2077]: ₹565
+                  - generic [ref=f1e2078]:
+                    - generic [ref=f1e2079]: AVL 10
+                    - generic [ref=f1e2080]: Available
+              - generic [ref=f1e2082] [cursor=pointer]:
+                - paragraph [ref=f1e2083]: 1 day ago
+                - generic [ref=f1e2084]:
+                  - generic [ref=f1e2085]:
+                    - generic [ref=f1e2086]: 2A
+                    - generic [ref=f1e2087]: ₹770
+                  - generic [ref=f1e2088]:
+                    - generic [ref=f1e2089]: Regret
+                    - generic [ref=f1e2090]: No more booking
+              - generic [ref=f1e2092] [cursor=pointer]:
+                - paragraph [ref=f1e2093]: 5 days ago
+                - generic [ref=f1e2094]:
+                  - generic [ref=f1e2095]:
+                    - generic [ref=f1e2096]: 1A
+                    - generic [ref=f1e2097]: ₹1270
+                  - generic [ref=f1e2098]:
+                    - paragraph [ref=f1e2100]: WL 8
+                    - generic [ref=f1e2102]:
+                      - paragraph [ref=f1e2103]: Confirm or 3X Refund*
+                      - text: Waitlist
+          - generic [ref=f1e2105]:
+            - generic [ref=f1e2106]:
+              - generic [ref=f1e2107]:
+                - generic [ref=f1e2108]: 16209Aii Mys Exp
+                - generic [ref=f1e2109]: "4.0"
+              - generic [ref=f1e2120]:
+                - generic [ref=f1e2121]:
+                  - generic [ref=f1e2122]: 21:25 BSR
+                  - paragraph [ref=f1e2126]: 4h 20m
+                  - generic [ref=f1e2129]: 01:45 PUNE
+                - button "Schedule" [ref=f1e2130] [cursor=pointer]
+            - generic [ref=f1e2133]:
+              - generic [ref=f1e2134] [cursor=pointer]:
+                - paragraph [ref=f1e2135]: Just now
+                - generic [ref=f1e2136]:
+                  - generic [ref=f1e2137]:
+                    - generic [ref=f1e2138]: SL
+                    - generic [ref=f1e2139]: ₹150
+                  - generic [ref=f1e2140]:
+                    - generic [ref=f1e2141]: WL 48
+                    - generic [ref=f1e2142]: Low Chance
+              - generic [ref=f1e2144] [cursor=pointer]:
+                - paragraph [ref=f1e2145]: 1 day ago
+                - generic [ref=f1e2146]:
+                  - generic [ref=f1e2147]:
+                    - generic [ref=f1e2148]: 3A
+                    - generic [ref=f1e2149]: ₹520
+                  - generic [ref=f1e2150]:
+                    - generic [ref=f1e2151]: WL 30
+                    - generic [ref=f1e2152]: 38% Chance
+              - generic [ref=f1e2154] [cursor=pointer]:
+                - paragraph [ref=f1e2155]: 2 days ago
+                - generic [ref=f1e2156]:
+                  - generic [ref=f1e2157]:
+                    - generic [ref=f1e2158]: 2A
+                    - generic [ref=f1e2159]: ₹725
+                  - generic [ref=f1e2160]:
+                    - paragraph [ref=f1e2162]: WL 13
+                    - generic [ref=f1e2164]:
+                      - paragraph [ref=f1e2165]: Confirm or 3X Refund*
+                      - text: Waitlist
+              - generic [ref=f1e2166] [cursor=pointer]:
+                - paragraph [ref=f1e2167]: 4 days ago
+                - generic [ref=f1e2168]:
+                  - generic [ref=f1e2169]:
+                    - generic [ref=f1e2170]: 1A
+                    - generic [ref=f1e2171]: ₹1190
+                  - generic [ref=f1e2172]:
+                    - generic [ref=f1e2173]: Regret
+                    - generic [ref=f1e2174]: No more booking
+          - generic [ref=f1e2177]:
+            - generic [ref=f1e2178]:
+              - generic [ref=f1e2179]:
+                - generic [ref=f1e2180]: 11005Puducherry Exp
+                - generic [ref=f1e2181]: "4.1"
+              - generic [ref=f1e2192]:
+                - generic [ref=f1e2193]:
+                  - generic [ref=f1e2194]: 21:30 DR
+                  - paragraph [ref=f1e2198]: 3h 25m
+                  - generic [ref=f1e2201]: 00:55 PUNE
+                - button "Schedule" [ref=f1e2202] [cursor=pointer]
+            - generic [ref=f1e2205]:
+              - generic [ref=f1e2206] [cursor=pointer]:
+                - paragraph [ref=f1e2207]: 6 hrs ago
+                - generic [ref=f1e2208]:
+                  - generic [ref=f1e2209]:
+                    - generic [ref=f1e2210]: SL
+                    - generic [ref=f1e2211]: ₹150
+                  - generic [ref=f1e2212]:
+                    - generic [ref=f1e2213]: WL 75
+                    - generic [ref=f1e2214]: 35% Chance
+              - generic [ref=f1e2216] [cursor=pointer]:
+                - paragraph [ref=f1e2217]: 2 hrs ago
+                - generic [ref=f1e2218]:
+                  - generic [ref=f1e2219]:
+                    - generic [ref=f1e2220]: 3A
+                    - generic [ref=f1e2221]: ₹520
+                  - generic [ref=f1e2222]:
+                    - paragraph [ref=f1e2224]: WL 28
+                    - generic [ref=f1e2226]:
+                      - paragraph [ref=f1e2227]: Confirm or 3X Refund*
+                      - text: Waitlist
+              - generic [ref=f1e2228] [cursor=pointer]:
+                - paragraph [ref=f1e2229]: 2 days ago
+                - generic [ref=f1e2230]:
+                  - generic [ref=f1e2231]:
+                    - generic [ref=f1e2232]: 2A
+                    - generic [ref=f1e2233]: ₹725
+                  - generic [ref=f1e2234]:
+                    - generic [ref=f1e2235]: AVL 1
+                    - generic [ref=f1e2236]: Available
+          - generic [ref=f1e2239]:
+            - generic [ref=f1e2240]:
+              - generic [ref=f1e2241]:
+                - generic [ref=f1e2242]: 12701Hussainsagar Exp
+                - generic [ref=f1e2243]: "4.1"
+              - generic [ref=f1e2254]:
+                - generic [ref=f1e2255]:
+                  - generic [ref=f1e2256]: 21:50 CSMT
+                  - paragraph [ref=f1e2260]: 3h 30m
+                  - generic [ref=f1e2263]: 01:20 PUNE
+                - button "Schedule" [ref=f1e2264] [cursor=pointer]
+            - generic [ref=f1e2267]:
+              - generic [ref=f1e2268] [cursor=pointer]:
+                - paragraph [ref=f1e2269]: 2 hrs ago
+                - generic [ref=f1e2270]:
+                  - generic [ref=f1e2271]:
+                    - generic [ref=f1e2272]: SL
+                    - generic [ref=f1e2273]: ₹180
+                  - generic [ref=f1e2274]:
+                    - paragraph [ref=f1e2276]: WL 62
+                    - generic [ref=f1e2278]:
+                      - paragraph [ref=f1e2279]: Confirm or 3X Refund*
+                      - text: Waitlist
+              - generic [ref=f1e2280] [cursor=pointer]:
+                - paragraph [ref=f1e2281]: 4 hrs ago
+                - generic [ref=f1e2282]:
+                  - generic [ref=f1e2283]:
+                    - generic [ref=f1e2284]: 3A
+                    - generic [ref=f1e2285]: ₹565
+                  - generic [ref=f1e2286]:
+                    - generic [ref=f1e2287]: AVL 8
+                    - generic [ref=f1e2288]: Available
+              - generic [ref=f1e2290] [cursor=pointer]:
+                - paragraph [ref=f1e2291]: 3 hrs ago
+                - generic [ref=f1e2292]:
+                  - generic [ref=f1e2293]:
+                    - generic [ref=f1e2294]: 2A
+                    - generic [ref=f1e2295]: ₹770
+                  - generic [ref=f1e2296]:
+                    - generic [ref=f1e2297]: AVL 1
+                    - generic [ref=f1e2298]: Available
+          - generic [ref=f1e2301]:
+            - generic [ref=f1e2302]:
+              - generic [ref=f1e2303]:
+                - generic [ref=f1e2304]: 11013Ltt Cbe Express
+                - generic [ref=f1e2305]: "4.0"
+              - generic [ref=f1e2316]:
+                - generic [ref=f1e2317]:
+                  - generic [ref=f1e2318]: 22:35 LTT
+                  - paragraph [ref=f1e2322]: 3h 15m
+                  - generic [ref=f1e2325]: 01:50 PUNE
+                - button "Schedule" [ref=f1e2326] [cursor=pointer]
+            - generic [ref=f1e2329]:
+              - generic [ref=f1e2330] [cursor=pointer]:
+                - paragraph [ref=f1e2331]: 3 hrs ago
+                - generic [ref=f1e2332]:
+                  - generic [ref=f1e2333]:
+                    - generic [ref=f1e2334]: SL
+                    - generic [ref=f1e2335]: ₹150
+                  - generic [ref=f1e2336]:
+                    - generic [ref=f1e2337]: WL 53
+                    - generic [ref=f1e2338]: 36% Chance
+              - generic [ref=f1e2340] [cursor=pointer]:
+                - paragraph [ref=f1e2341]: 2 mins ago
+                - generic [ref=f1e2342]:
+                  - generic [ref=f1e2343]:
+                    - generic [ref=f1e2344]: 3A
+                    - generic [ref=f1e2345]: ₹520
+                  - generic [ref=f1e2346]:
+                    - generic [ref=f1e2347]: AVL 15
+                    - generic [ref=f1e2348]: Available
+              - generic [ref=f1e2350] [cursor=pointer]:
+                - paragraph [ref=f1e2351]: 1 day ago
+                - generic [ref=f1e2352]:
+                  - generic [ref=f1e2353]:
+                    - generic [ref=f1e2354]: 2A
+                    - generic [ref=f1e2355]: ₹725
+                  - generic [ref=f1e2356]:
+                    - generic [ref=f1e2357]: AVL 3
+                    - generic [ref=f1e2358]: Available
+              - generic [ref=f1e2360] [cursor=pointer]:
+                - paragraph [ref=f1e2361]: 3 days ago
+                - generic [ref=f1e2362]:
+                  - generic [ref=f1e2363]:
+                    - generic [ref=f1e2364]: 1A
+                    - generic [ref=f1e2365]: ₹1190
+                  - generic [ref=f1e2366]:
+                    - generic [ref=f1e2367]: AVL 2
+                    - generic [ref=f1e2368]: Available
+          - generic [ref=f1e2371]:
+            - generic [ref=f1e2372]:
+              - generic [ref=f1e2373]:
+                - generic [ref=f1e2374]: 12115Siddheshwar Exp
+                - generic [ref=f1e2375]: "4.1"
+              - generic [ref=f1e2386]:
+                - generic [ref=f1e2387]:
+                  - generic [ref=f1e2388]: 22:40 CSMT
+                  - paragraph [ref=f1e2392]: 3h 35m
+                  - generic [ref=f1e2395]: 02:15 PUNE
+                - button "Schedule" [ref=f1e2396] [cursor=pointer]
+            - generic [ref=f1e2399]:
+              - generic [ref=f1e2400] [cursor=pointer]:
+                - paragraph [ref=f1e2401]: 2 hrs ago
+                - generic [ref=f1e2402]:
+                  - generic [ref=f1e2403]:
+                    - generic [ref=f1e2404]: SL
+                    - generic [ref=f1e2405]: ₹180
+                  - generic [ref=f1e2406]:
+                    - generic [ref=f1e2407]: WL 75
+                    - generic [ref=f1e2408]: 40% Chance
+              - generic [ref=f1e2410] [cursor=pointer]:
+                - paragraph [ref=f1e2411]: 3 hrs ago
+                - generic [ref=f1e2412]:
+                  - generic [ref=f1e2413]:
+                    - generic [ref=f1e2414]: 3E
+                    - generic [ref=f1e2415]: ₹565
+                  - generic [ref=f1e2416]:
+                    - generic [ref=f1e2417]: WL 28
+                    - generic [ref=f1e2418]: 43% Chance
+              - generic [ref=f1e2420] [cursor=pointer]:
+                - paragraph [ref=f1e2421]: 5 hrs ago
+                - generic [ref=f1e2422]:
+                  - generic [ref=f1e2423]:
+                    - generic [ref=f1e2424]: 3A
+                    - generic [ref=f1e2425]: ₹565
+                  - generic [ref=f1e2426]:
+                    - paragraph [ref=f1e2428]: WL 48
+                    - generic [ref=f1e2430]:
+                      - paragraph [ref=f1e2431]: Confirm or 3X Refund*
+                      - text: Waitlist
+              - generic [ref=f1e2432] [cursor=pointer]:
+                - paragraph [ref=f1e2433]: 5 hrs ago
+                - generic [ref=f1e2434]:
+                  - generic [ref=f1e2435]:
+                    - generic [ref=f1e2436]: 2A
+                    - generic [ref=f1e2437]: ₹770
+                  - generic [ref=f1e2438]:
+                    - paragraph [ref=f1e2440]: WL 28
+                    - generic [ref=f1e2442]:
+                      - paragraph [ref=f1e2443]: Confirm or 3X Refund*
+                      - text: Waitlist
+              - generic [ref=f1e2444] [cursor=pointer]:
+                - paragraph [ref=f1e2445]: 5 hrs ago
+                - generic [ref=f1e2446]:
+                  - generic [ref=f1e2447]:
+                    - generic [ref=f1e2448]: 1A
+                    - generic [ref=f1e2449]: ₹1270
+                  - generic [ref=f1e2450]:
+                    - paragraph [ref=f1e2452]: WL 8
+                    - generic [ref=f1e2454]:
+                      - paragraph [ref=f1e2455]: Confirm or 3X Refund*
+                      - text: Waitlist
+          - generic [ref=f1e2457]:
+            - generic [ref=f1e2458]:
+              - generic [ref=f1e2459]:
+                - generic [ref=f1e2460]: 22157Csmt Ms Sf Mail
+                - generic [ref=f1e2461]: "4.2"
+              - generic [ref=f1e2472]:
+                - generic [ref=f1e2473]:
+                  - generic [ref=f1e2474]: 22:52 CSMT
+                  - paragraph [ref=f1e2478]: 3h 58m
+                  - generic [ref=f1e2481]: 02:50 PUNE
+                - button "Schedule" [ref=f1e2482] [cursor=pointer]
+            - generic [ref=f1e2485]:
+              - generic [ref=f1e2486] [cursor=pointer]:
+                - paragraph [ref=f1e2487]: 2 hrs ago
+                - generic [ref=f1e2488]:
+                  - generic [ref=f1e2489]:
+                    - generic [ref=f1e2490]: SL
+                    - generic [ref=f1e2491]: ₹180
+                  - generic [ref=f1e2492]:
+                    - paragraph [ref=f1e2494]: WL 77
+                    - generic [ref=f1e2496]:
+                      - paragraph [ref=f1e2497]: Confirm or 3X Refund*
+                      - text: Waitlist
+              - generic [ref=f1e2498] [cursor=pointer]:
+                - paragraph [ref=f1e2499]: 2 hrs ago
+                - generic [ref=f1e2500]:
+                  - generic [ref=f1e2501]:
+                    - generic [ref=f1e2502]: 3A
+                    - generic [ref=f1e2503]: ₹565
+                  - generic [ref=f1e2504]:
+                    - paragraph [ref=f1e2506]: WL 44
+                    - generic [ref=f1e2508]:
+                      - paragraph [ref=f1e2509]: Confirm or 3X Refund*
+                      - text: Waitlist
+              - generic [ref=f1e2510] [cursor=pointer]:
+                - paragraph [ref=f1e2511]: 5 hrs ago
+                - generic [ref=f1e2512]:
+                  - generic [ref=f1e2513]:
+                    - generic [ref=f1e2514]: 2A
+                    - generic [ref=f1e2515]: ₹770
+                  - generic [ref=f1e2516]:
+                    - generic [ref=f1e2517]: AVL 5
+                    - generic [ref=f1e2518]: Available
+          - generic [ref=f1e2521]:
+            - generic [ref=f1e2522]:
+              - generic [ref=f1e2523]:
+                - generic [ref=f1e2524]: 11027Dr Satara Exp
+                - generic [ref=f1e2525]: "3.8"
+              - generic [ref=f1e2536]:
+                - generic [ref=f1e2537]:
+                  - generic [ref=f1e2538]: 23:55 DR
+                  - paragraph [ref=f1e2542]: 3h 35m
+                  - generic [ref=f1e2545]: 03:30 PUNE
+                - button "Schedule" [ref=f1e2546] [cursor=pointer]
+            - generic [ref=f1e2549]:
+              - generic [ref=f1e2550] [cursor=pointer]:
+                - paragraph [ref=f1e2551]: 3 hrs ago
+                - generic [ref=f1e2552]:
+                  - generic [ref=f1e2553]:
+                    - generic [ref=f1e2554]: SL
+                    - generic [ref=f1e2555]: ₹150
+                  - generic [ref=f1e2556]:
+                    - generic [ref=f1e2557]: WL 94
+                    - generic [ref=f1e2558]: 36% Chance
+              - generic [ref=f1e2560] [cursor=pointer]:
+                - paragraph [ref=f1e2561]: 2 hrs ago
+                - generic [ref=f1e2562]:
+                  - generic [ref=f1e2563]:
+                    - generic [ref=f1e2564]: 3A
+                    - generic [ref=f1e2565]: ₹520
+                  - generic [ref=f1e2566]:
+                    - paragraph [ref=f1e2568]: WL 41
+                    - generic [ref=f1e2570]:
+                      - paragraph [ref=f1e2571]: Confirm or 3X Refund*
+                      - text: Waitlist
+              - generic [ref=f1e2572] [cursor=pointer]:
+                - paragraph [ref=f1e2573]: 1 day ago
+                - generic [ref=f1e2574]:
+                  - generic [ref=f1e2575]:
+                    - generic [ref=f1e2576]: 2A
+                    - generic [ref=f1e2577]: ₹725
+                  - generic [ref=f1e2578]:
+                    - paragraph [ref=f1e2580]: WL 17
+                    - generic [ref=f1e2582]:
+                      - paragraph [ref=f1e2583]: Confirm or 3X Refund*
+                      - text: Waitlist
+          - generic [ref=f1e2585]:
+            - img "IRCTC"
+            - generic [ref=f1e2586]: IRCTC Authorised Partner
+  - dialog [active] [ref=f1e2589]:
+    - generic [ref=f1e2590]:
+      - paragraph [ref=f1e2591]: Not sure about your travel dates?
+      - generic [ref=f1e2592]:
+        - img "fcfIconUrl" [ref=f1e2593]
+        - paragraph [ref=f1e2595]:
+          - text: Opt FCF & get 100% train fare refund
+          - link [ref=f1e2596] [cursor=pointer]:
+            - /url: https://www.confirmtkt.com/free-cancellation?flow=pwa
+      - generic [ref=f1e2599]:
+        - button "Secure my trip" [ref=f1e2600] [cursor=pointer]
+        - button "Not now" [ref=f1e2601] [cursor=pointer]
+      - generic [ref=f1e2602]:
+        - img "fcfIconUrl" [ref=f1e2603]
+        - paragraph [ref=f1e2604]: Many passengers with last-minute cancellations received a full train fare refund with FCF.

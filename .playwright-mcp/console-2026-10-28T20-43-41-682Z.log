@@ -1,0 +1,6 @@
+[     499ms] [WARNING] Config is not set. Make sure to use setAppConfig @ https://www.confirmtkt.com/rbooking/assets/index-8ud__Vuv.js:1
+[     500ms] [WARNING] Config is not set. Make sure to use setAppConfig @ https://www.confirmtkt.com/rbooking/assets/index-8ud__Vuv.js:1
+[     500ms] [WARNING] Config is not set. Make sure to use setAppConfig @ https://www.confirmtkt.com/rbooking/assets/index-8ud__Vuv.js:1
+[     501ms] [WARNING] Config is not set. Make sure to use setAppConfig @ https://www.confirmtkt.com/rbooking/assets/index-8ud__Vuv.js:1
+[    2156ms] [WARNING] No `HydrateFallback` element provided to render during initial hydration @ https://www.confirmtkt.com/rbooking/assets/vendor-react-DQyzbvTZ.js:8
+[    2514ms] [ERROR] Not signed in with the identity provider. @ https://www.confirmtkt.com/rbooking/trains/from/BCT/to/PUNE/30-10-2026:0

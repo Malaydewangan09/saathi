@@ -1,0 +1,19 @@
+{
+  "name": "saathi",
+  "version": "0.1.0",
+  "description": "A WhatsApp voice assistant that does website chores for elderly parents, in their language, with family approval for anything risky.",
+  "scripts": {
+    "start": "node src/server.js",
+    "test": "node --test test/*.test.js",
+    "browser": "playwright-mcp --port 8931 --shared-browser-context --user-data-dir .browser-profile --viewport-size 1280,900"
+  },
+  "license": "MIT",
+  "type": "module",
+  "dependencies": {
+    "@playwright/mcp": "^0.0.83"
+  },
+  "private": true,
+  "engines": {
+    "node": ">=22"
+  }
+}

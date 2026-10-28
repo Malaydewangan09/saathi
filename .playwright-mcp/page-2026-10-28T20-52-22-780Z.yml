@@ -1,0 +1,3421 @@
+- generic [active] [ref=f9e1]:
+  - generic [ref=f9e2]:
+    - generic [ref=f9e4]:
+      - generic [ref=f9e5]:
+        - link [ref=f9e6] [cursor=pointer]:
+          - /url: /
+          - img "ixigo.com" [ref=f9e7]
+        - list [ref=f9e9]:
+          - listitem [ref=f9e10]:
+            - link [ref=f9e11] [cursor=pointer]:
+              - /url: /flights
+              - img "ixigo Flights" [ref=f9e13]
+              - paragraph [ref=f9e14]: Flights
+          - listitem [ref=f9e15]:
+            - link "ixigo Hotels Flat 80% Off Hotels" [ref=f9e16] [cursor=pointer]:
+              - /url: /hotels
+              - generic [ref=f9e17]:
+                - img "ixigo Hotels" [ref=f9e18]
+                - generic [ref=f9e19]: Flat 80% Off
+              - paragraph [ref=f9e21]: Hotels
+          - listitem [ref=f9e22]:
+            - link [ref=f9e23] [cursor=pointer]:
+              - /url: /trains
+              - img "ixigo Trains" [ref=f9e25]
+              - paragraph [ref=f9e26]: Trains
+              - paragraph [ref=f9e27]
+          - listitem [ref=f9e28]:
+            - link [ref=f9e29] [cursor=pointer]:
+              - /url: /buses
+              - img "ixigo Buses" [ref=f9e31]
+              - paragraph [ref=f9e32]: Buses
+        - generic [ref=f9e33]:
+          - generic [ref=f9e34] [cursor=pointer]:
+            - img "ixigo-more" [ref=f9e35]
+            - paragraph [ref=f9e36]: More
+          - list "More products" [ref=f9e39]:
+            - listitem [ref=f9e40]:
+              - listitem [ref=f9e41] [cursor=pointer]:
+                - paragraph [ref=f9e47]: Book Visa
+            - listitem [ref=f9e48] [cursor=pointer]:
+              - listitem [ref=f9e49]:
+                - paragraph [ref=f9e56]: Group Booking
+            - listitem [ref=f9e57] [cursor=pointer]:
+              - listitem [ref=f9e58]:
+                - img "user" [ref=f9e60]
+                - paragraph [ref=f9e62]: Plan
+            - listitem [ref=f9e63] [cursor=pointer]:
+              - listitem [ref=f9e64]:
+                - img "credit card" [ref=f9e66]
+                - paragraph [ref=f9e68]: Credit Card
+      - generic [ref=f9e69]:
+        - generic [ref=f9e70]:
+          - link [ref=f9e71] [cursor=pointer]:
+            - /url: /offers
+            - paragraph [ref=f9e74]: Offers
+          - link [ref=f9e75] [cursor=pointer]:
+            - /url: /help-center
+            - paragraph [ref=f9e79]: Customer Service
+        - button [ref=f9e82] [cursor=pointer]:
+          - img "user-avatar" [ref=f9e84]
+          - button "Log in/Sign up" [ref=f9e85]
+    - generic [ref=f9e87] [cursor=pointer]:
+      - generic [ref=f9e88]:
+        - generic [ref=f9e95]:
+          - generic: From
+          - searchbox "Enter Origin" [ref=f9e96]: Mumbai (CSTM)
+        - generic [ref=f9e103]:
+          - generic: To
+          - searchbox "Enter Destination" [ref=f9e104]: Pune (PUNE)
+      - generic [ref=f9e109]:
+        - paragraph [ref=f9e110]: Departure Date
+        - generic [ref=f9e111]: Fri, 30 Oct
+      - button "Search" [ref=f9e113]
+    - generic [ref=f9e116]:
+      - img "IRCTC Ticket Booking" [ref=f9e117]
+      - paragraph [ref=f9e118]: IRCTC Authorised Partner
+    - generic [ref=f9e119]:
+      - navigation [ref=f9e120]:
+        - list [ref=f9e121]:
+          - listitem [ref=f9e122]:
+            - link "Trains" [ref=f9e123] [cursor=pointer]:
+              - /url: /trains
+            - text: /
+          - listitem [ref=f9e124]: Mumbai to Pune Trains
+      - generic [ref=f9e125]:
+        - generic [ref=f9e126]:
+          - iframe [ref=f9e130]:
+            - link [ref=f13e2] [cursor=pointer]:
+              - /url: https://googleads.g.doubleclick.net/pcs/click?xai=AKAOjsvfwvPMe9OXALj4wocufbR9OWIumH0CDo2RGIYDsNVsRikuMQRVm2ZiwoEzJw9qv2AxzW4WwIS4pnPvykT6-HDN7qrvGwVgLTgG0FjkZrr7eLpc7ObxJQXElFIAcgP4peJotts-ThhyYt8lHkn3JYZQSJPhD4imS746YEDVLNGhNLb3TF-9fetQIpfkhuqXM7lX2VzDi4nNK63TfwD7hAdRVu8BtQJ7kuSbOape_rnufUmG5kdUafTLaTZOecYc24DLrS9-Kco3VySfqkJ1CN_rJIWsnCp1fTblTHfE0EGN09cWleGzcjl7bSYgrh_Il5wr9EKoffX3_MJcc7hiTHxn1ngiXZoa0LeHNPqjsdiJhVQJf70O4Z5XWYM8fmHGNa2HEuhjI-Ln9P6EVfhqHqFizAK0yfNupGw2Y109&sai=AMfl-YSWWTJz5pZBQVfBPy7diUj6oxVxa5kf4xUUOloY-xD78h71ucu1whyP4Uaph84mKFQOgWkKP9ZqYmSK1uc3g_36RRg5e3c9kRFALAWWv5twz2HywLXVOkoL8oEiE3JCY69tNSZLI1DV69mxdjLnA_cIo9KUrQGfH_wE4y2VGPwdM05dq4ruIKFrOgA6vEpa1siOaYwNvIRmB-_e9-xq_YXckLpWxfUk08jv1bZ3nL5-q0G0OEYLRNYkqtiC1GJ0SQJy2r4uSyoBnZ-2YQF72KZGjWIN0n1VKh7tKDyzB8rfojhF8evHWMNd8zZzgktpMoTdaNgAevLhHgJR7iCkiWwBv8sETeZCt7yjQi7WPWhe0VRRdhDek2uFAkU4-OcSJYZm9QkWA0fOvmqZkiMxZtc&sig=Cg0ArKJSzNOv4e1Davpp&fbs_aeid=%5Bgw_fbsaeid%5D&adurl=https://ww55.affinity.net/sssdomweb%3Fenk%3Do%3Dbcg05:tsid%3D38615:u%3Daffinity-315.com:b%3D315:qld%3DNoReferer:pos%3D1:blid%3D0%26di%3D%7Bdevice_identifier%7D%26cid%3D%7Bclick_id%7D%26subid%3D%7Bsubid%7D%26qld%3D%7Bapp_domain%7D
+          - generic [ref=f9e131]:
+            - paragraph [ref=f9e132]: Popular Train Routes
+            - generic [ref=f9e133]:
+              - link [ref=f9e134] [cursor=pointer]:
+                - /url: https://www.ixigo.com/by-train-rail/mumbai-to-goa-by-train
+                - paragraph [ref=f9e136]: Mumbai to Goa Trains
+              - link [ref=f9e139] [cursor=pointer]:
+                - /url: https://www.ixigo.com/by-train-rail/new-delhi-to-ujjain-by-train
+                - paragraph [ref=f9e141]: New Delhi to Ujjain Trains
+              - link [ref=f9e144] [cursor=pointer]:
+                - /url: https://www.ixigo.com/by-train-rail/new-delhi-to-mumbai-by-train
+                - paragraph [ref=f9e146]: New Delhi to Mumbai Trains
+              - link [ref=f9e149] [cursor=pointer]:
+                - /url: https://www.ixigo.com/by-train-rail/mumbai-to-pune-by-train
+                - paragraph [ref=f9e151]: Mumbai to Pune Trains
+              - link [ref=f9e154] [cursor=pointer]:
+                - /url: https://www.ixigo.com/by-train-rail/jammu-to-srinagar-by-train
+                - paragraph [ref=f9e156]: Jammu to Srinagar Trains
+              - link [ref=f9e159] [cursor=pointer]:
+                - /url: https://www.ixigo.com/by-train-rail/new-delhi-to-katra-by-train
+                - paragraph [ref=f9e161]: New Delhi to Katra Trains
+              - link [ref=f9e164] [cursor=pointer]:
+                - /url: https://www.ixigo.com/by-train-rail/new-delhi-to-haridwar-by-train
+                - paragraph [ref=f9e166]: New Delhi to Haridwar Trains
+              - link [ref=f9e169] [cursor=pointer]:
+                - /url: https://www.ixigo.com/by-train-rail/new-delhi-to-jaipur-by-train
+                - paragraph [ref=f9e171]: New Delhi to Jaipur Trains
+              - link [ref=f9e174] [cursor=pointer]:
+                - /url: https://www.ixigo.com/by-train-rail/pune-to-mumbai-by-train
+                - paragraph [ref=f9e176]: Pune to Mumbai Trains
+              - link [ref=f9e179] [cursor=pointer]:
+                - /url: https://www.ixigo.com/by-train-rail/new-delhi-to-varanasi-by-train
+                - paragraph [ref=f9e181]: New Delhi to Varanasi Trains
+              - link [ref=f9e184] [cursor=pointer]:
+                - /url: https://www.ixigo.com/by-train-rail/mumbai-to-new-delhi-by-train
+                - paragraph [ref=f9e186]: Mumbai to New Delhi Trains
+              - link [ref=f9e189] [cursor=pointer]:
+                - /url: https://www.ixigo.com/by-train-rail/varanasi-to-ayodhya-by-train
+                - paragraph [ref=f9e191]: Varanasi to Ayodhya Trains
+              - link [ref=f9e194] [cursor=pointer]:
+                - /url: https://www.ixigo.com/by-train-rail/bengaluru-to-chennai-by-train
+                - paragraph [ref=f9e196]: Bengaluru to Chennai Trains
+              - link [ref=f9e199] [cursor=pointer]:
+                - /url: https://www.ixigo.com/by-train-rail/chennai-to-bengaluru-by-train
+                - paragraph [ref=f9e201]: Chennai to Bengaluru Trains
+              - link [ref=f9e204] [cursor=pointer]:
+                - /url: https://www.ixigo.com/by-train-rail/new-delhi-to-jammu-by-train
+                - paragraph [ref=f9e206]: New Delhi to Jammu Trains
+              - link [ref=f9e209] [cursor=pointer]:
+                - /url: https://www.ixigo.com/by-train-rail/new-delhi-to-agra-by-train
+                - paragraph [ref=f9e211]: New Delhi to Agra Trains
+              - link [ref=f9e214] [cursor=pointer]:
+                - /url: https://www.ixigo.com/by-train-rail/mumbai-to-ahmedabad-by-train
+                - paragraph [ref=f9e216]: Mumbai to Ahmedabad Trains
+              - link [ref=f9e219] [cursor=pointer]:
+                - /url: https://www.ixigo.com/by-train-rail/hyderabad-to-tirupati-by-train
+                - paragraph [ref=f9e221]: Hyderabad to Tirupati Trains
+              - link [ref=f9e224] [cursor=pointer]:
+                - /url: https://www.ixigo.com/by-train-rail/ahmedabad-to-mumbai-by-train
+                - paragraph [ref=f9e226]: Ahmedabad to Mumbai Trains
+              - link [ref=f9e229] [cursor=pointer]:
+                - /url: https://www.ixigo.com/by-train-rail/new-delhi-to-lucknow-by-train
+                - paragraph [ref=f9e231]: New Delhi to Lucknow Trains
+          - generic [ref=f9e235]:
+            - paragraph [ref=f9e236]: Book Your Return Trip
+            - generic [ref=f9e237]:
+              - img "Book Return Train Tickets" [ref=f9e238]
+              - paragraph [ref=f9e239]: Book your return trip from Pune to Mumbai now
+              - link [ref=f9e240] [cursor=pointer]:
+                - /url: https://www.ixigo.com/by-train-rail/pune-to-mumbai-by-train
+                - paragraph [ref=f9e241]: Book
+          - generic [ref=f9e242]:
+            - paragraph [ref=f9e243]: Top Searched Routes
+            - generic [ref=f9e244]:
+              - link [ref=f9e245] [cursor=pointer]:
+                - /url: https://www.ixigo.com/by-train-rail/mumbai-to-goa-by-train
+                - paragraph [ref=f9e247]: Mumbai to Goa Trains
+              - link [ref=f9e250] [cursor=pointer]:
+                - /url: https://www.ixigo.com/by-train-rail/pune-to-mumbai-by-train
+                - paragraph [ref=f9e252]: Pune to Mumbai Trains
+              - link [ref=f9e255] [cursor=pointer]:
+                - /url: https://www.ixigo.com/by-train-rail/bengaluru-to-chennai-by-train
+                - paragraph [ref=f9e257]: Bengaluru to Chennai Trains
+              - link [ref=f9e260] [cursor=pointer]:
+                - /url: https://www.ixigo.com/by-train-rail/chennai-to-bengaluru-by-train
+                - paragraph [ref=f9e262]: Chennai to Bengaluru Trains
+              - link [ref=f9e265] [cursor=pointer]:
+                - /url: https://www.ixigo.com/by-train-rail/mumbai-to-pune-by-train
+                - paragraph [ref=f9e267]: Mumbai to Pune Trains
+              - link [ref=f9e270] [cursor=pointer]:
+                - /url: https://www.ixigo.com/by-train-rail/ahmedabad-to-mumbai-by-train
+                - paragraph [ref=f9e272]: Ahmedabad to Mumbai Trains
+              - link [ref=f9e275] [cursor=pointer]:
+                - /url: https://www.ixigo.com/by-train-rail/delhi-to-goa-by-train
+                - paragraph [ref=f9e277]: Delhi to Goa Trains
+              - link [ref=f9e280] [cursor=pointer]:
+                - /url: https://www.ixigo.com/by-train-rail/delhi-to-haridwar-by-train
+                - paragraph [ref=f9e282]: Delhi to Haridwar Trains
+              - link [ref=f9e285] [cursor=pointer]:
+                - /url: https://www.ixigo.com/by-train-rail/delhi-to-jaipur-by-train
+                - paragraph [ref=f9e287]: Delhi to Jaipur Trains
+              - link [ref=f9e290] [cursor=pointer]:
+                - /url: https://www.ixigo.com/by-train-rail/delhi-to-mumbai-by-train
+                - paragraph [ref=f9e292]: Delhi to Mumbai Trains
+          - generic [ref=f9e295]:
+            - paragraph [ref=f9e296]: Train routes from Mumbai
+            - generic [ref=f9e297]:
+              - link [ref=f9e298] [cursor=pointer]:
+                - /url: https://www.ixigo.com/by-train-rail/mumbai-to-goa-by-train
+                - paragraph [ref=f9e300]: mumbai to goa Trains
+              - link [ref=f9e303] [cursor=pointer]:
+                - /url: https://www.ixigo.com/by-train-rail/mumbai-to-new-delhi-by-train
+                - paragraph [ref=f9e305]: mumbai to new delhi Trains
+              - link [ref=f9e308] [cursor=pointer]:
+                - /url: https://www.ixigo.com/by-train-rail/mumbai-to-ahmedabad-by-train
+                - paragraph [ref=f9e310]: mumbai to ahmedabad Trains
+              - link [ref=f9e313] [cursor=pointer]:
+                - /url: https://www.ixigo.com/by-train-rail/mumbai-to-surat-by-train
+                - paragraph [ref=f9e315]: mumbai to surat Trains
+              - link [ref=f9e318] [cursor=pointer]:
+                - /url: https://www.ixigo.com/by-train-rail/mumbai-to-ujjain-by-train
+                - paragraph [ref=f9e320]: mumbai to ujjain Trains
+              - link [ref=f9e323] [cursor=pointer]:
+                - /url: https://www.ixigo.com/by-train-rail/mumbai-to-varanasi-by-train
+                - paragraph [ref=f9e325]: mumbai to varanasi Trains
+              - link [ref=f9e328] [cursor=pointer]:
+                - /url: https://www.ixigo.com/by-train-rail/mumbai-to-jaipur-by-train
+                - paragraph [ref=f9e330]: mumbai to jaipur Trains
+              - link [ref=f9e333] [cursor=pointer]:
+                - /url: https://www.ixigo.com/by-train-rail/mumbai-to-bengaluru-by-train
+                - paragraph [ref=f9e335]: mumbai to bengaluru Trains
+              - link [ref=f9e338] [cursor=pointer]:
+                - /url: https://www.ixigo.com/by-train-rail/mumbai-to-nagpur-by-train
+                - paragraph [ref=f9e340]: mumbai to nagpur Trains
+              - link [ref=f9e343] [cursor=pointer]:
+                - /url: https://www.ixigo.com/by-train-rail/mumbai-to-aurangabad-by-train
+                - paragraph [ref=f9e345]: mumbai to aurangabad Trains
+              - link [ref=f9e348] [cursor=pointer]:
+                - /url: https://www.ixigo.com/by-train-rail/mumbai-to-lonavala-by-train
+                - paragraph [ref=f9e350]: mumbai to lonavala Trains
+              - link [ref=f9e353] [cursor=pointer]:
+                - /url: https://www.ixigo.com/by-train-rail/mumbai-to-hyderabad-by-train
+                - paragraph [ref=f9e355]: mumbai to hyderabad Trains
+              - link [ref=f9e358] [cursor=pointer]:
+                - /url: https://www.ixigo.com/by-train-rail/mumbai-to-kolkata-by-train
+                - paragraph [ref=f9e360]: mumbai to kolkata Trains
+              - link [ref=f9e363] [cursor=pointer]:
+                - /url: https://www.ixigo.com/by-train-rail/mumbai-to-chennai-by-train
+                - paragraph [ref=f9e365]: mumbai to chennai Trains
+              - link [ref=f9e368] [cursor=pointer]:
+                - /url: https://www.ixigo.com/by-train-rail/mumbai-to-lucknow-by-train
+                - paragraph [ref=f9e370]: mumbai to lucknow Trains
+              - link [ref=f9e373] [cursor=pointer]:
+                - /url: https://www.ixigo.com/by-train-rail/mumbai-to-gorakhpur-by-train
+                - paragraph [ref=f9e375]: mumbai to gorakhpur Trains
+              - link [ref=f9e378] [cursor=pointer]:
+                - /url: https://www.ixigo.com/by-train-rail/mumbai-to-kochi-by-train
+                - paragraph [ref=f9e380]: mumbai to kochi Trains
+              - link [ref=f9e383] [cursor=pointer]:
+                - /url: https://www.ixigo.com/by-train-rail/mumbai-to-vadodara-by-train
+                - paragraph [ref=f9e385]: mumbai to vadodara Trains
+              - link [ref=f9e388] [cursor=pointer]:
+                - /url: https://www.ixigo.com/by-train-rail/mumbai-to-prayagraj-by-train
+                - paragraph [ref=f9e390]: mumbai to prayagraj Trains
+              - link [ref=f9e393] [cursor=pointer]:
+                - /url: https://www.ixigo.com/by-train-rail/mumbai-to-ajmer-by-train
+                - paragraph [ref=f9e395]: mumbai to ajmer Trains
+          - generic [ref=f9e398]:
+            - paragraph [ref=f9e399]: Train routes to Pune
+            - generic [ref=f9e400]:
+              - link [ref=f9e401] [cursor=pointer]:
+                - /url: https://www.ixigo.com/by-train-rail/new-delhi-to-pune-by-train
+                - paragraph [ref=f9e403]: new delhi to pune Trains
+              - link [ref=f9e406] [cursor=pointer]:
+                - /url: https://www.ixigo.com/by-train-rail/nagpur-to-pune-by-train
+                - paragraph [ref=f9e408]: nagpur to pune Trains
+              - link [ref=f9e411] [cursor=pointer]:
+                - /url: https://www.ixigo.com/by-train-rail/hyderabad-to-pune-by-train
+                - paragraph [ref=f9e413]: hyderabad to pune Trains
+              - link [ref=f9e416] [cursor=pointer]:
+                - /url: https://www.ixigo.com/by-train-rail/ahmedabad-to-pune-by-train
+                - paragraph [ref=f9e418]: ahmedabad to pune Trains
+              - link [ref=f9e421] [cursor=pointer]:
+                - /url: https://www.ixigo.com/by-train-rail/bengaluru-to-pune-by-train
+                - paragraph [ref=f9e423]: bengaluru to pune Trains
+              - link [ref=f9e426] [cursor=pointer]:
+                - /url: https://www.ixigo.com/by-train-rail/solapur-to-pune-by-train
+                - paragraph [ref=f9e428]: solapur to pune Trains
+              - link [ref=f9e431] [cursor=pointer]:
+                - /url: https://www.ixigo.com/by-train-rail/kolhapur-to-pune-by-train
+                - paragraph [ref=f9e433]: kolhapur to pune Trains
+              - link [ref=f9e436] [cursor=pointer]:
+                - /url: https://www.ixigo.com/by-train-rail/delhi-to-pune-by-train
+                - paragraph [ref=f9e438]: delhi to pune Trains
+              - link [ref=f9e441] [cursor=pointer]:
+                - /url: https://www.ixigo.com/by-train-rail/surat-to-pune-by-train
+                - paragraph [ref=f9e443]: surat to pune Trains
+              - link [ref=f9e446] [cursor=pointer]:
+                - /url: https://www.ixigo.com/by-train-rail/thane-to-pune-by-train
+                - paragraph [ref=f9e448]: thane to pune Trains
+              - link [ref=f9e451] [cursor=pointer]:
+                - /url: https://www.ixigo.com/by-train-rail/chennai-to-pune-by-train
+                - paragraph [ref=f9e453]: chennai to pune Trains
+              - link [ref=f9e456] [cursor=pointer]:
+                - /url: https://www.ixigo.com/by-train-rail/lucknow-to-pune-by-train
+                - paragraph [ref=f9e458]: lucknow to pune Trains
+              - link [ref=f9e461] [cursor=pointer]:
+                - /url: https://www.ixigo.com/by-train-rail/beed-to-pune-by-train
+                - paragraph [ref=f9e463]: beed to pune Trains
+              - link [ref=f9e466] [cursor=pointer]:
+                - /url: https://www.ixigo.com/by-train-rail/patna-to-pune-by-train
+                - paragraph [ref=f9e468]: patna to pune Trains
+              - link [ref=f9e471] [cursor=pointer]:
+                - /url: https://www.ixigo.com/by-train-rail/kolkata-to-pune-by-train
+                - paragraph [ref=f9e473]: kolkata to pune Trains
+              - link [ref=f9e476] [cursor=pointer]:
+                - /url: https://www.ixigo.com/by-train-rail/indore-to-pune-by-train
+                - paragraph [ref=f9e478]: indore to pune Trains
+              - link [ref=f9e481] [cursor=pointer]:
+                - /url: https://www.ixigo.com/by-train-rail/vadodara-to-pune-by-train
+                - paragraph [ref=f9e483]: vadodara to pune Trains
+              - link [ref=f9e486] [cursor=pointer]:
+                - /url: https://www.ixigo.com/by-train-rail/prayagraj-to-pune-by-train
+                - paragraph [ref=f9e488]: prayagraj to pune Trains
+              - link [ref=f9e491] [cursor=pointer]:
+                - /url: https://www.ixigo.com/by-train-rail/jaipur-to-pune-by-train
+                - paragraph [ref=f9e493]: jaipur to pune Trains
+              - link [ref=f9e496] [cursor=pointer]:
+                - /url: https://www.ixigo.com/by-train-rail/gorakhpur-to-pune-by-train
+                - paragraph [ref=f9e498]: gorakhpur to pune Trains
+          - generic [ref=f9e501]:
+            - paragraph [ref=f9e502]: Other Important Links
+            - generic [ref=f9e503]:
+              - link [ref=f9e504] [cursor=pointer]:
+                - /url: https://www.ixigo.com/trains/tatkal-railway-reservation
+                - paragraph [ref=f9e506]: Tatkal Railway Reservation
+              - link [ref=f9e509] [cursor=pointer]:
+                - /url: https://www.ixigo.com/trains/alternate-travel
+                - paragraph [ref=f9e511]: Alternate Travel Plan
+              - link [ref=f9e514] [cursor=pointer]:
+                - /url: https://www.ixigo.com/trains/order-food-in-train
+                - paragraph [ref=f9e516]: Order Food in Train
+              - link [ref=f9e519] [cursor=pointer]:
+                - /url: https://www.ixigo.com/train-stations
+                - paragraph [ref=f9e521]: Train Stations
+              - link [ref=f9e524] [cursor=pointer]:
+                - /url: https://www.ixigo.com/trains/platform-locator
+                - paragraph [ref=f9e526]: Platform Locator
+              - link [ref=f9e529] [cursor=pointer]:
+                - /url: https://www.ixigo.com/trains/vande-bharat-express-trains
+                - paragraph [ref=f9e531]: Vande Bharat Trains
+              - link [ref=f9e534] [cursor=pointer]:
+                - /url: https://www.ixigo.com/trains/irctc-cancellation-charges-icms
+                - paragraph [ref=f9e536]: IRCTC Cancellation Charges
+              - link [ref=f9e539] [cursor=pointer]:
+                - /url: https://www.ixigo.com/trains/irctc-aadhaar-linking
+                - paragraph [ref=f9e541]: Link Aadhaar in IRCTC
+              - link [ref=f9e544] [cursor=pointer]:
+                - /url: https://www.ixigo.com/travel-credit-card
+                - paragraph [ref=f9e546]: Travel Credit Card
+              - link [ref=f9e549] [cursor=pointer]:
+                - /url: https://www.abhibus.com/
+                - paragraph [ref=f9e551]: abhibus
+              - link [ref=f9e554] [cursor=pointer]:
+                - /url: https://www.confirmtkt.com/
+                - paragraph [ref=f9e556]: ConfirmTkt
+              - link [ref=f9e559] [cursor=pointer]:
+                - /url: https://www.trenes.com/en/
+                - paragraph [ref=f9e561]: Trenes
+              - link [ref=f9e564] [cursor=pointer]:
+                - /url: https://www.ixigo.com/travel-stories
+                - paragraph [ref=f9e566]: Travel Stories
+              - link [ref=f9e569] [cursor=pointer]:
+                - /url: https://www.ixigo.com/metro/delhi
+                - paragraph [ref=f9e571]: Delhi Metro Booking
+              - link [ref=f9e574] [cursor=pointer]:
+                - /url: https://www.ixigo.com/metro/delhi/route-map
+                - paragraph [ref=f9e576]: Delhi Metro Map
+              - link [ref=f9e579] [cursor=pointer]:
+                - /url: https://www.ixigo.com/metro/mumbai
+                - paragraph [ref=f9e581]: Mumbai Metro Booking
+              - link [ref=f9e584] [cursor=pointer]:
+                - /url: https://www.ixigo.com/metro/mumbai/route-map
+                - paragraph [ref=f9e586]: Mumbai Metro Map
+              - link [ref=f9e589] [cursor=pointer]:
+                - /url: https://www.ixigo.com/metro/bengaluru
+                - paragraph [ref=f9e591]: Bengaluru Metro Booking
+              - link [ref=f9e594] [cursor=pointer]:
+                - /url: https://www.ixigo.com/metro/bengaluru/route-map
+                - paragraph [ref=f9e596]: Bengaluru Metro Map
+        - generic [ref=f9e599]:
+          - generic [ref=f9e600]:
+            - generic [ref=f9e601]:
+              - heading "Mumbai to Pune Trains" [level=1] [ref=f9e602]
+              - link [ref=f9e603] [cursor=pointer]:
+                - /url: https://www.ixigo.com/hi/by-train-rail/mumbai-to-pune-by-train
+                - paragraph [ref=f9e604]: मुंबई से पुणे जाने वाली ट्रेन (हिंदी में देखें)
+            - paragraph [ref=f9e605]:
+              - text: 34 Trains found between Mumbai (CSTM) to Pune (PUNE) on
+              - strong [ref=f9e606]: Fri, 30 Oct 2026
+          - generic [ref=f9e610]:
+            - generic [ref=f9e611]: Oct
+            - generic [ref=f9e613]:
+              - generic [ref=f9e614] [cursor=pointer]:
+                - paragraph [ref=f9e615]: Thu, 29
+                - paragraph [ref=f9e616]: Available
+              - generic [ref=f9e617] [cursor=pointer]:
+                - paragraph [ref=f9e618]: Fri, 30
+                - paragraph [ref=f9e619]: Filling Fast
+              - generic [ref=f9e620] [cursor=pointer]:
+                - paragraph [ref=f9e621]: Sat, 31
+                - paragraph [ref=f9e622]: Filling Fast
+              - generic [ref=f9e623] [cursor=pointer]:
+                - paragraph [ref=f9e624]: Sun, 01
+                - paragraph [ref=f9e625]: Filling Fast
+              - generic [ref=f9e626] [cursor=pointer]:
+                - paragraph [ref=f9e627]: Mon, 02
+                - paragraph [ref=f9e628]: Available
+              - generic [ref=f9e629] [cursor=pointer]:
+                - paragraph [ref=f9e630]: Tue, 03
+                - paragraph [ref=f9e631]: Available
+              - generic [ref=f9e632] [cursor=pointer]:
+                - paragraph [ref=f9e633]: Wed, 04
+                - paragraph [ref=f9e634]: Available
+              - generic [ref=f9e635] [cursor=pointer]:
+                - paragraph [ref=f9e636]: Thu, 05
+                - paragraph [ref=f9e637]: Available
+          - generic [ref=f9e638]:
+            - generic [ref=f9e640]:
+              - generic [ref=f9e641]:
+                - generic [ref=f9e642]:
+                  - link [ref=f9e643] [cursor=pointer]:
+                    - /url: https://www.ixigo.com/trains/11041
+                    - paragraph [ref=f9e644]: 11041 DR SNSI EXP
+                  - generic [ref=f9e645]:
+                    - paragraph [ref=f9e646]:
+                      - text: Runs on
+                      - generic [ref=f9e647]: M
+                      - generic [ref=f9e648]: T
+                      - generic [ref=f9e649]: W
+                      - generic [ref=f9e650]: T
+                      - generic [ref=f9e651]: F
+                      - generic [ref=f9e652]: S
+                      - generic [ref=f9e653]: S
+                    - paragraph [ref=f9e654]: Mail/Express
+                    - link [ref=f9e655] [cursor=pointer]:
+                      - /url: https://www.ixigo.com/trains/11041/running-status
+                      - paragraph [ref=f9e656]: (11041 Running Status)
+                - generic [ref=f9e658]:
+                  - generic [ref=f9e659]:
+                    - paragraph [ref=f9e660]: 00:45
+                    - paragraph [ref=f9e661]: KYN
+                  - paragraph [ref=f9e663]: 02h 45m
+                  - generic [ref=f9e666]:
+                    - paragraph [ref=f9e667]: 03:30
+                    - paragraph [ref=f9e668]: PUNE
+                - link [ref=f9e669] [cursor=pointer]:
+                  - /url: /trains/search-pwa/from/KYN/to/PUNE/30-10-2026
+                  - button "Show Availability" [ref=f9e670]
+              - generic [ref=f9e674]:
+                - link "SL ₹150 WL 43 42% Chance" [ref=f9e675] [cursor=pointer]:
+                  - /url: /trains/search-pwa/from/KYN/to/PUNE/30-10-2026
+                  - generic [ref=f9e677]:
+                    - generic [ref=f9e678]:
+                      - generic [ref=f9e679]: SL
+                      - generic [ref=f9e680]: ₹150
+                    - generic [ref=f9e681]:
+                      - paragraph [ref=f9e682]: WL 43
+                      - paragraph [ref=f9e683]: 42% Chance
+                - link "3A ₹520 WL 10 Alternate Travel Plan Icon Alternate Travel Plan" [ref=f9e684] [cursor=pointer]:
+                  - /url: /trains/search-pwa/from/KYN/to/PUNE/30-10-2026
+                  - generic [ref=f9e686]:
+                    - generic [ref=f9e687]:
+                      - generic [ref=f9e688]: 3A
+                      - generic [ref=f9e689]: ₹520
+                    - generic [ref=f9e690]:
+                      - paragraph [ref=f9e691]: WL 10
+                      - generic [ref=f9e692]:
+                        - img "Alternate Travel Plan Icon" [ref=f9e693]
+                        - paragraph [ref=f9e694]: Alternate Travel Plan
+                - link "2A ₹725 WL 6 Alternate Travel Plan Icon Alternate Travel Plan" [ref=f9e695] [cursor=pointer]:
+                  - /url: /trains/search-pwa/from/KYN/to/PUNE/30-10-2026
+                  - generic [ref=f9e697]:
+                    - generic [ref=f9e698]:
+                      - generic [ref=f9e699]: 2A
+                      - generic [ref=f9e700]: ₹725
+                    - generic [ref=f9e701]:
+                      - paragraph [ref=f9e702]: WL 6
+                      - generic [ref=f9e703]:
+                        - img "Alternate Travel Plan Icon" [ref=f9e704]
+                        - paragraph [ref=f9e705]: Alternate Travel Plan
+            - generic [ref=f9e707]:
+              - generic [ref=f9e708]:
+                - generic [ref=f9e709]:
+                  - link [ref=f9e710] [cursor=pointer]:
+                    - /url: https://www.ixigo.com/trains/22185
+                    - paragraph [ref=f9e711]: 22185 ADI PUNE SF
+                  - generic [ref=f9e712]:
+                    - paragraph [ref=f9e713]:
+                      - text: Runs on
+                      - generic [ref=f9e714]: M
+                      - generic [ref=f9e715]: T
+                      - generic [ref=f9e716]: W
+                      - generic [ref=f9e717]: T
+                      - generic [ref=f9e718]: F
+                      - generic [ref=f9e719]: S
+                      - generic [ref=f9e720]: S
+                    - paragraph [ref=f9e721]: Mail/Express
+                    - link [ref=f9e722] [cursor=pointer]:
+                      - /url: https://www.ixigo.com/trains/22185/running-status
+                      - paragraph [ref=f9e723]: (22185 Running Status)
+                - generic [ref=f9e725]:
+                  - generic [ref=f9e726]:
+                    - paragraph [ref=f9e727]: 04:25
+                    - paragraph [ref=f9e728]: KYN
+                  - paragraph [ref=f9e730]: 03h 05m
+                  - generic [ref=f9e733]:
+                    - paragraph [ref=f9e734]: 07:30
+                    - paragraph [ref=f9e735]: PUNE
+                - link [ref=f9e736] [cursor=pointer]:
+                  - /url: /trains/search-pwa/from/KYN/to/PUNE/30-10-2026
+                  - button "Show Availability" [ref=f9e737]
+              - generic [ref=f9e741]:
+                - link "SL ₹180 AVL 20 Available" [ref=f9e742] [cursor=pointer]:
+                  - /url: /trains/search-pwa/from/KYN/to/PUNE/30-10-2026
+                  - generic [ref=f9e744]:
+                    - generic [ref=f9e745]:
+                      - generic [ref=f9e746]: SL
+                      - generic [ref=f9e747]: ₹180
+                    - generic [ref=f9e748]:
+                      - paragraph [ref=f9e749]: AVL 20
+                      - paragraph [ref=f9e750]: Available
+                - link "3A ₹565 AVL 15 Available" [ref=f9e751] [cursor=pointer]:
+                  - /url: /trains/search-pwa/from/KYN/to/PUNE/30-10-2026
+                  - generic [ref=f9e753]:
+                    - generic [ref=f9e754]:
+                      - generic [ref=f9e755]: 3A
+                      - generic [ref=f9e756]: ₹565
+                    - generic [ref=f9e757]:
+                      - paragraph [ref=f9e758]: AVL 15
+                      - paragraph [ref=f9e759]: Available
+                - link "2A ₹770 AVL 1 Available" [ref=f9e760] [cursor=pointer]:
+                  - /url: /trains/search-pwa/from/KYN/to/PUNE/30-10-2026
+                  - generic [ref=f9e762]:
+                    - generic [ref=f9e763]:
+                      - generic [ref=f9e764]: 2A
+                      - generic [ref=f9e765]: ₹770
+                    - generic [ref=f9e766]:
+                      - paragraph [ref=f9e767]: AVL 1
+                      - paragraph [ref=f9e768]: Available
+            - generic [ref=f9e770]:
+              - generic [ref=f9e771]:
+                - generic [ref=f9e772]:
+                  - link [ref=f9e773] [cursor=pointer]:
+                    - /url: https://www.ixigo.com/trains/22944
+                    - paragraph [ref=f9e774]: 22944 INDB DAUND EXP
+                  - generic [ref=f9e775]:
+                    - paragraph [ref=f9e776]:
+                      - text: Runs on
+                      - generic [ref=f9e777]: M
+                      - generic [ref=f9e778]: T
+                      - generic [ref=f9e779]: W
+                      - generic [ref=f9e780]: T
+                      - generic [ref=f9e781]: F
+                      - generic [ref=f9e782]: S
+                      - generic [ref=f9e783]: S
+                    - paragraph [ref=f9e784]: Mail/Express
+                    - link [ref=f9e785] [cursor=pointer]:
+                      - /url: https://www.ixigo.com/trains/22944/running-status
+                      - paragraph [ref=f9e786]: (22944 Running Status)
+                - generic [ref=f9e788]:
+                  - generic [ref=f9e789]:
+                    - paragraph [ref=f9e790]: 04:35
+                    - paragraph [ref=f9e791]: BSR
+                  - paragraph [ref=f9e793]: 04h 15m
+                  - generic [ref=f9e796]:
+                    - paragraph [ref=f9e797]: 08:50
+                    - paragraph [ref=f9e798]: PUNE
+                - link [ref=f9e799] [cursor=pointer]:
+                  - /url: /trains/search-pwa/from/BSR/to/PUNE/30-10-2026
+                  - button "Show Availability" [ref=f9e800]
+              - generic [ref=f9e804]:
+                - link "SL ₹180 WL 35 34% Chance" [ref=f9e805] [cursor=pointer]:
+                  - /url: /trains/search-pwa/from/BSR/to/PUNE/30-10-2026
+                  - generic [ref=f9e807]:
+                    - generic [ref=f9e808]:
+                      - generic [ref=f9e809]: SL
+                      - generic [ref=f9e810]: ₹180
+                    - generic [ref=f9e811]:
+                      - paragraph [ref=f9e812]: WL 35
+                      - paragraph [ref=f9e813]: 34% Chance
+                - link "3A ₹565 WL 13 Alternate Travel Plan Icon Alternate Travel Plan" [ref=f9e814] [cursor=pointer]:
+                  - /url: /trains/search-pwa/from/BSR/to/PUNE/30-10-2026
+                  - generic [ref=f9e816]:
+                    - generic [ref=f9e817]:
+                      - generic [ref=f9e818]: 3A
+                      - generic [ref=f9e819]: ₹565
+                    - generic [ref=f9e820]:
+                      - paragraph [ref=f9e821]: WL 13
+                      - generic [ref=f9e822]:
+                        - img "Alternate Travel Plan Icon" [ref=f9e823]
+                        - paragraph [ref=f9e824]: Alternate Travel Plan
+                - link "2A ₹770 WL 4 Alternate Travel Plan Icon Alternate Travel Plan" [ref=f9e825] [cursor=pointer]:
+                  - /url: /trains/search-pwa/from/BSR/to/PUNE/30-10-2026
+                  - generic [ref=f9e827]:
+                    - generic [ref=f9e828]:
+                      - generic [ref=f9e829]: 2A
+                      - generic [ref=f9e830]: ₹770
+                    - generic [ref=f9e831]:
+                      - paragraph [ref=f9e832]: WL 4
+                      - generic [ref=f9e833]:
+                        - img "Alternate Travel Plan Icon" [ref=f9e834]
+                        - paragraph [ref=f9e835]: Alternate Travel Plan
+                - link "1A ₹1270 WL 2 Alternate Travel Plan Icon Alternate Travel Plan" [ref=f9e836] [cursor=pointer]:
+                  - /url: /trains/search-pwa/from/BSR/to/PUNE/30-10-2026
+                  - generic [ref=f9e838]:
+                    - generic [ref=f9e839]:
+                      - generic [ref=f9e840]: 1A
+                      - generic [ref=f9e841]: ₹1270
+                    - generic [ref=f9e842]:
+                      - paragraph [ref=f9e843]: WL 2
+                      - generic [ref=f9e844]:
+                        - img "Alternate Travel Plan Icon" [ref=f9e845]
+                        - paragraph [ref=f9e846]: Alternate Travel Plan
+            - generic [ref=f9e848]:
+              - generic [ref=f9e849]:
+                - generic [ref=f9e850]:
+                  - link [ref=f9e851] [cursor=pointer]:
+                    - /url: https://www.ixigo.com/trains/22105
+                    - paragraph [ref=f9e852]: 22105 INDRAYANI EXP
+                  - generic [ref=f9e853]:
+                    - paragraph [ref=f9e854]:
+                      - text: Runs on
+                      - generic [ref=f9e855]: M
+                      - generic [ref=f9e856]: T
+                      - generic [ref=f9e857]: W
+                      - generic [ref=f9e858]: T
+                      - generic [ref=f9e859]: F
+                      - generic [ref=f9e860]: S
+                      - generic [ref=f9e861]: S
+                    - paragraph [ref=f9e862]: Mail/Express
+                    - link [ref=f9e863] [cursor=pointer]:
+                      - /url: https://www.ixigo.com/trains/22105/running-status
+                      - paragraph [ref=f9e864]: (22105 Running Status)
+                - generic [ref=f9e866]:
+                  - generic [ref=f9e867]:
+                    - paragraph [ref=f9e868]: 05:40
+                    - paragraph [ref=f9e869]: CSMT
+                  - paragraph [ref=f9e871]: 03h 25m
+                  - generic [ref=f9e874]:
+                    - paragraph [ref=f9e875]: 09:05
+                    - paragraph [ref=f9e876]: PUNE
+                - link [ref=f9e877] [cursor=pointer]:
+                  - /url: /trains/search-pwa/from/CSMT/to/PUNE/30-10-2026
+                  - button "Show Availability" [ref=f9e878]
+              - generic [ref=f9e882]:
+                - link "2S ₹115 WL 6 Alternate Travel Plan Icon Alternate Travel Plan" [ref=f9e883] [cursor=pointer]:
+                  - /url: /trains/search-pwa/from/CSMT/to/PUNE/30-10-2026
+                  - generic [ref=f9e885]:
+                    - generic [ref=f9e886]:
+                      - generic [ref=f9e887]: 2S
+                      - generic [ref=f9e888]: ₹115
+                    - generic [ref=f9e889]:
+                      - paragraph [ref=f9e890]: WL 6
+                      - generic [ref=f9e891]:
+                        - img "Alternate Travel Plan Icon" [ref=f9e892]
+                        - paragraph [ref=f9e893]: Alternate Travel Plan
+                - link "CC ₹395 WL 23 36% Chance" [ref=f9e894] [cursor=pointer]:
+                  - /url: /trains/search-pwa/from/CSMT/to/PUNE/30-10-2026
+                  - generic [ref=f9e896]:
+                    - generic [ref=f9e897]:
+                      - generic [ref=f9e898]: CC
+                      - generic [ref=f9e899]: ₹395
+                    - generic [ref=f9e900]:
+                      - paragraph [ref=f9e901]: WL 23
+                      - paragraph [ref=f9e902]: 36% Chance
+            - generic [ref=f9e903]:
+              - generic [ref=f9e904]:
+                - generic [ref=f9e905]:
+                  - generic [ref=f9e906]:
+                    - link [ref=f9e907] [cursor=pointer]:
+                      - /url: https://www.ixigo.com/trains/12127
+                      - paragraph [ref=f9e908]: 12127 INTERCITY EXP
+                    - generic [ref=f9e909]:
+                      - paragraph [ref=f9e910]:
+                        - text: Runs on
+                        - generic [ref=f9e911]: M
+                        - generic [ref=f9e912]: T
+                        - generic [ref=f9e913]: W
+                        - generic [ref=f9e914]: T
+                        - generic [ref=f9e915]: F
+                        - generic [ref=f9e916]: S
+                        - generic [ref=f9e917]: S
+                      - paragraph [ref=f9e918]: Mail/Express
+                      - link [ref=f9e919] [cursor=pointer]:
+                        - /url: https://www.ixigo.com/trains/12127/running-status
+                        - paragraph [ref=f9e920]: (12127 Running Status)
+                  - generic [ref=f9e922]:
+                    - generic [ref=f9e923]:
+                      - paragraph [ref=f9e924]: 06:40
+                      - paragraph [ref=f9e925]: CSMT
+                    - paragraph [ref=f9e927]: 03h 20m
+                    - generic [ref=f9e930]:
+                      - paragraph [ref=f9e931]: 10:00
+                      - paragraph [ref=f9e932]: PUNE
+                  - link [ref=f9e933] [cursor=pointer]:
+                    - /url: /trains/search-pwa/from/CSMT/to/PUNE/30-10-2026
+                    - button "Show Availability" [ref=f9e934]
+                - generic [ref=f9e938]:
+                  - link "2S ₹115 AVL 123 Available" [ref=f9e939] [cursor=pointer]:
+                    - /url: /trains/search-pwa/from/CSMT/to/PUNE/30-10-2026
+                    - generic [ref=f9e941]:
+                      - generic [ref=f9e942]:
+                        - generic [ref=f9e943]: 2S
+                        - generic [ref=f9e944]: ₹115
+                      - generic [ref=f9e945]:
+                        - paragraph [ref=f9e946]: AVL 123
+                        - paragraph [ref=f9e947]: Available
+                  - link "CC ₹395 WL 23 55% Chance" [ref=f9e948] [cursor=pointer]:
+                    - /url: /trains/search-pwa/from/CSMT/to/PUNE/30-10-2026
+                    - generic [ref=f9e950]:
+                      - generic [ref=f9e951]:
+                        - generic [ref=f9e952]: CC
+                        - generic [ref=f9e953]: ₹395
+                      - generic [ref=f9e954]:
+                        - paragraph [ref=f9e955]: WL 23
+                        - paragraph [ref=f9e956]: 55% Chance
+              - link [ref=f9e958] [cursor=pointer]:
+                - /url: /trains/search-pwa/from/CSTM/to/PUNE/30-10-2026
+                - img "Book Confirmed Tickets" [ref=f9e959]
+            - generic [ref=f9e961]:
+              - generic [ref=f9e962]:
+                - generic [ref=f9e963]:
+                  - link [ref=f9e964] [cursor=pointer]:
+                    - /url: https://www.ixigo.com/trains/18520
+                    - paragraph [ref=f9e965]: 18520 LTT VSKP EXPRESS
+                  - generic [ref=f9e966]:
+                    - paragraph [ref=f9e967]:
+                      - text: Runs on
+                      - generic [ref=f9e968]: M
+                      - generic [ref=f9e969]: T
+                      - generic [ref=f9e970]: W
+                      - generic [ref=f9e971]: T
+                      - generic [ref=f9e972]: F
+                      - generic [ref=f9e973]: S
+                      - generic [ref=f9e974]: S
+                    - paragraph [ref=f9e975]: Mail/Express
+                    - link [ref=f9e976] [cursor=pointer]:
+                      - /url: https://www.ixigo.com/trains/18520/running-status
+                      - paragraph [ref=f9e977]: (18520 Running Status)
+                - generic [ref=f9e979]:
+                  - generic [ref=f9e980]:
+                    - paragraph [ref=f9e981]: 06:55
+                    - paragraph [ref=f9e982]: LTT
+                  - paragraph [ref=f9e984]: 03h 20m
+                  - generic [ref=f9e987]:
+                    - paragraph [ref=f9e988]: 10:15
+                    - paragraph [ref=f9e989]: PUNE
+                - link [ref=f9e990] [cursor=pointer]:
+                  - /url: /trains/search-pwa/from/LTT/to/PUNE/30-10-2026
+                  - button "Show Availability" [ref=f9e991]
+              - generic [ref=f9e995]:
+                - link "SL ₹150 WL 49 Alternate Travel Plan Icon Alternate Travel Plan" [ref=f9e996] [cursor=pointer]:
+                  - /url: /trains/search-pwa/from/LTT/to/PUNE/30-10-2026
+                  - generic [ref=f9e998]:
+                    - generic [ref=f9e999]:
+                      - generic [ref=f9e1000]: SL
+                      - generic [ref=f9e1001]: ₹150
+                    - generic [ref=f9e1002]:
+                      - paragraph [ref=f9e1003]: WL 49
+                      - generic [ref=f9e1004]:
+                        - img "Alternate Travel Plan Icon" [ref=f9e1005]
+                        - paragraph [ref=f9e1006]: Alternate Travel Plan
+                - link "3A ₹520 AVL 41 Available" [ref=f9e1007] [cursor=pointer]:
+                  - /url: /trains/search-pwa/from/LTT/to/PUNE/30-10-2026
+                  - generic [ref=f9e1009]:
+                    - generic [ref=f9e1010]:
+                      - generic [ref=f9e1011]: 3A
+                      - generic [ref=f9e1012]: ₹520
+                    - generic [ref=f9e1013]:
+                      - paragraph [ref=f9e1014]: AVL 41
+                      - paragraph [ref=f9e1015]: Available
+                - link "2A ₹725 WL 20 56% Chance" [ref=f9e1016] [cursor=pointer]:
+                  - /url: /trains/search-pwa/from/LTT/to/PUNE/30-10-2026
+                  - generic [ref=f9e1018]:
+                    - generic [ref=f9e1019]:
+                      - generic [ref=f9e1020]: 2A
+                      - generic [ref=f9e1021]: ₹725
+                    - generic [ref=f9e1022]:
+                      - paragraph [ref=f9e1023]: WL 20
+                      - paragraph [ref=f9e1024]: 56% Chance
+                - link "1A ₹1190 AVL 4 Available" [ref=f9e1025] [cursor=pointer]:
+                  - /url: /trains/search-pwa/from/LTT/to/PUNE/30-10-2026
+                  - generic [ref=f9e1027]:
+                    - generic [ref=f9e1028]:
+                      - generic [ref=f9e1029]: 1A
+                      - generic [ref=f9e1030]: ₹1190
+                    - generic [ref=f9e1031]:
+                      - paragraph [ref=f9e1032]: AVL 4
+                      - paragraph [ref=f9e1033]: Available
+            - generic [ref=f9e1035]:
+              - generic [ref=f9e1036]:
+                - generic [ref=f9e1037]:
+                  - link [ref=f9e1038] [cursor=pointer]:
+                    - /url: https://www.ixigo.com/trains/11007
+                    - paragraph [ref=f9e1039]: 11007 DECCAN EXPRESS
+                  - generic [ref=f9e1040]:
+                    - paragraph [ref=f9e1041]:
+                      - text: Runs on
+                      - generic [ref=f9e1042]: M
+                      - generic [ref=f9e1043]: T
+                      - generic [ref=f9e1044]: W
+                      - generic [ref=f9e1045]: T
+                      - generic [ref=f9e1046]: F
+                      - generic [ref=f9e1047]: S
+                      - generic [ref=f9e1048]: S
+                    - paragraph [ref=f9e1049]: Mail/Express
+                    - link [ref=f9e1050] [cursor=pointer]:
+                      - /url: https://www.ixigo.com/trains/11007/running-status
+                      - paragraph [ref=f9e1051]: (11007 Running Status)
+                - generic [ref=f9e1053]:
+                  - generic [ref=f9e1054]:
+                    - paragraph [ref=f9e1055]: 07:00
+                    - paragraph [ref=f9e1056]: CSMT
+                  - paragraph [ref=f9e1058]: 04h 05m
+                  - generic [ref=f9e1061]:
+                    - paragraph [ref=f9e1062]: 11:05
+                    - paragraph [ref=f9e1063]: PUNE
+                - link [ref=f9e1064] [cursor=pointer]:
+                  - /url: /trains/search-pwa/from/CSMT/to/PUNE/30-10-2026
+                  - button "Show Availability" [ref=f9e1065]
+              - generic [ref=f9e1069]:
+                - link "2S ₹100 WL 6 Alternate Travel Plan Icon Alternate Travel Plan" [ref=f9e1070] [cursor=pointer]:
+                  - /url: /trains/search-pwa/from/CSMT/to/PUNE/30-10-2026
+                  - generic [ref=f9e1072]:
+                    - generic [ref=f9e1073]:
+                      - generic [ref=f9e1074]: 2S
+                      - generic [ref=f9e1075]: ₹100
+                    - generic [ref=f9e1076]:
+                      - paragraph [ref=f9e1077]: WL 6
+                      - generic [ref=f9e1078]:
+                        - img "Alternate Travel Plan Icon" [ref=f9e1079]
+                        - paragraph [ref=f9e1080]: Alternate Travel Plan
+                - link "CC ₹345 WL 30 Low Chance" [ref=f9e1081] [cursor=pointer]:
+                  - /url: /trains/search-pwa/from/CSMT/to/PUNE/30-10-2026
+                  - generic [ref=f9e1083]:
+                    - generic [ref=f9e1084]:
+                      - generic [ref=f9e1085]: CC
+                      - generic [ref=f9e1086]: ₹345
+                    - generic [ref=f9e1087]:
+                      - paragraph [ref=f9e1088]: WL 30
+                      - paragraph [ref=f9e1089]: Low Chance
+                - link "EV ₹920 WL 4 Alternate Travel Plan Icon Alternate Travel Plan" [ref=f9e1090] [cursor=pointer]:
+                  - /url: /trains/search-pwa/from/CSMT/to/PUNE/30-10-2026
+                  - generic [ref=f9e1092]:
+                    - generic [ref=f9e1093]:
+                      - generic [ref=f9e1094]: EV
+                      - generic [ref=f9e1095]: ₹920
+                    - generic [ref=f9e1096]:
+                      - paragraph [ref=f9e1097]: WL 4
+                      - generic [ref=f9e1098]:
+                        - img "Alternate Travel Plan Icon" [ref=f9e1099]
+                        - paragraph [ref=f9e1100]: Alternate Travel Plan
+            - generic [ref=f9e1102]:
+              - generic [ref=f9e1103]:
+                - generic [ref=f9e1104]:
+                  - link [ref=f9e1105] [cursor=pointer]:
+                    - /url: https://www.ixigo.com/trains/11301
+                    - paragraph [ref=f9e1106]: 11301 UDYAN EXPRESS
+                  - generic [ref=f9e1107]:
+                    - paragraph [ref=f9e1108]:
+                      - text: Runs on
+                      - generic [ref=f9e1109]: M
+                      - generic [ref=f9e1110]: T
+                      - generic [ref=f9e1111]: W
+                      - generic [ref=f9e1112]: T
+                      - generic [ref=f9e1113]: F
+                      - generic [ref=f9e1114]: S
+                      - generic [ref=f9e1115]: S
+                    - paragraph [ref=f9e1116]: Mail/Express
+                    - link [ref=f9e1117] [cursor=pointer]:
+                      - /url: https://www.ixigo.com/trains/11301/running-status
+                      - paragraph [ref=f9e1118]: (11301 Running Status)
+                - generic [ref=f9e1120]:
+                  - generic [ref=f9e1121]:
+                    - paragraph [ref=f9e1122]: 07:55
+                    - paragraph [ref=f9e1123]: CSMT
+                  - paragraph [ref=f9e1125]: 03h 45m
+                  - generic [ref=f9e1128]:
+                    - paragraph [ref=f9e1129]: 11:40
+                    - paragraph [ref=f9e1130]: PUNE
+                - link [ref=f9e1131] [cursor=pointer]:
+                  - /url: /trains/search-pwa/from/CSMT/to/PUNE/30-10-2026
+                  - button "Show Availability" [ref=f9e1132]
+              - generic [ref=f9e1136]:
+                - link "SL ₹150 WL 37 56% Chance" [ref=f9e1137] [cursor=pointer]:
+                  - /url: /trains/search-pwa/from/CSMT/to/PUNE/30-10-2026
+                  - generic [ref=f9e1139]:
+                    - generic [ref=f9e1140]:
+                      - generic [ref=f9e1141]: SL
+                      - generic [ref=f9e1142]: ₹150
+                    - generic [ref=f9e1143]:
+                      - paragraph [ref=f9e1144]: WL 37
+                      - paragraph [ref=f9e1145]: 56% Chance
+                - link "3E ₹520 WL 8 Alternate Travel Plan Icon Alternate Travel Plan" [ref=f9e1146] [cursor=pointer]:
+                  - /url: /trains/search-pwa/from/CSMT/to/PUNE/30-10-2026
+                  - generic [ref=f9e1148]:
+                    - generic [ref=f9e1149]:
+                      - generic [ref=f9e1150]: 3E
+                      - generic [ref=f9e1151]: ₹520
+                    - generic [ref=f9e1152]:
+                      - paragraph [ref=f9e1153]: WL 8
+                      - generic [ref=f9e1154]:
+                        - img "Alternate Travel Plan Icon" [ref=f9e1155]
+                        - paragraph [ref=f9e1156]: Alternate Travel Plan
+                - link "3A ₹520 WL 18 41% Chance" [ref=f9e1157] [cursor=pointer]:
+                  - /url: /trains/search-pwa/from/CSMT/to/PUNE/30-10-2026
+                  - generic [ref=f9e1159]:
+                    - generic [ref=f9e1160]:
+                      - generic [ref=f9e1161]: 3A
+                      - generic [ref=f9e1162]: ₹520
+                    - generic [ref=f9e1163]:
+                      - paragraph [ref=f9e1164]: WL 18
+                      - paragraph [ref=f9e1165]: 41% Chance
+                - link "2A ₹725 WL 17 Alternate Travel Plan Icon Alternate Travel Plan" [ref=f9e1166] [cursor=pointer]:
+                  - /url: /trains/search-pwa/from/CSMT/to/PUNE/30-10-2026
+                  - generic [ref=f9e1168]:
+                    - generic [ref=f9e1169]:
+                      - generic [ref=f9e1170]: 2A
+                      - generic [ref=f9e1171]: ₹725
+                    - generic [ref=f9e1172]:
+                      - paragraph [ref=f9e1173]: WL 17
+                      - generic [ref=f9e1174]:
+                        - img "Alternate Travel Plan Icon" [ref=f9e1175]
+                        - paragraph [ref=f9e1176]: Alternate Travel Plan
+                - link "1A ₹1190 AVL 1 Available" [ref=f9e1177] [cursor=pointer]:
+                  - /url: /trains/search-pwa/from/CSMT/to/PUNE/30-10-2026
+                  - generic [ref=f9e1179]:
+                    - generic [ref=f9e1180]:
+                      - generic [ref=f9e1181]: 1A
+                      - generic [ref=f9e1182]: ₹1190
+                    - generic [ref=f9e1183]:
+                      - paragraph [ref=f9e1184]: AVL 1
+                      - paragraph [ref=f9e1185]: Available
+            - generic [ref=f9e1187]:
+              - generic [ref=f9e1188]:
+                - generic [ref=f9e1189]:
+                  - link [ref=f9e1190] [cursor=pointer]:
+                    - /url: https://www.ixigo.com/trains/11029
+                    - paragraph [ref=f9e1191]: 11029 KOYNA EXPRESS
+                  - generic [ref=f9e1192]:
+                    - paragraph [ref=f9e1193]:
+                      - text: Runs on
+                      - generic [ref=f9e1194]: M
+                      - generic [ref=f9e1195]: T
+                      - generic [ref=f9e1196]: W
+                      - generic [ref=f9e1197]: T
+                      - generic [ref=f9e1198]: F
+                      - generic [ref=f9e1199]: S
+                      - generic [ref=f9e1200]: S
+                    - paragraph [ref=f9e1201]: Mail/Express
+                    - link [ref=f9e1202] [cursor=pointer]:
+                      - /url: https://www.ixigo.com/trains/11029/running-status
+                      - paragraph [ref=f9e1203]: (11029 Running Status)
+                - generic [ref=f9e1205]:
+                  - generic [ref=f9e1206]:
+                    - paragraph [ref=f9e1207]: 08:40
+                    - paragraph [ref=f9e1208]: CSMT
+                  - paragraph [ref=f9e1210]: 03h 55m
+                  - generic [ref=f9e1213]:
+                    - paragraph [ref=f9e1214]: 12:35
+                    - paragraph [ref=f9e1215]: PUNE
+                - link [ref=f9e1216] [cursor=pointer]:
+                  - /url: /trains/search-pwa/from/CSMT/to/PUNE/30-10-2026
+                  - button "Show Availability" [ref=f9e1217]
+              - generic [ref=f9e1221]:
+                - link "2S ₹100 WL 42 50% Chance" [ref=f9e1222] [cursor=pointer]:
+                  - /url: /trains/search-pwa/from/CSMT/to/PUNE/30-10-2026
+                  - generic [ref=f9e1224]:
+                    - generic [ref=f9e1225]:
+                      - generic [ref=f9e1226]: 2S
+                      - generic [ref=f9e1227]: ₹100
+                    - generic [ref=f9e1228]:
+                      - paragraph [ref=f9e1229]: WL 42
+                      - paragraph [ref=f9e1230]: 50% Chance
+                - link "SL ₹150 WL 13 Alternate Travel Plan Icon Alternate Travel Plan" [ref=f9e1231] [cursor=pointer]:
+                  - /url: /trains/search-pwa/from/CSMT/to/PUNE/30-10-2026
+                  - generic [ref=f9e1233]:
+                    - generic [ref=f9e1234]:
+                      - generic [ref=f9e1235]: SL
+                      - generic [ref=f9e1236]: ₹150
+                    - generic [ref=f9e1237]:
+                      - paragraph [ref=f9e1238]: WL 13
+                      - generic [ref=f9e1239]:
+                        - img "Alternate Travel Plan Icon" [ref=f9e1240]
+                        - paragraph [ref=f9e1241]: Alternate Travel Plan
+                - link "CC ₹345 WL 18 Alternate Travel Plan Icon Alternate Travel Plan" [ref=f9e1242] [cursor=pointer]:
+                  - /url: /trains/search-pwa/from/CSMT/to/PUNE/30-10-2026
+                  - generic [ref=f9e1244]:
+                    - generic [ref=f9e1245]:
+                      - generic [ref=f9e1246]: CC
+                      - generic [ref=f9e1247]: ₹345
+                    - generic [ref=f9e1248]:
+                      - paragraph [ref=f9e1249]: WL 18
+                      - generic [ref=f9e1250]:
+                        - img "Alternate Travel Plan Icon" [ref=f9e1251]
+                        - paragraph [ref=f9e1252]: Alternate Travel Plan
+                - link "3A ₹520 WL 8 Alternate Travel Plan Icon Alternate Travel Plan" [ref=f9e1253] [cursor=pointer]:
+                  - /url: /trains/search-pwa/from/CSMT/to/PUNE/30-10-2026
+                  - generic [ref=f9e1255]:
+                    - generic [ref=f9e1256]:
+                      - generic [ref=f9e1257]: 3A
+                      - generic [ref=f9e1258]: ₹520
+                    - generic [ref=f9e1259]:
+                      - paragraph [ref=f9e1260]: WL 8
+                      - generic [ref=f9e1261]:
+                        - img "Alternate Travel Plan Icon" [ref=f9e1262]
+                        - paragraph [ref=f9e1263]: Alternate Travel Plan
+                - link "2A ₹725 WL 2 Alternate Travel Plan Icon Alternate Travel Plan" [ref=f9e1264] [cursor=pointer]:
+                  - /url: /trains/search-pwa/from/CSMT/to/PUNE/30-10-2026
+                  - generic [ref=f9e1266]:
+                    - generic [ref=f9e1267]:
+                      - generic [ref=f9e1268]: 2A
+                      - generic [ref=f9e1269]: ₹725
+                    - generic [ref=f9e1270]:
+                      - paragraph [ref=f9e1271]: WL 2
+                      - generic [ref=f9e1272]:
+                        - img "Alternate Travel Plan Icon" [ref=f9e1273]
+                        - paragraph [ref=f9e1274]: Alternate Travel Plan
+                - link "1A ₹1190 WL 6 Alternate Travel Plan Icon Alternate Travel Plan" [ref=f9e1275] [cursor=pointer]:
+                  - /url: /trains/search-pwa/from/CSMT/to/PUNE/30-10-2026
+                  - generic [ref=f9e1277]:
+                    - generic [ref=f9e1278]:
+                      - generic [ref=f9e1279]: 1A
+                      - generic [ref=f9e1280]: ₹1190
+                    - generic [ref=f9e1281]:
+                      - paragraph [ref=f9e1282]: WL 6
+                      - generic [ref=f9e1283]:
+                        - img "Alternate Travel Plan Icon" [ref=f9e1284]
+                        - paragraph [ref=f9e1285]: Alternate Travel Plan
+            - generic [ref=f9e1287]:
+              - generic [ref=f9e1288]:
+                - generic [ref=f9e1289]:
+                  - link [ref=f9e1290] [cursor=pointer]:
+                    - /url: https://www.ixigo.com/trains/20495
+                    - paragraph [ref=f9e1291]: 20495 JU HDP SF EXP
+                  - generic [ref=f9e1292]:
+                    - paragraph [ref=f9e1293]:
+                      - text: Runs on
+                      - generic [ref=f9e1294]: M
+                      - generic [ref=f9e1295]: T
+                      - generic [ref=f9e1296]: W
+                      - generic [ref=f9e1297]: T
+                      - generic [ref=f9e1298]: F
+                      - generic [ref=f9e1299]: S
+                      - generic [ref=f9e1300]: S
+                    - paragraph [ref=f9e1301]: Mail/Express
+                    - link [ref=f9e1302] [cursor=pointer]:
+                      - /url: https://www.ixigo.com/trains/20495/running-status
+                      - paragraph [ref=f9e1303]: (20495 Running Status)
+                - generic [ref=f9e1305]:
+                  - generic [ref=f9e1306]:
+                    - paragraph [ref=f9e1307]: 12:22
+                    - paragraph [ref=f9e1308]: BSR
+                  - paragraph [ref=f9e1310]: 04h 18m
+                  - generic [ref=f9e1313]:
+                    - paragraph [ref=f9e1314]: 16:40
+                    - paragraph [ref=f9e1315]: PUNE
+                - link [ref=f9e1316] [cursor=pointer]:
+                  - /url: /trains/search-pwa/from/BSR/to/PUNE/30-10-2026
+                  - button "Show Availability" [ref=f9e1317]
+              - generic [ref=f9e1321]:
+                - link "SL ₹180 WL 34 32% Chance" [ref=f9e1322] [cursor=pointer]:
+                  - /url: /trains/search-pwa/from/BSR/to/PUNE/30-10-2026
+                  - generic [ref=f9e1324]:
+                    - generic [ref=f9e1325]:
+                      - generic [ref=f9e1326]: SL
+                      - generic [ref=f9e1327]: ₹180
+                    - generic [ref=f9e1328]:
+                      - paragraph [ref=f9e1329]: WL 34
+                      - paragraph [ref=f9e1330]: 32% Chance
+                - link "3E ₹565 WL 11 42% Chance" [ref=f9e1331] [cursor=pointer]:
+                  - /url: /trains/search-pwa/from/BSR/to/PUNE/30-10-2026
+                  - generic [ref=f9e1333]:
+                    - generic [ref=f9e1334]:
+                      - generic [ref=f9e1335]: 3E
+                      - generic [ref=f9e1336]: ₹565
+                    - generic [ref=f9e1337]:
+                      - paragraph [ref=f9e1338]: WL 11
+                      - paragraph [ref=f9e1339]: 42% Chance
+                - link "3A ₹565 WL 18 41% Chance" [ref=f9e1340] [cursor=pointer]:
+                  - /url: /trains/search-pwa/from/BSR/to/PUNE/30-10-2026
+                  - generic [ref=f9e1342]:
+                    - generic [ref=f9e1343]:
+                      - generic [ref=f9e1344]: 3A
+                      - generic [ref=f9e1345]: ₹565
+                    - generic [ref=f9e1346]:
+                      - paragraph [ref=f9e1347]: WL 18
+                      - paragraph [ref=f9e1348]: 41% Chance
+                - link "2A ₹770 WL 12 Alternate Travel Plan Icon Alternate Travel Plan" [ref=f9e1349] [cursor=pointer]:
+                  - /url: /trains/search-pwa/from/BSR/to/PUNE/30-10-2026
+                  - generic [ref=f9e1351]:
+                    - generic [ref=f9e1352]:
+                      - generic [ref=f9e1353]: 2A
+                      - generic [ref=f9e1354]: ₹770
+                    - generic [ref=f9e1355]:
+                      - paragraph [ref=f9e1356]: WL 12
+                      - generic [ref=f9e1357]:
+                        - img "Alternate Travel Plan Icon" [ref=f9e1358]
+                        - paragraph [ref=f9e1359]: Alternate Travel Plan
+            - generic [ref=f9e1361]:
+              - generic [ref=f9e1362]:
+                - generic [ref=f9e1363]:
+                  - link [ref=f9e1364] [cursor=pointer]:
+                    - /url: https://www.ixigo.com/trains/22159
+                    - paragraph [ref=f9e1365]: 22159 CSMT CHENNAI EXP
+                  - generic [ref=f9e1366]:
+                    - paragraph [ref=f9e1367]:
+                      - text: Runs on
+                      - generic [ref=f9e1368]: M
+                      - generic [ref=f9e1369]: T
+                      - generic [ref=f9e1370]: W
+                      - generic [ref=f9e1371]: T
+                      - generic [ref=f9e1372]: F
+                      - generic [ref=f9e1373]: S
+                      - generic [ref=f9e1374]: S
+                    - paragraph [ref=f9e1375]: Mail/Express
+                    - link [ref=f9e1376] [cursor=pointer]:
+                      - /url: https://www.ixigo.com/trains/22159/running-status
+                      - paragraph [ref=f9e1377]: (22159 Running Status)
+                - generic [ref=f9e1379]:
+                  - generic [ref=f9e1380]:
+                    - paragraph [ref=f9e1381]: 12:45
+                    - paragraph [ref=f9e1382]: CSMT
+                  - paragraph [ref=f9e1384]: 03h 35m
+                  - generic [ref=f9e1387]:
+                    - paragraph [ref=f9e1388]: 16:20
+                    - paragraph [ref=f9e1389]: PUNE
+                - link [ref=f9e1390] [cursor=pointer]:
+                  - /url: /trains/search-pwa/from/CSMT/to/PUNE/30-10-2026
+                  - button "Show Availability" [ref=f9e1391]
+              - generic [ref=f9e1395]:
+                - link "SL ₹180 WL 42 Alternate Travel Plan Icon Alternate Travel Plan" [ref=f9e1396] [cursor=pointer]:
+                  - /url: /trains/search-pwa/from/CSMT/to/PUNE/30-10-2026
+                  - generic [ref=f9e1398]:
+                    - generic [ref=f9e1399]:
+                      - generic [ref=f9e1400]: SL
+                      - generic [ref=f9e1401]: ₹180
+                    - generic [ref=f9e1402]:
+                      - paragraph [ref=f9e1403]: WL 42
+                      - generic [ref=f9e1404]:
+                        - img "Alternate Travel Plan Icon" [ref=f9e1405]
+                        - paragraph [ref=f9e1406]: Alternate Travel Plan
+                - link "3E ₹565 WL 23 Alternate Travel Plan Icon Alternate Travel Plan" [ref=f9e1407] [cursor=pointer]:
+                  - /url: /trains/search-pwa/from/CSMT/to/PUNE/30-10-2026
+                  - generic [ref=f9e1409]:
+                    - generic [ref=f9e1410]:
+                      - generic [ref=f9e1411]: 3E
+                      - generic [ref=f9e1412]: ₹565
+                    - generic [ref=f9e1413]:
+                      - paragraph [ref=f9e1414]: WL 23
+                      - generic [ref=f9e1415]:
+                        - img "Alternate Travel Plan Icon" [ref=f9e1416]
+                        - paragraph [ref=f9e1417]: Alternate Travel Plan
+                - link "2A ₹770 WL 12 Alternate Travel Plan Icon Alternate Travel Plan" [ref=f9e1418] [cursor=pointer]:
+                  - /url: /trains/search-pwa/from/CSMT/to/PUNE/30-10-2026
+                  - generic [ref=f9e1420]:
+                    - generic [ref=f9e1421]:
+                      - generic [ref=f9e1422]: 2A
+                      - generic [ref=f9e1423]: ₹770
+                    - generic [ref=f9e1424]:
+                      - paragraph [ref=f9e1425]: WL 12
+                      - generic [ref=f9e1426]:
+                        - img "Alternate Travel Plan Icon" [ref=f9e1427]
+                        - paragraph [ref=f9e1428]: Alternate Travel Plan
+            - generic [ref=f9e1430]:
+              - generic [ref=f9e1431]:
+                - generic [ref=f9e1432]:
+                  - link [ref=f9e1433] [cursor=pointer]:
+                    - /url: https://www.ixigo.com/trains/20991
+                    - paragraph [ref=f9e1434]: 20991 AII DD SUPERFAST
+                  - generic [ref=f9e1435]:
+                    - paragraph [ref=f9e1436]:
+                      - text: Runs on
+                      - generic [ref=f9e1437]: M
+                      - generic [ref=f9e1438]: T
+                      - generic [ref=f9e1439]: W
+                      - generic [ref=f9e1440]: T
+                      - generic [ref=f9e1441]: F
+                      - generic [ref=f9e1442]: S
+                      - generic [ref=f9e1443]: S
+                    - paragraph [ref=f9e1444]: Mail/Express
+                    - link [ref=f9e1445] [cursor=pointer]:
+                      - /url: https://www.ixigo.com/trains/20991/running-status
+                      - paragraph [ref=f9e1446]: (20991 Running Status)
+                - generic [ref=f9e1448]:
+                  - generic [ref=f9e1449]:
+                    - paragraph [ref=f9e1450]: 13:05
+                    - paragraph [ref=f9e1451]: BSR
+                  - paragraph [ref=f9e1453]: 03h 45m
+                  - generic [ref=f9e1456]:
+                    - paragraph [ref=f9e1457]: 16:50
+                    - paragraph [ref=f9e1458]: PUNE
+                - link [ref=f9e1459] [cursor=pointer]:
+                  - /url: /trains/search-pwa/from/BSR/to/PUNE/30-10-2026
+                  - button "Show Availability" [ref=f9e1460]
+              - generic [ref=f9e1464]:
+                - link "SL ₹180 WL 35 Alternate Travel Plan Icon Alternate Travel Plan" [ref=f9e1465] [cursor=pointer]:
+                  - /url: /trains/search-pwa/from/BSR/to/PUNE/30-10-2026
+                  - generic [ref=f9e1467]:
+                    - generic [ref=f9e1468]:
+                      - generic [ref=f9e1469]: SL
+                      - generic [ref=f9e1470]: ₹180
+                    - generic [ref=f9e1471]:
+                      - paragraph [ref=f9e1472]: WL 35
+                      - generic [ref=f9e1473]:
+                        - img "Alternate Travel Plan Icon" [ref=f9e1474]
+                        - paragraph [ref=f9e1475]: Alternate Travel Plan
+                - link "3A ₹565 WL 18 Alternate Travel Plan Icon Alternate Travel Plan" [ref=f9e1476] [cursor=pointer]:
+                  - /url: /trains/search-pwa/from/BSR/to/PUNE/30-10-2026
+                  - generic [ref=f9e1478]:
+                    - generic [ref=f9e1479]:
+                      - generic [ref=f9e1480]: 3A
+                      - generic [ref=f9e1481]: ₹565
+                    - generic [ref=f9e1482]:
+                      - paragraph [ref=f9e1483]: WL 18
+                      - generic [ref=f9e1484]:
+                        - img "Alternate Travel Plan Icon" [ref=f9e1485]
+                        - paragraph [ref=f9e1486]: Alternate Travel Plan
+                - link "2A ₹770 WL 19 Alternate Travel Plan Icon Alternate Travel Plan" [ref=f9e1487] [cursor=pointer]:
+                  - /url: /trains/search-pwa/from/BSR/to/PUNE/30-10-2026
+                  - generic [ref=f9e1489]:
+                    - generic [ref=f9e1490]:
+                      - generic [ref=f9e1491]: 2A
+                      - generic [ref=f9e1492]: ₹770
+                    - generic [ref=f9e1493]:
+                      - paragraph [ref=f9e1494]: WL 19
+                      - generic [ref=f9e1495]:
+                        - img "Alternate Travel Plan Icon" [ref=f9e1496]
+                        - paragraph [ref=f9e1497]: Alternate Travel Plan
+            - generic [ref=f9e1499]:
+              - generic [ref=f9e1500]:
+                - generic [ref=f9e1501]:
+                  - link [ref=f9e1502] [cursor=pointer]:
+                    - /url: https://www.ixigo.com/trains/14806
+                    - paragraph [ref=f9e1503]: 14806 BME YPR AC EXP
+                  - generic [ref=f9e1504]:
+                    - paragraph [ref=f9e1505]:
+                      - text: Runs on
+                      - generic [ref=f9e1506]: M
+                      - generic [ref=f9e1507]: T
+                      - generic [ref=f9e1508]: W
+                      - generic [ref=f9e1509]: T
+                      - generic [ref=f9e1510]: F
+                      - generic [ref=f9e1511]: S
+                      - generic [ref=f9e1512]: S
+                    - paragraph [ref=f9e1513]: Mail/Express
+                    - link [ref=f9e1514] [cursor=pointer]:
+                      - /url: https://www.ixigo.com/trains/14806/running-status
+                      - paragraph [ref=f9e1515]: (14806 Running Status)
+                - generic [ref=f9e1517]:
+                  - generic [ref=f9e1518]:
+                    - paragraph [ref=f9e1519]: 13:50
+                    - paragraph [ref=f9e1520]: BSR
+                  - paragraph [ref=f9e1522]: 05h 05m
+                  - generic [ref=f9e1525]:
+                    - paragraph [ref=f9e1526]: 18:55
+                    - paragraph [ref=f9e1527]: PUNE
+                - link [ref=f9e1528] [cursor=pointer]:
+                  - /url: /trains/search-pwa/from/BSR/to/PUNE/30-10-2026
+                  - button "Show Availability" [ref=f9e1529]
+              - generic [ref=f9e1533]:
+                - link "3A ₹520 WL 21 55% Chance" [ref=f9e1534] [cursor=pointer]:
+                  - /url: /trains/search-pwa/from/BSR/to/PUNE/30-10-2026
+                  - generic [ref=f9e1536]:
+                    - generic [ref=f9e1537]:
+                      - generic [ref=f9e1538]: 3A
+                      - generic [ref=f9e1539]: ₹520
+                    - generic [ref=f9e1540]:
+                      - paragraph [ref=f9e1541]: WL 21
+                      - paragraph [ref=f9e1542]: 55% Chance
+                - link "2A ₹725 WL 7 Alternate Travel Plan Icon Alternate Travel Plan" [ref=f9e1543] [cursor=pointer]:
+                  - /url: /trains/search-pwa/from/BSR/to/PUNE/30-10-2026
+                  - generic [ref=f9e1545]:
+                    - generic [ref=f9e1546]:
+                      - generic [ref=f9e1547]: 2A
+                      - generic [ref=f9e1548]: ₹725
+                    - generic [ref=f9e1549]:
+                      - paragraph [ref=f9e1550]: WL 7
+                      - generic [ref=f9e1551]:
+                        - img "Alternate Travel Plan Icon" [ref=f9e1552]
+                        - paragraph [ref=f9e1553]: Alternate Travel Plan
+                - link "1A ₹1190 WL 1 Alternate Travel Plan Icon Alternate Travel Plan" [ref=f9e1554] [cursor=pointer]:
+                  - /url: /trains/search-pwa/from/BSR/to/PUNE/30-10-2026
+                  - generic [ref=f9e1556]:
+                    - generic [ref=f9e1557]:
+                      - generic [ref=f9e1558]: 1A
+                      - generic [ref=f9e1559]: ₹1190
+                    - generic [ref=f9e1560]:
+                      - paragraph [ref=f9e1561]: WL 1
+                      - generic [ref=f9e1562]:
+                        - img "Alternate Travel Plan Icon" [ref=f9e1563]
+                        - paragraph [ref=f9e1564]: Alternate Travel Plan
+            - generic [ref=f9e1566]:
+              - generic [ref=f9e1567]:
+                - generic [ref=f9e1568]:
+                  - link [ref=f9e1569] [cursor=pointer]:
+                    - /url: https://www.ixigo.com/trains/11019
+                    - paragraph [ref=f9e1570]: 11019 KONARK EXPRESS
+                  - generic [ref=f9e1571]:
+                    - paragraph [ref=f9e1572]:
+                      - text: Runs on
+                      - generic [ref=f9e1573]: M
+                      - generic [ref=f9e1574]: T
+                      - generic [ref=f9e1575]: W
+                      - generic [ref=f9e1576]: T
+                      - generic [ref=f9e1577]: F
+                      - generic [ref=f9e1578]: S
+                      - generic [ref=f9e1579]: S
+                    - paragraph [ref=f9e1580]: Mail/Express
+                    - link [ref=f9e1581] [cursor=pointer]:
+                      - /url: https://www.ixigo.com/trains/11019/running-status
+                      - paragraph [ref=f9e1582]: (11019 Running Status)
+                - generic [ref=f9e1584]:
+                  - generic [ref=f9e1585]:
+                    - paragraph [ref=f9e1586]: 14:00
+                    - paragraph [ref=f9e1587]: CSMT
+                  - paragraph [ref=f9e1589]: 03h 55m
+                  - generic [ref=f9e1592]:
+                    - paragraph [ref=f9e1593]: 17:55
+                    - paragraph [ref=f9e1594]: PUNE
+                - link [ref=f9e1595] [cursor=pointer]:
+                  - /url: /trains/search-pwa/from/CSMT/to/PUNE/30-10-2026
+                  - button "Show Availability" [ref=f9e1596]
+              - generic [ref=f9e1600]:
+                - link "SL ₹150 WL 76 Low Chance" [ref=f9e1601] [cursor=pointer]:
+                  - /url: /trains/search-pwa/from/CSMT/to/PUNE/30-10-2026
+                  - generic [ref=f9e1603]:
+                    - generic [ref=f9e1604]:
+                      - generic [ref=f9e1605]: SL
+                      - generic [ref=f9e1606]: ₹150
+                    - generic [ref=f9e1607]:
+                      - paragraph [ref=f9e1608]: WL 76
+                      - paragraph [ref=f9e1609]: Low Chance
+                - link "3A ₹520 AVL 25 Available" [ref=f9e1610] [cursor=pointer]:
+                  - /url: /trains/search-pwa/from/CSMT/to/PUNE/30-10-2026
+                  - generic [ref=f9e1612]:
+                    - generic [ref=f9e1613]:
+                      - generic [ref=f9e1614]: 3A
+                      - generic [ref=f9e1615]: ₹520
+                    - generic [ref=f9e1616]:
+                      - paragraph [ref=f9e1617]: AVL 25
+                      - paragraph [ref=f9e1618]: Available
+                - link "2A ₹725 AVL 2 Available" [ref=f9e1619] [cursor=pointer]:
+                  - /url: /trains/search-pwa/from/CSMT/to/PUNE/30-10-2026
+                  - generic [ref=f9e1621]:
+                    - generic [ref=f9e1622]:
+                      - generic [ref=f9e1623]: 2A
+                      - generic [ref=f9e1624]: ₹725
+                    - generic [ref=f9e1625]:
+                      - paragraph [ref=f9e1626]: AVL 2
+                      - paragraph [ref=f9e1627]: Available
+            - generic [ref=f9e1629]:
+              - generic [ref=f9e1630]:
+                - generic [ref=f9e1631]:
+                  - link [ref=f9e1632] [cursor=pointer]:
+                    - /url: https://www.ixigo.com/trains/22732
+                    - paragraph [ref=f9e1633]: 22732 HYDERABAD EXP
+                  - generic [ref=f9e1634]:
+                    - paragraph [ref=f9e1635]:
+                      - text: Runs on
+                      - generic [ref=f9e1636]: M
+                      - generic [ref=f9e1637]: T
+                      - generic [ref=f9e1638]: W
+                      - generic [ref=f9e1639]: T
+                      - generic [ref=f9e1640]: F
+                      - generic [ref=f9e1641]: S
+                      - generic [ref=f9e1642]: S
+                    - paragraph [ref=f9e1643]: Mail/Express
+                    - link [ref=f9e1644] [cursor=pointer]:
+                      - /url: https://www.ixigo.com/trains/22732/running-status
+                      - paragraph [ref=f9e1645]: (22732 Running Status)
+                - generic [ref=f9e1647]:
+                  - generic [ref=f9e1648]:
+                    - paragraph [ref=f9e1649]: 14:10
+                    - paragraph [ref=f9e1650]: CSMT
+                  - paragraph [ref=f9e1652]: 03h 55m
+                  - generic [ref=f9e1655]:
+                    - paragraph [ref=f9e1656]: 18:05
+                    - paragraph [ref=f9e1657]: PUNE
+                - link [ref=f9e1658] [cursor=pointer]:
+                  - /url: /trains/search-pwa/from/CSMT/to/PUNE/30-10-2026
+                  - button "Show Availability" [ref=f9e1659]
+              - generic [ref=f9e1663]:
+                - link "SL ₹180 WL 25 Alternate Travel Plan Icon Alternate Travel Plan" [ref=f9e1664] [cursor=pointer]:
+                  - /url: /trains/search-pwa/from/CSMT/to/PUNE/30-10-2026
+                  - generic [ref=f9e1666]:
+                    - generic [ref=f9e1667]:
+                      - generic [ref=f9e1668]: SL
+                      - generic [ref=f9e1669]: ₹180
+                    - generic [ref=f9e1670]:
+                      - paragraph [ref=f9e1671]: WL 25
+                      - generic [ref=f9e1672]:
+                        - img "Alternate Travel Plan Icon" [ref=f9e1673]
+                        - paragraph [ref=f9e1674]: Alternate Travel Plan
+                - link "3A ₹565 AVL 20 Available" [ref=f9e1675] [cursor=pointer]:
+                  - /url: /trains/search-pwa/from/CSMT/to/PUNE/30-10-2026
+                  - generic [ref=f9e1677]:
+                    - generic [ref=f9e1678]:
+                      - generic [ref=f9e1679]: 3A
+                      - generic [ref=f9e1680]: ₹565
+                    - generic [ref=f9e1681]:
+                      - paragraph [ref=f9e1682]: AVL 20
+                      - paragraph [ref=f9e1683]: Available
+                - link "2A ₹770 AVL 4 Available" [ref=f9e1684] [cursor=pointer]:
+                  - /url: /trains/search-pwa/from/CSMT/to/PUNE/30-10-2026
+                  - generic [ref=f9e1686]:
+                    - generic [ref=f9e1687]:
+                      - generic [ref=f9e1688]: 2A
+                      - generic [ref=f9e1689]: ₹770
+                    - generic [ref=f9e1690]:
+                      - paragraph [ref=f9e1691]: AVL 4
+                      - paragraph [ref=f9e1692]: Available
+            - generic [ref=f9e1694]:
+              - generic [ref=f9e1695]:
+                - generic [ref=f9e1696]:
+                  - link [ref=f9e1697] [cursor=pointer]:
+                    - /url: https://www.ixigo.com/trains/17613
+                    - paragraph [ref=f9e1698]: 17613 PNVL NED EXPRESS
+                  - generic [ref=f9e1699]:
+                    - paragraph [ref=f9e1700]:
+                      - text: Runs on
+                      - generic [ref=f9e1701]: M
+                      - generic [ref=f9e1702]: T
+                      - generic [ref=f9e1703]: W
+                      - generic [ref=f9e1704]: T
+                      - generic [ref=f9e1705]: F
+                      - generic [ref=f9e1706]: S
+                      - generic [ref=f9e1707]: S
+                    - paragraph [ref=f9e1708]: Mail/Express
+                    - link [ref=f9e1709] [cursor=pointer]:
+                      - /url: https://www.ixigo.com/trains/17613/running-status
+                      - paragraph [ref=f9e1710]: (17613 Running Status)
+                - generic [ref=f9e1712]:
+                  - generic [ref=f9e1713]:
+                    - paragraph [ref=f9e1714]: 16:00
+                    - paragraph [ref=f9e1715]: PNVL
+                  - paragraph [ref=f9e1717]: 03h 15m
+                  - generic [ref=f9e1720]:
+                    - paragraph [ref=f9e1721]: 19:15
+                    - paragraph [ref=f9e1722]: PUNE
+                - link [ref=f9e1723] [cursor=pointer]:
+                  - /url: /trains/search-pwa/from/PNVL/to/PUNE/30-10-2026
+                  - button "Show Availability" [ref=f9e1724]
+              - generic [ref=f9e1728]:
+                - link "SL ₹150 WL 48 55% Chance" [ref=f9e1729] [cursor=pointer]:
+                  - /url: /trains/search-pwa/from/PNVL/to/PUNE/30-10-2026
+                  - generic [ref=f9e1731]:
+                    - generic [ref=f9e1732]:
+                      - generic [ref=f9e1733]: SL
+                      - generic [ref=f9e1734]: ₹150
+                    - generic [ref=f9e1735]:
+                      - paragraph [ref=f9e1736]: WL 48
+                      - paragraph [ref=f9e1737]: 55% Chance
+                - link "3A ₹520 AVL 55 Available" [ref=f9e1738] [cursor=pointer]:
+                  - /url: /trains/search-pwa/from/PNVL/to/PUNE/30-10-2026
+                  - generic [ref=f9e1740]:
+                    - generic [ref=f9e1741]:
+                      - generic [ref=f9e1742]: 3A
+                      - generic [ref=f9e1743]: ₹520
+                    - generic [ref=f9e1744]:
+                      - paragraph [ref=f9e1745]: AVL 55
+                      - paragraph [ref=f9e1746]: Available
+                - link "2A ₹725 AVL 14 Available" [ref=f9e1747] [cursor=pointer]:
+                  - /url: /trains/search-pwa/from/PNVL/to/PUNE/30-10-2026
+                  - generic [ref=f9e1749]:
+                    - generic [ref=f9e1750]:
+                      - generic [ref=f9e1751]: 2A
+                      - generic [ref=f9e1752]: ₹725
+                    - generic [ref=f9e1753]:
+                      - paragraph [ref=f9e1754]: AVL 14
+                      - paragraph [ref=f9e1755]: Available
+            - generic [ref=f9e1757]:
+              - generic [ref=f9e1758]:
+                - generic [ref=f9e1759]:
+                  - link [ref=f9e1760] [cursor=pointer]:
+                    - /url: https://www.ixigo.com/trains/22225
+                    - paragraph [ref=f9e1761]: 22225 SUR VANDE BHARAT
+                  - generic [ref=f9e1762]:
+                    - paragraph [ref=f9e1763]:
+                      - text: Runs on
+                      - generic [ref=f9e1764]: M
+                      - generic [ref=f9e1765]: T
+                      - generic [ref=f9e1766]: W
+                      - generic [ref=f9e1767]: T
+                      - generic [ref=f9e1768]: F
+                      - generic [ref=f9e1769]: S
+                      - generic [ref=f9e1770]: S
+                    - paragraph [ref=f9e1771]: Mail/Express
+                    - link [ref=f9e1772] [cursor=pointer]:
+                      - /url: https://www.ixigo.com/trains/22225/running-status
+                      - paragraph [ref=f9e1773]: (22225 Running Status)
+                - generic [ref=f9e1775]:
+                  - generic [ref=f9e1776]:
+                    - paragraph [ref=f9e1777]: 16:05
+                    - paragraph [ref=f9e1778]: CSMT
+                  - paragraph [ref=f9e1780]: 03h 05m
+                  - generic [ref=f9e1783]:
+                    - paragraph [ref=f9e1784]: 19:10
+                    - paragraph [ref=f9e1785]: PUNE
+                - link [ref=f9e1786] [cursor=pointer]:
+                  - /url: /trains/search-pwa/from/CSMT/to/PUNE/30-10-2026
+                  - button "Show Availability" [ref=f9e1787]
+              - generic [ref=f9e1791]:
+                - link "CC ₹665 AVL 398 Available" [ref=f9e1792] [cursor=pointer]:
+                  - /url: /trains/search-pwa/from/CSMT/to/PUNE/30-10-2026
+                  - generic [ref=f9e1794]:
+                    - generic [ref=f9e1795]:
+                      - generic [ref=f9e1796]: CC
+                      - generic [ref=f9e1797]: ₹665
+                    - generic [ref=f9e1798]:
+                      - paragraph [ref=f9e1799]: AVL 398
+                      - paragraph [ref=f9e1800]: Available
+                - link "EC ₹1280 WL 3 Alternate Travel Plan Icon Alternate Travel Plan" [ref=f9e1801] [cursor=pointer]:
+                  - /url: /trains/search-pwa/from/CSMT/to/PUNE/30-10-2026
+                  - generic [ref=f9e1803]:
+                    - generic [ref=f9e1804]:
+                      - generic [ref=f9e1805]: EC
+                      - generic [ref=f9e1806]: ₹1280
+                    - generic [ref=f9e1807]:
+                      - paragraph [ref=f9e1808]: WL 3
+                      - generic [ref=f9e1809]:
+                        - img "Alternate Travel Plan Icon" [ref=f9e1810]
+                        - paragraph [ref=f9e1811]: Alternate Travel Plan
+            - generic [ref=f9e1813]:
+              - generic [ref=f9e1814]:
+                - generic [ref=f9e1815]:
+                  - link [ref=f9e1816] [cursor=pointer]:
+                    - /url: https://www.ixigo.com/trains/12125
+                    - paragraph [ref=f9e1817]: 12125 PRAGATI EXPRESS
+                  - generic [ref=f9e1818]:
+                    - paragraph [ref=f9e1819]:
+                      - text: Runs on
+                      - generic [ref=f9e1820]: M
+                      - generic [ref=f9e1821]: T
+                      - generic [ref=f9e1822]: W
+                      - generic [ref=f9e1823]: T
+                      - generic [ref=f9e1824]: F
+                      - generic [ref=f9e1825]: S
+                      - generic [ref=f9e1826]: S
+                    - paragraph [ref=f9e1827]: Mail/Express
+                    - link [ref=f9e1828] [cursor=pointer]:
+                      - /url: https://www.ixigo.com/trains/12125/running-status
+                      - paragraph [ref=f9e1829]: (12125 Running Status)
+                - generic [ref=f9e1831]:
+                  - generic [ref=f9e1832]:
+                    - paragraph [ref=f9e1833]: 16:25
+                    - paragraph [ref=f9e1834]: CSMT
+                  - paragraph [ref=f9e1836]: 03h 25m
+                  - generic [ref=f9e1839]:
+                    - paragraph [ref=f9e1840]: 19:50
+                    - paragraph [ref=f9e1841]: PUNE
+                - link [ref=f9e1842] [cursor=pointer]:
+                  - /url: /trains/search-pwa/from/CSMT/to/PUNE/30-10-2026
+                  - button "Show Availability" [ref=f9e1843]
+              - generic [ref=f9e1847]:
+                - link "2S ₹110 WL 43 68% Chance" [ref=f9e1848] [cursor=pointer]:
+                  - /url: /trains/search-pwa/from/CSMT/to/PUNE/30-10-2026
+                  - generic [ref=f9e1850]:
+                    - generic [ref=f9e1851]:
+                      - generic [ref=f9e1852]: 2S
+                      - generic [ref=f9e1853]: ₹110
+                    - generic [ref=f9e1854]:
+                      - paragraph [ref=f9e1855]: WL 43
+                      - paragraph [ref=f9e1856]: 68% Chance
+                - link "CC ₹390 WL 14 Alternate Travel Plan Icon Alternate Travel Plan" [ref=f9e1857] [cursor=pointer]:
+                  - /url: /trains/search-pwa/from/CSMT/to/PUNE/30-10-2026
+                  - generic [ref=f9e1859]:
+                    - generic [ref=f9e1860]:
+                      - generic [ref=f9e1861]: CC
+                      - generic [ref=f9e1862]: ₹390
+                    - generic [ref=f9e1863]:
+                      - paragraph [ref=f9e1864]: WL 14
+                      - generic [ref=f9e1865]:
+                        - img "Alternate Travel Plan Icon" [ref=f9e1866]
+                        - paragraph [ref=f9e1867]: Alternate Travel Plan
+                - link "EV ₹980 AVL 18 Available" [ref=f9e1868] [cursor=pointer]:
+                  - /url: /trains/search-pwa/from/CSMT/to/PUNE/30-10-2026
+                  - generic [ref=f9e1870]:
+                    - generic [ref=f9e1871]:
+                      - generic [ref=f9e1872]: EV
+                      - generic [ref=f9e1873]: ₹980
+                    - generic [ref=f9e1874]:
+                      - paragraph [ref=f9e1875]: AVL 18
+                      - paragraph [ref=f9e1876]: Available
+            - generic [ref=f9e1878]:
+              - generic [ref=f9e1879]:
+                - generic [ref=f9e1880]:
+                  - link [ref=f9e1881] [cursor=pointer]:
+                    - /url: https://www.ixigo.com/trains/19568
+                    - paragraph [ref=f9e1882]: 19568 VIVEK EXPRESS
+                  - generic [ref=f9e1883]:
+                    - paragraph [ref=f9e1884]:
+                      - text: Runs on
+                      - generic [ref=f9e1885]: M
+                      - generic [ref=f9e1886]: T
+                      - generic [ref=f9e1887]: W
+                      - generic [ref=f9e1888]: T
+                      - generic [ref=f9e1889]: F
+                      - generic [ref=f9e1890]: S
+                      - generic [ref=f9e1891]: S
+                    - paragraph [ref=f9e1892]: Mail/Express
+                    - link [ref=f9e1893] [cursor=pointer]:
+                      - /url: https://www.ixigo.com/trains/19568/running-status
+                      - paragraph [ref=f9e1894]: (19568 Running Status)
+                - generic [ref=f9e1896]:
+                  - generic [ref=f9e1897]:
+                    - paragraph [ref=f9e1898]: 16:40
+                    - paragraph [ref=f9e1899]: BSR
+                  - paragraph [ref=f9e1901]: 04h 30m
+                  - generic [ref=f9e1904]:
+                    - paragraph [ref=f9e1905]: 21:10
+                    - paragraph [ref=f9e1906]: PUNE
+                - link [ref=f9e1907] [cursor=pointer]:
+                  - /url: /trains/search-pwa/from/BSR/to/PUNE/30-10-2026
+                  - button "Show Availability" [ref=f9e1908]
+              - generic [ref=f9e1912]:
+                - link "SL ₹150 WL 63 32% Chance" [ref=f9e1913] [cursor=pointer]:
+                  - /url: /trains/search-pwa/from/BSR/to/PUNE/30-10-2026
+                  - generic [ref=f9e1915]:
+                    - generic [ref=f9e1916]:
+                      - generic [ref=f9e1917]: SL
+                      - generic [ref=f9e1918]: ₹150
+                    - generic [ref=f9e1919]:
+                      - paragraph [ref=f9e1920]: WL 63
+                      - paragraph [ref=f9e1921]: 32% Chance
+                - link "3E ₹520 WL 24 Low Chance" [ref=f9e1922] [cursor=pointer]:
+                  - /url: /trains/search-pwa/from/BSR/to/PUNE/30-10-2026
+                  - generic [ref=f9e1924]:
+                    - generic [ref=f9e1925]:
+                      - generic [ref=f9e1926]: 3E
+                      - generic [ref=f9e1927]: ₹520
+                    - generic [ref=f9e1928]:
+                      - paragraph [ref=f9e1929]: WL 24
+                      - paragraph [ref=f9e1930]: Low Chance
+                - link "3A ₹520 Regret No more booking" [ref=f9e1931] [cursor=pointer]:
+                  - /url: /trains/search-pwa/from/BSR/to/PUNE/30-10-2026
+                  - generic [ref=f9e1933]:
+                    - generic [ref=f9e1934]:
+                      - generic [ref=f9e1935]: 3A
+                      - generic [ref=f9e1936]: ₹520
+                    - generic [ref=f9e1937]:
+                      - paragraph [ref=f9e1938]: Regret
+                      - paragraph [ref=f9e1939]: No more booking
+                - link "2A ₹725 Regret No more booking" [ref=f9e1940] [cursor=pointer]:
+                  - /url: /trains/search-pwa/from/BSR/to/PUNE/30-10-2026
+                  - generic [ref=f9e1942]:
+                    - generic [ref=f9e1943]:
+                      - generic [ref=f9e1944]: 2A
+                      - generic [ref=f9e1945]: ₹725
+                    - generic [ref=f9e1946]:
+                      - paragraph [ref=f9e1947]: Regret
+                      - paragraph [ref=f9e1948]: No more booking
+            - generic [ref=f9e1950]:
+              - generic [ref=f9e1951]:
+                - generic [ref=f9e1952]:
+                  - link [ref=f9e1953] [cursor=pointer]:
+                    - /url: https://www.ixigo.com/trains/12123
+                    - paragraph [ref=f9e1954]: 12123 DECCAN QUEEN
+                  - generic [ref=f9e1955]:
+                    - paragraph [ref=f9e1956]:
+                      - text: Runs on
+                      - generic [ref=f9e1957]: M
+                      - generic [ref=f9e1958]: T
+                      - generic [ref=f9e1959]: W
+                      - generic [ref=f9e1960]: T
+                      - generic [ref=f9e1961]: F
+                      - generic [ref=f9e1962]: S
+                      - generic [ref=f9e1963]: S
+                    - paragraph [ref=f9e1964]: Mail/Express
+                    - link [ref=f9e1965] [cursor=pointer]:
+                      - /url: https://www.ixigo.com/trains/12123/running-status
+                      - paragraph [ref=f9e1966]: (12123 Running Status)
+                - generic [ref=f9e1968]:
+                  - generic [ref=f9e1969]:
+                    - paragraph [ref=f9e1970]: 17:10
+                    - paragraph [ref=f9e1971]: CSMT
+                  - paragraph [ref=f9e1973]: 03h 15m
+                  - generic [ref=f9e1976]:
+                    - paragraph [ref=f9e1977]: 20:25
+                    - paragraph [ref=f9e1978]: PUNE
+                - link [ref=f9e1979] [cursor=pointer]:
+                  - /url: /trains/search-pwa/from/CSMT/to/PUNE/30-10-2026
+                  - button "Show Availability" [ref=f9e1980]
+              - generic [ref=f9e1984]:
+                - link "2S ₹115 WL 42 Low Chance" [ref=f9e1985] [cursor=pointer]:
+                  - /url: /trains/search-pwa/from/CSMT/to/PUNE/30-10-2026
+                  - generic [ref=f9e1987]:
+                    - generic [ref=f9e1988]:
+                      - generic [ref=f9e1989]: 2S
+                      - generic [ref=f9e1990]: ₹115
+                    - generic [ref=f9e1991]:
+                      - paragraph [ref=f9e1992]: WL 42
+                      - paragraph [ref=f9e1993]: Low Chance
+                - link "CC ₹395 WL 25 49% Chance" [ref=f9e1994] [cursor=pointer]:
+                  - /url: /trains/search-pwa/from/CSMT/to/PUNE/30-10-2026
+                  - generic [ref=f9e1996]:
+                    - generic [ref=f9e1997]:
+                      - generic [ref=f9e1998]: CC
+                      - generic [ref=f9e1999]: ₹395
+                    - generic [ref=f9e2000]:
+                      - paragraph [ref=f9e2001]: WL 25
+                      - paragraph [ref=f9e2002]: 49% Chance
+                - link "EV ₹1000 WL 1 Alternate Travel Plan Icon Alternate Travel Plan" [ref=f9e2003] [cursor=pointer]:
+                  - /url: /trains/search-pwa/from/CSMT/to/PUNE/30-10-2026
+                  - generic [ref=f9e2005]:
+                    - generic [ref=f9e2006]:
+                      - generic [ref=f9e2007]: EV
+                      - generic [ref=f9e2008]: ₹1000
+                    - generic [ref=f9e2009]:
+                      - paragraph [ref=f9e2010]: WL 1
+                      - generic [ref=f9e2011]:
+                        - img "Alternate Travel Plan Icon" [ref=f9e2012]
+                        - paragraph [ref=f9e2013]: Alternate Travel Plan
+            - generic [ref=f9e2015]:
+              - generic [ref=f9e2016]:
+                - generic [ref=f9e2017]:
+                  - link [ref=f9e2018] [cursor=pointer]:
+                    - /url: https://www.ixigo.com/trains/11009
+                    - paragraph [ref=f9e2019]: 11009 SINHAGAD EXP
+                  - generic [ref=f9e2020]:
+                    - paragraph [ref=f9e2021]:
+                      - text: Runs on
+                      - generic [ref=f9e2022]: M
+                      - generic [ref=f9e2023]: T
+                      - generic [ref=f9e2024]: W
+                      - generic [ref=f9e2025]: T
+                      - generic [ref=f9e2026]: F
+                      - generic [ref=f9e2027]: S
+                      - generic [ref=f9e2028]: S
+                    - paragraph [ref=f9e2029]: Mail/Express
+                    - link [ref=f9e2030] [cursor=pointer]:
+                      - /url: https://www.ixigo.com/trains/11009/running-status
+                      - paragraph [ref=f9e2031]: (11009 Running Status)
+                - generic [ref=f9e2033]:
+                  - generic [ref=f9e2034]:
+                    - paragraph [ref=f9e2035]: 17:50
+                    - paragraph [ref=f9e2036]: CSMT
+                  - paragraph [ref=f9e2038]: 04h 00m
+                  - generic [ref=f9e2041]:
+                    - paragraph [ref=f9e2042]: 21:50
+                    - paragraph [ref=f9e2043]: PUNE
+                - link [ref=f9e2044] [cursor=pointer]:
+                  - /url: /trains/search-pwa/from/CSMT/to/PUNE/30-10-2026
+                  - button "Show Availability" [ref=f9e2045]
+              - generic [ref=f9e2049]:
+                - link "2S ₹100 WL 87 37% Chance" [ref=f9e2050] [cursor=pointer]:
+                  - /url: /trains/search-pwa/from/CSMT/to/PUNE/30-10-2026
+                  - generic [ref=f9e2052]:
+                    - generic [ref=f9e2053]:
+                      - generic [ref=f9e2054]: 2S
+                      - generic [ref=f9e2055]: ₹100
+                    - generic [ref=f9e2056]:
+                      - paragraph [ref=f9e2057]: WL 87
+                      - paragraph [ref=f9e2058]: 37% Chance
+                - link "CC ₹345 WL 36 Low Chance" [ref=f9e2059] [cursor=pointer]:
+                  - /url: /trains/search-pwa/from/CSMT/to/PUNE/30-10-2026
+                  - generic [ref=f9e2061]:
+                    - generic [ref=f9e2062]:
+                      - generic [ref=f9e2063]: CC
+                      - generic [ref=f9e2064]: ₹345
+                    - generic [ref=f9e2065]:
+                      - paragraph [ref=f9e2066]: WL 36
+                      - paragraph [ref=f9e2067]: Low Chance
+            - generic [ref=f9e2069]:
+              - generic [ref=f9e2070]:
+                - generic [ref=f9e2071]:
+                  - link [ref=f9e2072] [cursor=pointer]:
+                    - /url: https://www.ixigo.com/trains/12163
+                    - paragraph [ref=f9e2073]: 12163 LTT MAS EXP
+                  - generic [ref=f9e2074]:
+                    - paragraph [ref=f9e2075]:
+                      - text: Runs on
+                      - generic [ref=f9e2076]: M
+                      - generic [ref=f9e2077]: T
+                      - generic [ref=f9e2078]: W
+                      - generic [ref=f9e2079]: T
+                      - generic [ref=f9e2080]: F
+                      - generic [ref=f9e2081]: S
+                      - generic [ref=f9e2082]: S
+                    - paragraph [ref=f9e2083]: Mail/Express
+                    - link [ref=f9e2084] [cursor=pointer]:
+                      - /url: https://www.ixigo.com/trains/12163/running-status
+                      - paragraph [ref=f9e2085]: (12163 Running Status)
+                - generic [ref=f9e2087]:
+                  - generic [ref=f9e2088]:
+                    - paragraph [ref=f9e2089]: 18:30
+                    - paragraph [ref=f9e2090]: LTT
+                  - paragraph [ref=f9e2092]: 03h 35m
+                  - generic [ref=f9e2095]:
+                    - paragraph [ref=f9e2096]: 22:05
+                    - paragraph [ref=f9e2097]: PUNE
+                - link [ref=f9e2098] [cursor=pointer]:
+                  - /url: /trains/search-pwa/from/LTT/to/PUNE/30-10-2026
+                  - button "Show Availability" [ref=f9e2099]
+              - generic [ref=f9e2103]:
+                - link "SL ₹180 WL 58 Alternate Travel Plan Icon Alternate Travel Plan" [ref=f9e2104] [cursor=pointer]:
+                  - /url: /trains/search-pwa/from/LTT/to/PUNE/30-10-2026
+                  - generic [ref=f9e2106]:
+                    - generic [ref=f9e2107]:
+                      - generic [ref=f9e2108]: SL
+                      - generic [ref=f9e2109]: ₹180
+                    - generic [ref=f9e2110]:
+                      - paragraph [ref=f9e2111]: WL 58
+                      - generic [ref=f9e2112]:
+                        - img "Alternate Travel Plan Icon" [ref=f9e2113]
+                        - paragraph [ref=f9e2114]: Alternate Travel Plan
+                - link "3A ₹565 WL 28 Alternate Travel Plan Icon Alternate Travel Plan" [ref=f9e2115] [cursor=pointer]:
+                  - /url: /trains/search-pwa/from/LTT/to/PUNE/30-10-2026
+                  - generic [ref=f9e2117]:
+                    - generic [ref=f9e2118]:
+                      - generic [ref=f9e2119]: 3A
+                      - generic [ref=f9e2120]: ₹565
+                    - generic [ref=f9e2121]:
+                      - paragraph [ref=f9e2122]: WL 28
+                      - generic [ref=f9e2123]:
+                        - img "Alternate Travel Plan Icon" [ref=f9e2124]
+                        - paragraph [ref=f9e2125]: Alternate Travel Plan
+                - link "2A ₹770 WL 14 Alternate Travel Plan Icon Alternate Travel Plan" [ref=f9e2126] [cursor=pointer]:
+                  - /url: /trains/search-pwa/from/LTT/to/PUNE/30-10-2026
+                  - generic [ref=f9e2128]:
+                    - generic [ref=f9e2129]:
+                      - generic [ref=f9e2130]: 2A
+                      - generic [ref=f9e2131]: ₹770
+                    - generic [ref=f9e2132]:
+                      - paragraph [ref=f9e2133]: WL 14
+                      - generic [ref=f9e2134]:
+                        - img "Alternate Travel Plan Icon" [ref=f9e2135]
+                        - paragraph [ref=f9e2136]: Alternate Travel Plan
+            - generic [ref=f9e2138]:
+              - generic [ref=f9e2139]:
+                - generic [ref=f9e2140]:
+                  - link [ref=f9e2141] [cursor=pointer]:
+                    - /url: https://www.ixigo.com/trains/17318
+                    - paragraph [ref=f9e2142]: 17318 DR HUBBALLI EXP
+                  - generic [ref=f9e2143]:
+                    - paragraph [ref=f9e2144]:
+                      - text: Runs on
+                      - generic [ref=f9e2145]: M
+                      - generic [ref=f9e2146]: T
+                      - generic [ref=f9e2147]: W
+                      - generic [ref=f9e2148]: T
+                      - generic [ref=f9e2149]: F
+                      - generic [ref=f9e2150]: S
+                      - generic [ref=f9e2151]: S
+                    - paragraph [ref=f9e2152]: Mail/Express
+                    - link [ref=f9e2153] [cursor=pointer]:
+                      - /url: https://www.ixigo.com/trains/17318/running-status
+                      - paragraph [ref=f9e2154]: (17318 Running Status)
+                - generic [ref=f9e2156]:
+                  - generic [ref=f9e2157]:
+                    - paragraph [ref=f9e2158]: 20:05
+                    - paragraph [ref=f9e2159]: DR
+                  - paragraph [ref=f9e2161]: 03h 56m
+                  - generic [ref=f9e2164]:
+                    - paragraph [ref=f9e2165]: 00:01
+                    - paragraph [ref=f9e2166]: PUNE
+                - link [ref=f9e2167] [cursor=pointer]:
+                  - /url: /trains/search-pwa/from/DR/to/PUNE/30-10-2026
+                  - button "Show Availability" [ref=f9e2168]
+              - generic [ref=f9e2172]:
+                - link "SL ₹150 WL 99 Low Chance" [ref=f9e2173] [cursor=pointer]:
+                  - /url: /trains/search-pwa/from/DR/to/PUNE/30-10-2026
+                  - generic [ref=f9e2175]:
+                    - generic [ref=f9e2176]:
+                      - generic [ref=f9e2177]: SL
+                      - generic [ref=f9e2178]: ₹150
+                    - generic [ref=f9e2179]:
+                      - paragraph [ref=f9e2180]: WL 99
+                      - paragraph [ref=f9e2181]: Low Chance
+                - link "3A ₹520 WL 30 48% Chance" [ref=f9e2182] [cursor=pointer]:
+                  - /url: /trains/search-pwa/from/DR/to/PUNE/30-10-2026
+                  - generic [ref=f9e2184]:
+                    - generic [ref=f9e2185]:
+                      - generic [ref=f9e2186]: 3A
+                      - generic [ref=f9e2187]: ₹520
+                    - generic [ref=f9e2188]:
+                      - paragraph [ref=f9e2189]: WL 30
+                      - paragraph [ref=f9e2190]: 48% Chance
+                - link "2A ₹725 WL 17 Alternate Travel Plan Icon Alternate Travel Plan" [ref=f9e2191] [cursor=pointer]:
+                  - /url: /trains/search-pwa/from/DR/to/PUNE/30-10-2026
+                  - generic [ref=f9e2193]:
+                    - generic [ref=f9e2194]:
+                      - generic [ref=f9e2195]: 2A
+                      - generic [ref=f9e2196]: ₹725
+                    - generic [ref=f9e2197]:
+                      - paragraph [ref=f9e2198]: WL 17
+                      - generic [ref=f9e2199]:
+                        - img "Alternate Travel Plan Icon" [ref=f9e2200]
+                        - paragraph [ref=f9e2201]: Alternate Travel Plan
+                - link "1A ₹1190 Not Available" [ref=f9e2202] [cursor=pointer]:
+                  - /url: /trains/search-pwa/from/DR/to/PUNE/30-10-2026
+                  - generic [ref=f9e2204]:
+                    - generic [ref=f9e2205]:
+                      - generic [ref=f9e2206]: 1A
+                      - generic [ref=f9e2207]: ₹1190
+                    - generic [ref=f9e2208]:
+                      - paragraph [ref=f9e2209]: Not Available
+                      - paragraph
+            - generic [ref=f9e2211]:
+              - generic [ref=f9e2212]:
+                - generic [ref=f9e2213]:
+                  - link [ref=f9e2214] [cursor=pointer]:
+                    - /url: https://www.ixigo.com/trains/17411
+                    - paragraph [ref=f9e2215]: 17411 MAHALAXMI EXP
+                  - generic [ref=f9e2216]:
+                    - paragraph [ref=f9e2217]:
+                      - text: Runs on
+                      - generic [ref=f9e2218]: M
+                      - generic [ref=f9e2219]: T
+                      - generic [ref=f9e2220]: W
+                      - generic [ref=f9e2221]: T
+                      - generic [ref=f9e2222]: F
+                      - generic [ref=f9e2223]: S
+                      - generic [ref=f9e2224]: S
+                    - paragraph [ref=f9e2225]: Mail/Express
+                    - link [ref=f9e2226] [cursor=pointer]:
+                      - /url: https://www.ixigo.com/trains/17411/running-status
+                      - paragraph [ref=f9e2227]: (17411 Running Status)
+                - generic [ref=f9e2229]:
+                  - generic [ref=f9e2230]:
+                    - paragraph [ref=f9e2231]: 20:15
+                    - paragraph [ref=f9e2232]: CSMT
+                  - paragraph [ref=f9e2234]: 03h 55m
+                  - generic [ref=f9e2237]:
+                    - paragraph [ref=f9e2238]: 00:10
+                    - paragraph [ref=f9e2239]: PUNE
+                - link [ref=f9e2240] [cursor=pointer]:
+                  - /url: /trains/search-pwa/from/CSMT/to/PUNE/30-10-2026
+                  - button "Show Availability" [ref=f9e2241]
+              - generic [ref=f9e2245]:
+                - link "SL ₹150 WL 88 Alternate Travel Plan Icon Alternate Travel Plan" [ref=f9e2246] [cursor=pointer]:
+                  - /url: /trains/search-pwa/from/CSMT/to/PUNE/30-10-2026
+                  - generic [ref=f9e2248]:
+                    - generic [ref=f9e2249]:
+                      - generic [ref=f9e2250]: SL
+                      - generic [ref=f9e2251]: ₹150
+                    - generic [ref=f9e2252]:
+                      - paragraph [ref=f9e2253]: WL 88
+                      - generic [ref=f9e2254]:
+                        - img "Alternate Travel Plan Icon" [ref=f9e2255]
+                        - paragraph [ref=f9e2256]: Alternate Travel Plan
+                - link "3E ₹520 WL 35 50% Chance" [ref=f9e2257] [cursor=pointer]:
+                  - /url: /trains/search-pwa/from/CSMT/to/PUNE/30-10-2026
+                  - generic [ref=f9e2259]:
+                    - generic [ref=f9e2260]:
+                      - generic [ref=f9e2261]: 3E
+                      - generic [ref=f9e2262]: ₹520
+                    - generic [ref=f9e2263]:
+                      - paragraph [ref=f9e2264]: WL 35
+                      - paragraph [ref=f9e2265]: 50% Chance
+                - link "3A ₹520 Regret No more booking" [ref=f9e2266] [cursor=pointer]:
+                  - /url: /trains/search-pwa/from/CSMT/to/PUNE/30-10-2026
+                  - generic [ref=f9e2268]:
+                    - generic [ref=f9e2269]:
+                      - generic [ref=f9e2270]: 3A
+                      - generic [ref=f9e2271]: ₹520
+                    - generic [ref=f9e2272]:
+                      - paragraph [ref=f9e2273]: Regret
+                      - paragraph [ref=f9e2274]: No more booking
+                - link "2A ₹725 WL 33 Alternate Travel Plan Icon Alternate Travel Plan" [ref=f9e2275] [cursor=pointer]:
+                  - /url: /trains/search-pwa/from/CSMT/to/PUNE/30-10-2026
+                  - generic [ref=f9e2277]:
+                    - generic [ref=f9e2278]:
+                      - generic [ref=f9e2279]: 2A
+                      - generic [ref=f9e2280]: ₹725
+                    - generic [ref=f9e2281]:
+                      - paragraph [ref=f9e2282]: WL 33
+                      - generic [ref=f9e2283]:
+                        - img "Alternate Travel Plan Icon" [ref=f9e2284]
+                        - paragraph [ref=f9e2285]: Alternate Travel Plan
+                - link "1A ₹1190 WL 8 Alternate Travel Plan Icon Alternate Travel Plan" [ref=f9e2286] [cursor=pointer]:
+                  - /url: /trains/search-pwa/from/CSMT/to/PUNE/30-10-2026
+                  - generic [ref=f9e2288]:
+                    - generic [ref=f9e2289]:
+                      - generic [ref=f9e2290]: 1A
+                      - generic [ref=f9e2291]: ₹1190
+                    - generic [ref=f9e2292]:
+                      - paragraph [ref=f9e2293]: WL 8
+                      - generic [ref=f9e2294]:
+                        - img "Alternate Travel Plan Icon" [ref=f9e2295]
+                        - paragraph [ref=f9e2296]: Alternate Travel Plan
+            - generic [ref=f9e2298]:
+              - generic [ref=f9e2299]:
+                - generic [ref=f9e2300]:
+                  - link [ref=f9e2301] [cursor=pointer]:
+                    - /url: https://www.ixigo.com/trains/16351
+                    - paragraph [ref=f9e2302]: 16351 NAGARCOIL EXP
+                  - generic [ref=f9e2303]:
+                    - paragraph [ref=f9e2304]:
+                      - text: Runs on
+                      - generic [ref=f9e2305]: M
+                      - generic [ref=f9e2306]: T
+                      - generic [ref=f9e2307]: W
+                      - generic [ref=f9e2308]: T
+                      - generic [ref=f9e2309]: F
+                      - generic [ref=f9e2310]: S
+                      - generic [ref=f9e2311]: S
+                    - paragraph [ref=f9e2312]: Mail/Express
+                    - link [ref=f9e2313] [cursor=pointer]:
+                      - /url: https://www.ixigo.com/trains/16351/running-status
+                      - paragraph [ref=f9e2314]: (16351 Running Status)
+                - generic [ref=f9e2316]:
+                  - generic [ref=f9e2317]:
+                    - paragraph [ref=f9e2318]: 20:55
+                    - paragraph [ref=f9e2319]: LTT
+                  - paragraph [ref=f9e2321]: 03h 20m
+                  - generic [ref=f9e2324]:
+                    - paragraph [ref=f9e2325]: 00:15
+                    - paragraph [ref=f9e2326]: PUNE
+                - link [ref=f9e2327] [cursor=pointer]:
+                  - /url: /trains/search-pwa/from/LTT/to/PUNE/30-10-2026
+                  - button "Show Availability" [ref=f9e2328]
+              - generic [ref=f9e2332]:
+                - link "SL ₹150 WL 70 43% Chance" [ref=f9e2333] [cursor=pointer]:
+                  - /url: /trains/search-pwa/from/LTT/to/PUNE/30-10-2026
+                  - generic [ref=f9e2335]:
+                    - generic [ref=f9e2336]:
+                      - generic [ref=f9e2337]: SL
+                      - generic [ref=f9e2338]: ₹150
+                    - generic [ref=f9e2339]:
+                      - paragraph [ref=f9e2340]: WL 70
+                      - paragraph [ref=f9e2341]: 43% Chance
+                - link "3A ₹520 WL 24 Alternate Travel Plan Icon Alternate Travel Plan" [ref=f9e2342] [cursor=pointer]:
+                  - /url: /trains/search-pwa/from/LTT/to/PUNE/30-10-2026
+                  - generic [ref=f9e2344]:
+                    - generic [ref=f9e2345]:
+                      - generic [ref=f9e2346]: 3A
+                      - generic [ref=f9e2347]: ₹520
+                    - generic [ref=f9e2348]:
+                      - paragraph [ref=f9e2349]: WL 24
+                      - generic [ref=f9e2350]:
+                        - img "Alternate Travel Plan Icon" [ref=f9e2351]
+                        - paragraph [ref=f9e2352]: Alternate Travel Plan
+                - link "2A ₹725 AVL 1 Available" [ref=f9e2353] [cursor=pointer]:
+                  - /url: /trains/search-pwa/from/LTT/to/PUNE/30-10-2026
+                  - generic [ref=f9e2355]:
+                    - generic [ref=f9e2356]:
+                      - generic [ref=f9e2357]: 2A
+                      - generic [ref=f9e2358]: ₹725
+                    - generic [ref=f9e2359]:
+                      - paragraph [ref=f9e2360]: AVL 1
+                      - paragraph [ref=f9e2361]: Available
+            - generic [ref=f9e2363]:
+              - generic [ref=f9e2364]:
+                - generic [ref=f9e2365]:
+                  - link [ref=f9e2366] [cursor=pointer]:
+                    - /url: https://www.ixigo.com/trains/22143
+                    - paragraph [ref=f9e2367]: 22143 CSMT BIDAR EXP
+                  - generic [ref=f9e2368]:
+                    - paragraph [ref=f9e2369]:
+                      - text: Runs on
+                      - generic [ref=f9e2370]: M
+                      - generic [ref=f9e2371]: T
+                      - generic [ref=f9e2372]: W
+                      - generic [ref=f9e2373]: T
+                      - generic [ref=f9e2374]: F
+                      - generic [ref=f9e2375]: S
+                      - generic [ref=f9e2376]: S
+                    - paragraph [ref=f9e2377]: Mail/Express
+                    - link [ref=f9e2378] [cursor=pointer]:
+                      - /url: https://www.ixigo.com/trains/22143/running-status
+                      - paragraph [ref=f9e2379]: (22143 Running Status)
+                - generic [ref=f9e2381]:
+                  - generic [ref=f9e2382]:
+                    - paragraph [ref=f9e2383]: 21:00
+                    - paragraph [ref=f9e2384]: CSMT
+                  - paragraph [ref=f9e2386]: 03h 30m
+                  - generic [ref=f9e2389]:
+                    - paragraph [ref=f9e2390]: 00:30
+                    - paragraph [ref=f9e2391]: PUNE
+                - link [ref=f9e2392] [cursor=pointer]:
+                  - /url: /trains/search-pwa/from/CSMT/to/PUNE/30-10-2026
+                  - button "Show Availability" [ref=f9e2393]
+              - generic [ref=f9e2397]:
+                - link "SL ₹180 WL 99 Low Chance" [ref=f9e2398] [cursor=pointer]:
+                  - /url: /trains/search-pwa/from/CSMT/to/PUNE/30-10-2026
+                  - generic [ref=f9e2400]:
+                    - generic [ref=f9e2401]:
+                      - generic [ref=f9e2402]: SL
+                      - generic [ref=f9e2403]: ₹180
+                    - generic [ref=f9e2404]:
+                      - paragraph [ref=f9e2405]: WL 99
+                      - paragraph [ref=f9e2406]: Low Chance
+                - link "3A ₹565 AVL 15 Available" [ref=f9e2407] [cursor=pointer]:
+                  - /url: /trains/search-pwa/from/CSMT/to/PUNE/30-10-2026
+                  - generic [ref=f9e2409]:
+                    - generic [ref=f9e2410]:
+                      - generic [ref=f9e2411]: 3A
+                      - generic [ref=f9e2412]: ₹565
+                    - generic [ref=f9e2413]:
+                      - paragraph [ref=f9e2414]: AVL 15
+                      - paragraph [ref=f9e2415]: Available
+                - link "2A ₹770 WL 24 53% Chance" [ref=f9e2416] [cursor=pointer]:
+                  - /url: /trains/search-pwa/from/CSMT/to/PUNE/30-10-2026
+                  - generic [ref=f9e2418]:
+                    - generic [ref=f9e2419]:
+                      - generic [ref=f9e2420]: 2A
+                      - generic [ref=f9e2421]: ₹770
+                    - generic [ref=f9e2422]:
+                      - paragraph [ref=f9e2423]: WL 24
+                      - paragraph [ref=f9e2424]: 53% Chance
+                - link "1A ₹1270 WL 9 Alternate Travel Plan Icon Alternate Travel Plan" [ref=f9e2425] [cursor=pointer]:
+                  - /url: /trains/search-pwa/from/CSMT/to/PUNE/30-10-2026
+                  - generic [ref=f9e2427]:
+                    - generic [ref=f9e2428]:
+                      - generic [ref=f9e2429]: 1A
+                      - generic [ref=f9e2430]: ₹1270
+                    - generic [ref=f9e2431]:
+                      - paragraph [ref=f9e2432]: WL 9
+                      - generic [ref=f9e2433]:
+                        - img "Alternate Travel Plan Icon" [ref=f9e2434]
+                        - paragraph [ref=f9e2435]: Alternate Travel Plan
+            - generic [ref=f9e2437]:
+              - generic [ref=f9e2438]:
+                - generic [ref=f9e2439]:
+                  - link [ref=f9e2440] [cursor=pointer]:
+                    - /url: https://www.ixigo.com/trains/11139
+                    - paragraph [ref=f9e2441]: 11139 CSMT HPT EXP
+                  - generic [ref=f9e2442]:
+                    - paragraph [ref=f9e2443]:
+                      - text: Runs on
+                      - generic [ref=f9e2444]: M
+                      - generic [ref=f9e2445]: T
+                      - generic [ref=f9e2446]: W
+                      - generic [ref=f9e2447]: T
+                      - generic [ref=f9e2448]: F
+                      - generic [ref=f9e2449]: S
+                      - generic [ref=f9e2450]: S
+                    - paragraph [ref=f9e2451]: Mail/Express
+                    - link [ref=f9e2452] [cursor=pointer]:
+                      - /url: https://www.ixigo.com/trains/11139/running-status
+                      - paragraph [ref=f9e2453]: (11139 Running Status)
+                - generic [ref=f9e2455]:
+                  - generic [ref=f9e2456]:
+                    - paragraph [ref=f9e2457]: 21:20
+                    - paragraph [ref=f9e2458]: CSMT
+                  - paragraph [ref=f9e2460]: 03h 45m
+                  - generic [ref=f9e2463]:
+                    - paragraph [ref=f9e2464]: 01:05
+                    - paragraph [ref=f9e2465]: PUNE
+                - link [ref=f9e2466] [cursor=pointer]:
+                  - /url: /trains/search-pwa/from/CSMT/to/PUNE/30-10-2026
+                  - button "Show Availability" [ref=f9e2467]
+              - generic [ref=f9e2471]:
+                - link "SL ₹180 WL 68 34% Chance" [ref=f9e2472] [cursor=pointer]:
+                  - /url: /trains/search-pwa/from/CSMT/to/PUNE/30-10-2026
+                  - generic [ref=f9e2474]:
+                    - generic [ref=f9e2475]:
+                      - generic [ref=f9e2476]: SL
+                      - generic [ref=f9e2477]: ₹180
+                    - generic [ref=f9e2478]:
+                      - paragraph [ref=f9e2479]: WL 68
+                      - paragraph [ref=f9e2480]: 34% Chance
+                - link "CC ₹395 WL 20 Alternate Travel Plan Icon Alternate Travel Plan" [ref=f9e2481] [cursor=pointer]:
+                  - /url: /trains/search-pwa/from/CSMT/to/PUNE/30-10-2026
+                  - generic [ref=f9e2483]:
+                    - generic [ref=f9e2484]:
+                      - generic [ref=f9e2485]: CC
+                      - generic [ref=f9e2486]: ₹395
+                    - generic [ref=f9e2487]:
+                      - paragraph [ref=f9e2488]: WL 20
+                      - generic [ref=f9e2489]:
+                        - img "Alternate Travel Plan Icon" [ref=f9e2490]
+                        - paragraph [ref=f9e2491]: Alternate Travel Plan
+                - link "3A ₹565 AVL 10 Available" [ref=f9e2492] [cursor=pointer]:
+                  - /url: /trains/search-pwa/from/CSMT/to/PUNE/30-10-2026
+                  - generic [ref=f9e2494]:
+                    - generic [ref=f9e2495]:
+                      - generic [ref=f9e2496]: 3A
+                      - generic [ref=f9e2497]: ₹565
+                    - generic [ref=f9e2498]:
+                      - paragraph [ref=f9e2499]: AVL 10
+                      - paragraph [ref=f9e2500]: Available
+                - link "2A ₹770 Regret No more booking" [ref=f9e2501] [cursor=pointer]:
+                  - /url: /trains/search-pwa/from/CSMT/to/PUNE/30-10-2026
+                  - generic [ref=f9e2503]:
+                    - generic [ref=f9e2504]:
+                      - generic [ref=f9e2505]: 2A
+                      - generic [ref=f9e2506]: ₹770
+                    - generic [ref=f9e2507]:
+                      - paragraph [ref=f9e2508]: Regret
+                      - paragraph [ref=f9e2509]: No more booking
+                - link "1A ₹1270 WL 8 Alternate Travel Plan Icon Alternate Travel Plan" [ref=f9e2510] [cursor=pointer]:
+                  - /url: /trains/search-pwa/from/CSMT/to/PUNE/30-10-2026
+                  - generic [ref=f9e2512]:
+                    - generic [ref=f9e2513]:
+                      - generic [ref=f9e2514]: 1A
+                      - generic [ref=f9e2515]: ₹1270
+                    - generic [ref=f9e2516]:
+                      - paragraph [ref=f9e2517]: WL 8
+                      - generic [ref=f9e2518]:
+                        - img "Alternate Travel Plan Icon" [ref=f9e2519]
+                        - paragraph [ref=f9e2520]: Alternate Travel Plan
+            - generic [ref=f9e2522]:
+              - generic [ref=f9e2523]:
+                - generic [ref=f9e2524]:
+                  - link [ref=f9e2525] [cursor=pointer]:
+                    - /url: https://www.ixigo.com/trains/16209
+                    - paragraph [ref=f9e2526]: 16209 AII MYS EXP
+                  - generic [ref=f9e2527]:
+                    - paragraph [ref=f9e2528]:
+                      - text: Runs on
+                      - generic [ref=f9e2529]: M
+                      - generic [ref=f9e2530]: T
+                      - generic [ref=f9e2531]: W
+                      - generic [ref=f9e2532]: T
+                      - generic [ref=f9e2533]: F
+                      - generic [ref=f9e2534]: S
+                      - generic [ref=f9e2535]: S
+                    - paragraph [ref=f9e2536]: Mail/Express
+                    - link [ref=f9e2537] [cursor=pointer]:
+                      - /url: https://www.ixigo.com/trains/16209/running-status
+                      - paragraph [ref=f9e2538]: (16209 Running Status)
+                - generic [ref=f9e2540]:
+                  - generic [ref=f9e2541]:
+                    - paragraph [ref=f9e2542]: 21:25
+                    - paragraph [ref=f9e2543]: BSR
+                  - paragraph [ref=f9e2545]: 04h 20m
+                  - generic [ref=f9e2548]:
+                    - paragraph [ref=f9e2549]: 01:45
+                    - paragraph [ref=f9e2550]: PUNE
+                - link [ref=f9e2551] [cursor=pointer]:
+                  - /url: /trains/search-pwa/from/BSR/to/PUNE/30-10-2026
+                  - button "Show Availability" [ref=f9e2552]
+              - generic [ref=f9e2556]:
+                - link "SL ₹150 WL 44 46% Chance" [ref=f9e2557] [cursor=pointer]:
+                  - /url: /trains/search-pwa/from/BSR/to/PUNE/30-10-2026
+                  - generic [ref=f9e2559]:
+                    - generic [ref=f9e2560]:
+                      - generic [ref=f9e2561]: SL
+                      - generic [ref=f9e2562]: ₹150
+                    - generic [ref=f9e2563]:
+                      - paragraph [ref=f9e2564]: WL 44
+                      - paragraph [ref=f9e2565]: 46% Chance
+                - link "3A ₹520 WL 30 38% Chance" [ref=f9e2566] [cursor=pointer]:
+                  - /url: /trains/search-pwa/from/BSR/to/PUNE/30-10-2026
+                  - generic [ref=f9e2568]:
+                    - generic [ref=f9e2569]:
+                      - generic [ref=f9e2570]: 3A
+                      - generic [ref=f9e2571]: ₹520
+                    - generic [ref=f9e2572]:
+                      - paragraph [ref=f9e2573]: WL 30
+                      - paragraph [ref=f9e2574]: 38% Chance
+                - link "2A ₹725 WL 13 51% Chance" [ref=f9e2575] [cursor=pointer]:
+                  - /url: /trains/search-pwa/from/BSR/to/PUNE/30-10-2026
+                  - generic [ref=f9e2577]:
+                    - generic [ref=f9e2578]:
+                      - generic [ref=f9e2579]: 2A
+                      - generic [ref=f9e2580]: ₹725
+                    - generic [ref=f9e2581]:
+                      - paragraph [ref=f9e2582]: WL 13
+                      - paragraph [ref=f9e2583]: 51% Chance
+                - link "1A ₹1190 Regret No more booking" [ref=f9e2584] [cursor=pointer]:
+                  - /url: /trains/search-pwa/from/BSR/to/PUNE/30-10-2026
+                  - generic [ref=f9e2586]:
+                    - generic [ref=f9e2587]:
+                      - generic [ref=f9e2588]: 1A
+                      - generic [ref=f9e2589]: ₹1190
+                    - generic [ref=f9e2590]:
+                      - paragraph [ref=f9e2591]: Regret
+                      - paragraph [ref=f9e2592]: No more booking
+            - generic [ref=f9e2594]:
+              - generic [ref=f9e2595]:
+                - generic [ref=f9e2596]:
+                  - link [ref=f9e2597] [cursor=pointer]:
+                    - /url: https://www.ixigo.com/trains/11005
+                    - paragraph [ref=f9e2598]: 11005 PUDUCHERRY EXP
+                  - generic [ref=f9e2599]:
+                    - paragraph [ref=f9e2600]:
+                      - text: Runs on
+                      - generic [ref=f9e2601]: M
+                      - generic [ref=f9e2602]: T
+                      - generic [ref=f9e2603]: W
+                      - generic [ref=f9e2604]: T
+                      - generic [ref=f9e2605]: F
+                      - generic [ref=f9e2606]: S
+                      - generic [ref=f9e2607]: S
+                    - paragraph [ref=f9e2608]: Mail/Express
+                    - link [ref=f9e2609] [cursor=pointer]:
+                      - /url: https://www.ixigo.com/trains/11005/running-status
+                      - paragraph [ref=f9e2610]: (11005 Running Status)
+                - generic [ref=f9e2612]:
+                  - generic [ref=f9e2613]:
+                    - paragraph [ref=f9e2614]: 21:30
+                    - paragraph [ref=f9e2615]: DR
+                  - paragraph [ref=f9e2617]: 03h 25m
+                  - generic [ref=f9e2620]:
+                    - paragraph [ref=f9e2621]: 00:55
+                    - paragraph [ref=f9e2622]: PUNE
+                - link [ref=f9e2623] [cursor=pointer]:
+                  - /url: /trains/search-pwa/from/DR/to/PUNE/30-10-2026
+                  - button "Show Availability" [ref=f9e2624]
+              - generic [ref=f9e2628]:
+                - link "SL ₹150 WL 75 35% Chance" [ref=f9e2629] [cursor=pointer]:
+                  - /url: /trains/search-pwa/from/DR/to/PUNE/30-10-2026
+                  - generic [ref=f9e2631]:
+                    - generic [ref=f9e2632]:
+                      - generic [ref=f9e2633]: SL
+                      - generic [ref=f9e2634]: ₹150
+                    - generic [ref=f9e2635]:
+                      - paragraph [ref=f9e2636]: WL 75
+                      - paragraph [ref=f9e2637]: 35% Chance
+                - link "3A ₹520 WL 28 Alternate Travel Plan Icon Alternate Travel Plan" [ref=f9e2638] [cursor=pointer]:
+                  - /url: /trains/search-pwa/from/DR/to/PUNE/30-10-2026
+                  - generic [ref=f9e2640]:
+                    - generic [ref=f9e2641]:
+                      - generic [ref=f9e2642]: 3A
+                      - generic [ref=f9e2643]: ₹520
+                    - generic [ref=f9e2644]:
+                      - paragraph [ref=f9e2645]: WL 28
+                      - generic [ref=f9e2646]:
+                        - img "Alternate Travel Plan Icon" [ref=f9e2647]
+                        - paragraph [ref=f9e2648]: Alternate Travel Plan
+                - link "2A ₹725 AVL 1 Available" [ref=f9e2649] [cursor=pointer]:
+                  - /url: /trains/search-pwa/from/DR/to/PUNE/30-10-2026
+                  - generic [ref=f9e2651]:
+                    - generic [ref=f9e2652]:
+                      - generic [ref=f9e2653]: 2A
+                      - generic [ref=f9e2654]: ₹725
+                    - generic [ref=f9e2655]:
+                      - paragraph [ref=f9e2656]: AVL 1
+                      - paragraph [ref=f9e2657]: Available
+            - generic [ref=f9e2659]:
+              - generic [ref=f9e2660]:
+                - generic [ref=f9e2661]:
+                  - link [ref=f9e2662] [cursor=pointer]:
+                    - /url: https://www.ixigo.com/trains/12701
+                    - paragraph [ref=f9e2663]: 12701 HUSSAINSAGAR EXP
+                  - generic [ref=f9e2664]:
+                    - paragraph [ref=f9e2665]:
+                      - text: Runs on
+                      - generic [ref=f9e2666]: M
+                      - generic [ref=f9e2667]: T
+                      - generic [ref=f9e2668]: W
+                      - generic [ref=f9e2669]: T
+                      - generic [ref=f9e2670]: F
+                      - generic [ref=f9e2671]: S
+                      - generic [ref=f9e2672]: S
+                    - paragraph [ref=f9e2673]: Mail/Express
+                    - link [ref=f9e2674] [cursor=pointer]:
+                      - /url: https://www.ixigo.com/trains/12701/running-status
+                      - paragraph [ref=f9e2675]: (12701 Running Status)
+                - generic [ref=f9e2677]:
+                  - generic [ref=f9e2678]:
+                    - paragraph [ref=f9e2679]: 21:50
+                    - paragraph [ref=f9e2680]: CSMT
+                  - paragraph [ref=f9e2682]: 03h 30m
+                  - generic [ref=f9e2685]:
+                    - paragraph [ref=f9e2686]: 01:20
+                    - paragraph [ref=f9e2687]: PUNE
+                - link [ref=f9e2688] [cursor=pointer]:
+                  - /url: /trains/search-pwa/from/CSMT/to/PUNE/30-10-2026
+                  - button "Show Availability" [ref=f9e2689]
+              - generic [ref=f9e2693]:
+                - link "SL ₹180 WL 62 49% Chance" [ref=f9e2694] [cursor=pointer]:
+                  - /url: /trains/search-pwa/from/CSMT/to/PUNE/30-10-2026
+                  - generic [ref=f9e2696]:
+                    - generic [ref=f9e2697]:
+                      - generic [ref=f9e2698]: SL
+                      - generic [ref=f9e2699]: ₹180
+                    - generic [ref=f9e2700]:
+                      - paragraph [ref=f9e2701]: WL 62
+                      - paragraph [ref=f9e2702]: 49% Chance
+                - link "3A ₹565 AVL 8 Available" [ref=f9e2703] [cursor=pointer]:
+                  - /url: /trains/search-pwa/from/CSMT/to/PUNE/30-10-2026
+                  - generic [ref=f9e2705]:
+                    - generic [ref=f9e2706]:
+                      - generic [ref=f9e2707]: 3A
+                      - generic [ref=f9e2708]: ₹565
+                    - generic [ref=f9e2709]:
+                      - paragraph [ref=f9e2710]: AVL 8
+                      - paragraph [ref=f9e2711]: Available
+                - link "2A ₹770 AVL 1 Available" [ref=f9e2712] [cursor=pointer]:
+                  - /url: /trains/search-pwa/from/CSMT/to/PUNE/30-10-2026
+                  - generic [ref=f9e2714]:
+                    - generic [ref=f9e2715]:
+                      - generic [ref=f9e2716]: 2A
+                      - generic [ref=f9e2717]: ₹770
+                    - generic [ref=f9e2718]:
+                      - paragraph [ref=f9e2719]: AVL 1
+                      - paragraph [ref=f9e2720]: Available
+            - generic [ref=f9e2722]:
+              - generic [ref=f9e2723]:
+                - generic [ref=f9e2724]:
+                  - link [ref=f9e2725] [cursor=pointer]:
+                    - /url: https://www.ixigo.com/trains/11013
+                    - paragraph [ref=f9e2726]: 11013 LTT CBE EXPRESS
+                  - generic [ref=f9e2727]:
+                    - paragraph [ref=f9e2728]:
+                      - text: Runs on
+                      - generic [ref=f9e2729]: M
+                      - generic [ref=f9e2730]: T
+                      - generic [ref=f9e2731]: W
+                      - generic [ref=f9e2732]: T
+                      - generic [ref=f9e2733]: F
+                      - generic [ref=f9e2734]: S
+                      - generic [ref=f9e2735]: S
+                    - paragraph [ref=f9e2736]: Mail/Express
+                    - link [ref=f9e2737] [cursor=pointer]:
+                      - /url: https://www.ixigo.com/trains/11013/running-status
+                      - paragraph [ref=f9e2738]: (11013 Running Status)
+                - generic [ref=f9e2740]:
+                  - generic [ref=f9e2741]:
+                    - paragraph [ref=f9e2742]: 22:35
+                    - paragraph [ref=f9e2743]: LTT
+                  - paragraph [ref=f9e2745]: 03h 15m
+                  - generic [ref=f9e2748]:
+                    - paragraph [ref=f9e2749]: 01:50
+                    - paragraph [ref=f9e2750]: PUNE
+                - link [ref=f9e2751] [cursor=pointer]:
+                  - /url: /trains/search-pwa/from/LTT/to/PUNE/30-10-2026
+                  - button "Show Availability" [ref=f9e2752]
+              - generic [ref=f9e2756]:
+                - link "SL ₹150 WL 53 36% Chance" [ref=f9e2757] [cursor=pointer]:
+                  - /url: /trains/search-pwa/from/LTT/to/PUNE/30-10-2026
+                  - generic [ref=f9e2759]:
+                    - generic [ref=f9e2760]:
+                      - generic [ref=f9e2761]: SL
+                      - generic [ref=f9e2762]: ₹150
+                    - generic [ref=f9e2763]:
+                      - paragraph [ref=f9e2764]: WL 53
+                      - paragraph [ref=f9e2765]: 36% Chance
+                - link "3A ₹520 AVL 15 Available" [ref=f9e2766] [cursor=pointer]:
+                  - /url: /trains/search-pwa/from/LTT/to/PUNE/30-10-2026
+                  - generic [ref=f9e2768]:
+                    - generic [ref=f9e2769]:
+                      - generic [ref=f9e2770]: 3A
+                      - generic [ref=f9e2771]: ₹520
+                    - generic [ref=f9e2772]:
+                      - paragraph [ref=f9e2773]: AVL 15
+                      - paragraph [ref=f9e2774]: Available
+                - link "2A ₹725 AVL 3 Available" [ref=f9e2775] [cursor=pointer]:
+                  - /url: /trains/search-pwa/from/LTT/to/PUNE/30-10-2026
+                  - generic [ref=f9e2777]:
+                    - generic [ref=f9e2778]:
+                      - generic [ref=f9e2779]: 2A
+                      - generic [ref=f9e2780]: ₹725
+                    - generic [ref=f9e2781]:
+                      - paragraph [ref=f9e2782]: AVL 3
+                      - paragraph [ref=f9e2783]: Available
+                - link "1A ₹1190 AVL 2 Available" [ref=f9e2784] [cursor=pointer]:
+                  - /url: /trains/search-pwa/from/LTT/to/PUNE/30-10-2026
+                  - generic [ref=f9e2786]:
+                    - generic [ref=f9e2787]:
+                      - generic [ref=f9e2788]: 1A
+                      - generic [ref=f9e2789]: ₹1190
+                    - generic [ref=f9e2790]:
+                      - paragraph [ref=f9e2791]: AVL 2
+                      - paragraph [ref=f9e2792]: Available
+            - generic [ref=f9e2794]:
+              - generic [ref=f9e2795]:
+                - generic [ref=f9e2796]:
+                  - link [ref=f9e2797] [cursor=pointer]:
+                    - /url: https://www.ixigo.com/trains/12115
+                    - paragraph [ref=f9e2798]: 12115 SIDDHESHWAR EXP
+                  - generic [ref=f9e2799]:
+                    - paragraph [ref=f9e2800]:
+                      - text: Runs on
+                      - generic [ref=f9e2801]: M
+                      - generic [ref=f9e2802]: T
+                      - generic [ref=f9e2803]: W
+                      - generic [ref=f9e2804]: T
+                      - generic [ref=f9e2805]: F
+                      - generic [ref=f9e2806]: S
+                      - generic [ref=f9e2807]: S
+                    - paragraph [ref=f9e2808]: Mail/Express
+                    - link [ref=f9e2809] [cursor=pointer]:
+                      - /url: https://www.ixigo.com/trains/12115/running-status
+                      - paragraph [ref=f9e2810]: (12115 Running Status)
+                - generic [ref=f9e2812]:
+                  - generic [ref=f9e2813]:
+                    - paragraph [ref=f9e2814]: 22:40
+                    - paragraph [ref=f9e2815]: CSMT
+                  - paragraph [ref=f9e2817]: 03h 35m
+                  - generic [ref=f9e2820]:
+                    - paragraph [ref=f9e2821]: 02:15
+                    - paragraph [ref=f9e2822]: PUNE
+                - link [ref=f9e2823] [cursor=pointer]:
+                  - /url: /trains/search-pwa/from/CSMT/to/PUNE/30-10-2026
+                  - button "Show Availability" [ref=f9e2824]
+              - generic [ref=f9e2828]:
+                - link "SL ₹180 WL 75 40% Chance" [ref=f9e2829] [cursor=pointer]:
+                  - /url: /trains/search-pwa/from/CSMT/to/PUNE/30-10-2026
+                  - generic [ref=f9e2831]:
+                    - generic [ref=f9e2832]:
+                      - generic [ref=f9e2833]: SL
+                      - generic [ref=f9e2834]: ₹180
+                    - generic [ref=f9e2835]:
+                      - paragraph [ref=f9e2836]: WL 75
+                      - paragraph [ref=f9e2837]: 40% Chance
+                - link "3E ₹565 WL 28 43% Chance" [ref=f9e2838] [cursor=pointer]:
+                  - /url: /trains/search-pwa/from/CSMT/to/PUNE/30-10-2026
+                  - generic [ref=f9e2840]:
+                    - generic [ref=f9e2841]:
+                      - generic [ref=f9e2842]: 3E
+                      - generic [ref=f9e2843]: ₹565
+                    - generic [ref=f9e2844]:
+                      - paragraph [ref=f9e2845]: WL 28
+                      - paragraph [ref=f9e2846]: 43% Chance
+                - link "3A ₹565 WL 48 54% Chance" [ref=f9e2847] [cursor=pointer]:
+                  - /url: /trains/search-pwa/from/CSMT/to/PUNE/30-10-2026
+                  - generic [ref=f9e2849]:
+                    - generic [ref=f9e2850]:
+                      - generic [ref=f9e2851]: 3A
+                      - generic [ref=f9e2852]: ₹565
+                    - generic [ref=f9e2853]:
+                      - paragraph [ref=f9e2854]: WL 48
+                      - paragraph [ref=f9e2855]: 54% Chance
+                - link "2A ₹770 WL 28 57% Chance" [ref=f9e2856] [cursor=pointer]:
+                  - /url: /trains/search-pwa/from/CSMT/to/PUNE/30-10-2026
+                  - generic [ref=f9e2858]:
+                    - generic [ref=f9e2859]:
+                      - generic [ref=f9e2860]: 2A
+                      - generic [ref=f9e2861]: ₹770
+                    - generic [ref=f9e2862]:
+                      - paragraph [ref=f9e2863]: WL 28
+                      - paragraph [ref=f9e2864]: 57% Chance
+                - link "1A ₹1270 WL 8 Alternate Travel Plan Icon Alternate Travel Plan" [ref=f9e2865] [cursor=pointer]:
+                  - /url: /trains/search-pwa/from/CSMT/to/PUNE/30-10-2026
+                  - generic [ref=f9e2867]:
+                    - generic [ref=f9e2868]:
+                      - generic [ref=f9e2869]: 1A
+                      - generic [ref=f9e2870]: ₹1270
+                    - generic [ref=f9e2871]:
+                      - paragraph [ref=f9e2872]: WL 8
+                      - generic [ref=f9e2873]:
+                        - img "Alternate Travel Plan Icon" [ref=f9e2874]
+                        - paragraph [ref=f9e2875]: Alternate Travel Plan
+            - generic [ref=f9e2877]:
+              - generic [ref=f9e2878]:
+                - generic [ref=f9e2879]:
+                  - link [ref=f9e2880] [cursor=pointer]:
+                    - /url: https://www.ixigo.com/trains/22157
+                    - paragraph [ref=f9e2881]: 22157 CSMT MS SF MAIL
+                  - generic [ref=f9e2882]:
+                    - paragraph [ref=f9e2883]:
+                      - text: Runs on
+                      - generic [ref=f9e2884]: M
+                      - generic [ref=f9e2885]: T
+                      - generic [ref=f9e2886]: W
+                      - generic [ref=f9e2887]: T
+                      - generic [ref=f9e2888]: F
+                      - generic [ref=f9e2889]: S
+                      - generic [ref=f9e2890]: S
+                    - paragraph [ref=f9e2891]: Mail/Express
+                    - link [ref=f9e2892] [cursor=pointer]:
+                      - /url: https://www.ixigo.com/trains/22157/running-status
+                      - paragraph [ref=f9e2893]: (22157 Running Status)
+                - generic [ref=f9e2895]:
+                  - generic [ref=f9e2896]:
+                    - paragraph [ref=f9e2897]: 22:52
+                    - paragraph [ref=f9e2898]: CSMT
+                  - paragraph [ref=f9e2900]: 03h 58m
+                  - generic [ref=f9e2903]:
+                    - paragraph [ref=f9e2904]: 02:50
+                    - paragraph [ref=f9e2905]: PUNE
+                - link [ref=f9e2906] [cursor=pointer]:
+                  - /url: /trains/search-pwa/from/CSMT/to/PUNE/30-10-2026
+                  - button "Show Availability" [ref=f9e2907]
+              - generic [ref=f9e2911]:
+                - link "SL ₹180 WL 77 Alternate Travel Plan Icon Alternate Travel Plan" [ref=f9e2912] [cursor=pointer]:
+                  - /url: /trains/search-pwa/from/CSMT/to/PUNE/30-10-2026
+                  - generic [ref=f9e2914]:
+                    - generic [ref=f9e2915]:
+                      - generic [ref=f9e2916]: SL
+                      - generic [ref=f9e2917]: ₹180
+                    - generic [ref=f9e2918]:
+                      - paragraph [ref=f9e2919]: WL 77
+                      - generic [ref=f9e2920]:
+                        - img "Alternate Travel Plan Icon" [ref=f9e2921]
+                        - paragraph [ref=f9e2922]: Alternate Travel Plan
+                - link "3A ₹565 WL 44 59% Chance" [ref=f9e2923] [cursor=pointer]:
+                  - /url: /trains/search-pwa/from/CSMT/to/PUNE/30-10-2026
+                  - generic [ref=f9e2925]:
+                    - generic [ref=f9e2926]:
+                      - generic [ref=f9e2927]: 3A
+                      - generic [ref=f9e2928]: ₹565
+                    - generic [ref=f9e2929]:
+                      - paragraph [ref=f9e2930]: WL 44
+                      - paragraph [ref=f9e2931]: 59% Chance
+                - link "2A ₹770 AVL 5 Available" [ref=f9e2932] [cursor=pointer]:
+                  - /url: /trains/search-pwa/from/CSMT/to/PUNE/30-10-2026
+                  - generic [ref=f9e2934]:
+                    - generic [ref=f9e2935]:
+                      - generic [ref=f9e2936]: 2A
+                      - generic [ref=f9e2937]: ₹770
+                    - generic [ref=f9e2938]:
+                      - paragraph [ref=f9e2939]: AVL 5
+                      - paragraph [ref=f9e2940]: Available
+            - generic [ref=f9e2942]:
+              - generic [ref=f9e2943]:
+                - generic [ref=f9e2944]:
+                  - link [ref=f9e2945] [cursor=pointer]:
+                    - /url: https://www.ixigo.com/trains/11027
+                    - paragraph [ref=f9e2946]: 11027 DR SATARA EXP
+                  - generic [ref=f9e2947]:
+                    - paragraph [ref=f9e2948]:
+                      - text: Runs on
+                      - generic [ref=f9e2949]: M
+                      - generic [ref=f9e2950]: T
+                      - generic [ref=f9e2951]: W
+                      - generic [ref=f9e2952]: T
+                      - generic [ref=f9e2953]: F
+                      - generic [ref=f9e2954]: S
+                      - generic [ref=f9e2955]: S
+                    - paragraph [ref=f9e2956]: Mail/Express
+                    - link [ref=f9e2957] [cursor=pointer]:
+                      - /url: https://www.ixigo.com/trains/11027/running-status
+                      - paragraph [ref=f9e2958]: (11027 Running Status)
+                - generic [ref=f9e2960]:
+                  - generic [ref=f9e2961]:
+                    - paragraph [ref=f9e2962]: 23:55
+                    - paragraph [ref=f9e2963]: DR
+                  - paragraph [ref=f9e2965]: 03h 35m
+                  - generic [ref=f9e2968]:
+                    - paragraph [ref=f9e2969]: 03:30
+                    - paragraph [ref=f9e2970]: PUNE
+                - link [ref=f9e2971] [cursor=pointer]:
+                  - /url: /trains/search-pwa/from/DR/to/PUNE/30-10-2026
+                  - button "Show Availability" [ref=f9e2972]
+              - generic [ref=f9e2976]:
+                - link "SL ₹150 WL 94 36% Chance" [ref=f9e2977] [cursor=pointer]:
+                  - /url: /trains/search-pwa/from/DR/to/PUNE/30-10-2026
+                  - generic [ref=f9e2979]:
+                    - generic [ref=f9e2980]:
+                      - generic [ref=f9e2981]: SL
+                      - generic [ref=f9e2982]: ₹150
+                    - generic [ref=f9e2983]:
+                      - paragraph [ref=f9e2984]: WL 94
+                      - paragraph [ref=f9e2985]: 36% Chance
+                - link "3A ₹520 WL 41 55% Chance" [ref=f9e2986] [cursor=pointer]:
+                  - /url: /trains/search-pwa/from/DR/to/PUNE/30-10-2026
+                  - generic [ref=f9e2988]:
+                    - generic [ref=f9e2989]:
+                      - generic [ref=f9e2990]: 3A
+                      - generic [ref=f9e2991]: ₹520
+                    - generic [ref=f9e2992]:
+                      - paragraph [ref=f9e2993]: WL 41
+                      - paragraph [ref=f9e2994]: 55% Chance
+                - link "2A ₹725 WL 17 Alternate Travel Plan Icon Alternate Travel Plan" [ref=f9e2995] [cursor=pointer]:
+                  - /url: /trains/search-pwa/from/DR/to/PUNE/30-10-2026
+                  - generic [ref=f9e2997]:
+                    - generic [ref=f9e2998]:
+                      - generic [ref=f9e2999]: 2A
+                      - generic [ref=f9e3000]: ₹725
+                    - generic [ref=f9e3001]:
+                      - paragraph [ref=f9e3002]: WL 17
+                      - generic [ref=f9e3003]:
+                        - img "Alternate Travel Plan Icon" [ref=f9e3004]
+                        - paragraph [ref=f9e3005]: Alternate Travel Plan
+          - generic [ref=f9e3006]:
+            - heading "Why Book Mumbai to Pune trains with ixigo?" [level=2] [ref=f9e3007]
+            - generic [ref=f9e3008]:
+              - generic [ref=f9e3009]:
+                - img "Get 3X Refund* if waitlisted" [ref=f9e3010]
+                - generic [ref=f9e3011]:
+                  - heading "Get 3X Refund* if waitlisted" [level=3] [ref=f9e3012]
+                  - paragraph [ref=f9e3013]: Get triple the ticket fare as a refund if your Mumbai to Pune train ticket remains fully waitlisted. *T&C Apply!
+              - generic [ref=f9e3014]:
+                - img "Enjoy Free Train Ticket Cancellation" [ref=f9e3015]
+                - generic [ref=f9e3016]:
+                  - heading "Enjoy Free Train Ticket Cancellation" [level=3] [ref=f9e3017]
+                  - paragraph [ref=f9e3018]: Opt for Assured and enjoy free cancellation on your Mumbai to Pune train booking.
+              - generic [ref=f9e3019]:
+                - img "Get Alternate Seat Options" [ref=f9e3020]
+                - generic [ref=f9e3021]:
+                  - heading "Get Alternate Seat Options" [level=3] [ref=f9e3022]
+                  - paragraph [ref=f9e3023]: Easily find alternate seat options with Same Train Alternates feature on your Mumbai to Pune train route for a confirmed journey.
+              - generic [ref=f9e3024]:
+                - img "Enjoy ₹0 PG Fee via UPI" [ref=f9e3025]
+                - generic [ref=f9e3026]:
+                  - heading "Enjoy ₹0 PG Fee via UPI" [level=3] [ref=f9e3027]
+                  - paragraph [ref=f9e3028]: Book your Mumbai to Pune trains with ixigo and enjoy ₹0 PG fee when you pay via UPI.
+              - generic [ref=f9e3029]:
+                - img "Track Live Train Running Status" [ref=f9e3030]
+                - generic [ref=f9e3031]:
+                  - heading "Track Live Train Running Status" [level=3] [ref=f9e3032]
+                  - paragraph [ref=f9e3033]: Stay updated on your Mumbai to Pune train's live location, delays, platform details and more!
+              - generic [ref=f9e3034]:
+                - img "IRCTC Authorised Partner" [ref=f9e3035]
+                - generic [ref=f9e3036]:
+                  - heading "IRCTC Authorised Partner" [level=3] [ref=f9e3037]
+                  - paragraph [ref=f9e3038]: Enjoy a seamless train ticket booking experience with ixigo—your trusted IRCTC authorised partner.
+          - generic [ref=f9e3039]:
+            - generic [ref=f9e3040]:
+              - img "Book Cheap Flights" [ref=f9e3042]
+              - generic [ref=f9e3043]:
+                - paragraph [ref=f9e3044]: Book Flights to Pune
+                - paragraph [ref=f9e3046]: Save time and book your trip from Mumbai to Pune
+            - link [ref=f9e3048] [cursor=pointer]:
+              - /url: https://www.ixigo.com/cheap-flights/mumbai-pune-bom-pnq
+              - button "Book" [ref=f9e3049]
+          - generic [ref=f9e3051]:
+            - heading "Mumbai to Pune Train Ticket Booking Online" [level=2] [ref=f9e3052]
+            - paragraph [ref=f9e3053]: Book Mumbai to Pune trains – Approximately 34 trains run today between Mumbai and Pune, covering a distance of about 139 km by train. Trains from Mumbai to Pune are listed above along with their train schedule, timetable, and ticket fares. To get accurate, up-to-date information about Mumbai to Pune train reservation, Mumbai to Pune train ticket price, and Mumbai Pune railway time table, you can visit the ixigo app or website. If you're unsure about which train to book, ixigo simplifies your decision-making process and helps you with the Mumbai to Pune train time table with the options like cheapest, fastest, first and last train from Mumbai to Pune.
+            - paragraph [ref=f9e3054]:
+              - text: With ixigo, you can check Mumbai to Pune train seat availability in real-time. ixigo also offers features like tracking & sharing Mumbai to Pune train live running status, platform number, and viewing seat maps. For anything related to Mumbai to Pune train booking, you can rely on ixigo's assistance. You can also book
+              - link "Mumbai to Pune train tickets" [ref=f9e3055] [cursor=pointer]:
+                - /url: https://www.confirmtkt.com/trains/mumbai-to-pune-train-tickets
+              - text: on ConfirmTkt, powered by ixigo.
+          - separator [ref=f9e3056]
+          - generic [ref=f9e3057]:
+            - generic [ref=f9e3058]:
+              - heading "Mumbai to Pune Fastest Train" [level=3] [ref=f9e3059]
+              - paragraph [ref=f9e3060]:
+                - text: The fastest train from Mumbai to Pune is
+                - link "11041 DR SNSI EXP" [ref=f9e3061] [cursor=pointer]:
+                  - /url: https://www.ixigo.com/trains/11041
+                - text: . It takes about 02:45 hours to reach Pune. This train leaves Mumbai (CSTM) at 00:45 and reaches Pune (PUNE) at 03:30. It operates on Wed, Thu, Fri, Sun.
+              - separator [ref=f9e3062]
+            - generic [ref=f9e3063]:
+              - heading "Cheapest Train from Mumbai to Pune" [level=3] [ref=f9e3064]
+              - paragraph [ref=f9e3065]:
+                - text: The cheapest train from Mumbai to Pune is
+                - link "11007 DECCAN EXPRESS" [ref=f9e3066] [cursor=pointer]:
+                  - /url: https://www.ixigo.com/trains/11007
+                - text: . It takes around 04:05 to reach Pune. 11007 DECCAN EXPRESS leaves Mumbai CSTM at 07:00 and reaches Pune PUNE at 11:05. The price of DECCAN EXPRESS ticket is 100 INR. The train operates on Mon, Tue, Wed, Thu, Fri, Sat, Sun.
+              - separator [ref=f9e3067]
+            - generic [ref=f9e3068]:
+              - heading "First Train from Mumbai to Pune" [level=3] [ref=f9e3069]
+              - paragraph [ref=f9e3070]:
+                - text: The first train from Mumbai to Pune is
+                - link "17318 DR HUBBALLI EXP" [ref=f9e3071] [cursor=pointer]:
+                  - /url: https://www.ixigo.com/trains/17318
+                - text: . This train takes about 03:56 to reach Pune. It leaves Mumbai CSTM at 20:05 and reaches Pune PUNE at 00:01 and operates on Mon, Tue, Wed, Thu, Fri, Sat, Sun.
+              - separator [ref=f9e3072]
+            - generic [ref=f9e3073]:
+              - heading "Mumbai to Pune Last Train" [level=3] [ref=f9e3074]
+              - paragraph [ref=f9e3075]:
+                - text: The last train to Pune from Mumbai is
+                - link "11027 DR SATARA EXP" [ref=f9e3076] [cursor=pointer]:
+                  - /url: https://www.ixigo.com/trains/11027
+                - text: . It takes around 03:35 hours to reach Pune. The last train leaves Mumbai CSTM at 23:55 and reaches Pune PUNE at 03:30 and operates on Mon, Fri, Sun.
+              - separator [ref=f9e3077]
+            - generic [ref=f9e3078]:
+              - heading "PNR status enquiry from Mumbai to Pune" [level=3] [ref=f9e3079]
+              - paragraph [ref=f9e3080]:
+                - text: If you are travelling from Mumbai to Pune and want to know about your
+                - link "PNR status" [ref=f9e3081] [cursor=pointer]:
+                  - /url: https://www.ixigo.com/trains/pnr-status
+                - text: ", then you can use PNR status enquiry feature and check the status at ixigo. It offers updated PNR information."
+              - separator [ref=f9e3082]
+          - generic [ref=f9e3083]:
+            - heading "Mumbai to Pune Train Tickets Price" [level=2] [ref=f9e3084]
+            - paragraph [ref=f9e3085]: If travel is on your mind and you are looking for Mumbai to Pune train tickets, ixigo is the ideal platform. The Mumbai to Pune train reservation ticket price depends on your travel dates, choice of coach, and individual preferences. Travellers can find tickets ranging between ₹100 and ₹1190, with the lowest Mumbai to Pune train ticket rate starting at ₹100.
+            - paragraph [ref=f9e3086]: "Listed below are the minimum ticket prices for each travel class:"
+            - table [ref=f9e3088]:
+              - rowgroup [ref=f9e3089]:
+                - row [ref=f9e3090]:
+                  - columnheader [ref=f9e3091]:
+                    - paragraph [ref=f9e3092]: Class
+                  - columnheader [ref=f9e3093]:
+                    - paragraph [ref=f9e3094]: Minimum Price
+              - rowgroup [ref=f9e3095]:
+                - row [ref=f9e3096]:
+                  - cell [ref=f9e3097]:
+                    - paragraph [ref=f9e3098]: 1A
+                  - cell [ref=f9e3099]:
+                    - paragraph [ref=f9e3100]: ₹1190
+                - row [ref=f9e3101]:
+                  - cell [ref=f9e3102]:
+                    - paragraph [ref=f9e3103]: 2A
+                  - cell [ref=f9e3104]:
+                    - paragraph [ref=f9e3105]: ₹725
+                - row [ref=f9e3106]:
+                  - cell [ref=f9e3107]:
+                    - paragraph [ref=f9e3108]: 3A
+                  - cell [ref=f9e3109]:
+                    - paragraph [ref=f9e3110]: ₹520
+                - row [ref=f9e3111]:
+                  - cell [ref=f9e3112]:
+                    - paragraph [ref=f9e3113]: 3E
+                  - cell [ref=f9e3114]:
+                    - paragraph [ref=f9e3115]: ₹520
+                - row [ref=f9e3116]:
+                  - cell [ref=f9e3117]:
+                    - paragraph [ref=f9e3118]: SL
+                  - cell [ref=f9e3119]:
+                    - paragraph [ref=f9e3120]: ₹150
+                - row [ref=f9e3121]:
+                  - cell [ref=f9e3122]:
+                    - paragraph [ref=f9e3123]: 2S
+                  - cell [ref=f9e3124]:
+                    - paragraph [ref=f9e3125]: ₹100
+                - row [ref=f9e3126]:
+                  - cell [ref=f9e3127]:
+                    - paragraph [ref=f9e3128]: CC
+                  - cell [ref=f9e3129]:
+                    - paragraph [ref=f9e3130]: ₹345
+          - generic [ref=f9e3131]:
+            - separator [ref=f9e3132]
+            - heading "Daily Trains from Mumbai to Pune" [level=2] [ref=f9e3133]
+            - paragraph [ref=f9e3134]: "A total of 23 Mumbai to Pune trains operate daily connecting these two cities. See the details below:"
+            - table [ref=f9e3136]:
+              - rowgroup [ref=f9e3137]:
+                - row [ref=f9e3138]:
+                  - columnheader [ref=f9e3139]:
+                    - paragraph [ref=f9e3140]: Train Name (No.)
+                  - columnheader [ref=f9e3141]:
+                    - paragraph [ref=f9e3142]: Day of Departure
+                  - columnheader [ref=f9e3143]:
+                    - paragraph [ref=f9e3144]: Time of Departure
+                  - columnheader [ref=f9e3145]:
+                    - paragraph [ref=f9e3146]: Time of Arrival
+                  - columnheader [ref=f9e3147]:
+                    - paragraph [ref=f9e3148]: Origin Station
+                  - columnheader [ref=f9e3149]:
+                    - paragraph [ref=f9e3150]: Destination Station
+                  - columnheader [ref=f9e3151]:
+                    - paragraph [ref=f9e3152]: Total Time of Travel
+              - rowgroup [ref=f9e3153]:
+                - row [ref=f9e3154]:
+                  - cell [ref=f9e3155]:
+                    - paragraph [ref=f9e3156]: INDB DAUND EXP (22944)
+                  - cell [ref=f9e3157]:
+                    - paragraph [ref=f9e3158]: Daily
+                  - cell [ref=f9e3159]:
+                    - paragraph [ref=f9e3160]: 04:35
+                  - cell [ref=f9e3161]:
+                    - paragraph [ref=f9e3162]: 08:50
+                  - cell [ref=f9e3163]:
+                    - paragraph [ref=f9e3164]: Vasai Road
+                  - cell [ref=f9e3165]:
+                    - paragraph [ref=f9e3166]: Pune Junction
+                  - cell [ref=f9e3167]:
+                    - paragraph [ref=f9e3168]: 04:15 hrs
+                - row [ref=f9e3169]:
+                  - cell [ref=f9e3170]:
+                    - paragraph [ref=f9e3171]: INDRAYANI EXP (22105)
+                  - cell [ref=f9e3172]:
+                    - paragraph [ref=f9e3173]: Daily
+                  - cell [ref=f9e3174]:
+                    - paragraph [ref=f9e3175]: 05:40
+                  - cell [ref=f9e3176]:
+                    - paragraph [ref=f9e3177]: 09:05
+                  - cell [ref=f9e3178]:
+                    - paragraph [ref=f9e3179]: Mumbai Csmt
+                  - cell [ref=f9e3180]:
+                    - paragraph [ref=f9e3181]: Pune Junction
+                  - cell [ref=f9e3182]:
+                    - paragraph [ref=f9e3183]: 03:25 hrs
+                - row [ref=f9e3184]:
+                  - cell [ref=f9e3185]:
+                    - paragraph [ref=f9e3186]: INTERCITY EXP (12127)
+                  - cell [ref=f9e3187]:
+                    - paragraph [ref=f9e3188]: Daily
+                  - cell [ref=f9e3189]:
+                    - paragraph [ref=f9e3190]: 06:40
+                  - cell [ref=f9e3191]:
+                    - paragraph [ref=f9e3192]: 10:00
+                  - cell [ref=f9e3193]:
+                    - paragraph [ref=f9e3194]: Mumbai Csmt
+                  - cell [ref=f9e3195]:
+                    - paragraph [ref=f9e3196]: Pune Junction
+                  - cell [ref=f9e3197]:
+                    - paragraph [ref=f9e3198]: 03:20 hrs
+                - row [ref=f9e3199]:
+                  - cell [ref=f9e3200]:
+                    - paragraph [ref=f9e3201]: LTT VSKP EXPRESS (18520)
+                  - cell [ref=f9e3202]:
+                    - paragraph [ref=f9e3203]: Daily
+                  - cell [ref=f9e3204]:
+                    - paragraph [ref=f9e3205]: 06:55
+                  - cell [ref=f9e3206]:
+                    - paragraph [ref=f9e3207]: 10:15
+                  - cell [ref=f9e3208]:
+                    - paragraph [ref=f9e3209]: Mumbai Lokmanya Tilak Terminus
+                  - cell [ref=f9e3210]:
+                    - paragraph [ref=f9e3211]: Pune Junction
+                  - cell [ref=f9e3212]:
+                    - paragraph [ref=f9e3213]: 03:20 hrs
+                - row [ref=f9e3214]:
+                  - cell [ref=f9e3215]:
+                    - paragraph [ref=f9e3216]: DECCAN EXPRESS (11007)
+                  - cell [ref=f9e3217]:
+                    - paragraph [ref=f9e3218]: Daily
+                  - cell [ref=f9e3219]:
+                    - paragraph [ref=f9e3220]: 07:00
+                  - cell [ref=f9e3221]:
+                    - paragraph [ref=f9e3222]: 11:05
+                  - cell [ref=f9e3223]:
+                    - paragraph [ref=f9e3224]: Mumbai Csmt
+                  - cell [ref=f9e3225]:
+                    - paragraph [ref=f9e3226]: Pune Junction
+                  - cell [ref=f9e3227]:
+                    - paragraph [ref=f9e3228]: 04:05 hrs
+                - row [ref=f9e3229]:
+                  - cell [ref=f9e3230]:
+                    - paragraph [ref=f9e3231]: UDYAN EXPRESS (11301)
+                  - cell [ref=f9e3232]:
+                    - paragraph [ref=f9e3233]: Daily
+                  - cell [ref=f9e3234]:
+                    - paragraph [ref=f9e3235]: 07:55
+                  - cell [ref=f9e3236]:
+                    - paragraph [ref=f9e3237]: 11:40
+                  - cell [ref=f9e3238]:
+                    - paragraph [ref=f9e3239]: Mumbai Csmt
+                  - cell [ref=f9e3240]:
+                    - paragraph [ref=f9e3241]: Pune Junction
+                  - cell [ref=f9e3242]:
+                    - paragraph [ref=f9e3243]: 03:45 hrs
+                - row [ref=f9e3244]:
+                  - cell [ref=f9e3245]:
+                    - paragraph [ref=f9e3246]: KOYNA EXPRESS (11029)
+                  - cell [ref=f9e3247]:
+                    - paragraph [ref=f9e3248]: Daily
+                  - cell [ref=f9e3249]:
+                    - paragraph [ref=f9e3250]: 08:40
+                  - cell [ref=f9e3251]:
+                    - paragraph [ref=f9e3252]: 12:35
+                  - cell [ref=f9e3253]:
+                    - paragraph [ref=f9e3254]: Mumbai Csmt
+                  - cell [ref=f9e3255]:
+                    - paragraph [ref=f9e3256]: Pune Junction
+                  - cell [ref=f9e3257]:
+                    - paragraph [ref=f9e3258]: 03:55 hrs
+                - row [ref=f9e3259]:
+                  - cell [ref=f9e3260]:
+                    - paragraph [ref=f9e3261]: JU HDP SF EXP (20495)
+                  - cell [ref=f9e3262]:
+                    - paragraph [ref=f9e3263]: Daily
+                  - cell [ref=f9e3264]:
+                    - paragraph [ref=f9e3265]: 12:22
+                  - cell [ref=f9e3266]:
+                    - paragraph [ref=f9e3267]: 16:40
+                  - cell [ref=f9e3268]:
+                    - paragraph [ref=f9e3269]: Vasai Road
+                  - cell [ref=f9e3270]:
+                    - paragraph [ref=f9e3271]: Pune Junction
+                  - cell [ref=f9e3272]:
+                    - paragraph [ref=f9e3273]: 04:18 hrs
+                - row [ref=f9e3274]:
+                  - cell [ref=f9e3275]:
+                    - paragraph [ref=f9e3276]: CSMT CHENNAI EXP (22159)
+                  - cell [ref=f9e3277]:
+                    - paragraph [ref=f9e3278]: Daily
+                  - cell [ref=f9e3279]:
+                    - paragraph [ref=f9e3280]: 12:45
+                  - cell [ref=f9e3281]:
+                    - paragraph [ref=f9e3282]: 16:20
+                  - cell [ref=f9e3283]:
+                    - paragraph [ref=f9e3284]: Mumbai Csmt
+                  - cell [ref=f9e3285]:
+                    - paragraph [ref=f9e3286]: Pune Junction
+                  - cell [ref=f9e3287]:
+                    - paragraph [ref=f9e3288]: 03:35 hrs
+                - row [ref=f9e3289]:
+                  - cell [ref=f9e3290]:
+                    - paragraph [ref=f9e3291]: KONARK EXPRESS (11019)
+                  - cell [ref=f9e3292]:
+                    - paragraph [ref=f9e3293]: Daily
+                  - cell [ref=f9e3294]:
+                    - paragraph [ref=f9e3295]: 14:00
+                  - cell [ref=f9e3296]:
+                    - paragraph [ref=f9e3297]: 17:55
+                  - cell [ref=f9e3298]:
+                    - paragraph [ref=f9e3299]: Mumbai Csmt
+                  - cell [ref=f9e3300]:
+                    - paragraph [ref=f9e3301]: Pune Junction
+                  - cell [ref=f9e3302]:
+                    - paragraph [ref=f9e3303]: 03:55 hrs
+                - row [ref=f9e3304]:
+                  - cell [ref=f9e3305]:
+                    - paragraph [ref=f9e3306]: HYDERABAD EXP (22732)
+                  - cell [ref=f9e3307]:
+                    - paragraph [ref=f9e3308]: Daily
+                  - cell [ref=f9e3309]:
+                    - paragraph [ref=f9e3310]: 14:10
+                  - cell [ref=f9e3311]:
+                    - paragraph [ref=f9e3312]: 18:05
+                  - cell [ref=f9e3313]:
+                    - paragraph [ref=f9e3314]: Mumbai Csmt
+                  - cell [ref=f9e3315]:
+                    - paragraph [ref=f9e3316]: Pune Junction
+                  - cell [ref=f9e3317]:
+                    - paragraph [ref=f9e3318]: 03:55 hrs
+                - row [ref=f9e3319]:
+                  - cell [ref=f9e3320]:
+                    - paragraph [ref=f9e3321]: PNVL NED EXPRESS (17613)
+                  - cell [ref=f9e3322]:
+                    - paragraph [ref=f9e3323]: Daily
+                  - cell [ref=f9e3324]:
+                    - paragraph [ref=f9e3325]: 16:00
+                  - cell [ref=f9e3326]:
+                    - paragraph [ref=f9e3327]: 19:15
+                  - cell [ref=f9e3328]:
+                    - paragraph [ref=f9e3329]: Panvel
+                  - cell [ref=f9e3330]:
+                    - paragraph [ref=f9e3331]: Pune Junction
+                  - cell [ref=f9e3332]:
+                    - paragraph [ref=f9e3333]: 03:15 hrs
+                - row [ref=f9e3334]:
+                  - cell [ref=f9e3335]:
+                    - paragraph [ref=f9e3336]: PRAGATI EXPRESS (12125)
+                  - cell [ref=f9e3337]:
+                    - paragraph [ref=f9e3338]: Daily
+                  - cell [ref=f9e3339]:
+                    - paragraph [ref=f9e3340]: 16:25
+                  - cell [ref=f9e3341]:
+                    - paragraph [ref=f9e3342]: 19:50
+                  - cell [ref=f9e3343]:
+                    - paragraph [ref=f9e3344]: Mumbai Csmt
+                  - cell [ref=f9e3345]:
+                    - paragraph [ref=f9e3346]: Pune Junction
+                  - cell [ref=f9e3347]:
+                    - paragraph [ref=f9e3348]: 03:25 hrs
+                - row [ref=f9e3349]:
+                  - cell [ref=f9e3350]:
+                    - paragraph [ref=f9e3351]: DECCAN QUEEN (12123)
+                  - cell [ref=f9e3352]:
+                    - paragraph [ref=f9e3353]: Daily
+                  - cell [ref=f9e3354]:
+                    - paragraph [ref=f9e3355]: 17:10
+                  - cell [ref=f9e3356]:
+                    - paragraph [ref=f9e3357]: 20:25
+                  - cell [ref=f9e3358]:
+                    - paragraph [ref=f9e3359]: Mumbai Csmt
+                  - cell [ref=f9e3360]:
+                    - paragraph [ref=f9e3361]: Pune Junction
+                  - cell [ref=f9e3362]:
+                    - paragraph [ref=f9e3363]: 03:15 hrs
+                - row [ref=f9e3364]:
+                  - cell [ref=f9e3365]:
+                    - paragraph [ref=f9e3366]: SINHAGAD EXP (11009)
+                  - cell [ref=f9e3367]:
+                    - paragraph [ref=f9e3368]: Daily
+                  - cell [ref=f9e3369]:
+                    - paragraph [ref=f9e3370]: 17:50
+                  - cell [ref=f9e3371]:
+                    - paragraph [ref=f9e3372]: 21:50
+                  - cell [ref=f9e3373]:
+                    - paragraph [ref=f9e3374]: Mumbai Csmt
+                  - cell [ref=f9e3375]:
+                    - paragraph [ref=f9e3376]: Pune Junction
+                  - cell [ref=f9e3377]:
+                    - paragraph [ref=f9e3378]: 04:00 hrs
+                - row [ref=f9e3379]:
+                  - cell [ref=f9e3380]:
+                    - paragraph [ref=f9e3381]: LTT MAS EXP (12163)
+                  - cell [ref=f9e3382]:
+                    - paragraph [ref=f9e3383]: Daily
+                  - cell [ref=f9e3384]:
+                    - paragraph [ref=f9e3385]: 18:30
+                  - cell [ref=f9e3386]:
+                    - paragraph [ref=f9e3387]: 22:05
+                  - cell [ref=f9e3388]:
+                    - paragraph [ref=f9e3389]: Mumbai Lokmanya Tilak Terminus
+                  - cell [ref=f9e3390]:
+                    - paragraph [ref=f9e3391]: Pune Junction
+                  - cell [ref=f9e3392]:
+                    - paragraph [ref=f9e3393]: 03:35 hrs
+                - row [ref=f9e3394]:
+                  - cell [ref=f9e3395]:
+                    - paragraph [ref=f9e3396]: DR HUBBALLI EXP (17318)
+                  - cell [ref=f9e3397]:
+                    - paragraph [ref=f9e3398]: Daily
+                  - cell [ref=f9e3399]:
+                    - paragraph [ref=f9e3400]: 20:05
+                  - cell [ref=f9e3401]:
+                    - paragraph [ref=f9e3402]: 00:01
+                  - cell [ref=f9e3403]:
+                    - paragraph [ref=f9e3404]: Mumbai Dadar Central
+                  - cell [ref=f9e3405]:
+                    - paragraph [ref=f9e3406]: Pune Junction
+                  - cell [ref=f9e3407]:
+                    - paragraph [ref=f9e3408]: 03:56 hrs
+                - row [ref=f9e3409]:
+                  - cell [ref=f9e3410]:
+                    - paragraph [ref=f9e3411]: MAHALAXMI EXP (17411)
+                  - cell [ref=f9e3412]:
+                    - paragraph [ref=f9e3413]: Daily
+                  - cell [ref=f9e3414]:
+                    - paragraph [ref=f9e3415]: 20:15
+                  - cell [ref=f9e3416]:
+                    - paragraph [ref=f9e3417]: 00:10
+                  - cell [ref=f9e3418]:
+                    - paragraph [ref=f9e3419]: Mumbai Csmt
+                  - cell [ref=f9e3420]:
+                    - paragraph [ref=f9e3421]: Pune Junction
+                  - cell [ref=f9e3422]:
+                    - paragraph [ref=f9e3423]: 03:55 hrs
+                - row [ref=f9e3424]:
+                  - cell [ref=f9e3425]:
+                    - paragraph [ref=f9e3426]: CSMT HPT EXP (11139)
+                  - cell [ref=f9e3427]:
+                    - paragraph [ref=f9e3428]: Daily
+                  - cell [ref=f9e3429]:
+                    - paragraph [ref=f9e3430]: 21:20
+                  - cell [ref=f9e3431]:
+                    - paragraph [ref=f9e3432]: 01:05
+                  - cell [ref=f9e3433]:
+                    - paragraph [ref=f9e3434]: Mumbai Csmt
+                  - cell [ref=f9e3435]:
+                    - paragraph [ref=f9e3436]: Pune Junction
+                  - cell [ref=f9e3437]:
+                    - paragraph [ref=f9e3438]: 03:45 hrs
+                - row [ref=f9e3439]:
+                  - cell [ref=f9e3440]:
+                    - paragraph [ref=f9e3441]: HUSSAINSAGAR EXP (12701)
+                  - cell [ref=f9e3442]:
+                    - paragraph [ref=f9e3443]: Daily
+                  - cell [ref=f9e3444]:
+                    - paragraph [ref=f9e3445]: 21:50
+                  - cell [ref=f9e3446]:
+                    - paragraph [ref=f9e3447]: 01:20
+                  - cell [ref=f9e3448]:
+                    - paragraph [ref=f9e3449]: Mumbai Csmt
+                  - cell [ref=f9e3450]:
+                    - paragraph [ref=f9e3451]: Pune Junction
+                  - cell [ref=f9e3452]:
+                    - paragraph [ref=f9e3453]: 03:30 hrs
+                - row [ref=f9e3454]:
+                  - cell [ref=f9e3455]:
+                    - paragraph [ref=f9e3456]: LTT CBE EXPRESS (11013)
+                  - cell [ref=f9e3457]:
+                    - paragraph [ref=f9e3458]: Daily
+                  - cell [ref=f9e3459]:
+                    - paragraph [ref=f9e3460]: 22:35
+                  - cell [ref=f9e3461]:
+                    - paragraph [ref=f9e3462]: 01:50
+                  - cell [ref=f9e3463]:
+                    - paragraph [ref=f9e3464]: Mumbai Lokmanya Tilak Terminus
+                  - cell [ref=f9e3465]:
+                    - paragraph [ref=f9e3466]: Pune Junction
+                  - cell [ref=f9e3467]:
+                    - paragraph [ref=f9e3468]: 03:15 hrs
+                - row [ref=f9e3469]:
+                  - cell [ref=f9e3470]:
+                    - paragraph [ref=f9e3471]: SIDDHESHWAR EXP (12115)
+                  - cell [ref=f9e3472]:
+                    - paragraph [ref=f9e3473]: Daily
+                  - cell [ref=f9e3474]:
+                    - paragraph [ref=f9e3475]: 22:40
+                  - cell [ref=f9e3476]:
+                    - paragraph [ref=f9e3477]: 02:15
+                  - cell [ref=f9e3478]:
+                    - paragraph [ref=f9e3479]: Mumbai Csmt
+                  - cell [ref=f9e3480]:
+                    - paragraph [ref=f9e3481]: Pune Junction
+                  - cell [ref=f9e3482]:
+                    - paragraph [ref=f9e3483]: 03:35 hrs
+                - row [ref=f9e3484]:
+                  - cell [ref=f9e3485]:
+                    - paragraph [ref=f9e3486]: CSMT MS SF MAIL (22157)
+                  - cell [ref=f9e3487]:
+                    - paragraph [ref=f9e3488]: Daily
+                  - cell [ref=f9e3489]:
+                    - paragraph [ref=f9e3490]: 22:52
+                  - cell [ref=f9e3491]:
+                    - paragraph [ref=f9e3492]: 02:50
+                  - cell [ref=f9e3493]:
+                    - paragraph [ref=f9e3494]: Mumbai Csmt
+                  - cell [ref=f9e3495]:
+                    - paragraph [ref=f9e3496]: Pune Junction
+                  - cell [ref=f9e3497]:
+                    - paragraph [ref=f9e3498]: 03:58 hrs
+          - separator [ref=f9e3499]
+          - generic [ref=f9e3500]:
+            - heading "Weekly Trains from Mumbai to Pune" [level=2] [ref=f9e3501]
+            - paragraph [ref=f9e3502]: "There are 4 Mumbai to Pune trains running between these two cities. Check the Mumbai to Pune train timetable below:"
+            - table [ref=f9e3504]:
+              - rowgroup [ref=f9e3505]:
+                - row [ref=f9e3506]:
+                  - columnheader [ref=f9e3507]:
+                    - paragraph [ref=f9e3508]: Train Name (No.)
+                  - columnheader [ref=f9e3509]:
+                    - paragraph [ref=f9e3510]: Day of Departure
+                  - columnheader [ref=f9e3511]:
+                    - paragraph [ref=f9e3512]: Time of Departure
+                  - columnheader [ref=f9e3513]:
+                    - paragraph [ref=f9e3514]: Time of Arrival
+                  - columnheader [ref=f9e3515]:
+                    - paragraph [ref=f9e3516]: Origin Station
+                  - columnheader [ref=f9e3517]:
+                    - paragraph [ref=f9e3518]: Destination Station
+                  - columnheader [ref=f9e3519]:
+                    - paragraph [ref=f9e3520]: Total Time of Travel
+              - rowgroup [ref=f9e3521]:
+                - row [ref=f9e3522]:
+                  - cell [ref=f9e3523]:
+                    - paragraph [ref=f9e3524]: ADI PUNE SF (22185)
+                  - cell [ref=f9e3525]:
+                    - paragraph [ref=f9e3526]: Fri
+                  - cell [ref=f9e3527]:
+                    - paragraph [ref=f9e3528]: 04:25
+                  - cell [ref=f9e3529]:
+                    - paragraph [ref=f9e3530]: 07:30
+                  - cell [ref=f9e3531]:
+                    - paragraph [ref=f9e3532]: Kalyan Junction
+                  - cell [ref=f9e3533]:
+                    - paragraph [ref=f9e3534]: Pune Junction
+                  - cell [ref=f9e3535]:
+                    - paragraph [ref=f9e3536]: 03:05 hrs
+                - row [ref=f9e3537]:
+                  - cell [ref=f9e3538]:
+                    - paragraph [ref=f9e3539]: AII DD SUPERFAST (20991)
+                  - cell [ref=f9e3540]:
+                    - paragraph [ref=f9e3541]: Fri
+                  - cell [ref=f9e3542]:
+                    - paragraph [ref=f9e3543]: 13:05
+                  - cell [ref=f9e3544]:
+                    - paragraph [ref=f9e3545]: 16:50
+                  - cell [ref=f9e3546]:
+                    - paragraph [ref=f9e3547]: Vasai Road
+                  - cell [ref=f9e3548]:
+                    - paragraph [ref=f9e3549]: Pune Junction
+                  - cell [ref=f9e3550]:
+                    - paragraph [ref=f9e3551]: 03:45 hrs
+                - row [ref=f9e3552]:
+                  - cell [ref=f9e3553]:
+                    - paragraph [ref=f9e3554]: BME YPR AC EXP (14806)
+                  - cell [ref=f9e3555]:
+                    - paragraph [ref=f9e3556]: Fri
+                  - cell [ref=f9e3557]:
+                    - paragraph [ref=f9e3558]: 13:50
+                  - cell [ref=f9e3559]:
+                    - paragraph [ref=f9e3560]: 18:55
+                  - cell [ref=f9e3561]:
+                    - paragraph [ref=f9e3562]: Vasai Road
+                  - cell [ref=f9e3563]:
+                    - paragraph [ref=f9e3564]: Pune Junction
+                  - cell [ref=f9e3565]:
+                    - paragraph [ref=f9e3566]: 05:05 hrs
+                - row [ref=f9e3567]:
+                  - cell [ref=f9e3568]:
+                    - paragraph [ref=f9e3569]: VIVEK EXPRESS (19568)
+                  - cell [ref=f9e3570]:
+                    - paragraph [ref=f9e3571]: Fri
+                  - cell [ref=f9e3572]:
+                    - paragraph [ref=f9e3573]: 16:40
+                  - cell [ref=f9e3574]:
+                    - paragraph [ref=f9e3575]: 21:10
+                  - cell [ref=f9e3576]:
+                    - paragraph [ref=f9e3577]: Vasai Road
+                  - cell [ref=f9e3578]:
+                    - paragraph [ref=f9e3579]: Pune Junction
+                  - cell [ref=f9e3580]:
+                    - paragraph [ref=f9e3581]: 04:30 hrs
+          - generic [ref=f9e3582]:
+            - separator [ref=f9e3583]
+            - heading "Mumbai to Pune Trains Seat Availability" [level=2] [ref=f9e3584]
+            - paragraph [ref=f9e3585]:
+              - text: Check Mumbai to Pune
+              - link "train seat availability" [ref=f9e3586] [cursor=pointer]:
+                - /url: https://www.ixigo.com/trains/train-seat-availability
+              - text: on ixigo. Enter the train name or number and hit the search button. You will find the seat availability for different classes along with the fares for the next 60 days. You can also check the availability for various quotas.
+            - generic [ref=f9e3588]:
+              - link [ref=f9e3590] [cursor=pointer]:
+                - /url: https://www.ixigo.com/trains/11041/seat-availability
+                - paragraph [ref=f9e3591]: 11041 Seat Availability
+              - link [ref=f9e3593] [cursor=pointer]:
+                - /url: https://www.ixigo.com/trains/22185/seat-availability
+                - paragraph [ref=f9e3594]: 22185 Seat Availability
+              - link [ref=f9e3596] [cursor=pointer]:
+                - /url: https://www.ixigo.com/trains/22944/seat-availability
+                - paragraph [ref=f9e3597]: 22944 Seat Availability
+              - link [ref=f9e3599] [cursor=pointer]:
+                - /url: https://www.ixigo.com/trains/22105/seat-availability
+                - paragraph [ref=f9e3600]: 22105 Seat Availability
+              - link [ref=f9e3602] [cursor=pointer]:
+                - /url: https://www.ixigo.com/trains/12127/seat-availability
+                - paragraph [ref=f9e3603]: 12127 Seat Availability
+              - link [ref=f9e3605] [cursor=pointer]:
+                - /url: https://www.ixigo.com/trains/18520/seat-availability
+                - paragraph [ref=f9e3606]: 18520 Seat Availability
+              - link [ref=f9e3608] [cursor=pointer]:
+                - /url: https://www.ixigo.com/trains/11007/seat-availability
+                - paragraph [ref=f9e3609]: 11007 Seat Availability
+              - link [ref=f9e3611] [cursor=pointer]:
+                - /url: https://www.ixigo.com/trains/11301/seat-availability
+                - paragraph [ref=f9e3612]: 11301 Seat Availability
+              - link [ref=f9e3614] [cursor=pointer]:
+                - /url: https://www.ixigo.com/trains/11029/seat-availability
+                - paragraph [ref=f9e3615]: 11029 Seat Availability
+              - link [ref=f9e3617] [cursor=pointer]:
+                - /url: https://www.ixigo.com/trains/20495/seat-availability
+                - paragraph [ref=f9e3618]: 20495 Seat Availability
+          - separator [ref=f9e3619]
+          - generic [ref=f9e3620]:
+            - heading "Mumbai to Pune Trains Running Status" [level=2] [ref=f9e3621]
+            - paragraph [ref=f9e3622]:
+              - text: Check Mumbai to Pune
+              - link "train running status" [ref=f9e3623] [cursor=pointer]:
+                - /url: https://www.ixigo.com/trains/train-running-status
+              - text: on ixigo. Enter the train number or name into the search box and hit the search button. You will find the complete train timetable, stoppage information and delay at each station (if any) during the journey. You can also check the platform number and coach position of the train through the feature.
+            - generic [ref=f9e3625]:
+              - link [ref=f9e3627] [cursor=pointer]:
+                - /url: https://www.ixigo.com/trains/11041/running-status
+                - paragraph [ref=f9e3628]: 11041 Running Status
+              - link [ref=f9e3630] [cursor=pointer]:
+                - /url: https://www.ixigo.com/trains/22185/running-status
+                - paragraph [ref=f9e3631]: 22185 Running Status
+              - link [ref=f9e3633] [cursor=pointer]:
+                - /url: https://www.ixigo.com/trains/22944/running-status
+                - paragraph [ref=f9e3634]: 22944 Running Status
+              - link [ref=f9e3636] [cursor=pointer]:
+                - /url: https://www.ixigo.com/trains/22105/running-status
+                - paragraph [ref=f9e3637]: 22105 Running Status
+              - link [ref=f9e3639] [cursor=pointer]:
+                - /url: https://www.ixigo.com/trains/12127/running-status
+                - paragraph [ref=f9e3640]: 12127 Running Status
+              - link [ref=f9e3642] [cursor=pointer]:
+                - /url: https://www.ixigo.com/trains/18520/running-status
+                - paragraph [ref=f9e3643]: 18520 Running Status
+              - link [ref=f9e3645] [cursor=pointer]:
+                - /url: https://www.ixigo.com/trains/11007/running-status
+                - paragraph [ref=f9e3646]: 11007 Running Status
+              - link [ref=f9e3648] [cursor=pointer]:
+                - /url: https://www.ixigo.com/trains/11301/running-status
+                - paragraph [ref=f9e3649]: 11301 Running Status
+              - link [ref=f9e3651] [cursor=pointer]:
+                - /url: https://www.ixigo.com/trains/11029/running-status
+                - paragraph [ref=f9e3652]: 11029 Running Status
+              - link [ref=f9e3654] [cursor=pointer]:
+                - /url: https://www.ixigo.com/trains/20495/running-status
+                - paragraph [ref=f9e3655]: 20495 Running Status
+          - generic [ref=f9e3657]:
+            - heading "Frequently Asked Questions (FAQs)" [level=2] [ref=f9e3658]
+            - generic [ref=f9e3659]:
+              - heading "Q. How many trains run daily between Mumbai to Pune?" [level=3] [ref=f9e3662] [cursor=pointer]
+              - generic [ref=f9e3666]: A. 23 trains run daily between Mumbai to Pune.
+            - generic [ref=f9e3671]:
+              - heading "Q. What is the approximate travel distance between Mumbai to Pune by train?" [level=3] [ref=f9e3674] [cursor=pointer]
+              - generic [ref=f9e3678]: A. The approximate travel distance between Mumbai to Pune is 183 kms.
+            - generic [ref=f9e3683]:
+              - heading "Q. How many trains run weekly from Mumbai to Pune?" [level=3] [ref=f9e3686] [cursor=pointer]
+              - generic [ref=f9e3690]: A. To travel from Mumbai to Pune, 4 weekly trains are available.
+            - generic [ref=f9e3695]:
+              - heading "Q. If travelling from Mumbai to Pune, how many days prior to jouney date are Tatkal tickets available?" [level=3] [ref=f9e3698] [cursor=pointer]
+              - generic [ref=f9e3702]: A. In case of Tatkal tickets, the reservation be done 1 day prior. The journey route is from Mumbai to Pune.
+            - generic [ref=f9e3707]:
+              - heading "Q. Which is the slowest train that runs from Mumbai to Pune route?" [level=3] [ref=f9e3710] [cursor=pointer]
+              - generic [ref=f9e3718]:
+                - text: A. The name of the slowest train that runs on Mumbai to Pune route is
+                - link "14806 BME YPR AC EXP" [ref=f9e3719] [cursor=pointer]:
+                  - /url: https://www.ixigo.com/trains/14806
+                - text: . It departs from Mumbai at 13:50 and reaches Pune at 18:55. The train covers a distance of 183 kms.
+            - generic [ref=f9e3720]:
+              - heading "Q. How can I check the train running status from Mumbai to Pune?" [level=3] [ref=f9e3723] [cursor=pointer]
+              - generic [ref=f9e3731]:
+                - text: A. Yes, you can check the
+                - link "train running status online" [ref=f9e3732] [cursor=pointer]:
+                  - /url: https://www.ixigo.com/trains/train-running-status
+                - text: from Mumbai to Pune on the ixigo app.
+            - generic [ref=f9e3733]:
+              - heading "Q. How to check train seat availability online, if travelling from Mumbai to Pune?" [level=3] [ref=f9e3736] [cursor=pointer]
+              - generic [ref=f9e3744]:
+                - text: A. When travelling from Mumbai to Pune check
+                - link "train seat availability" [ref=f9e3745] [cursor=pointer]:
+                  - /url: https://www.ixigo.com/trains/train-seat-availability
+                - text: online by using ixigo.
+            - generic [ref=f9e3746]:
+              - heading "Q. How do I book a train ticket from Mumbai to Pune through IRCTC?" [level=3] [ref=f9e3749] [cursor=pointer]
+              - generic [ref=f9e3757]:
+                - text: A. You can book an online IRCTC train ticket from Mumbai to Pune by simply logging into your
+                - link "IRCTC account" [ref=f9e3758] [cursor=pointer]:
+                  - /url: https://www.ixigo.com/trains
+                - text: and entering the required details.
+          - generic [ref=f9e3760]:
+            - heading "Railway Information" [level=4] [ref=f9e3761]
+            - generic [ref=f9e3762]:
+              - link [ref=f9e3764] [cursor=pointer]:
+                - /url: https://www.ixigo.com/trains
+                - img "IRCTC Tickets" [ref=f9e3765]
+                - paragraph [ref=f9e3767]: IRCTC Tickets
+              - link [ref=f9e3769] [cursor=pointer]:
+                - /url: https://www.ixigo.com/trains/pnr-status
+                - img "PNR Status" [ref=f9e3770]
+                - paragraph [ref=f9e3772]: PNR Status
+              - link "Live Running Status Running Status" [ref=f9e3774] [cursor=pointer]:
+                - /url: https://www.ixigo.com/trains/train-running-status
+                - generic [ref=f9e3775]: Live
+                - img "Running Status" [ref=f9e3777]
+                - paragraph [ref=f9e3779]: Running Status
+              - link [ref=f9e3781] [cursor=pointer]:
+                - /url: https://www.ixigo.com/trains/train-seat-availability
+                - img "Seat Availability" [ref=f9e3782]
+                - paragraph [ref=f9e3784]: Seat Availability
+    - generic [ref=f9e3787]:
+      - generic [ref=f9e3788]:
+        - generic [ref=f9e3789]:
+          - paragraph [ref=f9e3790]:
+            - link "About Us" [ref=f9e3791] [cursor=pointer]:
+              - /url: /about
+          - paragraph [ref=f9e3792]:
+            - link "Investor Relations" [ref=f9e3793] [cursor=pointer]:
+              - /url: /about/investor-relations
+          - paragraph [ref=f9e3794]:
+            - link "CSR" [ref=f9e3795] [cursor=pointer]:
+              - /url: /about/csr
+        - generic [ref=f9e3796]:
+          - paragraph [ref=f9e3797]:
+            - link "Privacy" [ref=f9e3798] [cursor=pointer]:
+              - /url: /about/more-info/privacy
+          - paragraph [ref=f9e3799]:
+            - link "Terms of Use" [ref=f9e3800] [cursor=pointer]:
+              - /url: /about/more-info/terms-of-use
+          - paragraph [ref=f9e3801]:
+            - link "Career" [ref=f9e3802] [cursor=pointer]:
+              - /url: /about/careers
+          - paragraph [ref=f9e3803]:
+            - link "Customer Service" [ref=f9e3804] [cursor=pointer]:
+              - /url: /support
+        - paragraph [ref=f9e3805]: © 2026 Le Travenues Technology Ltd. India. All brands are trademarks of their respective owners.
+      - generic [ref=f9e3806]:
+        - link [ref=f9e3807] [cursor=pointer]:
+          - /url: https://www.facebook.com/ixigo
+          - img "facebook" [ref=f9e3808]
+        - link [ref=f9e3809] [cursor=pointer]:
+          - /url: https://www.twitter.com/ixigo
+          - img "twitter" [ref=f9e3810]
+        - link [ref=f9e3811] [cursor=pointer]:
+          - /url: https://www.instagram.com/ixigo
+          - img "instgram" [ref=f9e3812]
+        - link [ref=f9e3813] [cursor=pointer]:
+          - /url: https://in.linkedin.com/company/ixigo
+          - img "linkedin" [ref=f9e3814]
+        - link [ref=f9e3815] [cursor=pointer]:
+          - /url: https://www.youtube.com/user/ixigorocks
+          - img "youtube" [ref=f9e3816]
+  - alert [ref=f9e3817]

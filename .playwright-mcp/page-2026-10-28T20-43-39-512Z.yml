@@ -1,0 +1,377 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e3]:
+    - generic [ref=e4]:
+      - link [ref=e5] [cursor=pointer]:
+        - /url: /
+        - img "confirmtkt" [ref=e6]
+      - list [ref=e7]:
+        - listitem [ref=e8] [cursor=pointer]:
+          - link "IRCTC Tickets" [ref=e9]:
+            - /url: /
+        - listitem [ref=e10] [cursor=pointer]:
+          - link "PNR Status" [ref=e11]:
+            - /url: /pnr-status
+        - listitem [ref=e12] [cursor=pointer]:
+          - link "Train Running Status" [ref=e13]:
+            - /url: /train-running-status
+        - listitem [ref=e14] [cursor=pointer]:
+          - link "Train Schedule" [ref=e15]:
+            - /url: /train-schedule
+        - listitem [ref=e16]:
+          - paragraph [ref=e17] [cursor=pointer]: MORE
+  - main [ref=e20]:
+    - generic [ref=e22]:
+      - heading "Train Running Status" [level=1] [ref=e23]
+      - generic [ref=e24]:
+        - textbox "Enter the train number or name" [ref=e25]
+        - button "Check Live Status" [ref=e26] [cursor=pointer]
+      - alert
+    - main [ref=e27]:
+      - generic [ref=e28]:
+        - heading "Why Book Train Tickets With Confirmtkt?" [level=2] [ref=e29]
+        - generic [ref=e30]:
+          - generic [ref=e31]:
+            - img "IRCTC train ticket cancallations and refund" [ref=e32]
+            - generic [ref=e33]:
+              - heading "Train Alternates & Prediction" [level=3] [ref=e34]
+              - paragraph [ref=e35]: With our same train alternates and prediction feature, improve your chances of getting train tickets.
+          - generic [ref=e36]:
+            - img "IRCTC waitlist tickets prediction and alternative options" [ref=e37]
+            - generic [ref=e38]:
+              - heading "UPI Enabled Secured Payment" [level=3] [ref=e39]
+              - paragraph [ref=e40]: Payment on Confirmtkt is highly secured. Easy UPI and other multiple payment modes available.
+          - generic [ref=e41]:
+            - img "Secure train ticket booking" [ref=e42]
+            - generic [ref=e43]:
+              - heading "Free Cancellation on Train Tickets" [level=3] [ref=e44]
+              - paragraph [ref=e45]: Get a full refund on train tickets by opting our free cancellation feature.
+          - generic [ref=e46]:
+            - img "train ticket booking customer support" [ref=e47]
+            - generic [ref=e48]:
+              - heading "Train Booking & Enquiry Support" [level=3] [ref=e49]
+              - paragraph [ref=e50]: 24X7 customer support, for any train enquiry & booking related queries call 08068243910.
+          - generic [ref=e51]:
+            - img "Secure train ticket booking" [ref=e52]
+            - generic [ref=e53]:
+              - heading "Instant Refund & Cancellation" [level=3] [ref=e54]
+              - paragraph [ref=e55]: Get an instant refund and book your next Train ticket easily.
+          - generic [ref=e56]:
+            - img "train ticket booking customer support" [ref=e57]
+            - generic [ref=e58]:
+              - heading "Live Train Status Tracking" [level=3] [ref=e59]
+              - paragraph [ref=e60]: Train status & notification of your train tickets.
+      - generic [ref=e61]:
+        - generic [ref=e63]:
+          - img "Home Screen Mobile app" [ref=e64]
+          - img "trusted" [ref=e65]
+        - generic [ref=e66]:
+          - link "Download on Google Play" [ref=e67] [cursor=pointer]:
+            - /url: https://www.confirmtkt.com/amp-redirection.html?link=https://t.confirmtkt.com/2aWPEwNRTg9d
+            - button "play-store" [ref=e68]
+          - link "Download on App Store" [ref=e69] [cursor=pointer]:
+            - /url: https://www.confirmtkt.com/amp-redirection.html?link=https://t.confirmtkt.com/2aWPEwNRTg9d
+            - button "apple-store" [ref=e70]
+      - generic [ref=e71]:
+        - generic [ref=e72]:
+          - heading "Live Train Status" [level=2] [ref=e73]
+          - paragraph [ref=e74]:
+            - strong [ref=e75]: Live train status
+            - text: of Indian Railways can be easily checked online using Confirmtkt Train running status or Spot your train service. Train current running status live information that can be tracked are — Train current location, last departed station, delay of train, expected arrival or departure time at a station.
+          - paragraph [ref=e76]:
+            - text: With 23 million passengers travelling daily, calling up
+            - strong [ref=e77]: Indian railways for train running status
+            - text: would end up in busy dial tones. With ConfirmTkt.com you can easily and quickly check the real-time status of the train and spot your train accurately.
+          - complementary "Check Running Status on ixigo" [ref=e78]:
+            - img "Train Running Status" [ref=e79]
+            - generic [ref=e80]:
+              - paragraph [ref=e81]: Track Accurate, Real-Time Live Train Running Status with ixigo.
+              - link "Check Running Status" [ref=e82] [cursor=pointer]:
+                - /url: https://www.ixigo.com/trains/train-running-status
+        - separator [ref=e83]
+        - generic [ref=e84]:
+          - heading "Train running status with highest accuracy and realtime updates" [level=2] [ref=e85]
+          - paragraph [ref=e86]: It is very rightly quoted, "If you spend on travel, you are going to be richer". Travel fills one with memories, adventure and gives you a whole lot of reasons to be a storyteller. So just travel and travel to sooth my passion to explore new places. And this journey becomes beautiful when it happens on the train.
+          - paragraph [ref=e87]: Oh my god, talking about trains simply fills us with all childlike excitement. Being a 90s child, your memories are full of travel through trains. The remembrance of visiting cousins and relatives is never complete without a long noisy steam engine. The flights were not so affordable then and trains were always lucrative to ride along with all family members. Even day and night journeys passed so quickly in casual plays and songs. The fun on stations and strolling with other passengers was altogether a different level of experience.
+          - paragraph [ref=e88]:
+            - text: During early days, every vacation brought a family trip, which mostly conceptualized on rail tracks. However, sometimes it fetched instances of long waiting hours due to various delays and that bothers people travelling via trains. Nevertheless, scenarios are different in the current age where we have many apps and techniques with live train running status to trace the train. There are no more undesirable jitters, for train arrival. You can easily
+            - strong [ref=e89]: spot your train
+            - text: and strategize the whole program. The unnecessary waiting on platforms is long forgotten past. Checking
+            - strong [ref=e90]: online train status
+            - text: is now a common habit before leaving for the railway station.
+          - paragraph [ref=e91]:
+            - text: Contrary to earlier times, travelling on rails is pretty easy now. Of course, booking tickets and reserving seats is so convenient. Trips are more manageable with a handy smartphone, which helps in getting live train status. There are many websites available on the internet that make
+            - strong [ref=e92]: online train status
+            - text: or train running status check so easy. Even before hopping for the station, you can see the train running status and figure out your move. The uncontrollable panic is much under control with the internet at our disposal.
+          - paragraph [ref=e93]:
+            - text: Elders these days get fascinated by the process of checking
+            - strong [ref=e94]: live train status
+            - text: that they end up helping friends and people travelling. It's so accessible with just entering the train number, and all the live details one may need while travelling is displayed. With this option you can be known as
+            - strong [ref=e95]: spot your train
+            - text: guru in our family.
+          - paragraph [ref=e96]:
+            - text: Travelling is a good lesson for children as well as adults. It builds a bond with nature and strangers too. Moving by train is just so good. Indian railways have immensely improved with clean coaches and well-maintained washrooms. Trains could be easily accepted as most desirable means to travel with live train status to
+            - strong [ref=e97]: train running status
+            - text: available from the very beginning, and being able to trace easily.
+          - paragraph [ref=e98]:
+            - text: So next time when you plan a trip, just book your train tickets, pack your bag and don't forget to have a live train running status. You never know what excitement is on the way. For added convenience, don't forget to check your
+            - link "PNR Status" [ref=e99] [cursor=pointer]:
+              - /url: https://www.confirmtkt.com/pnr-status
+            - text: to stay informed about your booking details.
+          - paragraph [ref=e100]:
+            - text: Now you can easily book your
+            - link "IRCTC TRAIN TICKET" [ref=e101] [cursor=pointer]:
+              - /url: https://www.confirmtkt.com
+            - text: "on"
+            - link "ConfirmTkt" [ref=e102] [cursor=pointer]:
+              - /url: https://www.confirmtkt.com
+        - separator [ref=e103]
+        - generic [ref=e104]:
+          - heading "Enhance your train journey with ConfirmTkt" [level=2] [ref=e105]
+          - table [ref=e106]:
+            - rowgroup [ref=e107]:
+              - row [ref=e108]:
+                - cell "Enjoy Meals on Train" [ref=e109]
+                - cell [ref=e110]:
+                  - text: Get delicious food delivered straight to your seat.
+                  - link "Order food on train" [ref=e111] [cursor=pointer]:
+                    - /url: https://www.confirmtkt.com/order-food-on-train
+                  - text: hassle-free.
+              - row [ref=e112]:
+                - cell "Link Your Aadhaar" [ref=e113]
+                - cell [ref=e114]:
+                  - text: Get priority booking during the Advanced Reservation Period with
+                  - link "IRCTC Aadhaar Link" [ref=e115] [cursor=pointer]:
+                    - /url: https://www.confirmtkt.com/irctc-aadhaar-link
+              - row [ref=e116]:
+                - cell "Alternate Travel Plan" [ref=e117]
+                - cell [ref=e118]:
+                  - text: Get 3X Refund with
+                  - link "Alternate Travel Plan" [ref=e119] [cursor=pointer]:
+                    - /url: https://www.confirmtkt.com/alternate-travel-plan
+                  - text: ", if your train seat remains waitlisted."
+        - separator [ref=e120]
+      - generic [ref=e122]:
+        - heading "Top Train Routes" [level=3] [ref=e123]
+        - generic [ref=e124]:
+          - generic [ref=e127]:
+            - paragraph [ref=e128]: Trains to Bengaluru
+            - paragraph [ref=e129]:
+              - text: "Via:"
+              - link "Chennai" [ref=e130] [cursor=pointer]:
+                - /url: /trains/chennai-to-bengaluru-train-tickets
+              - link ", Mysore" [ref=e131] [cursor=pointer]:
+                - /url: /trains/mysore-to-bengaluru-train-tickets
+              - link ", Hyderabad" [ref=e132] [cursor=pointer]:
+                - /url: /trains/hyderabad-to-bengaluru-train-tickets
+              - link ", New Delhi" [ref=e133] [cursor=pointer]:
+                - /url: /trains/new-delhi-to-bengaluru-train-tickets
+          - generic [ref=e136]:
+            - paragraph [ref=e137]: Trains to New Delhi
+            - paragraph [ref=e138]:
+              - text: "Via:"
+              - link "Patna" [ref=e139] [cursor=pointer]:
+                - /url: /trains/patna-to-new-delhi-train-tickets
+              - link ", Varanasi" [ref=e140] [cursor=pointer]:
+                - /url: /trains/varanasi-to-new-delhi-train-tickets
+              - link ", Mumbai" [ref=e141] [cursor=pointer]:
+                - /url: /trains/mumbai-to-new-delhi-train-tickets
+              - link ", Lucknow" [ref=e142] [cursor=pointer]:
+                - /url: /trains/lucknow-to-new-delhi-train-tickets
+          - generic [ref=e145]:
+            - paragraph [ref=e146]: Trains to Goa
+            - paragraph [ref=e147]:
+              - text: "Via:"
+              - link "Mumbai" [ref=e148] [cursor=pointer]:
+                - /url: /trains/mumbai-to-goa-train-tickets
+              - link ", New Delhi" [ref=e149] [cursor=pointer]:
+                - /url: /trains/new-delhi-to-goa-train-tickets
+              - link ", Bengaluru" [ref=e150] [cursor=pointer]:
+                - /url: /trains/bengaluru-to-goa-train-tickets
+              - link ", Pune" [ref=e151] [cursor=pointer]:
+                - /url: /trains/pune-to-goa-train-tickets
+          - generic [ref=e154]:
+            - paragraph [ref=e155]: Trains to Hyderabad
+            - paragraph [ref=e156]:
+              - text: "Via:"
+              - link "New Delhi" [ref=e157] [cursor=pointer]:
+                - /url: /trains/new-delhi-to-hyderabad-train-tickets
+              - link ", Mumbai" [ref=e158] [cursor=pointer]:
+                - /url: /trains/mumbai-to-hyderabad-train-tickets
+              - link ", Chennai" [ref=e159] [cursor=pointer]:
+                - /url: /trains/chennai-to-hyderabad-train-tickets
+              - link ", Bengaluru" [ref=e160] [cursor=pointer]:
+                - /url: /trains/bengaluru-to-hyderabad-train-tickets
+          - generic [ref=e163]:
+            - paragraph [ref=e164]: Trains to Mumbai
+            - paragraph [ref=e165]:
+              - text: "Via:"
+              - link "New Delhi" [ref=e166] [cursor=pointer]:
+                - /url: /trains/new-delhi-to-mumbai-train-tickets
+              - link ", Pune" [ref=e167] [cursor=pointer]:
+                - /url: /trains/pune-to-mumbai-train-tickets
+              - link ", Ahmedabad" [ref=e168] [cursor=pointer]:
+                - /url: /trains/ahmedabad-to-mumbai-train-tickets
+              - link ", Surat" [ref=e169] [cursor=pointer]:
+                - /url: /trains/surat-to-mumbai-train-tickets
+          - generic [ref=e172]:
+            - paragraph [ref=e173]: Trains to Mysore
+            - paragraph [ref=e174]:
+              - text: "Via:"
+              - link "Bengaluru" [ref=e175] [cursor=pointer]:
+                - /url: /trains/bengaluru-to-mysore-train-tickets
+              - link ", Chennai" [ref=e176] [cursor=pointer]:
+                - /url: /trains/chennai-to-mysore-train-tickets
+              - link ", Hyderabad" [ref=e177] [cursor=pointer]:
+                - /url: /trains/hyderabad-to-mysore-train-tickets
+              - link ", Dharwad" [ref=e178] [cursor=pointer]:
+                - /url: /trains/dharwad-to-mysore-train-tickets
+          - generic [ref=e181]:
+            - paragraph [ref=e182]: Trains to Chennai
+            - paragraph [ref=e183]:
+              - text: "Via:"
+              - link "Bengaluru" [ref=e184] [cursor=pointer]:
+                - /url: /trains/bengaluru-to-chennai-train-tickets
+              - link ", Coimbatore" [ref=e185] [cursor=pointer]:
+                - /url: /trains/coimbatore-to-chennai-train-tickets
+              - link ", Madurai" [ref=e186] [cursor=pointer]:
+                - /url: /trains/madurai-to-chennai-train-tickets
+              - link ", Salem" [ref=e187] [cursor=pointer]:
+                - /url: /trains/salem-to-chennai-train-tickets
+          - generic [ref=e190]:
+            - paragraph [ref=e191]: Trains to Pune
+            - paragraph [ref=e192]:
+              - text: "Via:"
+              - link "Mumbai" [ref=e193] [cursor=pointer]:
+                - /url: /trains/mumbai-to-pune-train-tickets
+              - link ", New Delhi" [ref=e194] [cursor=pointer]:
+                - /url: /trains/new-delhi-to-pune-train-tickets
+              - link ", Solapur" [ref=e195] [cursor=pointer]:
+                - /url: /trains/solapur-to-pune-train-tickets
+              - link ", Nagpur" [ref=e196] [cursor=pointer]:
+                - /url: /trains/nagpur-to-pune-train-tickets
+          - generic [ref=e199]:
+            - paragraph [ref=e200]: Trains to Coimbatore
+            - paragraph [ref=e201]:
+              - text: "Via:"
+              - link "Chennai" [ref=e202] [cursor=pointer]:
+                - /url: /trains/chennai-to-coimbatore-train-tickets
+              - link ", Bengaluru" [ref=e203] [cursor=pointer]:
+                - /url: /trains/bengaluru-to-coimbatore-train-tickets
+              - link ", Salem" [ref=e204] [cursor=pointer]:
+                - /url: /trains/salem-to-coimbatore-train-tickets
+              - link ", Ernakulam" [ref=e205] [cursor=pointer]:
+                - /url: /trains/ernakulam-to-coimbatore-train-tickets
+      - generic [ref=e207]:
+        - heading "Explore more with Confirmtkt" [level=3] [ref=e208]
+        - generic [ref=e209]:
+          - link [ref=e210] [cursor=pointer]:
+            - /url: /
+            - img "IRCTC Ticket" [ref=e212]
+            - paragraph [ref=e213]: IRCTC Tickets
+          - link [ref=e215] [cursor=pointer]:
+            - /url: /pnr-status
+            - img "PNR Status" [ref=e217]
+            - paragraph [ref=e218]: PNR Status
+          - link [ref=e220] [cursor=pointer]:
+            - /url: /train-running-status
+            - img "Running Status" [ref=e222]
+            - paragraph [ref=e223]: Running Status
+          - link [ref=e225] [cursor=pointer]:
+            - /url: /train-schedule
+            - img "Train Schedule" [ref=e227]
+            - paragraph [ref=e228]: Train Schedule
+  - contentinfo [ref=e229]:
+    - generic [ref=e230]:
+      - generic [ref=e231]:
+        - link [ref=e232] [cursor=pointer]:
+          - /url: https://www.confirmtkt.com
+          - img "confirmtkt" [ref=e233]
+        - paragraph [ref=e234]: Confirmtkt.com is official partner of IRCTC to book IRCTC train tickets and Railway train enquiry
+      - generic [ref=e235]:
+        - paragraph [ref=e236]: Book
+        - list [ref=e237]:
+          - listitem [ref=e238]:
+            - link "IRCTC Tickets" [ref=e239] [cursor=pointer]:
+              - /url: https://www.confirmtkt.com
+          - listitem [ref=e240]:
+            - link "Flights" [ref=e241] [cursor=pointer]:
+              - /url: https://www.ixigo.com/flights?utm_source=confirmtkt&utm_medium=desktop
+          - listitem [ref=e242]:
+            - link "Hotels" [ref=e243] [cursor=pointer]:
+              - /url: https://www.ixigo.com/hotels?utm_source=confirmtkt&utm_medium=desktop
+          - listitem [ref=e244]:
+            - link "Order Food on Train" [ref=e245] [cursor=pointer]:
+              - /url: https://www.confirmtkt.com/order-food-on-train
+      - generic [ref=e246]:
+        - paragraph [ref=e247]: Features
+        - list [ref=e248]:
+          - listitem [ref=e249]:
+            - link "PNR Status" [ref=e250] [cursor=pointer]:
+              - /url: https://www.confirmtkt.com/pnr-status
+          - listitem [ref=e251]:
+            - link "Train Running Status" [ref=e252] [cursor=pointer]:
+              - /url: https://www.confirmtkt.com/train-running-status
+          - listitem [ref=e253]:
+            - link "Train Schedule" [ref=e254] [cursor=pointer]:
+              - /url: https://www.confirmtkt.com/train-schedule
+          - listitem [ref=e255]:
+            - link "IRCTC Aadhaar Link" [ref=e256] [cursor=pointer]:
+              - /url: https://www.confirmtkt.com/irctc-aadhaar-link
+      - generic [ref=e257]:
+        - paragraph [ref=e258]: About ConfirmTkt
+        - list [ref=e259]:
+          - listitem [ref=e260]:
+            - link "Contact Us" [ref=e261] [cursor=pointer]:
+              - /url: https://www.confirmtkt.com/contact.htm
+          - listitem [ref=e262]:
+            - link "Media Kit" [ref=e263] [cursor=pointer]:
+              - /url: https://www.confirmtkt.com/MediaKit.zip
+          - listitem [ref=e264]:
+            - link "Alliances" [ref=e265] [cursor=pointer]:
+              - /url: https://docs.google.com/forms/d/1rAepQbj02vTSI0JB9vC1GVrkQcboIUmKBrfT78dqVXo/viewform?ts=57d7aac1
+      - generic [ref=e266]:
+        - paragraph [ref=e267]: Partners
+        - list [ref=e268]:
+          - listitem [ref=e269]:
+            - link "ixigo" [ref=e270] [cursor=pointer]:
+              - /url: https://www.ixigo.com/
+          - listitem [ref=e271]:
+            - link "abhibus" [ref=e272] [cursor=pointer]:
+              - /url: https://www.abhibus.com/
+      - generic [ref=e273]:
+        - paragraph [ref=e274]: Legal
+        - list [ref=e275]:
+          - listitem [ref=e276]:
+            - link "Privacy Policy" [ref=e277] [cursor=pointer]:
+              - /url: https://www.confirmtkt.com/privacypolicy.htm
+          - listitem [ref=e278]:
+            - link "Terms & Conditions" [ref=e279] [cursor=pointer]:
+              - /url: https://www.confirmtkt.com/termscondition.html
+          - listitem [ref=e280]:
+            - link "Alternate Travel Plan" [ref=e281] [cursor=pointer]:
+              - /url: https://www.confirmtkt.com/alternate-travel-plan
+      - generic [ref=e282]:
+        - paragraph [ref=e283]: Apps
+        - list [ref=e284]:
+          - listitem [ref=e285]:
+            - link "Confirmtkt" [ref=e286] [cursor=pointer]:
+              - /url: https://play.google.com/store/apps/details?id=com.confirmtkt.lite&hl=en_IN
+          - listitem [ref=e287]:
+            - link "ixigo" [ref=e288] [cursor=pointer]:
+              - /url: https://play.google.com/store/apps/details?id=com.ixigo.train.ixitrain&hl=en_IN
+          - listitem [ref=e289]:
+            - link "abhibus" [ref=e290] [cursor=pointer]:
+              - /url: https://play.google.com/store/apps/details?id=com.app.abhibus&hl=en_IN
+      - generic [ref=e291]:
+        - paragraph [ref=e292]: Follow us
+        - generic [ref=e293]:
+          - link [ref=e294] [cursor=pointer]:
+            - /url: https://www.instagram.com/confirmtkt
+            - img "Instagram" [ref=e295]
+          - link [ref=e296] [cursor=pointer]:
+            - /url: https://www.facebook.com/confirmtkt
+            - img "Facebook" [ref=e297]
+          - link [ref=e298] [cursor=pointer]:
+            - /url: https://twitter.com/ConfirmTKT
+            - img "Twitter" [ref=e299]
+    - paragraph [ref=e300]: © Copyright @ Le Travenues Technology Ltd. All Rights Reserved.

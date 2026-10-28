@@ -1,0 +1,2 @@
+[     771ms] [ERROR] The script resource is behind a redirect, which is disallowed. @ :0
+[     774ms] [ERROR] SecurityError: Failed to register a ServiceWorker for scope ('https://www.confirmtkt.com/~partytown/') with script ('https://www.confirmtkt.com/~partytown/partytown-sw.js'): The script resource is behind a redirect, which is disallowed. @ :0

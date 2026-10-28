@@ -1,0 +1,54 @@
+[    1659ms] [ERROR] Mixed Content: The page at 'https://www.ixigo.com/trains' was loaded over HTTPS, but requested an insecure resource 'http://www.ixigo.com/tour-packages/?source=WEB&_rsc=14mzl'. This request has been blocked; the content must be served over HTTPS. @ https://www.ixigo.com/trains:0
+[    1659ms] [ERROR] Failed to fetch RSC payload for https://www.ixigo.com/tour-packages?source=WEB. Falling back to browser navigation. TypeError: Failed to fetch
+    at https://edge.ixigo.com/st/rail/_next/static/chunks/131-7ccd8936419bd844.js:1:43348
+    at c (https://edge.ixigo.com/st/rail/_next/static/chunks/131-7ccd8936419bd844.js:5:96985)
+    at https://edge.ixigo.com/st/rail/_next/static/chunks/131-7ccd8936419bd844.js:5:110536
+    at Object.a [as task] (https://edge.ixigo.com/st/rail/_next/static/chunks/131-7ccd8936419bd844.js:5:83357)
+    at l.c (https://edge.ixigo.com/st/rail/_next/static/chunks/131-7ccd8936419bd844.js:5:84062)
+    at l.enqueue (https://edge.ixigo.com/st/rail/_next/static/chunks/131-7ccd8936419bd844.js:5:83487)
+    at c (https://edge.ixigo.com/st/rail/_next/static/chunks/131-7ccd8936419bd844.js:5:110499)
+    at u (https://edge.ixigo.com/st/rail/_next/static/chunks/131-7ccd8936419bd844.js:5:110039)
+    at s (https://edge.ixigo.com/st/rail/_next/static/chunks/131-7ccd8936419bd844.js:5:116865)
+    at d (https://edge.ixigo.com/st/rail/_next/static/chunks/131-7ccd8936419bd844.js:5:126762)
+    at Object.action (https://edge.ixigo.com/st/rail/_next/static/chunks/131-7ccd8936419bd844.js:6:10477)
+    at l (https://edge.ixigo.com/st/rail/_next/static/chunks/131-7ccd8936419bd844.js:6:9605)
+    at https://edge.ixigo.com/st/rail/_next/static/chunks/131-7ccd8936419bd844.js:6:10084
+    at Object.dispatch (https://edge.ixigo.com/st/rail/_next/static/chunks/131-7ccd8936419bd844.js:6:10363)
+    at https://edge.ixigo.com/st/rail/_next/static/chunks/131-7ccd8936419bd844.js:5:131724
+    at https://edge.ixigo.com/st/rail/_next/static/chunks/131-7ccd8936419bd844.js:5:63928
+    at t.startTransition (https://edge.ixigo.com/st/rail/_next/static/chunks/131-7ccd8936419bd844.js:6:81441)
+    at Object.prefetch (https://edge.ixigo.com/st/rail/_next/static/chunks/131-7ccd8936419bd844.js:5:63916)
+    at https://edge.ixigo.com/st/rail/_next/static/chunks/2972-c0944eb400372fff.js:1:1032
+    at g (https://edge.ixigo.com/st/rail/_next/static/chunks/2972-c0944eb400372fff.js:1:1064)
+    at https://edge.ixigo.com/st/rail/_next/static/chunks/2972-c0944eb400372fff.js:1:2149
+    at aW (https://edge.ixigo.com/st/rail/_next/static/chunks/fd9d1056-2861aafe56251062.js:1:73244)
+    at oe (https://edge.ixigo.com/st/rail/_next/static/chunks/fd9d1056-2861aafe56251062.js:1:84685)
+    at ol (https://edge.ixigo.com/st/rail/_next/static/chunks/fd9d1056-2861aafe56251062.js:1:85323)
+    at or (https://edge.ixigo.com/st/rail/_next/static/chunks/fd9d1056-2861aafe56251062.js:1:85207)
+    at ol (https://edge.ixigo.com/st/rail/_next/static/chunks/fd9d1056-2861aafe56251062.js:1:86268)
+    at or (https://edge.ixigo.com/st/rail/_next/static/chunks/fd9d1056-2861aafe56251062.js:1:85207)
+    at ol (https://edge.ixigo.com/st/rail/_next/static/chunks/fd9d1056-2861aafe56251062.js:1:86268)
+    at or (https://edge.ixigo.com/st/rail/_next/static/chunks/fd9d1056-2861aafe56251062.js:1:85207)
+    at ol (https://edge.ixigo.com/st/rail/_next/static/chunks/fd9d1056-2861aafe56251062.js:1:85651)
+    at or (https://edge.ixigo.com/st/rail/_next/static/chunks/fd9d1056-2861aafe56251062.js:1:85207)
+    at ol (https://edge.ixigo.com/st/rail/_next/static/chunks/fd9d1056-2861aafe56251062.js:1:86268)
+    at or (https://edge.ixigo.com/st/rail/_next/static/chunks/fd9d1056-2861aafe56251062.js:1:85207)
+    at ol (https://edge.ixigo.com/st/rail/_next/static/chunks/fd9d1056-2861aafe56251062.js:1:86268)
+    at or (https://edge.ixigo.com/st/rail/_next/static/chunks/fd9d1056-2861aafe56251062.js:1:85207)
+    at ol (https://edge.ixigo.com/st/rail/_next/static/chunks/fd9d1056-2861aafe56251062.js:1:86268)
+    at or (https://edge.ixigo.com/st/rail/_next/static/chunks/fd9d1056-2861aafe56251062.js:1:85207)
+    at ol (https://edge.ixigo.com/st/rail/_next/static/chunks/fd9d1056-2861aafe56251062.js:1:86268)
+    at or (https://edge.ixigo.com/st/rail/_next/static/chunks/fd9d1056-2861aafe56251062.js:1:85207)
+    at ol (https://edge.ixigo.com/st/rail/_next/static/chunks/fd9d1056-2861aafe56251062.js:1:85303)
+    at or (https://edge.ixigo.com/st/rail/_next/static/chunks/fd9d1056-2861aafe56251062.js:1:85207)
+    at ol (https://edge.ixigo.com/st/rail/_next/static/chunks/fd9d1056-2861aafe56251062.js:1:86268)
+    at or (https://edge.ixigo.com/st/rail/_next/static/chunks/fd9d1056-2861aafe56251062.js:1:85207)
+    at ol (https://edge.ixigo.com/st/rail/_next/static/chunks/fd9d1056-2861aafe56251062.js:1:85303)
+    at or (https://edge.ixigo.com/st/rail/_next/static/chunks/fd9d1056-2861aafe56251062.js:1:85207)
+    at ol (https://edge.ixigo.com/st/rail/_next/static/chunks/fd9d1056-2861aafe56251062.js:1:86268)
+    at or (https://edge.ixigo.com/st/rail/_next/static/chunks/fd9d1056-2861aafe56251062.js:1:85207)
+    at ol (https://edge.ixigo.com/st/rail/_next/static/chunks/fd9d1056-2861aafe56251062.js:1:85303)
+    at or (https://edge.ixigo.com/st/rail/_next/static/chunks/fd9d1056-2861aafe56251062.js:1:85207)
+    at ol (https://edge.ixigo.com/st/rail/_next/static/chunks/fd9d1056-2861aafe56251062.js:1:85303) @ https://edge.ixigo.com/st/rail/_next/static/chunks/131-7ccd8936419bd844.js:0
+[    6970ms] [ERROR] Not signed in with the identity provider. @ https://www.ixigo.com/trains:0
+[    7667ms] [ERROR] [GSI_LOGGER]: FedCM get() rejects with NetworkError: Error retrieving a token. @ https://edge.ixigo.com/st/rail/_next/static/chunks/131-7ccd8936419bd844.js:0
