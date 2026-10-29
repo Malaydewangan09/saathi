@@ -137,14 +137,28 @@
   .vid small { color: var(--muted); }
   .honest { margin-top: 14px; font-size: 13.5px; color: var(--muted); }
 
-  /* Everyday asks */
-  .grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
-  .ex { background: var(--bg); border: 1px solid var(--line); border-radius: 20px; padding: 22px; display: flex; flex-direction: column; gap: 12px; }
-  .ex .q { font-family: "Noto Sans Devanagari"; font-size: 16px; font-weight: 500; }
-  .ex .a { font-size: 14px; color: var(--muted); }
-  .tag { align-self: start; margin-top: auto; font-size: 12px; font-weight: 500; padding: 3px 10px; border-radius: 999px; }
-  .tried { background: var(--ok-bg); color: var(--accent); }
-  .wip { background: var(--amber-bg); color: var(--amber); }
+  /* Everyday asks: a wall of real conversations */
+  .thread { background: var(--bg2); border-radius: 22px; padding: 18px 18px 8px; }
+  .thread .bubble { max-width: 88%; font-size: 14px; }
+  .thread .said { font-size: 13px; }
+  .meta { display: flex; align-items: center; gap: 8px; margin-bottom: 12px; font-size: 12px; color: var(--muted); }
+  .meta::before { content: ""; width: 6px; height: 6px; border-radius: 50%; background: var(--accent); }
+  .feature { display: grid; grid-template-columns: 1fr 1.05fr; gap: 28px; align-items: center; padding: 26px 26px 18px; margin-bottom: 20px; }
+  .feature .bubble { max-width: 92%; }
+  .wall { columns: 3; column-gap: 20px; }
+  .wall .thread { break-inside: avoid; margin-bottom: 20px; }
+  .fwd { margin-top: 8px; padding: 8px 10px; border-left: 2px solid rgba(27,26,23,.25); background: rgba(255,255,255,.55); border-radius: 6px; font-size: 13px; color: #3f4a3c; }
+  .fwd small { display: block; font-style: italic; color: var(--muted); font-size: 11.5px; margin-bottom: 2px; }
+  .urls { margin-top: 6px; display: grid; gap: 2px; }
+  .urls span { font-size: 12px; color: var(--accent); }
+  .them .chip { background: var(--bg); }
+  .pic { padding: 6px; }
+  .tiles { display: grid; grid-template-columns: 1fr 1fr; gap: 6px; }
+  .tile { position: relative; aspect-ratio: 1; border-radius: 12px; background: linear-gradient(180deg, #fbf8f2, #efe8da); display: grid; place-items: center; overflow: hidden; }
+  .tile svg { width: 64%; height: 64%; }
+  .tile b { position: absolute; top: 8px; left: 8px; width: 26px; height: 26px; border-radius: 50%; background: var(--ink); color: #fff; font: 600 13px/26px Inter, sans-serif; text-align: center; }
+  .tile em { position: absolute; right: 8px; bottom: 8px; font-style: normal; font-size: 12px; font-weight: 600; background: #fff; padding: 2px 8px; border-radius: 999px; box-shadow: 0 1px 2px rgba(0,0,0,.06); }
+  .pic-cap { padding: 8px 6px 2px; font-size: 13px; }
 
   /* Safety */
   .safety { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; margin-top: 48px; }
@@ -184,13 +198,17 @@
     .split { grid-template-columns: 1fr; }
     .pane + .pane { border-left: 0; border-top: 1px solid var(--line); }
     .pane { padding: 20px; }
-    .grid { grid-template-columns: 1fr 1fr; }
+    .wall { columns: 2; }
+    .feature { grid-template-columns: 1fr; gap: 16px; }
+    .feature .pic { max-width: 440px; }
     .safety { grid-template-columns: 1fr 1fr; }
     .answer { grid-template-columns: 1fr; gap: 10px; }
     .answer q { justify-self: start; white-space: normal; }
   }
   @media (max-width: 600px) {
-    .grid, .safety { grid-template-columns: 1fr; }
+    .safety { grid-template-columns: 1fr; }
+    .wall { columns: 1; }
+    .feature { padding: 18px 16px 10px; }
     .log { font-size: 12px; }
     .facts li { flex-direction: column; gap: 4px; }
     .facts li span:last-child { text-align: left; }
@@ -312,18 +330,63 @@
       <div class="wrap">
         <div class="head">
           <h2>Ask it what you'd<br><em>ask a friend.</em></h2>
-          <p>Real asks from building it. Every answer here came from Saathi using the live web on October 29.</p>
+          <p>Real questions, real answers from the live web on 29 October 2026.</p>
         </div>
-        <div class="grid">
-          <article class="ex"><div class="q">हॉल के लिए दो हज़ार से कम में झूमर</div><div class="a">Five chandeliers under ₹2,000, sorted by rating, as one numbered picture with links.</div><span class="tag tried">Tried</span></article>
-          <article class="ex"><div class="q" lang="en">Find me a good pressure cooker under 2000 rupees</div><div class="a">Four options from ₹1,407 to ₹1,799, each with rating and an Amazon link. Answered in English.</div><span class="tag tried">Tried</span></article>
-          <article class="ex"><div class="q">कल सुबह मुंबई से पुणे की train</div><div class="a">Real trains with times, fares and seats, then “क्या मैं यह करूँ?”</div><span class="tag tried">Tried</span></article>
-          <article class="ex"><div class="q" lang="en">Is this message real? (SBI KYC SMS)</div><div class="a">“This message is not real. It is a scam.” SBI’s real sites are sbi.co.in and onlinesbi.sbi.</div><span class="tag tried">Tried</span></article>
-          <article class="ex"><div class="q">आज सोने का भाव क्या है?</div><div class="a">24 कैरेट ₹14,395 और 22 कैरेट ₹13,195 प्रति ग्राम, with a note that the jeweller’s price may differ.</div><span class="tag tried">Tried</span></article>
-          <article class="ex"><div class="q" lang="en">What do I need to renew my passport?</div><div class="a">Old passport, copies of the first and last two pages, address proof only if it changed, and the official site.</div><span class="tag tried">Tried</span></article>
-          <article class="ex"><div class="q">मुंबई में कल बारिश होगी क्या?</div><div class="a">“सुबह 3 से 9 बजे बारिश के आसार। छाता साथ रख लीजिए।”</div><span class="tag tried">Tried</span></article>
-          <article class="ex"><div class="q">दीवाली कब है?</div><div class="a">रविवार, 8 नवंबर · धनतेरस 6 · भाई दूज 11. Asked by a voice note from a phone.</div><span class="tag tried">Tried</span></article>
-          <article class="ex"><div class="q">पनीर बटर मसाला बनाना है</div><div class="a">Three Hindi YouTube videos that open in the app.</div><span class="tag tried">Tried</span></article>
+        <div class="thread feature">
+          <div>
+            <div class="meta">Voice · Hindi</div>
+            <div class="bubble me"><div class="voice"><div class="play"></div><div class="wave" data-n="26" data-seed="11"></div><span class="dur">0:05</span></div><div class="said hi">हॉल के लिए दो हज़ार से कम में झूमर</div></div>
+            <div class="bubble them"><div class="voice"><div class="play"></div><div class="wave" data-n="30" data-seed="29"></div><span class="dur">0:14</span></div></div>
+            <div class="bubble them pic-cap">1. Homesake, 4.5★ · 2. GA crystal, 4.3★ · 3. Swanart flower, 4.2★ · 4. Elephantboat, 4.2★
+              <div class="urls"><span>amazon.in/dp/…</span><span>amazon.in/dp/…</span></div>
+              <span class="chip">Opens in Amazon</span></div>
+          </div>
+          <div class="bubble them pic" role="img" aria-label="One picture with four numbered chandeliers under 2,000 rupees">
+            <div class="tiles"><div class="tile"><b>1</b><svg viewBox="0 0 100 100" aria-hidden="true"><line x1="50" y1="2" x2="50" y2="24" stroke="#6b665c" stroke-width="2"/><ellipse cx="50" cy="28" rx="9" ry="4" fill="none" stroke="#6b665c" stroke-width="2"/><line x1="50" y1="32" x2="50" y2="62" stroke="#6b665c" stroke-width="2"/><path d="M50 50 Q30.0 70 10.0 50" fill="none" stroke="#6b665c" stroke-width="2"/><circle cx="10.0" cy="44" r="5" fill="#f0d79a" stroke="#b08a3e" stroke-width="1.2"/><line x1="10.0" y1="50" x2="10.0" y2="44" stroke="#6b665c" stroke-width="2"/><path d="M50 50 Q50.0 70 50.0 50" fill="none" stroke="#6b665c" stroke-width="2"/><circle cx="50.0" cy="44" r="5" fill="#f0d79a" stroke="#b08a3e" stroke-width="1.2"/><line x1="50.0" y1="50" x2="50.0" y2="44" stroke="#6b665c" stroke-width="2"/><path d="M50 50 Q70.0 70 90.0 50" fill="none" stroke="#6b665c" stroke-width="2"/><circle cx="90.0" cy="44" r="5" fill="#f0d79a" stroke="#b08a3e" stroke-width="1.2"/><line x1="90.0" y1="50" x2="90.0" y2="44" stroke="#6b665c" stroke-width="2"/><line x1="30.0" y1="64" x2="30.0" y2="74" stroke="#9aa39a" stroke-width="1.4"/><circle cx="30.0" cy="76" r="2.2" fill="#c9d6dc"/><line x1="50.0" y1="64" x2="50.0" y2="80" stroke="#9aa39a" stroke-width="1.4"/><circle cx="50.0" cy="82" r="2.2" fill="#c9d6dc"/><line x1="70.0" y1="64" x2="70.0" y2="74" stroke="#9aa39a" stroke-width="1.4"/><circle cx="70.0" cy="76" r="2.2" fill="#c9d6dc"/><circle cx="50" cy="66" r="4" fill="#c9d6dc"/></svg><em>₹1,549</em></div><div class="tile"><b>2</b><svg viewBox="0 0 100 100" aria-hidden="true"><line x1="50" y1="2" x2="50" y2="24" stroke="#6b665c" stroke-width="2"/><ellipse cx="50" cy="28" rx="9" ry="4" fill="none" stroke="#6b665c" stroke-width="2"/><line x1="50" y1="32" x2="50" y2="62" stroke="#6b665c" stroke-width="2"/><path d="M50 50 Q30.0 70 10.0 50" fill="none" stroke="#6b665c" stroke-width="2"/><circle cx="10.0" cy="44" r="5" fill="#f0d79a" stroke="#b08a3e" stroke-width="1.2"/><line x1="10.0" y1="50" x2="10.0" y2="44" stroke="#6b665c" stroke-width="2"/><path d="M50 50 Q40.0 70 30.0 50" fill="none" stroke="#6b665c" stroke-width="2"/><circle cx="30.0" cy="44" r="5" fill="#f0d79a" stroke="#b08a3e" stroke-width="1.2"/><line x1="30.0" y1="50" x2="30.0" y2="44" stroke="#6b665c" stroke-width="2"/><path d="M50 50 Q50.0 70 50.0 50" fill="none" stroke="#6b665c" stroke-width="2"/><circle cx="50.0" cy="44" r="5" fill="#f0d79a" stroke="#b08a3e" stroke-width="1.2"/><line x1="50.0" y1="50" x2="50.0" y2="44" stroke="#6b665c" stroke-width="2"/><path d="M50 50 Q60.0 70 70.0 50" fill="none" stroke="#6b665c" stroke-width="2"/><circle cx="70.0" cy="44" r="5" fill="#f0d79a" stroke="#b08a3e" stroke-width="1.2"/><line x1="70.0" y1="50" x2="70.0" y2="44" stroke="#6b665c" stroke-width="2"/><path d="M50 50 Q70.0 70 90.0 50" fill="none" stroke="#6b665c" stroke-width="2"/><circle cx="90.0" cy="44" r="5" fill="#f0d79a" stroke="#b08a3e" stroke-width="1.2"/><line x1="90.0" y1="50" x2="90.0" y2="44" stroke="#6b665c" stroke-width="2"/><line x1="30.0" y1="64" x2="30.0" y2="74" stroke="#9aa39a" stroke-width="1.4"/><circle cx="30.0" cy="76" r="2.2" fill="#c9d6dc"/><line x1="40.0" y1="64" x2="40.0" y2="80" stroke="#9aa39a" stroke-width="1.4"/><circle cx="40.0" cy="82" r="2.2" fill="#c9d6dc"/><line x1="50.0" y1="64" x2="50.0" y2="74" stroke="#9aa39a" stroke-width="1.4"/><circle cx="50.0" cy="76" r="2.2" fill="#c9d6dc"/><line x1="60.0" y1="64" x2="60.0" y2="80" stroke="#9aa39a" stroke-width="1.4"/><circle cx="60.0" cy="82" r="2.2" fill="#c9d6dc"/><line x1="70.0" y1="64" x2="70.0" y2="74" stroke="#9aa39a" stroke-width="1.4"/><circle cx="70.0" cy="76" r="2.2" fill="#c9d6dc"/><circle cx="50" cy="66" r="4" fill="#c9d6dc"/></svg><em>₹1,810</em></div><div class="tile"><b>3</b><svg viewBox="0 0 100 100" aria-hidden="true"><line x1="50" y1="2" x2="50" y2="24" stroke="#6b665c" stroke-width="2"/><ellipse cx="50" cy="28" rx="9" ry="4" fill="none" stroke="#6b665c" stroke-width="2"/><line x1="50" y1="32" x2="50" y2="62" stroke="#6b665c" stroke-width="2"/><path d="M50 50 Q30.0 70 10.0 50" fill="none" stroke="#6b665c" stroke-width="2"/><circle cx="10.0" cy="44" r="5" fill="#f0d79a" stroke="#b08a3e" stroke-width="1.2"/><line x1="10.0" y1="50" x2="10.0" y2="44" stroke="#6b665c" stroke-width="2"/><path d="M50 50 Q43.3 70 36.7 50" fill="none" stroke="#6b665c" stroke-width="2"/><circle cx="36.7" cy="44" r="5" fill="#f0d79a" stroke="#b08a3e" stroke-width="1.2"/><line x1="36.7" y1="50" x2="36.7" y2="44" stroke="#6b665c" stroke-width="2"/><path d="M50 50 Q56.7 70 63.3 50" fill="none" stroke="#6b665c" stroke-width="2"/><circle cx="63.3" cy="44" r="5" fill="#f0d79a" stroke="#b08a3e" stroke-width="1.2"/><line x1="63.3" y1="50" x2="63.3" y2="44" stroke="#6b665c" stroke-width="2"/><path d="M50 50 Q70.0 70 90.0 50" fill="none" stroke="#6b665c" stroke-width="2"/><circle cx="90.0" cy="44" r="5" fill="#f0d79a" stroke="#b08a3e" stroke-width="1.2"/><line x1="90.0" y1="50" x2="90.0" y2="44" stroke="#6b665c" stroke-width="2"/><line x1="30.0" y1="64" x2="30.0" y2="74" stroke="#9aa39a" stroke-width="1.4"/><circle cx="30.0" cy="76" r="2.2" fill="#c9d6dc"/><line x1="43.3" y1="64" x2="43.3" y2="80" stroke="#9aa39a" stroke-width="1.4"/><circle cx="43.3" cy="82" r="2.2" fill="#c9d6dc"/><line x1="56.7" y1="64" x2="56.7" y2="74" stroke="#9aa39a" stroke-width="1.4"/><circle cx="56.7" cy="76" r="2.2" fill="#c9d6dc"/><line x1="70.0" y1="64" x2="70.0" y2="80" stroke="#9aa39a" stroke-width="1.4"/><circle cx="70.0" cy="82" r="2.2" fill="#c9d6dc"/><circle cx="50" cy="66" r="4" fill="#c9d6dc"/></svg><em>₹1,480</em></div><div class="tile"><b>4</b><svg viewBox="0 0 100 100" aria-hidden="true"><line x1="50" y1="2" x2="50" y2="24" stroke="#6b665c" stroke-width="2"/><ellipse cx="50" cy="28" rx="9" ry="4" fill="none" stroke="#6b665c" stroke-width="2"/><line x1="50" y1="32" x2="50" y2="62" stroke="#6b665c" stroke-width="2"/><path d="M50 50 Q30.0 70 10.0 50" fill="none" stroke="#6b665c" stroke-width="2"/><circle cx="10.0" cy="44" r="5" fill="#f0d79a" stroke="#b08a3e" stroke-width="1.2"/><line x1="10.0" y1="50" x2="10.0" y2="44" stroke="#6b665c" stroke-width="2"/><path d="M50 50 Q38.0 70 26.0 50" fill="none" stroke="#6b665c" stroke-width="2"/><circle cx="26.0" cy="44" r="5" fill="#f0d79a" stroke="#b08a3e" stroke-width="1.2"/><line x1="26.0" y1="50" x2="26.0" y2="44" stroke="#6b665c" stroke-width="2"/><path d="M50 50 Q46.0 70 42.0 50" fill="none" stroke="#6b665c" stroke-width="2"/><circle cx="42.0" cy="44" r="5" fill="#f0d79a" stroke="#b08a3e" stroke-width="1.2"/><line x1="42.0" y1="50" x2="42.0" y2="44" stroke="#6b665c" stroke-width="2"/><path d="M50 50 Q54.0 70 58.0 50" fill="none" stroke="#6b665c" stroke-width="2"/><circle cx="58.0" cy="44" r="5" fill="#f0d79a" stroke="#b08a3e" stroke-width="1.2"/><line x1="58.0" y1="50" x2="58.0" y2="44" stroke="#6b665c" stroke-width="2"/><path d="M50 50 Q62.0 70 74.0 50" fill="none" stroke="#6b665c" stroke-width="2"/><circle cx="74.0" cy="44" r="5" fill="#f0d79a" stroke="#b08a3e" stroke-width="1.2"/><line x1="74.0" y1="50" x2="74.0" y2="44" stroke="#6b665c" stroke-width="2"/><path d="M50 50 Q70.0 70 90.0 50" fill="none" stroke="#6b665c" stroke-width="2"/><circle cx="90.0" cy="44" r="5" fill="#f0d79a" stroke="#b08a3e" stroke-width="1.2"/><line x1="90.0" y1="50" x2="90.0" y2="44" stroke="#6b665c" stroke-width="2"/><line x1="30.0" y1="64" x2="30.0" y2="74" stroke="#9aa39a" stroke-width="1.4"/><circle cx="30.0" cy="76" r="2.2" fill="#c9d6dc"/><line x1="50.0" y1="64" x2="50.0" y2="80" stroke="#9aa39a" stroke-width="1.4"/><circle cx="50.0" cy="82" r="2.2" fill="#c9d6dc"/><line x1="70.0" y1="64" x2="70.0" y2="74" stroke="#9aa39a" stroke-width="1.4"/><circle cx="70.0" cy="76" r="2.2" fill="#c9d6dc"/><circle cx="50" cy="66" r="4" fill="#c9d6dc"/></svg><em>₹1,571</em></div></div>
+          </div>
+        </div>
+        <div class="wall">
+          <div class="thread">
+            <div class="meta">Text · English</div>
+            <div class="bubble me" lang="en">Is this message real?<div class="fwd"><small>Forwarded</small>Your SBI account will be blocked today. Update KYC at sbi-kyc-update.in</div></div>
+            <div class="bubble them">This message is not real. It is a scam. SBI never asks you to update KYC through a link.</div>
+          </div>
+          <div class="thread">
+            <div class="meta">Voice · Hindi</div>
+            <div class="bubble me"><div class="voice"><div class="play"></div><div class="wave" data-n="22" data-seed="37"></div><span class="dur">0:04</span></div><div class="said hi">कल सुबह मुंबई से पुणे की train</div></div>
+            <div class="bubble them train hi"><b>22185 पुणे सुपरफ़ास्ट</b><br>04:25 कल्याण · स्लीपर ₹180 · 20 सीट</div>
+            <div class="bubble them hi ask">क्या मैं यह करूँ? <span>(हाँ या नहीं बोलिए)</span></div>
+          </div>
+          <div class="thread">
+            <div class="meta">Text · English</div>
+            <div class="bubble me" lang="en">Find me a good pressure cooker under 2000 rupees</div>
+            <div class="bubble them">Four options from ₹1,407 to ₹1,799. My top pick is the Prestige 3 litre, 4.2 stars.<div class="urls"><span>amazon.in/dp/B0C3DDBBWM</span><span>amazon.in/dp/B00SX2YZI0</span></div></div>
+          </div>
+          <div class="thread">
+            <div class="meta">Voice · Hindi</div>
+            <div class="bubble me"><div class="voice"><div class="play"></div><div class="wave" data-n="20" data-seed="71"></div><span class="dur">0:03</span></div><div class="said hi">पनीर बटर मसाला बनाना है</div></div>
+            <div class="bubble them hi">तीन हिंदी वीडियो मिले।<br><span class="chip">Opens in YouTube</span></div>
+          </div>
+          <div class="thread">
+            <div class="meta">Text · English</div>
+            <div class="bubble me" lang="en">What do I need to renew my passport?</div>
+            <div class="bubble them">Your old passport, copies of the first and last two pages, and address proof only if it changed.</div>
+          </div>
+          <div class="thread">
+            <div class="meta">Voice · Hindi</div>
+            <div class="bubble me"><div class="voice"><div class="play"></div><div class="wave" data-n="20" data-seed="43"></div><span class="dur">0:03</span></div><div class="said hi">आज सोने का भाव क्या है?</div></div>
+            <div class="bubble them hi">24 कैरेट ₹14,395 और 22 कैरेट ₹13,195 प्रति ग्राम। सुनार के पास थोड़ा फ़र्क हो सकता है।</div>
+          </div>
+          <div class="thread">
+            <div class="meta">Voice · Hindi</div>
+            <div class="bubble me"><div class="voice"><div class="play"></div><div class="wave" data-n="20" data-seed="53"></div><span class="dur">0:03</span></div><div class="said hi">मुंबई में कल बारिश होगी क्या?</div></div>
+            <div class="bubble them hi">सुबह 3 से 9 बजे बारिश के आसार। छाता साथ रख लीजिए।</div>
+          </div>
+          <div class="thread">
+            <div class="meta">Voice · Hindi, from a phone</div>
+            <div class="bubble me"><div class="voice"><div class="play"></div><div class="wave" data-n="16" data-seed="61"></div><span class="dur">0:02</span></div><div class="said hi">दीवाली कब है?</div></div>
+            <div class="bubble them hi">रविवार, 8 नवंबर। धनतेरस 6 नवंबर, भाई दूज 11 नवंबर।</div>
+          </div>
         </div>
       </div>
     </section>
