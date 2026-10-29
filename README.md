@@ -40,14 +40,7 @@ All real answers from the live web, 29 October 2026.
 
 ## How it works
 
-```mermaid
-flowchart LR
-  phone["WhatsApp"] -->|voice note| server["Saathi"]
-  server --> dg["Deepgram<br/>speech to text"]
-  server --> agent["Claude<br/>+ a real browser"]
-  agent --> web["Websites"]
-  server -->|voice note, card, picture| phone
-```
+<p align="center"><img src="docs/assets/arch-overview.png" alt="How Saathi works: your WhatsApp voice note goes to the Saathi server, Deepgram turns it into text, Claude uses real websites with its own browser, and the answer comes back as a voice note, card or numbered picture. Anything that costs money waits for your yes." width="100%"></p>
 
 1. Your voice note reaches a small Node server.
 2. Deepgram turns it into text. Hindi, English or both in one sentence.

@@ -4,19 +4,7 @@ Saathi is a small Node server between WhatsApp and an agent that drives a real b
 
 ## The pieces
 
-```mermaid
-flowchart LR
-  phone["WhatsApp on a phone"] <--> channel["WhatsApp channel<br/>Twilio sandbox or Meta Cloud API"]
-  channel <-->|"signed webhook / send API"| server["Saathi server<br/>src/server.js"]
-  server --> handler["Conversation handler<br/>src/handler.js"]
-  handler --> stt["Speech to text<br/>Deepgram nova-3, multi"]
-  handler --> agent["Agent<br/>Claude via Claude Code CLI<br/>src/agent.js"]
-  agent <-->|"MCP over HTTP"| browser["Playwright MCP<br/>one Chrome, own profile"]
-  browser <--> web["Real websites"]
-  handler --> tts["Text to speech<br/>macOS voice to Ogg Opus"]
-  handler --> collage["Numbered picture<br/>src/collage.js"]
-  handler --> store["JSON store<br/>language, session, confirmations"]
-```
+<p align="center"><img src="assets/arch-overview.png" alt="Overview: phone, Saathi server, Deepgram, Claude with a browser, real websites, and the answer back to the phone. Money waits for your yes." width="100%"></p>
 
 | File | Job |
 |---|---|
@@ -32,28 +20,7 @@ flowchart LR
 
 ## One request, end to end
 
-```mermaid
-sequenceDiagram
-  autonumber
-  participant P as Phone (WhatsApp)
-  participant C as Channel
-  participant S as Saathi server
-  participant D as Deepgram
-  participant A as Claude + browser
-  P->>C: voice note "हॉल के लिए दो हज़ार से कम में झूमर"
-  C->>S: webhook (signed)
-  S-->>C: 200 OK straight away
-  S->>C: download the voice note
-  S->>D: audio
-  D-->>S: "हॉल के लिए दो हज़ार से कम में झूमर"
-  S->>P: "जी, देख रही हूँ। बस एक मिनट।"
-  S->>A: request + reply language + session
-  A->>A: open the site, search, read results
-  A-->>S: JSON reply: spoken text, card, photo URLs, status
-  S->>S: speak it, build the numbered picture
-  S->>P: voice note
-  S->>P: picture with the card and links as caption
-```
+<p align="center"><img src="assets/arch-request.png" alt="One request end to end across Phone, Saathi, Deepgram and Claude with a browser, using the chandelier example. Takes 10 to 60 seconds, mostly the website." width="100%"></p>
 
 A typical request takes 10 to 60 seconds, mostly the agent working on the website.
 
@@ -61,16 +28,7 @@ A typical request takes 10 to 60 seconds, mostly the agent working on the websit
 
 The agent never books, pays or submits on its own. When it reaches such a step it returns `needs_confirmation` with a one-line summary. The handler stores it and asks the person in the same chat.
 
-```mermaid
-stateDiagram-v2
-  [*] --> Working: request
-  Working --> Asked: needs_confirmation
-  Asked --> Working: "हाँ, बुक कर दो" (USER CONFIRMED)
-  Asked --> Cancelled: "नहीं, रहने दो"
-  Asked --> Working: "हाँ, लेकिन दूसरी वाली" (new request, never a yes)
-  Asked --> Expired: 30 minutes
-  Working --> Done
-```
+<p align="center"><img src="assets/arch-confirm.png" alt="The confirmation flow: Saathi asks क्या मैं यह करूँ? and waits. हाँ continues with exactly that, नहीं cancels, हाँ लेकिन दूसरी वाली is a new request, 30 minutes without an answer expires it." width="100%"></p>
 
 Rules held in code, not left to the model:
 
