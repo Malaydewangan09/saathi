@@ -328,7 +328,7 @@
             <button type="button" class="s" data-ask="Is this message real? 'Your SBI account will be blocked today. Update KYC at sbi-kyc-update.in'">Is this message real?<small>“Your SBI account will be blocked today. Update KYC at sbi-kyc-update.in”</small></button>
             <button type="button" class="s hi" data-ask="मुंबई में कल बारिश होगी क्या?">मुंबई में कल बारिश होगी क्या?<small>Will it rain in Mumbai tomorrow?</small></button>
             <button type="button" class="s" data-ask="Find me a good pressure cooker under 2000 rupees">Find me a good pressure cooker under 2000 rupees<small>With ratings and links</small></button>
-            <p class="fine">A few questions per visitor each day. When Saathi's computer is offline, these play replays of real runs instead.</p>
+            <p class="fine">Three live questions per visitor each day. When the free live answers run out, these play replays of real runs instead.</p>
           </div>
         </div>
       </div>
@@ -534,7 +534,7 @@
     let api = '', cloud = false, online = false, busy = false, replays = null, recorder = null;
     const CLOUD_ERRORS = {
       visitor: "That's the limit for today on this demo. Watch the video for more.",
-      busy: 'Lots of questions right now. Please try again in a minute.',
+      busy: 'Live answers are used up for now. Tap one of the questions above for a replay, or try again later.',
       failed: 'That did not work. Please try again.',
     };
 
@@ -756,7 +756,17 @@
         });
         const body = await res.json().catch(() => ({}));
         dots.remove();
-        if (!res.ok) return note(CLOUD_ERRORS[body.error] || 'That did not work. Please try again.');
+        if (!res.ok) {
+          // Out of free answers or Groq is busy: show a replay of a real run when there is one for this question.
+          const item = payload.text && (await loadReplays()).find((r) => r.ask === payload.text);
+          if (item && (body.error === 'busy' || body.error === 'failed')) {
+            note('Live answers are used up for now. Here is a replay of a real run.');
+            tag('Replay of a real run, 29 October');
+            voice('them', item.voice, item.duration);
+            return card(item.card);
+          }
+          return note(CLOUD_ERRORS[body.error] || 'That did not work. Please try again.');
+        }
         if (body.transcript) note(`Heard: “${body.transcript}”`);
         if (body.empty) return note('I could not hear anything. Please try again, a little closer to the mic.');
         const play = spoken(body.spoken, body.lang);
