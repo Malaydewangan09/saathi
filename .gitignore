@@ -3,3 +3,4 @@ node_modules/
 .browser-profile/
 data/
 .playwright-mcp/
+brag-output*/
