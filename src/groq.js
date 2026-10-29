@@ -21,9 +21,14 @@ When you have the answer, write it as plain text in exactly this shape (no JSON,
 SPOKEN: what Saathi says aloud, 2 to 4 short warm sentences, numbers written the way people say them
 CARD: the key facts in short lines, options numbered with their links, the source site at the end`;
 
-// Drops search citation marks like 【2†L55-L56】 that the model adds.
+// Drops search citation marks like 【2†L55-L56】 and markdown the model adds.
 export function stripCitations(text) {
-  return String(text || '').replace(/【[^】]*】/g, '').replace(/[ \t]+\n/g, '\n').replace(/ {2,}/g, ' ').trim();
+  return String(text || '')
+    .replace(/【[^】]*】/g, '')
+    // WhatsApp and the web chat show plain text, so markdown bold and <link> brackets go.
+    .replace(/\*\*([^*]+)\*\*/g, '$1')
+    .replace(/<(https?:\/\/[^>\s]+)>/g, '$1')
+    .replace(/[ \t]+\n/g, '\n').replace(/ {2,}/g, ' ').trim();
 }
 
 export function parseReply(content) {

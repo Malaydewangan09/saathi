@@ -1,0 +1,33 @@
+{
+  "date": "29 October",
+  "items": [
+    {
+      "ask": "आज सोने का भाव क्या है?",
+      "lang": "hi",
+      "voice": "replays/gold.m4a",
+      "duration": "0:15",
+      "card": "सोने का भाव, 29 अक्टूबर 2026\n24 कैरेट: ₹14,395 प्रति ग्राम\n22 कैरेट: ₹13,195 प्रति ग्राम\nGST अलग। सुनार के पास भाव थोड़ा अलग हो सकता है।"
+    },
+    {
+      "ask": "Is this message real? 'Your SBI account will be blocked today. Update KYC at sbi-kyc-update.in'",
+      "lang": "en",
+      "voice": "replays/scam.m4a",
+      "duration": "0:23",
+      "card": "SCAM ALERT\n- sbi-kyc-update.in is not SBI. SBI's sites are sbi.co.in and onlinesbi.sbi\n- Do not tap the link or share OTP, PIN or card details\n- Report: 1930 or cybercrime.gov.in"
+    },
+    {
+      "ask": "मुंबई में कल बारिश होगी क्या?",
+      "lang": "hi",
+      "voice": "replays/rain.m4a",
+      "duration": "0:12",
+      "card": "मुंबई, कल (30 अक्टूबर)\nसुबह 3 से 9 बजे: बारिश के आसार\nउसके बाद: धूप\nतापमान: 27° से 29°C"
+    },
+    {
+      "ask": "Find me a good pressure cooker under 2000 rupees",
+      "lang": "en",
+      "voice": "replays/cooker.m4a",
+      "duration": "0:18",
+      "card": "1. Prestige Svachh 3L: ₹1,799, 4.2★ amazon.in/dp/B0C3DDBBWM\n2. Hawkins Classic 3L: ₹1,407, 4.2★ amazon.in/dp/B00SX2YZI0\n3. Hawkins Contura 3L: ₹1,589, 4.2★ amazon.in/dp/B00NRT7ZUO\n4. Butterfly Curve 3L: ₹1,645, 4.1★ amazon.in/dp/B005MMTON0"
+    }
+  ]
+}
