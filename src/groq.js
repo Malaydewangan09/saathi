@@ -113,6 +113,8 @@ export function createGroqAgent({ apiKey, fetchImpl = fetch, timeoutMs = 90_000,
             model,
             tools: [{ type: 'browser_search' }],
             tool_choice: 'auto',
+            // Low reasoning keeps each answer inside the free tier's daily token budget.
+            reasoning_effort: 'low',
             messages: [{ role: 'system', content: systemFor(language, now()) }, ...history, { role: 'user', content: message }],
           }),
           signal: AbortSignal.timeout(timeoutMs),

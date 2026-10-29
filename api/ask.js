@@ -5,7 +5,7 @@ export const config = { maxDuration: 60 };
 const chat = createCloudChat({
   apiKey: process.env.GROQ_API_KEY,
   origins: (process.env.SAATHI_WEB_ORIGIN || 'https://malaydewangan09.github.io').split(','),
-  perVisitor: Number(process.env.SAATHI_WEB_PER_VISITOR) || 6,
+  perVisitor: Number(process.env.SAATHI_WEB_PER_VISITOR) || 3,
 });
 
 // Vercel function behind the website's live chat. Only the Saathi website may call it.
