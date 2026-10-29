@@ -5,7 +5,7 @@
   </picture>
 </p>
 
-<p align="center"><b>Don't search, just ask.</b><br>A WhatsApp contact that uses the web for you, in Hindi or English.</p>
+<p align="center"><b>You talk. Saathi does the clicking.</b><br>The internet, by voice note. On WhatsApp, in Hindi or English.</p>
 
 <p align="center">
   <a href="https://malaydewangan09.github.io/saathi/">Website</a> ·

@@ -1,7 +1,7 @@
 {
   "name": "saathi",
   "version": "0.1.0",
-  "description": "A WhatsApp contact that uses the web for you. Send a voice note in Hindi or English, Saathi does the website part and replies with a voice note.",
+  "description": "You talk. Saathi does the clicking. The internet, by voice note, on WhatsApp in Hindi or English.",
   "scripts": {
     "start": "node src/server.js",
     "test": "node --test test/*.test.js",
