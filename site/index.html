@@ -200,6 +200,7 @@
     html { scroll-behavior: auto; }
     .reveal .log div { opacity: 1; transform: none; }
   }
+  .video video { display: block; width: 100%; aspect-ratio: 16 / 9; border-radius: 24px; background: #111; box-shadow: var(--shadow); }
 </style>
 </head>
 <body>
@@ -342,8 +343,10 @@
 
     <section class="band white" id="demo">
       <div class="wrap">
-        <div class="poster" role="img" aria-label="Demo video placeholder">
-          <div><div class="playbig"></div><p>The 2 minute demo</p><small>Recorded on a real phone, over real WhatsApp. Coming soon.</small></div>
+        <div class="video">
+          <video controls playsinline preload="metadata" poster="assets/saathi-launch.jpg" aria-label="Saathi launch video, 22 seconds">
+            <source src="assets/saathi-launch.mp4" type="video/mp4">
+          </video>
         </div>
       </div>
     </section>
