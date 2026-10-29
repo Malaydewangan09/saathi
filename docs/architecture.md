@@ -100,7 +100,7 @@ Rules held in code, not left to the model:
 
 Voice notes are not stored. The browser profile in `.browser-profile/` keeps cookies between requests.
 
-## Choices made for a two-day build
+## Choices made for the prototype
 
 | Choice | Why | In a real deployment |
 |---|---|---|

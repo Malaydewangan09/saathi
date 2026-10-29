@@ -83,6 +83,6 @@ It runs on one laptop with one browser, through the Twilio sandbox. It can't use
 
 ## Built by voice
 
-Made in two days for the [WeMakeDevs x Wispr Flow No Hands challenge](https://www.wemakedevs.org/wispr), by talking to Claude through Wispr Flow instead of typing.
+Built by talking to Claude through Wispr Flow instead of typing.
 
 MIT licensed.
