@@ -2,7 +2,9 @@ import { randomUUID } from 'node:crypto';
 import { normalizeReply } from './policy.js';
 
 const URL = 'https://api.groq.com/openai/v1/chat/completions';
-const MODEL = 'openai/gpt-oss-120b';
+// The free tier limits tokens per minute per model, so the smaller model takes over when the bigger one is busy.
+const MODELS = ['openai/gpt-oss-120b', 'openai/gpt-oss-20b'];
+const MAX_WAIT_MS = 60_000;
 const HISTORY_TURNS = 6;
 
 const SYSTEM = `You are Saathi, answering people on a public demo page. They ask by voice or text, in Hindi or English.
@@ -51,33 +53,58 @@ export function parseReply(content) {
   });
 }
 
+// Seconds Groq asks us to wait, from the Retry-After header or the "try again in 12.3s" message.
+export function retryAfterMs(headers, body) {
+  const header = Number(headers?.get?.('retry-after'));
+  if (Number.isFinite(header) && header > 0) return header * 1000;
+  const m = String(body).match(/try again in (?:(\d+)m)?([\d.]+)s/i);
+  return m ? (Number(m[1] || 0) * 60 + Number(m[2])) * 1000 : 10_000;
+}
+
+// Tries each model. A bad tool call is retried once on the same model, a rate limit moves to the next one.
+// When every model is rate limited, waits as long as Groq asks (up to a minute) and tries again.
+async function askWithFallback(ask, sleep) {
+  for (let round = 0; round < 3; round++) {
+    let wait = Infinity;
+    for (const model of MODELS) {
+      let res = await ask(model);
+      if (res.status === 400) {
+        const detail = await res.text();
+        if (!detail.includes('tool_use_failed')) throw new Error(`Groq 400: ${detail.slice(0, 200)}`);
+        res = await ask(model);
+      }
+      if (res.status !== 429) {
+        if (!res.ok) throw new Error(`Groq ${res.status}: ${(await res.text()).slice(0, 200)}`);
+        return res;
+      }
+      wait = Math.min(wait, retryAfterMs(res.headers, await res.text()));
+    }
+    if (wait > MAX_WAIT_MS) break;
+    await sleep(wait + 500);
+  }
+  throw new Error('Groq is busy, every model is at its rate limit');
+}
+
 // Same interface as the Claude agent, so the handler is reused as is.
-export function createGroqAgent({ apiKey, fetchImpl = fetch, timeoutMs = 90_000 }) {
+export function createGroqAgent({ apiKey, fetchImpl = fetch, timeoutMs = 90_000, sleep = (ms) => new Promise((r) => setTimeout(r, ms)) }) {
   const sessions = new Map();
   return {
     async run({ message, sessionId }) {
       const id = sessionId && sessions.has(sessionId) ? sessionId : randomUUID();
       const history = sessions.get(id) || [];
-      const ask = () =>
+      const ask = (model) =>
         fetchImpl(URL, {
           method: 'POST',
           headers: { Authorization: `Bearer ${apiKey}`, 'Content-Type': 'application/json' },
           body: JSON.stringify({
-            model: MODEL,
+            model,
             tools: [{ type: 'browser_search' }],
             tool_choice: 'auto',
             messages: [{ role: 'system', content: SYSTEM }, ...history, { role: 'user', content: message }],
           }),
           signal: AbortSignal.timeout(timeoutMs),
         });
-      let res = await ask();
-      // The model sometimes calls a tool that does not exist. One retry usually gets a clean answer.
-      if (res.status === 400) {
-        const detail = await res.text();
-        if (!detail.includes('tool_use_failed')) throw new Error(`Groq 400: ${detail.slice(0, 200)}`);
-        res = await ask();
-      }
-      if (!res.ok) throw new Error(`Groq ${res.status}: ${(await res.text()).slice(0, 200)}`);
+      const res = await askWithFallback(ask, sleep);
       const content = (await res.json()).choices?.[0]?.message?.content || '';
       const reply = parseReply(content);
       sessions.set(id, [...history, { role: 'user', content: message }, { role: 'assistant', content: `SPOKEN: ${reply.spoken}\nCARD: ${reply.card}` }].slice(-HISTORY_TURNS * 2));

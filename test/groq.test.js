@@ -1,6 +1,6 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
-import { createGroqAgent, parseReply, stripCitations } from '../src/groq.js';
+import { createGroqAgent, parseReply, retryAfterMs, stripCitations } from '../src/groq.js';
 
 test('citation marks are removed', () => {
   assert.equal(stripCitations('भाव ₹1,44,110 है【2†L55-L56】।'), 'भाव ₹1,44,110 है।');
@@ -54,6 +54,40 @@ test('keeps a short history per session and surfaces API errors', async () => {
   assert.equal(bodies[1].messages.length, 4);
   assert.equal(bodies[1].tools[0].type, 'browser_search');
 
-  const failing = createGroqAgent({ apiKey: 'k', fetchImpl: async () => ({ ok: false, status: 429, text: async () => 'rate limited' }) });
-  await assert.rejects(failing.run({ message: 'x' }), /Groq 429/);
+  const failing = createGroqAgent({ apiKey: 'k', fetchImpl: async () => ({ ok: false, status: 500, text: async () => 'boom' }) });
+  await assert.rejects(failing.run({ message: 'x' }), /Groq 500/);
+});
+
+const ok = (content) => ({ ok: true, status: 200, json: async () => ({ choices: [{ message: { content } }] }) });
+const limited = (msg = 'Please try again in 3.5s') => ({ ok: false, status: 429, headers: { get: () => null }, text: async () => msg });
+
+test('a rate-limited big model hands over to the small model', async () => {
+  const models = [];
+  const fetchImpl = async (_u, init) => {
+    const { model } = JSON.parse(init.body);
+    models.push(model);
+    return model.endsWith('120b') ? limited() : ok('SPOKEN: from the small model\nCARD: x');
+  };
+  const { reply } = await createGroqAgent({ apiKey: 'k', fetchImpl, sleep: async () => {} }).run({ message: 'hi' });
+  assert.deepEqual(models, ['openai/gpt-oss-120b', 'openai/gpt-oss-20b']);
+  assert.equal(reply.spoken, 'from the small model');
+});
+
+test('when every model is busy it waits as asked, then answers', async () => {
+  let calls = 0;
+  const waits = [];
+  const fetchImpl = async () => (++calls <= 2 ? limited('try again in 7.25s') : ok('SPOKEN: ok\nCARD: x'));
+  const { reply } = await createGroqAgent({ apiKey: 'k', fetchImpl, sleep: async (ms) => waits.push(ms) }).run({ message: 'hi' });
+  assert.equal(reply.spoken, 'ok');
+  assert.deepEqual(waits, [7750]);
+});
+
+test('gives up instead of waiting more than a minute', async () => {
+  const fetchImpl = async () => limited('try again in 5m12s');
+  await assert.rejects(createGroqAgent({ apiKey: 'k', fetchImpl, sleep: async () => {} }).run({ message: 'hi' }), /busy/);
+});
+
+test('reads the wait time from the header or the message', () => {
+  assert.equal(retryAfterMs({ get: () => '4' }, ''), 4000);
+  assert.equal(retryAfterMs({ get: () => null }, 'Please try again in 1m2.5s'), 62500);
 });
