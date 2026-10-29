@@ -214,7 +214,53 @@
     .facts li span:last-child { text-align: left; }
     .head { margin-bottom: 36px; }
   }
+  /* Try it live */
+  .sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+  .try { display: grid; grid-template-columns: minmax(0, 420px) minmax(0, 380px); gap: 64px; align-items: start; justify-content: center; }
+  .phone { display: flex; flex-direction: column; height: 620px; padding: 18px 18px 14px; background: linear-gradient(180deg, #fbf8f2, #f3eee4); border: 1px solid var(--line); border-radius: 28px; box-shadow: var(--shadow); }
+  .phone .chat-head { margin-bottom: 10px; padding-bottom: 12px; }
+  .status { margin-left: auto; display: inline-flex; align-items: center; gap: 6px; font-size: 12px; padding: 4px 10px; border-radius: 999px; background: var(--bg2); color: var(--muted); white-space: nowrap; }
+  .status::before { content: ""; width: 7px; height: 7px; border-radius: 50%; background: #b9b2a3; }
+  .status.on { background: var(--ok-bg); color: var(--accent); }
+  .status.on::before { background: var(--accent); }
+  .convo { flex: 1; overflow-y: auto; padding: 6px 2px; }
+  .convo .bubble { white-space: pre-line; overflow-wrap: anywhere; }
+  .convo .empty { margin: 48px 20px; text-align: center; color: var(--muted); font-size: 14px; }
+  .convo .note { margin: 4px 14px 12px; text-align: center; color: var(--muted); font-size: 13px; }
+  .convo .tag { display: table; margin: 4px 0 8px; padding: 3px 10px; border-radius: 999px; background: var(--amber-bg); color: var(--amber); font-size: 11.5px; }
+  .convo .pic { padding: 6px; }
+  .convo .pic img { display: block; width: 100%; border-radius: 12px; }
+  .convo .pic p { padding: 8px 6px 2px; }
+  .convo button.play { border: 0; padding: 0; cursor: pointer; }
+  .convo button.play:disabled { cursor: default; opacity: .55; }
+  .convo button.play.pause::after { width: 10px; height: 12px; border: 0; border-left: 3px solid #fff; border-right: 3px solid #fff; margin: 0; }
+  .typing { display: inline-flex; gap: 4px; align-items: center; min-height: 20px; }
+  .typing i { width: 6px; height: 6px; border-radius: 50%; background: #b9b2a3; animation: blink 1.2s infinite; }
+  .typing i:nth-child(2) { animation-delay: .2s; }
+  .typing i:nth-child(3) { animation-delay: .4s; }
+  @keyframes blink { 50% { opacity: .25; } }
+  .choices { display: flex; flex-wrap: wrap; gap: 6px; margin: -2px 0 12px; }
+  .choices button { font: inherit; font-size: 13px; padding: 6px 12px; border: 1px solid var(--line); border-radius: 999px; background: #fff; cursor: pointer; }
+  .composer { display: flex; align-items: center; gap: 8px; padding-top: 12px; border-top: 1px solid var(--line); }
+  .composer input { flex: 1; min-width: 0; font: inherit; font-size: 15px; padding: 11px 15px; border: 1px solid var(--line); border-radius: 999px; background: #fff; color: var(--ink); }
+  .composer input:focus-visible, .iconbtn:focus-visible, .suggest .s:focus-visible, .convo button:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+  .iconbtn { flex: none; width: 42px; height: 42px; display: grid; place-items: center; border: 0; border-radius: 50%; background: var(--ink); color: #fff; cursor: pointer; }
+  .iconbtn svg { width: 18px; height: 18px; }
+  .iconbtn.rec { background: #b3261e; }
+  .iconbtn:disabled { opacity: .45; cursor: default; }
+  .rec-time { font-size: 12px; color: #b3261e; font-variant-numeric: tabular-nums; }
+  .suggest h3 { margin-bottom: 14px; font: 500 12px/1.4 Inter, sans-serif; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); }
+  .suggest .s { display: block; width: 100%; margin-bottom: 10px; padding: 14px 16px; text-align: left; font: inherit; font-size: 15px; color: var(--ink); background: #fff; border: 1px solid var(--line); border-radius: 16px; box-shadow: 0 1px 2px rgba(27,26,23,.04); cursor: pointer; transition: border-color .2s ease, transform .2s ease; }
+  .suggest .s:hover:not(:disabled) { border-color: #cfc6b4; transform: translateY(-1px); }
+  .suggest .s:disabled { opacity: .55; cursor: default; }
+  .suggest .s small { display: block; margin-top: 4px; color: var(--muted); font-size: 12.5px; }
+  .suggest .fine { margin-top: 18px; color: var(--muted); font-size: 13.5px; }
+  @media (max-width: 960px) {
+    .try { grid-template-columns: 1fr; gap: 28px; }
+    .phone { height: 560px; }
+  }
   @media (prefers-reduced-motion: reduce) {
+    .typing i { animation: none; }
     * { animation: none !important; transition: none !important; }
     html { scroll-behavior: auto; }
     .reveal .log div { opacity: 1; transform: none; }
@@ -226,8 +272,8 @@
   <div class="wrap">
     <nav aria-label="Main">
       <a class="logo" href="#"><i aria-hidden="true">सा</i>Saathi</a>
-      <ul><li><a href="#how">How it works</a></li><li><a href="#safety">Safety</a></li><li><a href="#demo">Demo</a></li></ul>
-      <a class="btn btn-dark btn-sm" href="#demo">Chat on WhatsApp</a>
+      <ul><li><a href="#try">Try it</a></li><li><a href="#how">How it works</a></li><li><a href="#safety">Safety</a></li><li><a href="#demo">Demo</a></li></ul>
+      <a class="btn btn-dark btn-sm" href="#try">Try it live</a>
     </nav>
 
     <header class="hero">
@@ -236,7 +282,7 @@
         <h1>Don't search,<br><em>just ask.</em></h1>
         <p class="lede"><b>You talk. Saathi does the clicking.</b> Send a voice note on WhatsApp in Hindi or English. It opens the real website, does the work, and answers with a voice note and a short card.</p>
         <div class="ctas">
-          <a class="btn btn-dark" href="#demo">Chat on WhatsApp</a>
+          <a class="btn btn-dark" href="#try">Try it live</a>
           <a class="btn btn-ghost" href="#demo"><span aria-hidden="true">▶</span>Watch the demo</a>
         </div>
         <p class="fine">Never types your passwords. Asks before anything that costs money.</p>
@@ -258,6 +304,36 @@
   </div>
 
   <main>
+    <section class="band" id="try">
+      <div class="wrap">
+        <div class="head">
+          <h2>Try it,<br><em>right here.</em></h2>
+          <p>Ask anything in Hindi or English, by voice or text. Live answers here use web search. The full Saathi on WhatsApp also uses the websites for you, see the video below.</p>
+        </div>
+        <div class="try">
+          <div class="phone" role="region" aria-label="Chat with Saathi">
+            <div class="chat-head"><div class="avatar" aria-hidden="true">सा</div><div><b>Saathi</b><small>on this page</small></div><span class="status" id="try-status">checking</span></div>
+            <div class="convo" id="try-thread" aria-live="polite"><p class="empty">Tap a question, type one, or record a short voice note.</p></div>
+            <form class="composer" id="try-form">
+              <label class="sr" for="try-input">Your question</label>
+              <input id="try-input" type="text" maxlength="500" placeholder="Ask in Hindi or English" autocomplete="off">
+              <span class="rec-time" id="try-rec-time" hidden></span>
+              <button type="button" class="iconbtn" id="try-mic" aria-label="Record a voice note"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><rect x="9" y="3" width="6" height="11" rx="3"/><path d="M5 11a7 7 0 0 0 14 0M12 18v3"/></svg></button>
+              <button type="submit" class="iconbtn" id="try-send" aria-label="Send"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+            </form>
+          </div>
+          <div class="suggest">
+            <h3>Try one of these</h3>
+            <button type="button" class="s hi" data-ask="आज सोने का भाव क्या है?">आज सोने का भाव क्या है?<small>Today's gold rate</small></button>
+            <button type="button" class="s" data-ask="Is this message real? 'Your SBI account will be blocked today. Update KYC at sbi-kyc-update.in'">Is this message real?<small>“Your SBI account will be blocked today. Update KYC at sbi-kyc-update.in”</small></button>
+            <button type="button" class="s hi" data-ask="मुंबई में कल बारिश होगी क्या?">मुंबई में कल बारिश होगी क्या?<small>Will it rain in Mumbai tomorrow?</small></button>
+            <button type="button" class="s" data-ask="Find me a good pressure cooker under 2000 rupees">Find me a good pressure cooker under 2000 rupees<small>With ratings and links</small></button>
+            <p class="fine">A few questions per visitor each day. When Saathi's computer is offline, these play replays of real runs instead.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <section class="band white" id="how">
       <div class="wrap">
         <div class="head">
@@ -440,6 +516,290 @@
       if (entries[0].isIntersecting) { win.classList.add('in'); obs.disconnect(); }
     }, { threshold: 0.35 }).observe(win);
   } else win.classList.add('in');
+</script>
+<script>
+  // Try it live: talks to Saathi through the API in live.json, or plays replays of real runs when offline.
+  (() => {
+    const $ = (id) => document.getElementById(id);
+    const thread = $('try-thread'), form = $('try-form'), input = $('try-input');
+    const mic = $('try-mic'), send = $('try-send'), statusEl = $('try-status'), recTime = $('try-rec-time');
+    const chips = [...document.querySelectorAll('#try .s')];
+    const reduce = window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches;
+    const OFFLINE = "Saathi's computer is offline right now. Tap a question above to see a replay of a real run.";
+    const ERRORS = {
+      busy: 'Saathi is still answering your last question.',
+      visitor: "That's the limit for today on this demo. Watch the video for more.",
+      day: "The demo has reached today's limit. Try again tomorrow, or watch the video.",
+    };
+    let api = '', online = false, busy = false, replays = null, recorder = null;
+
+    const visitor = (() => {
+      const make = () => Array.from(crypto.getRandomValues(new Uint8Array(24)), (b) => 'abcdefghijklmnopqrstuvwxyz0123456789'[b % 36]).join('');
+      try {
+        let v = localStorage.getItem('saathi-visitor');
+        if (!/^[a-z0-9]{24}$/.test(v || '')) { v = make(); localStorage.setItem('saathi-visitor', v); }
+        return v;
+      } catch { return make(); }
+    })();
+
+    const wait = (ms) => new Promise((r) => setTimeout(r, reduce ? Math.min(ms, 120) : ms));
+    const hindi = (t) => /[ऀ-ॿ]/.test(t);
+    const fmt = (sec) => `${Math.floor(sec / 60)}:${String(Math.round(sec % 60)).padStart(2, '0')}`;
+
+    function place(el, before) {
+      thread.querySelector('.empty')?.remove();
+      before && before.isConnected ? thread.insertBefore(el, before) : thread.appendChild(el);
+      thread.scrollTop = thread.scrollHeight;
+      return el;
+    }
+    function make(tag, cls, text) {
+      const el = document.createElement(tag);
+      if (cls) el.className = cls;
+      if (text != null) { el.textContent = text; if (hindi(text)) el.classList.add('hi'); }
+      return el;
+    }
+    const bubble = (who, text, before) => place(make('div', `bubble ${who}`, text), before);
+    const note = (text, before) => place(make('p', 'note', text), before);
+    const tag = (text, before) => place(make('span', 'tag', text), before);
+    function card(text, before) {
+      const el = bubble('them', text, before);
+      el.classList.add('train');
+      return el;
+    }
+    function wave(seed) {
+      const w = make('div', 'wave');
+      let x = seed;
+      for (let i = 0, n = 26; i < n; i++) {
+        x = (x * 9301 + 49297) % 233280;
+        const b = document.createElement('i');
+        b.style.height = 5 + Math.round((x / 233280) * 18 * Math.sin((i / n) * Math.PI) + 3) + 'px';
+        w.appendChild(b);
+      }
+      return w;
+    }
+    function voice(who, url, label, before) {
+      const el = make('div', `bubble ${who}`);
+      const row = make('div', 'voice');
+      const btn = make('button', 'play');
+      btn.type = 'button';
+      btn.setAttribute('aria-label', 'Play voice note');
+      const dur = make('span', 'dur', label || '');
+      row.append(btn, wave(7 + thread.children.length * 13), dur);
+      el.appendChild(row);
+      if (url) {
+        const audio = new Audio();
+        audio.preload = 'metadata';
+        audio.src = url;
+        audio.addEventListener('loadedmetadata', () => { if (isFinite(audio.duration)) dur.textContent = fmt(audio.duration); });
+        audio.addEventListener('play', () => { btn.classList.add('pause'); btn.setAttribute('aria-label', 'Pause voice note'); });
+        const stop = () => { btn.classList.remove('pause'); btn.setAttribute('aria-label', 'Play voice note'); };
+        audio.addEventListener('pause', stop);
+        audio.addEventListener('ended', stop);
+        btn.addEventListener('click', () => {
+          if (!audio.paused) return audio.pause();
+          thread.querySelectorAll('audio').forEach((a) => a !== audio && a.pause());
+          audio.play().catch(() => {});
+        });
+        el.appendChild(audio);
+      } else btn.disabled = true;
+      return place(el, before);
+    }
+    function picture(url, caption, before) {
+      const el = make('div', 'bubble them pic');
+      const img = make('img');
+      img.src = url;
+      img.alt = caption ? `Options: ${caption.split('\n')[0]}` : 'Numbered options';
+      el.appendChild(img);
+      if (caption) el.appendChild(make('p', '', caption));
+      return place(el, before);
+    }
+    function choices(text, options, before) {
+      if (text) bubble('them', text, before);
+      const row = make('div', 'choices');
+      options.forEach((o) => {
+        const b = make('button', '', o);
+        b.type = 'button';
+        b.addEventListener('click', () => ask(o));
+        row.appendChild(b);
+      });
+      return place(row, before);
+    }
+    function typing() {
+      const el = make('div', 'bubble them');
+      el.setAttribute('aria-label', 'Saathi is working');
+      const dots = make('span', 'typing');
+      dots.innerHTML = '<i></i><i></i><i></i>';
+      el.appendChild(dots);
+      return place(el);
+    }
+
+    function lock(on) {
+      busy = on;
+      [input, send, ...chips].forEach((el) => (el.disabled = on));
+      mic.disabled = on && !recorder;
+      thread.querySelectorAll('.choices button').forEach((b) => (b.disabled = on));
+    }
+    function setStatus(on) {
+      online = on;
+      statusEl.textContent = on ? 'online' : 'offline, showing replays';
+      statusEl.classList.toggle('on', on);
+    }
+
+    async function connect() {
+      try { api = ((await (await fetch('live.json', { cache: 'no-store' })).json()).api || '').replace(/\/$/, ''); } catch { api = ''; }
+      if (!api) return setStatus(false);
+      try {
+        const res = await fetch(`${api}/api/status`, { signal: AbortSignal.timeout(4000) });
+        setStatus(res.ok && (await res.json()).online === true);
+      } catch { setStatus(false); }
+    }
+
+    async function loadReplays() {
+      if (!replays) {
+        try { replays = (await (await fetch('replays/replays.json')).json()).items; } catch { replays = []; }
+      }
+      return replays;
+    }
+
+    async function replay(item) {
+      lock(true);
+      bubble('me', item.ask);
+      await wait(600);
+      bubble('them', item.lang === 'hi' ? 'जी, देख रही हूँ। बस एक मिनट।' : 'Okay, I am looking. Just a minute.');
+      const dots = typing();
+      await wait(2000);
+      dots.remove();
+      tag('Replay of a real run, 29 October');
+      voice('them', item.voice, item.duration);
+      card(item.card);
+      lock(false);
+    }
+
+    async function ask(text) {
+      text = (text || '').trim().slice(0, 500);
+      if (!text || busy) return;
+      if (!online) {
+        const item = (await loadReplays()).find((r) => r.ask === text);
+        if (item) return replay(item);
+        bubble('me', text);
+        return note(OFFLINE);
+      }
+      bubble('me', text);
+      return submit({ text });
+    }
+
+    async function submit(payload) {
+      lock(true);
+      const dots = typing();
+      try {
+        const res = await fetch(`${api}/api/chat`, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ visitor, ...payload }),
+        });
+        const body = await res.json().catch(() => ({}));
+        if (!res.ok) {
+          dots.remove();
+          return note(ERRORS[body.error] || 'That did not work. Please try again.');
+        }
+        await follow(body.job, dots);
+      } catch {
+        dots.remove();
+        setStatus(false);
+        note(OFFLINE);
+      } finally {
+        lock(false);
+      }
+    }
+
+    // Polls the job and shows each new message as it arrives.
+    async function follow(job, dots) {
+      const started = Date.now();
+      let shown = 0, line = null;
+      while (Date.now() - started < 150000) {
+        await new Promise((r) => setTimeout(r, 1500));
+        let view;
+        try { view = await (await fetch(`${api}/api/chat/${job}?visitor=${visitor}`)).json(); } catch { continue; }
+        if (view.status === 'queued' && view.position > 1) {
+          line = line || note('', dots);
+          line.textContent = `You are number ${view.position} in line.`;
+        } else if (line) { line.remove(); line = null; }
+        for (const m of (view.messages || []).slice(shown)) render(m, dots);
+        shown = (view.messages || []).length;
+        if (view.status === 'done' || view.status === 'failed') {
+          dots.remove();
+          if (view.status === 'failed' && !shown) note('Something went wrong. Please try again.');
+          return;
+        }
+      }
+      dots.remove();
+      note('This is taking longer than usual. Please try again in a minute.');
+    }
+
+    function render(m, before) {
+      if (m.type === 'text') bubble('them', m.text, before);
+      else if (m.type === 'voice') {
+        voice('them', `${api}${m.url}`, '', before);
+        if (m.caption) card(m.caption, before);
+      } else if (m.type === 'image') picture(`${api}${m.url}`, m.caption, before);
+      else if (m.type === 'choice') choices(m.text, m.options || [], before);
+    }
+
+    // Voice notes: tap to start, tap to stop, 30 seconds at most.
+    async function record() {
+      if (recorder) return recorder.stop();
+      if (busy) return;
+      if (!online) return note(OFFLINE);
+      if (!navigator.mediaDevices?.getUserMedia || !window.MediaRecorder) return note('This browser cannot record here. You can type instead.');
+      let stream;
+      try { stream = await navigator.mediaDevices.getUserMedia({ audio: true }); } catch { return note('The microphone is blocked. You can type instead.'); }
+      const mime = ['audio/webm;codecs=opus', 'audio/mp4', 'audio/webm'].find((t) => MediaRecorder.isTypeSupported(t));
+      const chunks = [];
+      recorder = new MediaRecorder(stream, mime ? { mimeType: mime } : undefined);
+      recorder.ondataavailable = (e) => e.data.size && chunks.push(e.data);
+      let left = 30;
+      recTime.hidden = false;
+      recTime.textContent = '0:30';
+      const tick = setInterval(() => {
+        left -= 1;
+        recTime.textContent = fmt(left);
+        if (left <= 0) recorder?.stop();
+      }, 1000);
+      recorder.onstop = async () => {
+        clearInterval(tick);
+        stream.getTracks().forEach((t) => t.stop());
+        recorder = null;
+        recTime.hidden = true;
+        mic.classList.remove('rec');
+        mic.setAttribute('aria-label', 'Record a voice note');
+        lock(false);
+        const blob = new Blob(chunks, { type: chunks[0]?.type || mime || 'audio/webm' });
+        if (blob.size < 1500) return note('That was too short. Hold on a little longer.');
+        voice('me', URL.createObjectURL(blob));
+        const audio = await new Promise((r) => {
+          const fr = new FileReader();
+          fr.onload = () => r(String(fr.result).split(',')[1]);
+          fr.readAsDataURL(blob);
+        });
+        submit({ audio, mime: blob.type.split(';')[0] || 'audio/webm' });
+      };
+      recorder.start();
+      lock(true);
+      mic.disabled = false;
+      mic.classList.add('rec');
+      mic.setAttribute('aria-label', 'Stop recording');
+    }
+
+    form.addEventListener('submit', (e) => {
+      e.preventDefault();
+      const text = input.value;
+      input.value = '';
+      ask(text);
+    });
+    mic.addEventListener('click', record);
+    chips.forEach((b) => b.addEventListener('click', () => ask(b.dataset.ask)));
+    connect();
+  })();
 </script>
 </body>
 </html>

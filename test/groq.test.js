@@ -6,6 +6,10 @@ test('citation marks are removed', () => {
   assert.equal(stripCitations('भाव ₹1,44,110 है【2†L55-L56】।'), 'भाव ₹1,44,110 है।');
 });
 
+test('markdown bold and link brackets are removed', () => {
+  assert.equal(stripCitations('1. **₹1,43,560 / 10 ग्राम** <https://example.com/a>'), '1. ₹1,43,560 / 10 ग्राम https://example.com/a');
+});
+
 test('parses the JSON reply even with text or citations around it', () => {
   const r = parseReply('Sure. {"status":"done","spoken":"सोना ₹14,395 प्रति ग्राम है【1†L3】।","card":"24K: ₹14,395/g\\nSource: moneycontrol"} ok');
   assert.equal(r.status, 'done');
