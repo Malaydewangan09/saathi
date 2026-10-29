@@ -30,7 +30,7 @@ test('a voice question is transcribed with Groq Whisper first', async () => {
   const chat = createCloudChat({ apiKey: 'k', origins: [ORIGIN], fetchImpl, agent: { run: async ({ message }) => (asked.push(message), reply('Sunday, 8 November.')) } });
   const [status, body] = await chat.ask({ visitor: VISITOR, audio: Buffer.from('webm').toString('base64'), mime: 'audio/webm;codecs=opus' });
   assert.equal(status, 200);
-  assert.deepEqual(asked, ['When is Diwali?']);
+  assert.deepEqual(asked, ['[Reply in English]\nWhen is Diwali?']);
   assert.equal(body.transcript, 'When is Diwali?');
   assert.equal(body.lang, 'en');
 });
