@@ -94,7 +94,7 @@ async function askWithFallback(ask, sleep) {
 export function createGroqAgent({ apiKey, fetchImpl = fetch, timeoutMs = 90_000, sleep = (ms) => new Promise((r) => setTimeout(r, ms)) }) {
   const sessions = new Map();
   return {
-    async run({ message, sessionId }) {
+    async run({ message, sessionId, language }) {
       const id = sessionId && sessions.has(sessionId) ? sessionId : randomUUID();
       const history = sessions.get(id) || [];
       const ask = (model) =>
@@ -105,7 +105,7 @@ export function createGroqAgent({ apiKey, fetchImpl = fetch, timeoutMs = 90_000,
             model,
             tools: [{ type: 'browser_search' }],
             tool_choice: 'auto',
-            messages: [{ role: 'system', content: SYSTEM }, ...history, { role: 'user', content: message }],
+            messages: [{ role: 'system', content: language ? `${SYSTEM}\n\nWrite SPOKEN and CARD only in ${language}.` : SYSTEM }, ...history, { role: 'user', content: message }],
           }),
           signal: AbortSignal.timeout(timeoutMs),
         });

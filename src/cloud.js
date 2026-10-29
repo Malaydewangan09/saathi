@@ -67,8 +67,13 @@ export function createCloudChat({ apiKey, origins, perVisitor = 6, fetchImpl = f
       try {
         if (audio) text = await transcribe(audio.data, audio.mime);
         if (!text) return [200, { transcript: '', spoken: '', card: '', lang: 'en', empty: true }];
-        const { reply } = await groq.run({ message: `[Reply in ${replyLanguage(text)}]\n${text}` });
-        const lang = /[ऀ-ॿ]/.test(reply.spoken) ? 'hi' : 'en';
+        const language = replyLanguage(text);
+        const message = `[Reply in ${language}]\n${text}`;
+        let { reply } = await groq.run({ message, language });
+        // The free model sometimes answers in the wrong language. Ask once more, then accept what comes.
+        const wantHindi = language.startsWith('Hindi');
+        if (wantHindi !== /[\u0900-\u097F]/.test(reply.spoken)) ({ reply } = await groq.run({ message, language }));
+        const lang = /[\u0900-\u097F]/.test(reply.spoken) ? 'hi' : 'en';
         return [200, { transcript: audio ? text : undefined, spoken: reply.spoken, card: reply.card, lang }];
       } catch (err) {
         const busy = /busy|429/.test(err.message);

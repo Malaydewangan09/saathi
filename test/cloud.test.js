@@ -68,3 +68,13 @@ test('reply language follows the person\'s own words, not quoted text', () => {
   assert.equal(replyLanguage('Is this message real? "आपका खाता बंद हो जाएगा"'), 'English');
   assert.equal(replyLanguage('यह मैसेज सच है क्या? "Your SBI account will be blocked"'), 'Hindi, in Devanagari script');
 });
+
+test('an answer in the wrong language is asked again once', async () => {
+  const runs = [];
+  const answers = [reply('यह फ़र्जी है।'), reply('This message is a scam.')];
+  const chat = createCloudChat({ apiKey: 'k', origins: [ORIGIN], agent: { run: async (args) => (runs.push(args), answers.shift()) } });
+  const [, body] = await chat.ask({ visitor: VISITOR, text: 'Is this message real? "SBI KYC"' });
+  assert.equal(runs.length, 2);
+  assert.equal(runs[0].language, 'English');
+  assert.deepEqual([body.spoken, body.lang], ['This message is a scam.', 'en']);
+});
