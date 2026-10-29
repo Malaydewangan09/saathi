@@ -33,6 +33,13 @@ export const config = {
     from: env.TWILIO_WHATSAPP_FROM || 'whatsapp:+14155238886',
   },
   // Numbers in international format without '+', e.g. 919800000001.
+  web: {
+    enabled: env.SAATHI_WEB === '1',
+    origins: list(env.SAATHI_WEB_ORIGIN || 'https://malaydewangan09.github.io'),
+    perVisitor: Number(env.SAATHI_WEB_PER_VISITOR) || 6,
+    perDay: Number(env.SAATHI_WEB_PER_DAY) || 120,
+    groqKey: env.GROQ_API_KEY,
+  },
   // Only these numbers can talk to Saathi.
   numbers: list(env.SAATHI_NUMBERS),
 };

@@ -9,6 +9,7 @@ import * as wa from './whatsapp.js';
 import { createTwilioTransport, verifyTwilioSignature } from './twilio.js';
 import { withLocalPlayback } from './local.js';
 import { makeCollage } from './collage.js';
+import { createWebApi } from './web-api.js';
 
 const MAX_BODY = 1024 * 1024;
 const inflight = new Set();
@@ -37,13 +38,13 @@ const handle = createHandler({
   collage: makeCollage,
 });
 
-function readBody(req) {
+function readBody(req, max = MAX_BODY) {
   return new Promise((resolve, reject) => {
     const chunks = [];
     let size = 0;
     req.on('data', (c) => {
       size += c.length;
-      if (size > MAX_BODY) {
+      if (size > max) {
         reject(new Error('body too large'));
         req.destroy();
       } else chunks.push(c);
@@ -53,9 +54,13 @@ function readBody(req) {
   });
 }
 
+if (config.web.enabled) require_('web.groqKey');
+const webApi = config.web.enabled ? createWebApi({ web: config.web, voice: { speak, transcribe }, readBody, track }) : null;
+
 const server = createServer(async (req, res) => {
   const url = new URL(req.url, 'http://localhost');
   try {
+    if (webApi && (await webApi(req, res, url))) return;
     if (req.method === 'GET' && url.pathname === '/health') {
       res.writeHead(200).end('ok');
     } else if (req.method === 'GET' && url.pathname === '/webhook') {
