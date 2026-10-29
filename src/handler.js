@@ -152,7 +152,8 @@ export function createHandler({ store, wa, agent, voice, numbers, log = console,
 
   return async function handle(msg) {
     if (!firstTime(msg.id)) return;
-    if (!numbers.includes(msg.from)) return log.warn(`ignored message from unregistered number ending ${msg.from.slice(-4)}`);
+    const allowed = typeof numbers === 'function' ? numbers(msg.from) : numbers.includes(msg.from);
+    if (!allowed) return log.warn(`ignored message from unregistered number ending ${msg.from.slice(-4)}`);
     return enqueue(msg.from, () => fromUser(msg));
   };
 }
