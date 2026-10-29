@@ -15,12 +15,13 @@ A prototype built in two days for the [WeMakeDevs x Wispr Flow No Hands challeng
 | You say | Saathi does |
 |---|---|
 | हॉल के लिए दो हज़ार से कम में झूमर | Finds five chandeliers under ₹2,000, sorted by rating, and sends one numbered picture with links |
+| Find me a good pressure cooker under 2000 rupees | Four options from ₹1,407 to ₹1,799 with ratings and Amazon links, answered in English |
 | कल सुबह मुंबई से पुणे की train | Searches a train site and sends real times, fares and seats, then asks before booking |
-| यह मैसेज सच है क्या? (with a forwarded SMS) | "नहीं, यह ठगी है।" Explains why and what not to do |
+| Is this message real? (a forwarded "SBI KYC" SMS) | "This message is not real. It is a scam." Points out SBI's real sites and what not to do |
 | आज सोने का भाव क्या है? | 24 and 22 carat rates per gram, with a note that the jeweller's price may differ |
+| What do I need to renew my passport? | The documents list and the official site |
 | मुंबई में कल बारिश होगी क्या? | "सुबह 3 से 9 बजे बारिश के आसार। छाता साथ रख लीजिए।" |
 | दीवाली कब है? | Sunday 8 November, with Dhanteras and Bhai Dooj |
-| पनीर बटर मसाला बनाना है | Three Hindi YouTube videos that open in the app |
 
 Every answer above came from Saathi using the live web on 29 October 2026.
 
