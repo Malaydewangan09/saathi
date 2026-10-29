@@ -4,3 +4,5 @@ node_modules/
 data/
 .playwright-mcp/
 brag-output*/
+site/shots/
+site/options/shots/
