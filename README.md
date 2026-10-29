@@ -1,8 +1,21 @@
 <p align="center">
-  <img src="docs/assets/banner.png" alt="Saathi: Don't search, just ask." width="100%">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="docs/assets/logo-wordmark-dark.svg">
+    <img src="docs/assets/logo-wordmark.svg" alt="Saathi" height="64">
+  </picture>
 </p>
 
-# Saathi
+<p align="center"><b>Don't search, just ask.</b><br>A WhatsApp contact that uses the web for you, in Hindi or English.</p>
+
+<p align="center">
+  <a href="https://malaydewangan09.github.io/saathi/">Website</a> ·
+  <a href="docs/architecture.md">How it works</a> ·
+  <a href="#run-it-yourself">Run it yourself</a>
+</p>
+
+<p align="center">
+  <img src="docs/assets/banner.png" alt="Saathi: Don't search, just ask." width="100%">
+</p>
 
 A WhatsApp contact that uses the web for you. Send a voice note in Hindi or English. Saathi opens the real website, does the searching and clicking, and replies with a voice note and a short card.
 
