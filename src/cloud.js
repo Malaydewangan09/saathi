@@ -6,6 +6,13 @@ const MAX_TEXT = 500;
 const MAX_AUDIO_BYTES = 900 * 1024;
 const VISITOR = /^[a-z0-9]{16,40}$/;
 
+// Decided in code because the free model does not reliably follow the asker's language.
+// Quoted or forwarded text does not count, only the person's own words.
+export function replyLanguage(text) {
+  const own = String(text).replace(/["“”'‘’][^"“”'‘’]*["“”'‘’]/g, ' ');
+  return /[\u0900-\u097F]/.test(own) ? 'Hindi, in Devanagari script' : 'English';
+}
+
 // The live web chat without a laptop: one stateless request in, one answer out.
 // Limits here are per server instance, a best effort on top of Groq's own rate limits.
 export function createCloudChat({ apiKey, origins, perVisitor = 6, fetchImpl = fetch, agent, now = Date.now }) {
@@ -60,7 +67,7 @@ export function createCloudChat({ apiKey, origins, perVisitor = 6, fetchImpl = f
       try {
         if (audio) text = await transcribe(audio.data, audio.mime);
         if (!text) return [200, { transcript: '', spoken: '', card: '', lang: 'en', empty: true }];
-        const { reply } = await groq.run({ message: text });
+        const { reply } = await groq.run({ message: `[Reply in ${replyLanguage(text)}]\n${text}` });
         const lang = /[ऀ-ॿ]/.test(reply.spoken) ? 'hi' : 'en';
         return [200, { transcript: audio ? text : undefined, spoken: reply.spoken, card: reply.card, lang }];
       } catch (err) {

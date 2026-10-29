@@ -1,6 +1,6 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
-import { createCloudChat } from '../src/cloud.js';
+import { createCloudChat, replyLanguage } from '../src/cloud.js';
 
 const ORIGIN = 'https://malaydewangan09.github.io';
 const VISITOR = 'abcdefghijklmnop1234';
@@ -61,4 +61,10 @@ test('Groq being busy or failing gives a clear status, not a crash', async () =>
   assert.deepEqual(await busy.ask({ visitor: VISITOR, text: 'a' }), [503, { error: 'busy' }]);
   const broken = createCloudChat({ apiKey: 'k', origins: [ORIGIN], agent: { run: async () => { throw new Error('Groq 500: boom'); } } });
   assert.deepEqual(await broken.ask({ visitor: VISITOR, text: 'a' }), [502, { error: 'failed' }]);
+});
+
+test('reply language follows the person\'s own words, not quoted text', () => {
+  assert.equal(replyLanguage('आज सोने का भाव क्या है?'), 'Hindi, in Devanagari script');
+  assert.equal(replyLanguage('Is this message real? "आपका खाता बंद हो जाएगा"'), 'English');
+  assert.equal(replyLanguage('यह मैसेज सच है क्या? "Your SBI account will be blocked"'), 'Hindi, in Devanagari script');
 });
