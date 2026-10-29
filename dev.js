@@ -31,7 +31,7 @@ if (!message) {
   process.exit(1);
 }
 
-console.log(`\nMaa: ${message}\n...`);
+console.log(`\nYou: ${message}\n...`);
 const started = Date.now();
 const { reply, sessionId: next } = await runAgent({ message, sessionId });
 await writeFile(SESSION_FILE, next);

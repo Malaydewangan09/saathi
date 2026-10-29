@@ -21,7 +21,8 @@ function setup(agentReplies = [], { failAgent = false, failText = false, clock, 
     downloadMedia: async () => ({ data: Buffer.from('ogg'), mimeType: 'audio/ogg' }),
   };
   let transcript = 'कल पुणे की ट्रेन देखो';
-  const voice = { speak: async () => Buffer.from('ogg'), transcribe: async () => transcript };
+  const voices = [];
+  const voice = { speak: async (_t, v) => { voices.push(v); return Buffer.from('ogg'); }, transcribe: async () => transcript };
   const agent = {
     run: async (args) => {
       agentCalls.push(args);
@@ -34,7 +35,7 @@ function setup(agentReplies = [], { failAgent = false, failText = false, clock, 
   const handle = createHandler({ store, wa, agent, voice, numbers: [ME], log, ...(clock ? { clock } : {}), ...(collage ? { collage } : {}) });
   let n = 0;
   const msg = (extra, from = ME) => ({ id: `m${++n}`, from, timestamp: Date.now(), ...extra });
-  return { handle, sent, agentCalls, store, msg, setTranscript: (t) => (transcript = t) };
+  return { handle, sent, agentCalls, store, msg, voices, setTranscript: (t) => (transcript = t) };
 }
 
 const booking = { status: 'needs_confirmation', spoken: 'क्या मैं बुक करूँ?', card: '12409 SL ₹640', confirm_summary: 'गोंडवाना एक्सप्रेस, स्लीपर, ₹640, वेटिंग 57', amount_inr: 640 };
@@ -158,6 +159,16 @@ test('if the picture cannot be made, the card still goes with the voice note', a
   await handle(msg({ kind: 'text', text: 'झूमर दिखाओ' }));
   assert.deepEqual(sent.map((s) => s.type), ['text', 'voice']);
   assert.match(sent[1].caption, /Homesake/);
+});
+
+test('an English reply is spoken in the English voice, a Hindi one in the Hindi voice', async () => {
+  const en = { status: 'done', spoken: 'Here are four pressure cookers under 2,000 rupees.', card: '', confirm_summary: '', amount_inr: 0, images: [] };
+  const hi = { status: 'done', spoken: 'ये चार प्रेशर कुकर मिले।', card: '', confirm_summary: '', amount_inr: 0, images: [] };
+  const { handle, store, msg, voices } = setup([en, hi]);
+  store.person(ME).language = 'hi';
+  await handle(msg({ kind: 'text', text: 'Find me a pressure cooker' }));
+  await handle(msg({ kind: 'text', text: 'प्रेशर कुकर दिखाओ' }));
+  assert.deepEqual(voices, ['Rishi', 'Lekha']);
 });
 
 test('a failed ack does not stop the task', async () => {

@@ -1,7 +1,7 @@
 {
   "name": "saathi",
   "version": "0.1.0",
-  "description": "A WhatsApp voice assistant that does website chores for elderly parents, in their language, with family approval for anything risky.",
+  "description": "A WhatsApp contact that uses the web for you. Send a voice note in Hindi or English, Saathi does the website part and replies with a voice note.",
   "scripts": {
     "start": "node src/server.js",
     "test": "node --test test/*.test.js",
@@ -16,5 +16,13 @@
   "private": true,
   "engines": {
     "node": ">=22"
-  }
+  },
+  "keywords": [
+    "whatsapp",
+    "voice",
+    "hindi",
+    "browser-agent",
+    "claude",
+    "playwright"
+  ]
 }

@@ -39,7 +39,9 @@ export function createHandler({ store, wa, agent, voice, numbers, log = console,
 
   // The card rides along with the voice note where the channel allows it, to save a message.
   async function say(to, text, lang, caption = '') {
-    const ogg = await voice.speak(text, LANGUAGES[lang]?.voice);
+    // The voice follows the reply itself: Devanagari is spoken in Hindi, anything else in Indian English.
+    const spokenIn = /[\u0900-\u097F]/.test(text) ? 'hi' : /[a-z]/i.test(text) ? 'en' : lang;
+    const ogg = await voice.speak(text, LANGUAGES[spokenIn]?.voice);
     await wa.sendVoice(to, ogg, caption);
   }
 
@@ -61,7 +63,7 @@ export function createHandler({ store, wa, agent, voice, numbers, log = console,
     if (person.lastActive && now - person.lastActive > FRESH_AFTER_MS) person.sessionId = null;
     person.lastActive = now;
     const { reply, sessionId } = await agent.run({
-      message: `[Reply language: ${LANGUAGES[lang].name}]\n${message}`,
+      message: `[Reply language: ${LANGUAGES[lang].name}, unless the message below is clearly in another language]\n${message}`,
       sessionId: person.sessionId,
     });
     person.sessionId = sessionId;
