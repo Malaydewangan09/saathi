@@ -21,6 +21,14 @@ When you have the answer, write it as plain text in exactly this shape (no JSON,
 SPOKEN: what Saathi says aloud, 2 to 4 short warm sentences. Write numbers as digits (₹1,44,110), exactly as in the card, never spelled out in words
 CARD: the key facts in short lines, options numbered with their links, the source site at the end`;
 
+// Without today's date the model reads "this year" or "tomorrow" against old pages.
+export function systemFor(language, at) {
+  const today = new Date(at).toLocaleDateString('en-IN', { timeZone: 'Asia/Kolkata', weekday: 'long', day: 'numeric', month: 'long', year: 'numeric' });
+  const lines = [SYSTEM, `Today is ${today} in India. Use it for "today", "tomorrow" and "this year", and ignore pages about other years.`];
+  if (language) lines.push(`Write SPOKEN and CARD only in ${language}.`);
+  return lines.join('\n\n');
+}
+
 // Drops search citation marks like 【2†L55-L56】 and markdown the model adds.
 export function stripCitations(text) {
   return String(text || '')
@@ -91,7 +99,7 @@ async function askWithFallback(ask, sleep) {
 }
 
 // Same interface as the Claude agent, so the handler is reused as is.
-export function createGroqAgent({ apiKey, fetchImpl = fetch, timeoutMs = 90_000, sleep = (ms) => new Promise((r) => setTimeout(r, ms)) }) {
+export function createGroqAgent({ apiKey, fetchImpl = fetch, timeoutMs = 90_000, sleep = (ms) => new Promise((r) => setTimeout(r, ms)), now = Date.now }) {
   const sessions = new Map();
   return {
     async run({ message, sessionId, language }) {
@@ -105,7 +113,7 @@ export function createGroqAgent({ apiKey, fetchImpl = fetch, timeoutMs = 90_000,
             model,
             tools: [{ type: 'browser_search' }],
             tool_choice: 'auto',
-            messages: [{ role: 'system', content: language ? `${SYSTEM}\n\nWrite SPOKEN and CARD only in ${language}.` : SYSTEM }, ...history, { role: 'user', content: message }],
+            messages: [{ role: 'system', content: systemFor(language, now()) }, ...history, { role: 'user', content: message }],
           }),
           signal: AbortSignal.timeout(timeoutMs),
         });

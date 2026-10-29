@@ -1,6 +1,6 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
-import { createGroqAgent, parseReply, retryAfterMs, stripCitations } from '../src/groq.js';
+import { createGroqAgent, parseReply, retryAfterMs, stripCitations, systemFor } from '../src/groq.js';
 
 test('citation marks are removed', () => {
   assert.equal(stripCitations('भाव ₹1,44,110 है【2†L55-L56】।'), 'भाव ₹1,44,110 है।');
@@ -94,4 +94,11 @@ test('gives up instead of waiting more than a minute', async () => {
 test('reads the wait time from the header or the message', () => {
   assert.equal(retryAfterMs({ get: () => '4' }, ''), 4000);
   assert.equal(retryAfterMs({ get: () => null }, 'Please try again in 1m2.5s'), 62500);
+});
+
+test("every question carries today's date and, when given, the reply language", () => {
+  const s = systemFor('English', Date.parse('2026-10-29T08:00:00Z'));
+  assert.match(s, /Today is Thursday,? 29 October 2026 in India/);
+  assert.match(s, /only in English/);
+  assert.doesNotMatch(systemFor(undefined, 0), /only in/);
 });
