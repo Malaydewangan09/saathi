@@ -1,0 +1,7 @@
+node_modules
+data
+.browser-profile
+brag-output*
+test
+docs
+.env
