@@ -14,6 +14,25 @@ test('parses the JSON reply even with text or citations around it', () => {
   assert.deepEqual(r.images, []);
 });
 
+test('parses the SPOKEN and CARD sections', () => {
+  const r = parseReply('SPOKEN: यह ठगी है। उस नंबर पर फ़ोन मत कीजिए【1†L2】।\nCARD: Scam alert\n- Do not call 9812345621\nSource: cybercrime.gov.in');
+  assert.equal(r.spoken, 'यह ठगी है। उस नंबर पर फ़ोन मत कीजिए।');
+  assert.match(r.card, /^Scam alert/);
+  assert.match(r.card, /cybercrime\.gov\.in$/);
+});
+
+test('retries once when the model calls a tool that does not exist', async () => {
+  let calls = 0;
+  const fetchImpl = async () => {
+    calls += 1;
+    if (calls === 1) return { ok: false, status: 400, text: async () => '{"error":{"code":"tool_use_failed"}}' };
+    return { ok: true, status: 200, json: async () => ({ choices: [{ message: { content: 'SPOKEN: ok\nCARD: x' } }] }) };
+  };
+  const { reply } = await createGroqAgent({ apiKey: 'k', fetchImpl }).run({ message: 'hi' });
+  assert.equal(calls, 2);
+  assert.equal(reply.spoken, 'ok');
+});
+
 test('the public demo can never ask for a money confirmation', () => {
   assert.equal(parseReply('{"status":"needs_confirmation","spoken":"Book it?","card":""}').status, 'done');
 });
