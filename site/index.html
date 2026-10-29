@@ -531,7 +531,12 @@
       visitor: "That's the limit for today on this demo. Watch the video for more.",
       day: "The demo has reached today's limit. Try again tomorrow, or watch the video.",
     };
-    let api = '', online = false, busy = false, replays = null, recorder = null;
+    let api = '', cloud = false, online = false, busy = false, replays = null, recorder = null;
+    const CLOUD_ERRORS = {
+      visitor: "That's the limit for today on this demo. Watch the video for more.",
+      busy: 'Lots of questions right now. Please try again in a minute.',
+      failed: 'That did not work. Please try again.',
+    };
 
     const visitor = (() => {
       const make = () => Array.from(crypto.getRandomValues(new Uint8Array(24)), (b) => 'abcdefghijklmnopqrstuvwxyz0123456789'[b % 36]).join('');
@@ -604,6 +609,46 @@
       } else btn.disabled = true;
       return place(el, before);
     }
+    // Cloud mode: the visitor's own device reads the answer aloud, in Hindi or Indian English when it has those voices.
+    function pickVoice(lang) {
+      const all = window.speechSynthesis ? speechSynthesis.getVoices() : [];
+      const want = lang === 'hi' ? ['hi-IN', 'hi'] : ['en-IN', 'en-GB', 'en-US', 'en'];
+      for (const w of want) {
+        const v = all.find((x) => x.lang && x.lang.replace('_', '-').toLowerCase().startsWith(w.toLowerCase()));
+        if (v) return v;
+      }
+      return null;
+    }
+    function spoken(text, lang, before) {
+      const el = make('div', 'bubble them');
+      const row = make('div', 'voice');
+      const btn = make('button', 'play');
+      btn.type = 'button';
+      btn.setAttribute('aria-label', 'Play the answer aloud');
+      const words = text.split(/\s+/).length;
+      row.append(btn, wave(7 + thread.children.length * 13), make('span', 'dur', fmt(Math.max(3, Math.round(words / 2.4)))));
+      el.appendChild(row);
+      el.appendChild(make('p', 'said', text));
+      const stop = () => { btn.classList.remove('pause'); btn.setAttribute('aria-label', 'Play the answer aloud'); };
+      const play = () => {
+        if (!window.speechSynthesis) return;
+        if (speechSynthesis.speaking) { speechSynthesis.cancel(); return stop(); }
+        const u = new SpeechSynthesisUtterance(text);
+        u.lang = lang === 'hi' ? 'hi-IN' : 'en-IN';
+        const v = pickVoice(lang);
+        if (v) u.voice = v;
+        u.rate = 0.95;
+        u.onend = stop;
+        u.onerror = stop;
+        btn.classList.add('pause');
+        btn.setAttribute('aria-label', 'Stop');
+        speechSynthesis.speak(u);
+      };
+      if (window.speechSynthesis) btn.addEventListener('click', play);
+      else btn.disabled = true;
+      place(el, before);
+      return play;
+    }
     function picture(url, caption, before) {
       const el = make('div', 'bubble them pic');
       const img = make('img');
@@ -646,12 +691,16 @@
     }
 
     async function connect() {
-      try { api = ((await (await fetch('live.json', { cache: 'no-store' })).json()).api || '').replace(/\/$/, ''); } catch { api = ''; }
+      try {
+        const live = await (await fetch('live.json', { cache: 'no-store' })).json();
+        api = (live.api || '').replace(/\/$/, '');
+        cloud = live.mode === 'cloud';
+      } catch { api = ''; }
       if (!api) return setStatus(false);
       // The first request through the tunnel can be slow, so try twice before falling back to replays.
       for (let attempt = 0; attempt < 2; attempt++) {
         try {
-          const res = await fetch(`${api}/api/status`, { cache: 'no-store', signal: AbortSignal.timeout(8000) });
+          const res = await fetch(cloud ? `${api}/api/ask` : `${api}/api/status`, { cache: 'no-store', signal: AbortSignal.timeout(8000) });
           if (res.ok && (await res.json()).online === true) return setStatus(true);
         } catch {}
       }
@@ -692,7 +741,37 @@
       return submit({ text });
     }
 
+    // Cloud mode: one request, one answer, spoken by the visitor's device.
+    async function submitCloud(payload) {
+      lock(true);
+      const hindi = payload.audio || /[\u0900-\u097F]/.test(payload.text || '');
+      bubble('them', hindi ? 'जी, देख रही हूँ। बस एक मिनट।' : 'Okay, I am looking. Just a minute.');
+      const dots = typing();
+      try {
+        const res = await fetch(`${api}/api/ask`, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ visitor, ...payload }),
+          signal: AbortSignal.timeout(70000),
+        });
+        const body = await res.json().catch(() => ({}));
+        dots.remove();
+        if (!res.ok) return note(CLOUD_ERRORS[body.error] || 'That did not work. Please try again.');
+        if (body.transcript) note(`Heard: “${body.transcript}”`);
+        if (body.empty) return note('I could not hear anything. Please try again, a little closer to the mic.');
+        const play = spoken(body.spoken, body.lang);
+        if (body.card) card(body.card);
+        play();
+      } catch {
+        dots.remove();
+        note('This is taking longer than usual. Please try again in a minute.');
+      } finally {
+        lock(false);
+      }
+    }
+
     async function submit(payload) {
+      if (cloud) return submitCloud(payload);
       lock(true);
       const dots = typing();
       try {
