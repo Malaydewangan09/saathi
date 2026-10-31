@@ -24,7 +24,7 @@ Most of the internet is in English and full of forms. A lot of people would rath
 
 [![Saathi demo video](site/assets/saathi-demo.jpg)](https://malaydewangan09.github.io/saathi/assets/saathi-demo.mp4)
 
-A WhatsApp voice note becomes a real train search on a booking site, plus a quick look at the website's live preview chat. [Watch the video](https://malaydewangan09.github.io/saathi/assets/saathi-demo.mp4).
+A WhatsApp voice note becomes a real train search on a booking site. [Watch the video](https://malaydewangan09.github.io/saathi/assets/saathi-demo.mp4).
 
 So you send Saathi a voice note on WhatsApp. It opens the real website, does the clicking, and answers with a voice note and a short card. It never types your passwords, and it asks "क्या मैं यह करूँ?" before anything that costs money.
 
@@ -94,10 +94,6 @@ A Chrome window opens and does the search, then the reply is printed and spoken.
 Only the numbers in `SAATHI_NUMBERS` get an answer. The sandbox allows 50 messages a day, and the tunnel address changes each time it starts (update `PUBLIC_URL` and the sandbox URL when it does). `SAATHI_PLAY_LOCALLY=1` plays replies on the Mac if WhatsApp refuses them.
 
 `npm test` runs 85 tests. No network needed.
-
-### 3. Your own website chat (optional)
-
-The "Try it" chat on the website is a small Vercel function (`api/ask.js`) using Groq's free tier, no Mac needed. Import your fork into [Vercel](https://vercel.com/new), set `GROQ_API_KEY` ([console.groq.com](https://console.groq.com)) and `SAATHI_WEB_ORIGIN` (your site's address), and point `site/live.json` at your Vercel URL. GitHub Pages serves `site/` from `.github/workflows/pages.yml`.
 
 ## Honest limits
 
