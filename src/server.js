@@ -21,7 +21,7 @@ function track(promise) {
 }
 
 const twilio = config.transport === 'twilio';
-if (twilio) require_('deepgramKey', 'twilio.accountSid', 'twilio.authToken', 'publicUrl');
+if (twilio) require_('deepgramKey', 'twilio.accountSid', 'twilio.authToken', 'twilio.from', 'publicUrl');
 else require_('deepgramKey', 'whatsapp.token', 'whatsapp.phoneNumberId', 'whatsapp.appSecret', 'whatsapp.verifyToken');
 if (!config.numbers.length) throw new Error('set SAATHI_NUMBERS in .env');
 

@@ -30,7 +30,7 @@ export const config = {
   twilio: {
     accountSid: env.TWILIO_ACCOUNT_SID,
     authToken: env.TWILIO_AUTH_TOKEN,
-    from: env.TWILIO_WHATSAPP_FROM || 'whatsapp:+10000000000',
+    from: env.TWILIO_WHATSAPP_FROM,
   },
   // Numbers in international format without '+', e.g. 919800000001.
   web: {
