@@ -24,7 +24,7 @@ Most of the internet is in English and full of forms. A lot of people would rath
 
 [![Saathi demo video](site/assets/saathi-demo.jpg)](https://malaydewangan09.github.io/saathi/assets/saathi-demo.mp4)
 
-A Hindi voice question and a scam check on the live website, then a real train search on a booking site, by voice note. [Watch the video](https://malaydewangan09.github.io/saathi/assets/saathi-demo.mp4).
+A WhatsApp voice note becomes a real train search on a booking site, plus a quick look at the website's live preview chat. [Watch the video](https://malaydewangan09.github.io/saathi/assets/saathi-demo.mp4).
 
 So you send Saathi a voice note on WhatsApp. It opens the real website, does the clicking, and answers with a voice note and a short card. It never types your passwords, and it asks "क्या मैं यह करूँ?" before anything that costs money.
 
