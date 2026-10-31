@@ -95,6 +95,10 @@ Only the numbers in `SAATHI_NUMBERS` get an answer. The sandbox allows 50 messag
 
 `npm test` runs 85 tests. No network needed.
 
+### 3. Your own website chat (optional)
+
+The "Try it" chat on the website is a small Vercel function (`api/ask.js`) using Groq's free tier, no Mac needed. Import your fork into [Vercel](https://vercel.com/new), set `GROQ_API_KEY` ([console.groq.com](https://console.groq.com)) and `SAATHI_WEB_ORIGIN` (your site's address), and point `site/live.json` at your Vercel URL. GitHub Pages serves `site/` from `.github/workflows/pages.yml`.
+
 ## Honest limits
 
 It runs on one laptop with one browser, through the Twilio sandbox. It can't use the apps on your phone, so it sends links that open them. Captchas, logins and payments still need you. Hindi and English for now.
@@ -102,5 +106,9 @@ It runs on one laptop with one browser, through the Twilio sandbox. It can't use
 ## Built by voice
 
 Built by talking to Claude through Wispr Flow instead of typing.
+
+## Contributing
+
+Fork it, run your own, and open an issue or a pull request if something breaks or you add a language. Keep changes small and run `npm test` first.
 
 MIT licensed.
