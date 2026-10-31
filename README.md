@@ -9,6 +9,7 @@
 
 <p align="center">
   <a href="https://malaydewangan09.github.io/saathi/">Website</a> ·
+  <a href="https://malaydewangan09.github.io/saathi/#demo">Demo</a> ·
   <a href="docs/architecture.md">How it works</a> ·
   <a href="#run-it">Run it</a>
 </p>
