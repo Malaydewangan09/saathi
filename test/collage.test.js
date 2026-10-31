@@ -1,14 +1,14 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
-import { checkImageUrl, isPrivateAddress } from '../src/collage.js';
+import { checkImageUrl, guardedLookup, isPrivateAddress } from '../src/collage.js';
 
 const resolveTo = (address) => async () => [{ address, family: 4 }];
 
 test('private and loopback addresses are recognised', () => {
-  for (const ip of ['127.0.0.1', '10.1.2.3', '192.168.1.13', '172.20.0.1', '169.254.1.1', '::1', '::ffff:127.0.0.1', '100.64.0.1']) {
+  for (const ip of ['127.0.0.1', '10.1.2.3', '192.168.1.13', '172.20.0.1', '169.254.1.1', '::1', '::ffff:127.0.0.1', '100.64.0.1', '0.0.0.0', '::', 'fd00::1', 'fe80::1', '224.0.0.1']) {
     assert.equal(isPrivateAddress(ip), true, ip);
   }
-  for (const ip of ['13.32.1.1', '151.101.1.1', '172.32.0.1']) assert.equal(isPrivateAddress(ip), false, ip);
+  for (const ip of ['13.32.1.1', '151.101.1.1', '172.32.0.1', '2600:9000::1']) assert.equal(isPrivateAddress(ip), false, ip);
 });
 
 test('accepts a public https image host', async () => {
@@ -22,4 +22,10 @@ test('refuses http, IP literals, localhost and hosts that resolve to the local n
   await assert.rejects(checkImageUrl('https://localhost/x.jpg', resolveTo('127.0.0.1')), /not allowed/);
   await assert.rejects(checkImageUrl('https://evil.example/x.jpg', resolveTo('192.168.1.1')), /not allowed/);
   await assert.rejects(checkImageUrl('not a url', resolveTo('13.32.1.1')), /not a URL/);
+});
+
+test('the address actually dialled is checked again, so DNS cannot switch to the local network after the first check', async () => {
+  const dial = (address) => new Promise((resolve) => guardedLookup('cdn.example', {}, (err, ip) => resolve(err ? err.message : ip), (_h, _o, cb) => cb(null, [{ address, family: 4 }])));
+  assert.equal(await dial('192.168.1.1'), 'host not allowed');
+  assert.equal(await dial('13.32.1.1'), '13.32.1.1');
 });

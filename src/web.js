@@ -30,6 +30,7 @@ export function createWebChannel({ perVisitor = 6, perDay = 120, now = Date.now,
     if (dayOf(t) !== usage.day) usage = { day: dayOf(t), total: 0, visitors: new Map() };
     for (const [id, j] of jobs) if (t - j.createdAt > JOB_TTL_MS) jobs.delete(id);
     for (const [id, m] of media) if (m.expires < t) media.delete(id);
+    for (const [to, id] of current) if (!jobs.has(id)) current.delete(to);
   }
 
   function jobFor(to) {

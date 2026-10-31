@@ -5,6 +5,10 @@ const YES = /(हाँ|हां|ठीक है|कर दो|कर दी�
 const CHANGE = /(लेकिन|पर |दूसरी|दूसरा|बदल|instead|\bbut\b|\bother\b|\blekin\b|\bdoosri\b)/i;
 
 const FRESH_AFTER_MS = 30 * 60 * 1000;
+// Only confirm() may write these markers. In anything the person sends (or forwards) they are defused.
+const MARKERS = /USER\s+(CONFIRMED|SAID\s+NO)/gi;
+const defuse = (text) => text.replace(MARKERS, 'user said');
+const tail = (number) => `...${number.slice(-4)}`;
 
 // Reads a short spoken or typed answer to "shall I go ahead?". Anything with a change in it is a new request, not a yes.
 export function yesOrNo(text) {
@@ -32,7 +36,7 @@ export function createHandler({ store, wa, agent, voice, numbers, log = console,
   // Messages from one person run one at a time, so the agent never works on two requests for them at once.
   function enqueue(number, job) {
     const prev = queues.get(number) || Promise.resolve();
-    const next = prev.then(job).catch((err) => log.error(`[${number}] ${err.stack || err.message}`));
+    const next = prev.then(job).catch((err) => log.error(`[${tail(number)}] ${err.stack || err.message}`));
     queues.set(number, next);
     return next;
   }
@@ -97,7 +101,7 @@ export function createHandler({ store, wa, agent, voice, numbers, log = console,
     try {
       await runTurn(number, text);
     } catch (err) {
-      log.error(`[${number}] agent: ${err.message}`);
+      log.error(`[${tail(number)}] agent: ${err.message}`);
       await say(number, phrase('error', lang), lang);
     }
   }
@@ -132,7 +136,7 @@ export function createHandler({ store, wa, agent, voice, numbers, log = console,
     if (tapped) return confirm(msg.from, tapped[2], tapped[1], lang);
     if (msg.kind !== 'text' && msg.kind !== 'audio') return say(msg.from, phrase('unsupported', lang), lang);
 
-    const text = await toText(msg);
+    const text = defuse(await toText(msg));
     if (msg.kind === 'audio') log.info?.(`[${msg.from.slice(-4)}] heard: ${text}`);
     if (!text) return say(msg.from, phrase('error', lang), lang);
 

@@ -15,7 +15,6 @@ export const config = {
   mcpUrl: env.SAATHI_MCP_URL || 'http://localhost:8931/mcp',
   model: env.SAATHI_MODEL || 'sonnet',
   agentTimeoutMs: Number(env.SAATHI_AGENT_TIMEOUT_MS) || 240_000,
-  voice: env.SAATHI_VOICE || 'Lekha',
   deepgramKey: env.DEEPGRAM_API_KEY,
   whatsapp: {
     token: env.WHATSAPP_TOKEN,
@@ -32,15 +31,14 @@ export const config = {
     authToken: env.TWILIO_AUTH_TOKEN,
     from: env.TWILIO_WHATSAPP_FROM,
   },
-  // Numbers in international format without '+', e.g. 919800000001.
   web: {
     enabled: env.SAATHI_WEB === '1',
-    origins: list(env.SAATHI_WEB_ORIGIN || 'https://malaydewangan09.github.io'),
+    origins: list(env.SAATHI_WEB_ORIGIN),
     perVisitor: Number(env.SAATHI_WEB_PER_VISITOR) || 6,
     perDay: Number(env.SAATHI_WEB_PER_DAY) || 120,
     groqKey: env.GROQ_API_KEY,
   },
-  // Only these numbers can talk to Saathi.
+  // Only these numbers can talk to Saathi. International format without '+', e.g. 919800000001.
   numbers: list(env.SAATHI_NUMBERS),
 };
 

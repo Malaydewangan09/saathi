@@ -32,6 +32,8 @@ export function createTwilioTransport({ accountSid, authToken, from, publicUrl, 
 
   // Twilio fetches media from a URL, so files are served by this server for a short time under a random id.
   function sendMedia(to, data, ext, caption) {
+    // Drop expired files here too, or ones Twilio never fetched would stay in memory.
+    for (const [old, m] of media) if (m.expires < Date.now()) media.delete(old);
     const id = randomBytes(16).toString('hex');
     media.set(id, { data, ext, expires: Date.now() + MEDIA_TTL_MS });
     return send(to, { MediaUrl: `${publicUrl}/media/${id}.${ext}`, ...(caption ? { Body: caption } : {}) });
@@ -78,11 +80,7 @@ export function createTwilioTransport({ accountSid, authToken, from, publicUrl, 
 
     getMedia(id, ext) {
       const m = media.get(id);
-      if (!m || m.expires < Date.now() || m.ext !== ext) {
-        if (m && m.expires < Date.now()) media.delete(id);
-        return null;
-      }
-      return m.data;
+      return m && m.ext === ext && m.expires >= Date.now() ? m.data : null;
     },
 
     // Incoming media URLs need the account credentials and redirect to storage.

@@ -4,7 +4,8 @@ export const config = { maxDuration: 60 };
 
 const chat = createCloudChat({
   apiKey: process.env.GROQ_API_KEY,
-  origins: (process.env.SAATHI_WEB_ORIGIN || 'https://malaydewangan09.github.io').split(','),
+  // No default: without SAATHI_WEB_ORIGIN no website may call this.
+  origins: (process.env.SAATHI_WEB_ORIGIN || '').split(',').map((s) => s.trim()).filter(Boolean),
   perVisitor: Number(process.env.SAATHI_WEB_PER_VISITOR) || 3,
 });
 

@@ -57,3 +57,10 @@ test('saves and loads, dropping the old approvals field', async () => {
     await rm(dir, { recursive: true, force: true });
   }
 });
+
+test('questions older than a day are dropped when a new one is asked', () => {
+  const s = fresh();
+  const old = s.createConfirmation({ owner: '911', summary: 'old', amount: 1, now: 0 });
+  s.createConfirmation({ owner: '911', summary: 'new', amount: 1, now: 25 * 60 * 60 * 1000 });
+  assert.equal(s.data.confirmations[old], undefined);
+});

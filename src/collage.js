@@ -1,15 +1,31 @@
+import { lookup as lookupCb } from 'node:dns';
 import { lookup } from 'node:dns/promises';
+import https from 'node:https';
 import { isIP } from 'node:net';
 import { chromium } from 'playwright';
+
 const MAX_IMAGE_BYTES = 5 * 1024 * 1024;
 const TILE = 480;
 
 // Image URLs come from web pages via the model, so only public https hosts are fetched (no local network).
 export function isPrivateAddress(ip) {
-  if (ip === '::1' || ip.startsWith('fe80:') || ip.startsWith('fc') || ip.startsWith('fd')) return true;
-  const v4 = ip.startsWith('::ffff:') ? ip.slice(7) : ip;
+  const v6 = ip.toLowerCase();
+  if (v6 === '::' || v6 === '::1' || /^(fe[89ab]|f[cd]|ff)/.test(v6)) return true;
+  const v4 = v6.startsWith('::ffff:') ? v6.slice(7) : v6;
+  if (isIP(v4) !== 4) return false;
   const [a, b] = v4.split('.').map(Number);
-  return a === 10 || a === 127 || a === 0 || (a === 169 && b === 254) || (a === 172 && b >= 16 && b <= 31) || (a === 192 && b === 168) || (a === 100 && b >= 64 && b <= 127);
+  return a === 10 || a === 127 || a === 0 || a >= 224 || (a === 169 && b === 254) || (a === 172 && b >= 16 && b <= 31) ||
+    (a === 192 && b === 168) || (a === 100 && b >= 64 && b <= 127) || (a === 198 && (b === 18 || b === 19));
+}
+
+// The same check at connect time, on the address actually dialled, so DNS cannot change between check and fetch.
+export function guardedLookup(hostname, options, cb, resolve = lookupCb) {
+  resolve(hostname, { ...options, all: true }, (err, addrs) => {
+    if (err) return cb(err);
+    if (!addrs.length || addrs.some((a) => isPrivateAddress(a.address))) return cb(new Error('host not allowed'));
+    if (options.all) return cb(null, addrs);
+    cb(null, addrs[0].address, addrs[0].family);
+  });
 }
 
 export async function checkImageUrl(raw, resolve = lookup) {
@@ -26,15 +42,29 @@ export async function checkImageUrl(raw, resolve = lookup) {
   return url;
 }
 
+// No redirects (https.get does not follow them), and the size limit applies while reading, not after.
 async function fetchImage(raw) {
   const url = await checkImageUrl(raw);
-  // No redirects: a redirect could point at the local network after the check above.
-  const res = await fetch(url, { redirect: 'error', signal: AbortSignal.timeout(10_000), headers: { 'User-Agent': 'Mozilla/5.0 Saathi' } });
-  if (!res.ok) throw new Error(`image ${res.status}`);
-  if (!(res.headers.get('content-type') || '').startsWith('image/')) throw new Error('not an image');
-  const data = Buffer.from(await res.arrayBuffer());
-  if (data.length > MAX_IMAGE_BYTES) throw new Error('image too large');
-  return data;
+  return new Promise((resolve, reject) => {
+    const req = https.get(url, { lookup: guardedLookup, signal: AbortSignal.timeout(10_000), headers: { 'User-Agent': 'Mozilla/5.0 Saathi' } }, (res) => {
+      const fail = (msg) => {
+        res.resume();
+        reject(new Error(msg));
+      };
+      if (res.statusCode < 200 || res.statusCode > 299) return fail(`image ${res.statusCode}`);
+      if (!(res.headers['content-type'] || '').startsWith('image/')) return fail('not an image');
+      const chunks = [];
+      let size = 0;
+      res.on('data', (c) => {
+        size += c.length;
+        if (size > MAX_IMAGE_BYTES) req.destroy(new Error('image too large'));
+        else chunks.push(c);
+      });
+      res.on('end', () => resolve(Buffer.concat(chunks)));
+      res.on('error', reject);
+    });
+    req.on('error', reject);
+  });
 }
 
 // Builds one numbered picture (1 to 4 tiles) so a single WhatsApp message shows every option.

@@ -3,6 +3,7 @@ import { randomUUID } from 'node:crypto';
 import path from 'node:path';
 
 const CONFIRM_TTL_MS = 30 * 60 * 1000;
+const KEEP_MS = 24 * 60 * 60 * 1000;
 
 // Small JSON file store: per-person language, agent session and pending confirmations.
 export class Store {
@@ -38,6 +39,8 @@ export class Store {
   }
 
   createConfirmation({ owner, summary, amount, now = Date.now() }) {
+    // Old questions are no use after the time limit, so the file does not grow forever.
+    for (const [old, c] of Object.entries(this.data.confirmations)) if (now - c.createdAt > KEEP_MS) delete this.data.confirmations[old];
     const id = randomUUID().slice(0, 8);
     this.data.confirmations[id] = { owner, summary, amount, createdAt: now, status: 'pending' };
     return id;
