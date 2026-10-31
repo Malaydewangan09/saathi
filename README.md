@@ -59,23 +59,41 @@ More detail and the safety rules: [docs/architecture.md](docs/architecture.md).
 
 ## Run it
 
-You need a Mac, Node 22+, ffmpeg, [Claude Code](https://claude.com/claude-code) logged in, a [Deepgram](https://deepgram.com) key and a Twilio WhatsApp sandbox.
+Saathi runs on your own Mac, with your own accounts. Nothing is shared with anyone else.
+
+You need macOS (for the Hindi and English voices), Node 22+, ffmpeg (`brew install ffmpeg`) and [Claude Code](https://claude.com/claude-code) logged in. The agent runs on your Claude Code login.
+
+### 1. Try it in the terminal (2 minutes, no WhatsApp)
 
 ```sh
 git clone https://github.com/Malaydewangan09/saathi && cd saathi
 npm install && npx playwright install chromium chromium-headless-shell
-cp .env.example .env        # add your keys and your number
 
-npm run browser             # the agent's browser
-npm start                   # Saathi on :3000
-cloudflared tunnel --url http://localhost:3000
+npm run browser                                   # the agent's browser, leave it running
+node dev.js "कल सुबह मुंबई से पुणे की ट्रेन देखो"      # in a second terminal
 ```
 
-Point the sandbox's "When a message comes in" at `https://<tunnel>/twilio`, send the join code from your phone, then a voice note.
+A Chrome window opens and does the search, then the reply is printed and spoken. Add `--new` to start a fresh conversation, `--mute` for no sound.
 
-No WhatsApp handy? `node dev.js "आज सोने का भाव क्या है?"` talks to it from the terminal.
+### 2. On WhatsApp (about 15 minutes, free)
 
-`npm test` runs 54 tests. No network needed.
+1. Get a [Deepgram](https://deepgram.com) key (free credit) for voice notes, and `brew install cloudflared` for the tunnel.
+2. Open the [Twilio WhatsApp sandbox](https://console.twilio.com/us1/develop/sms/try-it-out/whatsapp-learn). Note the sandbox number and the join code, and send the join code from your phone.
+3. `cp .env.example .env` and fill in `DEEPGRAM_API_KEY`, `TWILIO_ACCOUNT_SID`, `TWILIO_AUTH_TOKEN`, `TWILIO_WHATSAPP_FROM` (`whatsapp:+<sandbox number>`) and `SAATHI_NUMBERS` (your number, country code, no `+`).
+4. Run these, each in its own terminal:
+
+   ```sh
+   npm run browser
+   cloudflared tunnel --url http://localhost:3000    # prints a https://...trycloudflare.com address
+   ```
+
+5. Put that address in `.env` as `PUBLIC_URL`, then `npm start`.
+6. In the sandbox settings, set "When a message comes in" to `<PUBLIC_URL>/twilio` (POST) and save.
+7. Send Saathi a voice note.
+
+Only the numbers in `SAATHI_NUMBERS` get an answer. The sandbox allows 50 messages a day, and the tunnel address changes each time it starts (update `PUBLIC_URL` and the sandbox URL when it does). `SAATHI_PLAY_LOCALLY=1` plays replies on the Mac if WhatsApp refuses them.
+
+`npm test` runs 85 tests. No network needed.
 
 ## Honest limits
 
